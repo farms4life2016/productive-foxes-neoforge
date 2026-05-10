@@ -1,0 +1,13 @@
+{
+  "itemGroup.productivefoxes": "Example Mod Tab",
+  "block.productivefoxes.example_block": "Example Block",
+  "item.productivefoxes.example_item": "Example Item",
+
+  "productivefoxes.configuration.title": "Productive Foxes Configs",
+  "productivefoxes.configuration.section.productivefoxes.common.toml": "Productive Foxes Configs",
+  "productivefoxes.configuration.section.productivefoxes.common.toml.title": "Productive Foxes Configs",
+  "productivefoxes.configuration.items": "Item List",
+  "productivefoxes.configuration.logDirtBlock": "Log Dirt Block",
+  "productivefoxes.configuration.magicNumberIntroduction": "Magic Number Text",
+  "productivefoxes.configuration.magicNumber": "Magic Number"
+}
