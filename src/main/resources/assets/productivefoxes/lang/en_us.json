@@ -9,5 +9,7 @@
   "productivefoxes.configuration.items": "Item List",
   "productivefoxes.configuration.logDirtBlock": "Log Dirt Block",
   "productivefoxes.configuration.magicNumberIntroduction": "Magic Number Text",
-  "productivefoxes.configuration.magicNumber": "Magic Number"
+  "productivefoxes.configuration.magicNumber": "Magic Number",
+  "message.productivefoxes.fox_on_shoulder": "You put the baby fox on your shoulder!",
+  "message.productivefoxes.shoulders_occupied": "Your shoulders are occupied!"
 }
