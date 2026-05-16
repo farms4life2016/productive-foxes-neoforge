@@ -38,3 +38,6 @@ run/
 **/src/generated/**/.cache/
 repo/
 !**/src/**/repo/
+
+# extracted reference files and textures from 1.20.4
+1.20.4/
