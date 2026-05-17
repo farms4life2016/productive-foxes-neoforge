@@ -41,3 +41,6 @@ repo/
 
 # extracted reference files and textures from 1.20.4
 1.20.4/
+
+# cobblemon-blockbench experimentation area
+blockbench/
