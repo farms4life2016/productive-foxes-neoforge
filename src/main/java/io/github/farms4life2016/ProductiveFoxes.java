@@ -1,5 +1,7 @@
 package io.github.farms4life2016;
 
+import io.github.farms4life2016.vaporeon_port.VaporeonEntities;
+import io.github.farms4life2016.vaporeon_port.VaporeonEntity;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -16,7 +18,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
@@ -25,6 +26,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -75,6 +77,7 @@ public class ProductiveFoxes {
         ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
+        VaporeonEntities.ENTITY_TYPES.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ProductiveFoxes) to respond directly to events.
@@ -83,6 +86,9 @@ public class ProductiveFoxes {
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        // register entity attributes??
+        modEventBus.addListener(this::registerEntityAttributes);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -106,6 +112,10 @@ public class ProductiveFoxes {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(EXAMPLE_BLOCK_ITEM);
         }
+    }
+
+    private void registerEntityAttributes(EntityAttributeCreationEvent event) {
+        event.put(VaporeonEntities.VAPOREON.get(), VaporeonEntity.createAttributes().build());
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

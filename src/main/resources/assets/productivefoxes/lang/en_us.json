@@ -3,6 +3,8 @@
   "block.productivefoxes.example_block": "Example Block",
   "item.productivefoxes.example_item": "Example Item",
 
+  "entity.productivefoxes.vaporeon": "Vaporeon",
+
   "productivefoxes.configuration.title": "Productive Foxes Configs",
   "productivefoxes.configuration.section.productivefoxes.common.toml": "Productive Foxes Configs",
   "productivefoxes.configuration.section.productivefoxes.common.toml.title": "Productive Foxes Configs",
