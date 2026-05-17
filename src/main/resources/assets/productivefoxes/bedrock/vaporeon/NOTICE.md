@@ -6,5 +6,7 @@ https://gitlab.com/cable-mc/cobblemon/-/tree/main/common/src/main/resources/asse
 
 The model uses a custom CCPL license which has been copied in this folder.
 
+---
+
 _Last updated: May 16, 2026._
 _Links on this page were working on that day, but they may not work today!_
