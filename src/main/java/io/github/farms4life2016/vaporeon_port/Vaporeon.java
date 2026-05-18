@@ -11,8 +11,8 @@ import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
-public class VaporeonEntity extends PathfinderMob {
-    public VaporeonEntity(EntityType<? extends PathfinderMob> entityType, Level level) {
+public class Vaporeon extends PathfinderMob {
+    public Vaporeon(EntityType<? extends PathfinderMob> entityType, Level level) {
         super(entityType, level);
     }
 

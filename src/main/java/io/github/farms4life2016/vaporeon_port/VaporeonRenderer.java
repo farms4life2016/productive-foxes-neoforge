@@ -6,7 +6,7 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 
 // Productive Foxes code. Renders through VaporeonModel, which uses the MPL-2.0 BedrockGeoModel adapter.
-public class VaporeonRenderer extends MobRenderer<VaporeonEntity, VaporeonModel> {
+public class VaporeonRenderer extends MobRenderer<Vaporeon, VaporeonModel> {
     private static final ResourceLocation MODEL = ResourceLocation.fromNamespaceAndPath(
             ProductiveFoxes.MODID,
             "bedrock/vaporeon/vaporeon.geo.json"
@@ -21,7 +21,7 @@ public class VaporeonRenderer extends MobRenderer<VaporeonEntity, VaporeonModel>
     }
 
     @Override
-    public ResourceLocation getTextureLocation(VaporeonEntity entity) {
+    public ResourceLocation getTextureLocation(Vaporeon entity) {
         return TEXTURE;
     }
 }

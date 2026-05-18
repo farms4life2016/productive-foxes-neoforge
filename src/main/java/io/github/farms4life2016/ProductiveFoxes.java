@@ -1,7 +1,6 @@
 package io.github.farms4life2016;
 
-import io.github.farms4life2016.vaporeon_port.VaporeonEntities;
-import io.github.farms4life2016.vaporeon_port.VaporeonEntity;
+import io.github.farms4life2016.vaporeon_port.Vaporeon;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -77,7 +76,7 @@ public class ProductiveFoxes {
         ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
-        VaporeonEntities.ENTITY_TYPES.register(modEventBus);
+        ProductiveFoxesEntities.ENTITY_TYPES.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ProductiveFoxes) to respond directly to events.
@@ -115,7 +114,7 @@ public class ProductiveFoxes {
     }
 
     private void registerEntityAttributes(EntityAttributeCreationEvent event) {
-        event.put(VaporeonEntities.VAPOREON.get(), VaporeonEntity.createAttributes().build());
+        event.put(ProductiveFoxesEntities.VAPOREON.get(), Vaporeon.createAttributes().build());
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

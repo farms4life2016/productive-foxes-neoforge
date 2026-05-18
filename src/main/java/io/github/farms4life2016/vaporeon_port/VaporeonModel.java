@@ -7,7 +7,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 
 // Productive Foxes code. Uses BedrockGeoModel, which is adapted from Cobblemon under MPL-2.0.
-public class VaporeonModel extends EntityModel<VaporeonEntity> {
+public class VaporeonModel extends EntityModel<Vaporeon> {
     private final ResourceLocation modelLocation;
     private BedrockGeoModel model;
 
@@ -17,7 +17,7 @@ public class VaporeonModel extends EntityModel<VaporeonEntity> {
     }
 
     @Override
-    public void setupAnim(VaporeonEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+    public void setupAnim(Vaporeon entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
     }
 
     @Override
