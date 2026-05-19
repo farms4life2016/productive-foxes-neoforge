@@ -1,6 +1,7 @@
 package io.github.farms4life2016;
 
 import io.github.farms4life2016.vaporeon_port.Vaporeon;
+import io.github.farms4life2016.vixen_maid.Braixen;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -17,6 +18,13 @@ public final class ProductiveFoxesEntities {
                     .sized(0.72F, 0.92F)
                     .clientTrackingRange(10)
                     .build(ProductiveFoxes.MODID + ":vaporeon"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<Braixen>> BRAIXEN =
+            ENTITY_TYPES.register("braixen", () -> EntityType.Builder
+                    .of(Braixen::new, MobCategory.CREATURE)
+                    .sized(0.72F, 0.92F)
+                    .clientTrackingRange(10)
+                    .build(ProductiveFoxes.MODID + ":braixen"));
 
     private ProductiveFoxesEntities() {
     }

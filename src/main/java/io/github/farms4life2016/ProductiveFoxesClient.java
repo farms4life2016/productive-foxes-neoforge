@@ -1,6 +1,7 @@
 package io.github.farms4life2016;
 
 import io.github.farms4life2016.vaporeon_port.VaporeonRenderer;
+import io.github.farms4life2016.vixen_maid.BraixenRenderer;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -29,6 +30,7 @@ public class ProductiveFoxesClient {
 
     private void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ProductiveFoxesEntities.VAPOREON.get(), VaporeonRenderer::new);
+        event.registerEntityRenderer(ProductiveFoxesEntities.BRAIXEN.get(), BraixenRenderer::new);
     }
 
     @SubscribeEvent
