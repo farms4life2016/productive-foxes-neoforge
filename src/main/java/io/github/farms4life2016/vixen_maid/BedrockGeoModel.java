@@ -8,11 +8,16 @@
  * Cobblemon source code: https://gitlab.com/cable-mc/cobblemon/-/tree/main?ref_type=heads
  *
  * Adapted for Productive Foxes from Cobblemon's Bedrock model stuff.
+ * 
+ * Model:
  * - https://gitlab.com/cable-mc/cobblemon/-/blob/main/common/src/main/kotlin/com/cobblemon/mod/common/client/render/models/blockbench/TexturedModel.kt
  * - https://gitlab.com/cable-mc/cobblemon/-/tree/30b769db132a81b83dc6b1d61fa6b21e2b8dcdfc/common/src/main/kotlin/com/cobblemon/mod/common/client/render/models/blockbench/TexturedModel.kt
+ * 
+ * Animation:
  * - https://gitlab.com/cable-mc/cobblemon/-/tree/30b769db132a81b83dc6b1d61fa6b21e2b8dcdfc/common/src/main/kotlin/com/cobblemon/mod/common/client/render/models/blockbench/bedrock/animation/BedrockAnimation.kt
  * - https://gitlab.com/cable-mc/cobblemon/-/tree/30b769db132a81b83dc6b1d61fa6b21e2b8dcdfc/common/src/main/kotlin/com/cobblemon/mod/common/client/render/models/blockbench/bedrock/animation/BedrockPoseAnimation.kt
  * - https://gitlab.com/cable-mc/cobblemon/-/tree/30b769db132a81b83dc6b1d61fa6b21e2b8dcdfc/common/src/main/kotlin/com/cobblemon/mod/common/client/render/models/blockbench/bedrock/animation/BedrockAnimationAdapter.kt
+ * - https://gitlab.com/cable-mc/cobblemon/-/blob/30b769db132a81b83dc6b1d61fa6b21e2b8dcdfc/common/src/main/kotlin/com/cobblemon/mod/common/client/render/models/blockbench/PoseableEntityModel.kt
  */
 
 package io.github.farms4life2016.vixen_maid;
@@ -77,13 +82,27 @@ public final class BedrockGeoModel {
 
     public void applyAnimation(String animationName, float animationSeconds) {
         this.resetPose();
+        this.applyAnimationLayer(animationName, animationSeconds);
+    }
+
+    public void applyAnimationLayer(String animationName, float animationSeconds) {
+        BedrockAnimation animation = this.findAnimation(animationName);
+        if (animation != null) {
+            animation.apply(this.partsByName, animationSeconds);
+        }
+    }
+
+    public float getAnimationLength(String animationName) {
+        BedrockAnimation animation = this.findAnimation(animationName);
+        return animation != null ? (float) animation.animationLength : 0.0F;
+    }
+
+    private BedrockAnimation findAnimation(String animationName) {
         BedrockAnimation animation = this.animations.get(animationName);
         if (animation == null) {
             animation = this.animations.get("animation.braixen." + animationName);
         }
-        if (animation != null) {
-            animation.apply(this.partsByName, animationSeconds);
-        }
+        return animation;
     }
 
     public void lookAt(String partName, float yawDegrees, float pitchDegrees) {
@@ -272,7 +291,7 @@ public final class BedrockGeoModel {
     private record BakedBedrockModel(ModelPart root, Map<String, ModelPart> partsByName) {
     }
 
-    private record BedrockAnimation(Map<String, BoneAnimation> bones) {
+    private record BedrockAnimation(Map<String, BoneAnimation> bones, double animationLength, boolean shouldLoop) {
         private static BedrockAnimation read(JsonObject json) {
             Map<String, BoneAnimation> bones = new HashMap<>();
             JsonObject bonesJson = json.getAsJsonObject("bones");
@@ -281,10 +300,18 @@ public final class BedrockGeoModel {
                     bones.put(entry.getKey(), BoneAnimation.read(entry.getValue().getAsJsonObject()));
                 }
             }
-            return new BedrockAnimation(bones);
+            double animationLength = json.has("animation_length") ? json.get("animation_length").getAsDouble() : -1.0D;
+            boolean shouldLoop = json.has("loop") && json.get("loop").getAsBoolean();
+            return new BedrockAnimation(bones, animationLength, shouldLoop);
         }
 
         private void apply(Map<String, ModelPart> partsByName, double animationSeconds) {
+            if (this.shouldLoop && this.animationLength > 0.0D) {
+                animationSeconds %= this.animationLength;
+            } else if (!this.shouldLoop && this.animationLength > 0.0D && animationSeconds > this.animationLength) {
+                return;
+            }
+
             for (Map.Entry<String, BoneAnimation> entry : this.bones.entrySet()) {
                 ModelPart part = partsByName.get(entry.getKey());
                 if (part != null) {
@@ -294,11 +321,11 @@ public final class BedrockGeoModel {
         }
     }
 
-    private record BoneAnimation(VectorExpression position, VectorExpression rotation) {
+    private record BoneAnimation(BoneValue position, BoneValue rotation) {
         private static BoneAnimation read(JsonObject json) {
             return new BoneAnimation(
-                    VectorExpression.read(json.get("position")),
-                    VectorExpression.read(json.get("rotation"))
+                    BoneValue.read(json.get("position")),
+                    BoneValue.read(json.get("rotation"))
             );
         }
 
@@ -319,13 +346,25 @@ public final class BedrockGeoModel {
         }
     }
 
-    private record VectorExpression(ScalarExpression x, ScalarExpression y, ScalarExpression z) {
-        private static VectorExpression read(JsonElement json) {
-            if (json == null || !json.isJsonArray()) {
+    private interface BoneValue {
+        static BoneValue read(JsonElement json) {
+            if (json == null) {
                 return null;
             }
+            if (json.isJsonArray()) {
+                return VectorExpression.read(json.getAsJsonArray());
+            }
+            if (json.isJsonObject()) {
+                return KeyframedVectorExpression.read(json.getAsJsonObject());
+            }
+            return null;
+        }
 
-            JsonArray array = json.getAsJsonArray();
+        double[] evaluate(double animationSeconds);
+    }
+
+    private record VectorExpression(ScalarExpression x, ScalarExpression y, ScalarExpression z) implements BoneValue {
+        private static VectorExpression read(JsonArray array) {
             return new VectorExpression(
                     ScalarExpression.read(array.get(0)),
                     ScalarExpression.read(array.get(1)),
@@ -333,12 +372,63 @@ public final class BedrockGeoModel {
             );
         }
 
-        private double[] evaluate(double animationSeconds) {
+        @Override
+        public double[] evaluate(double animationSeconds) {
             return new double[]{
                     this.x.evaluate(animationSeconds),
                     this.y.evaluate(animationSeconds),
                     this.z.evaluate(animationSeconds)
             };
+        }
+    }
+
+    private static final class KeyframedVectorExpression extends TreeMap<Double, VectorExpression> implements BoneValue {
+        private static KeyframedVectorExpression read(JsonObject json) {
+            KeyframedVectorExpression keyframes = new KeyframedVectorExpression();
+            for (Map.Entry<String, JsonElement> entry : json.entrySet()) {
+                if (entry.getValue().isJsonArray()) {
+                    keyframes.put(Double.parseDouble(entry.getKey()), VectorExpression.read(entry.getValue().getAsJsonArray()));
+                } else if (entry.getValue().isJsonObject()) {
+                    JsonObject frame = entry.getValue().getAsJsonObject();
+                    JsonElement post = frame.has("post") ? frame.get("post") : frame.get("pre");
+                    if (post != null && post.isJsonArray()) {
+                        keyframes.put(Double.parseDouble(entry.getKey()), VectorExpression.read(post.getAsJsonArray()));
+                    }
+                }
+            }
+            return keyframes;
+        }
+
+        @Override
+        public double[] evaluate(double animationSeconds) {
+            if (this.isEmpty()) {
+                return new double[]{0.0D, 0.0D, 0.0D};
+            }
+
+            Map.Entry<Double, VectorExpression> previous = this.floorEntry(animationSeconds);
+            Map.Entry<Double, VectorExpression> next = this.ceilingEntry(animationSeconds);
+            if (previous == null) {
+                return this.firstEntry().getValue().evaluate(animationSeconds);
+            }
+            if (next == null) {
+                return this.lastEntry().getValue().evaluate(animationSeconds);
+            }
+            if (previous.getKey().equals(next.getKey())) {
+                return previous.getValue().evaluate(animationSeconds);
+            }
+
+            double alpha = (animationSeconds - previous.getKey()) / (next.getKey() - previous.getKey());
+            double[] from = previous.getValue().evaluate(animationSeconds);
+            double[] to = next.getValue().evaluate(animationSeconds);
+            return new double[]{
+                    lerp(from[0], to[0], alpha),
+                    lerp(from[1], to[1], alpha),
+                    lerp(from[2], to[2], alpha)
+            };
+        }
+
+        private static double lerp(double from, double to, double alpha) {
+            return from + (to - from) * alpha;
         }
     }
 
