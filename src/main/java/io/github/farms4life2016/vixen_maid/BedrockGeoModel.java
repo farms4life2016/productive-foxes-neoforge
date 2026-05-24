@@ -32,12 +32,25 @@ import java.util.*;
 
 public final class BedrockGeoModel {
     private final ModelPart root;
+    private final Map<String, ModelPart> partsByName;
+    private final Map<ModelPart, PartPose> defaultPoses;
+    private final Map<String, BedrockAnimation> animations;
 
-    private BedrockGeoModel(ModelPart root) {
+    private BedrockGeoModel(ModelPart root, Map<String, ModelPart> partsByName, Map<String, BedrockAnimation> animations) {
         this.root = root;
+        this.partsByName = partsByName;
+        this.animations = animations;
+        this.defaultPoses = new IdentityHashMap<>();
+        for (ModelPart part : partsByName.values()) {
+            this.defaultPoses.put(part, part.storePose());
+        }
     }
 
     public static BedrockGeoModel load(ResourceLocation location) {
+        return load(location, null);
+    }
+
+    public static BedrockGeoModel load(ResourceLocation location, ResourceLocation animationLocation) {
         try {
             Optional<Resource> resource = Minecraft.getInstance().getResourceManager().getResource(location);
             if (resource.isEmpty()) {
@@ -46,10 +59,42 @@ public final class BedrockGeoModel {
 
             try (InputStreamReader reader = new InputStreamReader(resource.get().open(), StandardCharsets.UTF_8)) {
                 JsonObject root = JsonParser.parseReader(reader).getAsJsonObject();
-                return new BedrockGeoModel(createLayer(root).bakeRoot());
+                BakedBedrockModel model = createModel(root);
+                return new BedrockGeoModel(
+                        model.root,
+                        model.partsByName,
+                        animationLocation != null ? loadAnimations(animationLocation) : Map.of()
+                );
             }
         } catch (Exception exception) {
             throw new IllegalStateException("Failed to load Bedrock geo model " + location, exception);
+        }
+    }
+
+    public void applyAnimation(String animationName, float animationSeconds) {
+        this.resetPose();
+        BedrockAnimation animation = this.animations.get(animationName);
+        if (animation == null) {
+            animation = this.animations.get("animation.braixen." + animationName);
+        }
+        if (animation != null) {
+            animation.apply(this.partsByName, animationSeconds);
+        }
+    }
+
+    public void lookAt(String partName, float yawDegrees, float pitchDegrees) {
+        ModelPart part = this.partsByName.get(partName);
+        if (part == null) {
+            return;
+        }
+        part.yRot += radians(yawDegrees);
+        part.xRot += radians(pitchDegrees);
+    }
+
+    public void setVisible(String partName, boolean visible) {
+        ModelPart part = this.partsByName.get(partName);
+        if (part != null) {
+            part.visible = visible;
         }
     }
 
@@ -57,7 +102,14 @@ public final class BedrockGeoModel {
         this.root.render(poseStack, consumer, packedLight, packedOverlay, color);
     }
 
-    private static LayerDefinition createLayer(JsonObject root) {
+    private void resetPose() {
+        for (Map.Entry<ModelPart, PartPose> entry : this.defaultPoses.entrySet()) {
+            entry.getKey().loadPose(entry.getValue());
+            entry.getKey().visible = true;
+        }
+    }
+
+    private static BakedBedrockModel createModel(JsonObject root) {
         JsonObject geometry = root.getAsJsonArray("minecraft:geometry").get(0).getAsJsonObject();
         JsonObject description = geometry.getAsJsonObject("description");
         int textureWidth = description.get("texture_width").getAsInt();
@@ -121,7 +173,41 @@ public final class BedrockGeoModel {
             }
         }
 
-        return LayerDefinition.create(mesh, textureWidth, textureHeight);
+        ModelPart rootPart = LayerDefinition.create(mesh, textureWidth, textureHeight).bakeRoot();
+        Map<String, ModelPart> bakedParts = new HashMap<>();
+        for (ModelBone bone : orderedBones) {
+            ModelPart part = bone.parent == null
+                    ? rootPart.getChild(bone.name)
+                    : bakedParts.get(bone.parent).getChild(bone.name);
+            bakedParts.put(bone.name, part);
+        }
+
+        return new BakedBedrockModel(rootPart, bakedParts);
+    }
+
+    private static Map<String, BedrockAnimation> loadAnimations(ResourceLocation location) {
+        try {
+            Optional<Resource> resource = Minecraft.getInstance().getResourceManager().getResource(location);
+            if (resource.isEmpty()) {
+                throw new IllegalStateException("Missing Bedrock animation resource: " + location);
+            }
+
+            try (InputStreamReader reader = new InputStreamReader(resource.get().open(), StandardCharsets.UTF_8)) {
+                JsonObject root = JsonParser.parseReader(reader).getAsJsonObject();
+                JsonObject animationsJson = root.getAsJsonObject("animations");
+                if (animationsJson == null) {
+                    return Map.of();
+                }
+
+                Map<String, BedrockAnimation> animations = new HashMap<>();
+                for (Map.Entry<String, JsonElement> entry : animationsJson.entrySet()) {
+                    animations.put(entry.getKey(), BedrockAnimation.read(entry.getValue().getAsJsonObject()));
+                }
+                return animations;
+            }
+        } catch (Exception exception) {
+            throw new IllegalStateException("Failed to load Bedrock animation " + location, exception);
+        }
     }
 
     private static PartPose bonePose(ModelBone bone, ModelBone parent) {
@@ -177,6 +263,244 @@ public final class BedrockGeoModel {
     }
 
     private record SubPart(CubeListBuilder builder, PartPose pose) {
+    }
+
+    private record BakedBedrockModel(ModelPart root, Map<String, ModelPart> partsByName) {
+    }
+
+    private record BedrockAnimation(Map<String, BoneAnimation> bones) {
+        private static BedrockAnimation read(JsonObject json) {
+            Map<String, BoneAnimation> bones = new HashMap<>();
+            JsonObject bonesJson = json.getAsJsonObject("bones");
+            if (bonesJson != null) {
+                for (Map.Entry<String, JsonElement> entry : bonesJson.entrySet()) {
+                    bones.put(entry.getKey(), BoneAnimation.read(entry.getValue().getAsJsonObject()));
+                }
+            }
+            return new BedrockAnimation(bones);
+        }
+
+        private void apply(Map<String, ModelPart> partsByName, double animationSeconds) {
+            for (Map.Entry<String, BoneAnimation> entry : this.bones.entrySet()) {
+                ModelPart part = partsByName.get(entry.getKey());
+                if (part != null) {
+                    entry.getValue().apply(part, animationSeconds);
+                }
+            }
+        }
+    }
+
+    private record BoneAnimation(VectorExpression position, VectorExpression rotation) {
+        private static BoneAnimation read(JsonObject json) {
+            return new BoneAnimation(
+                    VectorExpression.read(json.get("position")),
+                    VectorExpression.read(json.get("rotation"))
+            );
+        }
+
+        private void apply(ModelPart part, double animationSeconds) {
+            if (this.position != null) {
+                double[] position = this.position.evaluate(animationSeconds);
+                part.x += (float) position[0];
+                part.y -= (float) position[1];
+                part.z += (float) position[2];
+            }
+
+            if (this.rotation != null) {
+                double[] rotation = this.rotation.evaluate(animationSeconds);
+                part.xRot += radians((float) rotation[0]);
+                part.yRot += radians((float) rotation[1]);
+                part.zRot += radians((float) rotation[2]);
+            }
+        }
+    }
+
+    private record VectorExpression(ScalarExpression x, ScalarExpression y, ScalarExpression z) {
+        private static VectorExpression read(JsonElement json) {
+            if (json == null || !json.isJsonArray()) {
+                return null;
+            }
+
+            JsonArray array = json.getAsJsonArray();
+            return new VectorExpression(
+                    ScalarExpression.read(array.get(0)),
+                    ScalarExpression.read(array.get(1)),
+                    ScalarExpression.read(array.get(2))
+            );
+        }
+
+        private double[] evaluate(double animationSeconds) {
+            return new double[]{
+                    this.x.evaluate(animationSeconds),
+                    this.y.evaluate(animationSeconds),
+                    this.z.evaluate(animationSeconds)
+            };
+        }
+    }
+
+    private record ScalarExpression(String expression) {
+        private static ScalarExpression read(JsonElement json) {
+            return new ScalarExpression(json.getAsString());
+        }
+
+        private double evaluate(double animationSeconds) {
+            return new ExpressionParser(this.expression, animationSeconds).parse();
+        }
+    }
+
+    private static final class ExpressionParser {
+        private final String expression;
+        private final double animationSeconds;
+        private int index;
+
+        private ExpressionParser(String expression, double animationSeconds) {
+            this.expression = expression.replace("query.", "q.");
+            this.animationSeconds = animationSeconds;
+        }
+
+        private double parse() {
+            double value = parseExpression();
+            skipWhitespace();
+            if (this.index != this.expression.length()) {
+                throw new IllegalArgumentException("Unexpected token in animation expression: " + this.expression.substring(this.index));
+            }
+            return value;
+        }
+
+        private double parseExpression() {
+            double value = parseTerm();
+            while (true) {
+                skipWhitespace();
+                if (match('+')) {
+                    value += parseTerm();
+                } else if (match('-')) {
+                    value -= parseTerm();
+                } else {
+                    return value;
+                }
+            }
+        }
+
+        private double parseTerm() {
+            double value = parseFactor();
+            while (true) {
+                skipWhitespace();
+                if (match('*')) {
+                    value *= parseFactor();
+                } else if (match('/')) {
+                    value /= parseFactor();
+                } else {
+                    return value;
+                }
+            }
+        }
+
+        private double parseFactor() {
+            skipWhitespace();
+            if (match('+')) {
+                return parseFactor();
+            }
+            if (match('-')) {
+                return -parseFactor();
+            }
+            if (match('(')) {
+                double value = parseExpression();
+                expect(')');
+                return value;
+            }
+            if (peekDigit()) {
+                return parseNumber();
+            }
+            return parseIdentifier();
+        }
+
+        private double parseIdentifier() {
+            String identifier = readIdentifier();
+            if ("q.anim_time".equals(identifier)) {
+                return this.animationSeconds;
+            }
+            if ("math.sin".equals(identifier)) {
+                expect('(');
+                double value = parseExpression();
+                expect(')');
+                return Math.sin(Math.toRadians(value));
+            }
+            if ("math.abs".equals(identifier)) {
+                expect('(');
+                double value = parseExpression();
+                expect(')');
+                return Math.abs(value);
+            }
+            if ("math.clamp".equals(identifier)) {
+                expect('(');
+                double value = parseExpression();
+                expect(',');
+                double min = parseExpression();
+                expect(',');
+                double max = parseExpression();
+                expect(')');
+                return Math.max(min, Math.min(max, value));
+            }
+            throw new IllegalArgumentException("Unknown animation expression identifier: " + identifier);
+        }
+
+        private String readIdentifier() {
+            int start = this.index;
+            while (this.index < this.expression.length()) {
+                char c = this.expression.charAt(this.index);
+                if (Character.isLetterOrDigit(c) || c == '_' || c == '.') {
+                    this.index++;
+                } else {
+                    break;
+                }
+            }
+            if (start == this.index) {
+                throw new IllegalArgumentException("Expected identifier in animation expression: " + this.expression);
+            }
+            return this.expression.substring(start, this.index);
+        }
+
+        private double parseNumber() {
+            int start = this.index;
+            while (this.index < this.expression.length()) {
+                char c = this.expression.charAt(this.index);
+                if ((c >= '0' && c <= '9') || c == '.') {
+                    this.index++;
+                } else {
+                    break;
+                }
+            }
+            return Double.parseDouble(this.expression.substring(start, this.index));
+        }
+
+        private boolean peekDigit() {
+            if (this.index >= this.expression.length()) {
+                return false;
+            }
+            char c = this.expression.charAt(this.index);
+            return (c >= '0' && c <= '9') || c == '.';
+        }
+
+        private boolean match(char expected) {
+            skipWhitespace();
+            if (this.index < this.expression.length() && this.expression.charAt(this.index) == expected) {
+                this.index++;
+                return true;
+            }
+            return false;
+        }
+
+        private void expect(char expected) {
+            if (!match(expected)) {
+                throw new IllegalArgumentException("Expected '" + expected + "' in animation expression: " + this.expression);
+            }
+        }
+
+        private void skipWhitespace() {
+            while (this.index < this.expression.length() && Character.isWhitespace(this.expression.charAt(this.index))) {
+                this.index++;
+            }
+        }
     }
 
     private static final class ModelBone {

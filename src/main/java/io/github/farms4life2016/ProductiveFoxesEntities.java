@@ -22,7 +22,8 @@ public final class ProductiveFoxesEntities {
     public static final DeferredHolder<EntityType<?>, EntityType<Braixen>> BRAIXEN =
             ENTITY_TYPES.register("braixen", () -> EntityType.Builder
                     .of(Braixen::new, MobCategory.CREATURE)
-                    .sized(0.72F, 0.92F)
+                    .sized(1F, 2.25F)
+                    .eyeHeight(1.9125F)
                     .clientTrackingRange(10)
                     .build(ProductiveFoxes.MODID + ":braixen"));
 

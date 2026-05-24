@@ -8,7 +8,11 @@ import net.minecraft.resources.ResourceLocation;
 public class BraixenRenderer extends MobRenderer<Braixen, BraixenModel> {
     private static final ResourceLocation MODEL = ResourceLocation.fromNamespaceAndPath(
             ProductiveFoxes.MODID,
-            "bedrock/vixen_maid/braixen.geo.json"
+            "bedrock/vixen_maid/model/braixen.geo.json"
+    );
+    private static final ResourceLocation ANIMATION = ResourceLocation.fromNamespaceAndPath(
+            ProductiveFoxes.MODID,
+            "bedrock/vixen_maid/anim/braixen.animation.json"
     );
     private static final ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath(
             ProductiveFoxes.MODID,
@@ -16,7 +20,7 @@ public class BraixenRenderer extends MobRenderer<Braixen, BraixenModel> {
     );
 
     public BraixenRenderer(EntityRendererProvider.Context context) {
-        super(context, new BraixenModel(MODEL), 0.45F);
+        super(context, new BraixenModel(MODEL, ANIMATION), 0.45F);
     }
 
     @Override
