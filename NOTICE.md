@@ -30,9 +30,6 @@ Assets and sources used:
 
 ---
 
-_Last updated: May 16, 2026._
-_Links on this page were working on that day, but they may not work today!_
-
 _Any references listed above may be stale as the mod continues to evolve._
 _Files may get moved around, and features may be added or removed._
 _Please submit a PR on Gitlab if you need this file needs updated for legal reasons._

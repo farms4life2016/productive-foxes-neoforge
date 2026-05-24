@@ -11,8 +11,3 @@ These textures are licensed under the MPL 2.0 License. Link: https://www.mozilla
 
 Other textures were made by myself and are not subject to MPL 2.0.
 These textures, if copyrightable, shall inherit the same license as the root repository's license.
-
----
-
-_Last updated: May 24, 2026._
-_Links on this page were working on that day, but they may not work today!_

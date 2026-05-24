@@ -70,8 +70,3 @@ Except for the limited purpose of indicating to the public that the Work is lice
 Creative Commons may be contacted at http://creativecommons.org/.
 
 ```
-
----
-
-_Last updated: May 18, 2026._
-_Links on this page were working on that day, but they may not work today!_
