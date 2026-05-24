@@ -1,3 +1,11 @@
+/*
+ * some parts of this file are vaguely based off of ideas from BraixenModel.kt 
+ * (https://gitlab.com/cable-mc/cobblemon/-/tree/30b769db132a81b83dc6b1d61fa6b21e2b8dcdfc/common/src/main/kotlin/com/cobblemon/mod/common/client/render/models/blockbench/pokemon/gen6/BraixenModel.kt)
+ * 
+ * i.e. use ground_idle when not moving, use ground_walk when moving, and hide hand_stick for both anims.
+ * however, I don't think these adapted ideas are significant enough to warrant the entire class being MPL 2.0 like Cobblemon.
+ */
+
 package io.github.farms4life2016.vixen_maid;
 
 import com.mojang.blaze3d.vertex.PoseStack;
