@@ -4,6 +4,10 @@ For example, here is the link to Braixen's Blockbench model:
 
 https://gitlab.com/cable-mc/cobblemon/-/tree/30b769db132a81b83dc6b1d61fa6b21e2b8dcdfc/common/src/main/resources/assets/cobblemon/bedrock/pokemon/models/0654_braixen
 
+And here is the link to Delphox's Blockbench model:
+
+https://gitlab.com/cable-mc/cobblemon/-/tree/30b769db132a81b83dc6b1d61fa6b21e2b8dcdfc/common/src/main/resources/assets/cobblemon/bedrock/pokemon/models/0655_delphox
+
 > **NOTE:** I am specifically using the older Braixen model from commit `30b769db132a81b83dc6b1d61fa6b21e2b8dcdfc`.
 > I find the older model (with a $2 \times 2$ pixel nose) less aggressive-looking and overall cuter!
 

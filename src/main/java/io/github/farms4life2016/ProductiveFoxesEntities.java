@@ -2,6 +2,7 @@ package io.github.farms4life2016;
 
 import io.github.farms4life2016.vaporeon_port.Vaporeon;
 import io.github.farms4life2016.vixen_maid.Braixen;
+import io.github.farms4life2016.vixen_maid.Delphox;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -22,10 +23,18 @@ public final class ProductiveFoxesEntities {
     public static final DeferredHolder<EntityType<?>, EntityType<Braixen>> BRAIXEN =
             ENTITY_TYPES.register("braixen", () -> EntityType.Builder
                     .of(Braixen::new, MobCategory.CREATURE)
-                    .sized(1F, 2.25F)
-                    .eyeHeight(1.9125F)
+                    .sized(1F, 2.25F) // same as cobblemon's
+                    .eyeHeight(1.9125F)           // cobblemon's default: 85% of height
                     .clientTrackingRange(10)
                     .build(ProductiveFoxes.MODID + ":braixen"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<Delphox>> DELPHOX =
+            ENTITY_TYPES.register("delphox", () -> EntityType.Builder
+                    .of(Delphox::new, MobCategory.CREATURE)
+                    .sized(1F, 2.5F)
+                    .eyeHeight(2.125F)
+                    .clientTrackingRange(10)
+                    .build(ProductiveFoxes.MODID + ":delphox"));
 
     private ProductiveFoxesEntities() {
     }

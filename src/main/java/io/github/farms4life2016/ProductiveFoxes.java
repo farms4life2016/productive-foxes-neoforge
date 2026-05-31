@@ -2,6 +2,7 @@ package io.github.farms4life2016;
 
 import io.github.farms4life2016.vaporeon_port.Vaporeon;
 import io.github.farms4life2016.vixen_maid.Braixen;
+import io.github.farms4life2016.vixen_maid.Delphox;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -117,6 +118,7 @@ public class ProductiveFoxes {
     private void registerEntityAttributes(EntityAttributeCreationEvent event) {
         event.put(ProductiveFoxesEntities.VAPOREON.get(), Vaporeon.createAttributes().build());
         event.put(ProductiveFoxesEntities.BRAIXEN.get(), Braixen.createAttributes().build());
+        event.put(ProductiveFoxesEntities.DELPHOX.get(), Delphox.createAttributes().build());
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
