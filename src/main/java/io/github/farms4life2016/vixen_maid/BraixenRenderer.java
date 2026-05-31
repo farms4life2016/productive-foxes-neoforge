@@ -14,9 +14,13 @@ public class BraixenRenderer extends MobRenderer<Braixen, BraixenModel> {
             ProductiveFoxes.MODID,
             "bedrock/vixen_maid/anim/braixen.animation.json"
     );
-    private static final ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath(
+    private static final ResourceLocation YELLOW_TEXTURE = ResourceLocation.fromNamespaceAndPath(
             ProductiveFoxes.MODID,
-            "textures/entity/vixen_maid/braixen.png"
+            "textures/entity/vixen_maid/braixen_yellow.png"
+    );
+    private static final ResourceLocation LAVENDER_TEXTURE = ResourceLocation.fromNamespaceAndPath(
+            ProductiveFoxes.MODID,
+            "textures/entity/vixen_maid/braixen_lavender.png"
     );
 
     public BraixenRenderer(EntityRendererProvider.Context context) {
@@ -25,6 +29,6 @@ public class BraixenRenderer extends MobRenderer<Braixen, BraixenModel> {
 
     @Override
     public ResourceLocation getTextureLocation(Braixen entity) {
-        return TEXTURE;
+        return entity.getVariant() == Braixen.Type.LAVENDER ? LAVENDER_TEXTURE : YELLOW_TEXTURE;
     }
 }
