@@ -417,7 +417,13 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
 
     @Override
     protected Vec3 getLeashOffset() {
-        return new Vec3(0.0D, 0.55F * this.getEyeHeight(), this.getBbWidth() * 0.4F);
+        // a neck-level leash would be (0, 27/16, 1/16) or so
+        // but the neck moves around during anims so it'll
+        // either look good while idling or while walking
+        // but not both ._. (floating leash endpoint)
+
+        // the current just ties to upper chest and looks good on both anims
+        return new Vec3(0.0D, 26.0D / 16.0D, 2.0D / 16.0D);
     }
 
     class BraixenFloatGoal extends FloatGoal {
