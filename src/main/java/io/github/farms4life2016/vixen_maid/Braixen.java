@@ -17,6 +17,8 @@ import net.minecraft.tags.FluidTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.ByIdMap;
 import net.minecraft.util.StringRepresentable;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -215,6 +217,26 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
         if (this.isBaby()) return BABY_DIMENSIONS;
          */
         return super.getDefaultDimensions(pose);
+    }
+
+    @Override
+    protected int getBaseExperienceReward() {
+        return 0;
+    }
+
+    @Override
+    public InteractionResult mobInteract(Player player, InteractionHand hand) {
+        ItemStack itemstack = player.getItemInHand(hand);
+        // temp code to get a braixen to "trust" you when you feed it a berry
+        if (this.isFutureBreedingFood(itemstack) && !this.level().isClientSide) {
+            this.usePlayerItem(player, hand, itemstack);
+            this.addTrustedUUID(player.getUUID());
+            this.level().broadcastEntityEvent(this, (byte)18); // 18 = love hearts
+            return InteractionResult.SUCCESS;
+
+        }
+
+        return super.mobInteract(player, hand);
     }
 
     @Override
