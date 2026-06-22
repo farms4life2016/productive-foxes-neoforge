@@ -34,6 +34,8 @@ import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.Resource;
+import net.minecraft.world.phys.Vec3;
+import org.joml.Vector4f;
 
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -42,12 +44,14 @@ import java.util.*;
 public final class BedrockGeoModel {
     private final ModelPart root;
     private final Map<String, ModelPart> partsByName;
+    private final Map<String, String> parentsByName;
     private final Map<ModelPart, PartPose> defaultPoses;
     private final Map<String, BedrockAnimation> animations;
 
-    private BedrockGeoModel(ModelPart root, Map<String, ModelPart> partsByName, Map<String, BedrockAnimation> animations) {
+    private BedrockGeoModel(ModelPart root, Map<String, ModelPart> partsByName, Map<String, String> parentsByName, Map<String, BedrockAnimation> animations) {
         this.root = root;
         this.partsByName = partsByName;
+        this.parentsByName = parentsByName;
         this.animations = animations;
         this.defaultPoses = new IdentityHashMap<>();
         for (ModelPart part : partsByName.values()) {
@@ -72,6 +76,7 @@ public final class BedrockGeoModel {
                 return new BedrockGeoModel(
                         model.root,
                         model.partsByName,
+                        model.parentsByName,
                         animationLocation != null ? loadAnimations(animationLocation) : Map.of()
                 );
             }
@@ -123,6 +128,45 @@ public final class BedrockGeoModel {
 
     public void render(PoseStack poseStack, VertexConsumer consumer, int packedLight, int packedOverlay, int color) {
         this.root.render(poseStack, consumer, packedLight, packedOverlay, color);
+    }
+
+    public boolean transformToPart(PoseStack poseStack, String partName, Vec3 offsetPixels) {
+        List<String> chain = this.partChain(partName);
+        if (chain.isEmpty()) {
+            return false;
+        }
+
+        this.root.translateAndRotate(poseStack);
+        for (String name : chain) {
+            this.partsByName.get(name).translateAndRotate(poseStack);
+        }
+        poseStack.translate(offsetPixels.x / 16.0D, offsetPixels.y / 16.0D, offsetPixels.z / 16.0D);
+        return true;
+    }
+
+    public Vector4f partOrigin(String partName, Vec3 offsetPixels) {
+        PoseStack poseStack = new PoseStack();
+        if (!this.transformToPart(poseStack, partName, offsetPixels)) {
+            return null;
+        }
+
+        Vector4f origin = new Vector4f(0.0F, 0.0F, 0.0F, 1.0F);
+        poseStack.last().pose().transform(origin);
+        return origin;
+    }
+
+    private List<String> partChain(String partName) {
+        if (!this.partsByName.containsKey(partName)) {
+            return List.of();
+        }
+
+        LinkedList<String> chain = new LinkedList<>();
+        String name = partName;
+        while (name != null) {
+            chain.addFirst(name);
+            name = this.parentsByName.get(name);
+        }
+        return chain;
     }
 
     private void resetPose() {
@@ -198,14 +242,16 @@ public final class BedrockGeoModel {
 
         ModelPart rootPart = LayerDefinition.create(mesh, textureWidth, textureHeight).bakeRoot();
         Map<String, ModelPart> bakedParts = new HashMap<>();
+        Map<String, String> bakedParents = new HashMap<>();
         for (ModelBone bone : orderedBones) {
             ModelPart part = bone.parent == null
                     ? rootPart.getChild(bone.name)
                     : bakedParts.get(bone.parent).getChild(bone.name);
             bakedParts.put(bone.name, part);
+            bakedParents.put(bone.name, bone.parent);
         }
 
-        return new BakedBedrockModel(rootPart, bakedParts);
+        return new BakedBedrockModel(rootPart, bakedParts, bakedParents);
     }
 
     private static Map<String, BedrockAnimation> loadAnimations(ResourceLocation location) {
@@ -288,7 +334,7 @@ public final class BedrockGeoModel {
     private record SubPart(CubeListBuilder builder, PartPose pose) {
     }
 
-    private record BakedBedrockModel(ModelPart root, Map<String, ModelPart> partsByName) {
+    private record BakedBedrockModel(ModelPart root, Map<String, ModelPart> partsByName, Map<String, String> parentsByName) {
     }
 
     private record BedrockAnimation(Map<String, BoneAnimation> bones, double animationLength, boolean shouldLoop) {

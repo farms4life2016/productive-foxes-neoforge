@@ -14,6 +14,8 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.phys.Vec3;
+import org.joml.Vector4f;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,11 +27,18 @@ public class BraixenModel extends EntityModel<Braixen> {
     private static final double MOVING_SPEED_THRESHOLD = 1.0E-5D;
     private static final float MIN_SECONDS_BETWEEN_BLINKS = 8.0F;
     private static final float MAX_SECONDS_BETWEEN_BLINKS = 30.0F;
+    private static final float MODEL_Y_OFFSET = 1.5F;
+    private static final String LEASH_BONE = "neck";
+    private static final Vec3 LEASH_BONE_OFFSET_PIXELS = new Vec3(0.0D, -2.0D, 0.0D);
+    private static final String MOUTH_BONE = "muzzle2";
+    public static final String HELD_ITEM_BONE = "hand_left";
+    private static final Vec3 HELD_ITEM_OFFSET_PIXELS = new Vec3(1.5D, 0.5D, 0.0D);
 
     private final ResourceLocation modelLocation;
     private final ResourceLocation animationLocation;
     private final Map<Integer, BlinkState> blinkStates = new HashMap<>();
     private BedrockGeoModel model;
+    private Braixen currentEntity;
     private String currentAnimation = IDLE_ANIMATION;
     private float currentAnimationSeconds;
     private float blinkAnimationSeconds = -1.0F;
@@ -44,6 +53,7 @@ public class BraixenModel extends EntityModel<Braixen> {
 
     @Override
     public void setupAnim(Braixen entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+        this.currentEntity = entity;
         boolean moving = limbSwingAmount > 0.01F || entity.getDeltaMovement().horizontalDistanceSqr() > MOVING_SPEED_THRESHOLD;
         this.currentAnimation = moving ? WALK_ANIMATION : IDLE_ANIMATION;
         this.currentAnimationSeconds = ageInTicks / 20.0F;
@@ -53,6 +63,7 @@ public class BraixenModel extends EntityModel<Braixen> {
 
         if (this.model != null) {
             this.applyCurrentPose();
+            this.updateEntityAnchors(entity);
         }
     }
 
@@ -62,11 +73,32 @@ public class BraixenModel extends EntityModel<Braixen> {
             this.model = BedrockGeoModel.load(this.modelLocation, this.animationLocation);
         }
         this.applyCurrentPose();
+        if (this.currentEntity != null) {
+            this.updateEntityAnchors(this.currentEntity);
+        }
 
         poseStack.pushPose();
-        poseStack.translate(0.0F, 1.5F, 0.0F);
+        poseStack.translate(0.0F, MODEL_Y_OFFSET, 0.0F);
         this.model.render(poseStack, consumer, packedLight, packedOverlay, color);
         poseStack.popPose();
+    }
+
+    public boolean translateToHeldItem(PoseStack poseStack) {
+        return this.translateToBone(poseStack, HELD_ITEM_BONE, HELD_ITEM_OFFSET_PIXELS);
+    }
+
+    public boolean translateToBone(PoseStack poseStack, String boneName) {
+        return this.translateToBone(poseStack, boneName, Vec3.ZERO);
+    }
+
+    public boolean translateToBone(PoseStack poseStack, String boneName, Vec3 offsetPixels) {
+        if (this.model == null) {
+            this.model = BedrockGeoModel.load(this.modelLocation, this.animationLocation);
+        }
+
+        this.applyCurrentPose();
+        poseStack.translate(0.0F, MODEL_Y_OFFSET, 0.0F);
+        return this.model.transformToPart(poseStack, boneName, offsetPixels);
     }
 
     private void applyCurrentPose() {
@@ -77,6 +109,24 @@ public class BraixenModel extends EntityModel<Braixen> {
         this.model.lookAt("head", this.netHeadYaw, this.headPitch);
         this.model.setVisible("hand_stick", false);
         this.model.setVisible("stick_tail", true);
+    }
+
+    private void updateEntityAnchors(Braixen entity) {
+        Vec3 leashOffset = this.entityLocalBoneOrigin(LEASH_BONE, LEASH_BONE_OFFSET_PIXELS);
+        Vec3 mouthOffset = this.entityLocalBoneOrigin(MOUTH_BONE, Vec3.ZERO);
+        if (leashOffset != null || mouthOffset != null) {
+            entity.setClientAnchorOffsets(leashOffset, mouthOffset);
+        }
+    }
+
+    private Vec3 entityLocalBoneOrigin(String boneName, Vec3 offsetPixels) {
+        Vector4f origin = this.model.partOrigin(boneName, offsetPixels);
+        if (origin == null) {
+            return null;
+        }
+
+        // ModelPart space is mirrored from entity offset space: +Y is down and -Z is forward.
+        return new Vec3(-origin.x(), -origin.y(), -origin.z());
     }
 
     private float updateBlinkState(Braixen entity, float animationSeconds) {

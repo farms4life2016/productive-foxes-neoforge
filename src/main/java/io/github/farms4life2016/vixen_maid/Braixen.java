@@ -64,6 +64,8 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
 
     private static final int FLAG_DEFENDING = 1;
     private static final int MIN_TICKS_BEFORE_EAT = 600;
+    private static final Vec3 DEFAULT_LEASH_OFFSET = new Vec3(0.0D, 26.0D / 16.0D, 2.0D / 16.0D);
+    private static final Vec3 DEFAULT_MOUTH_OFFSET = new Vec3(0.0D, 29.0D / 16.0D, 7.0D / 16.0D);
     private static final Predicate<ItemEntity> ALLOWED_ITEMS = item -> !item.hasPickUpDelay() && item.isAlive();
     private static final Predicate<Entity> TRUSTED_TARGET_SELECTOR = entity -> entity instanceof LivingEntity livingEntity
             && livingEntity.getLastHurtMob() != null
@@ -71,6 +73,8 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
 
     private final List<ResourceKey<DamageType>> immuneTo = List.of(DamageTypes.SWEET_BERRY_BUSH);
     private int ticksSinceEaten;
+    private Vec3 clientLeashOffset = DEFAULT_LEASH_OFFSET;
+    private Vec3 clientMouthOffset = DEFAULT_MOUTH_OFFSET;
 
     public Braixen(EntityType<? extends Braixen> entityType, Level level) {
         super(entityType, level);
@@ -151,6 +155,15 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
         return stack.has(DataComponents.FOOD) && this.getTarget() == null && this.onGround();
     }
 
+    void setClientAnchorOffsets(@Nullable Vec3 leashOffset, @Nullable Vec3 mouthOffset) {
+        if (leashOffset != null) {
+            this.clientLeashOffset = leashOffset;
+        }
+        if (mouthOffset != null) {
+            this.clientMouthOffset = mouthOffset;
+        }
+    }
+
     @Override
     public void handleEntityEvent(byte id) {
         if (id == 45) {
@@ -160,11 +173,12 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
                     Vec3 motion = new Vec3(((double) this.random.nextFloat() - 0.5D) * 0.1D, Math.random() * 0.1D + 0.1D, 0.0D)
                             .xRot(-this.getXRot() * (float) (Math.PI / 180.0D))
                             .yRot(-this.getYRot() * (float) (Math.PI / 180.0D));
-                    this.level().addParticle( // TODO: should probably appear at Braxien's mouth/muzzle
+                    Vec3 mouthPosition = this.getClientMouthPosition();
+                    this.level().addParticle(
                             new net.minecraft.core.particles.ItemParticleOption(net.minecraft.core.particles.ParticleTypes.ITEM, heldItem),
-                            this.getX() + this.getLookAngle().x / 2.0D,
-                            this.getY(),
-                            this.getZ() + this.getLookAngle().z / 2.0D,
+                            mouthPosition.x,
+                            mouthPosition.y,
+                            mouthPosition.z,
                             motion.x,
                             motion.y + 0.05D,
                             motion.z
@@ -174,6 +188,17 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
         } else {
             super.handleEntityEvent(id);
         }
+    }
+
+    private Vec3 getClientMouthPosition() {
+        return this.position().add(this.rotateClientOffset(this.clientMouthOffset, 1.0F));
+    }
+
+    private Vec3 rotateClientOffset(Vec3 offset, float partialTick) {
+        double bodyRotation = (double) (this.getPreciseBodyRotation(partialTick) * (float) (Math.PI / 180.0D)) + (Math.PI / 2.0D);
+        double x = Math.cos(bodyRotation) * offset.z + Math.sin(bodyRotation) * offset.x;
+        double z = Math.sin(bodyRotation) * offset.z - Math.cos(bodyRotation) * offset.x;
+        return new Vec3(x, offset.y, z);
     }
 
     @Override
@@ -438,14 +463,16 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
     }
 
     @Override
-    protected Vec3 getLeashOffset() {
-        // a neck-level leash would be (0, 27/16, 1/16) or so
-        // but the neck moves around during anims so it'll
-        // either look good while idling or while walking
-        // but not both ._. (floating leash endpoint)
+    public Vec3 getLeashOffset(float partialTick) {
+        if (this.level().isClientSide) {
+            return this.clientLeashOffset;
+        }
+        return this.getLeashOffset();
+    }
 
-        // the current just ties to upper chest and looks good on both anims
-        return new Vec3(0.0D, 26.0D / 16.0D, 2.0D / 16.0D);
+    @Override
+    protected Vec3 getLeashOffset() {
+        return DEFAULT_LEASH_OFFSET;
     }
 
     class BraixenFloatGoal extends FloatGoal {

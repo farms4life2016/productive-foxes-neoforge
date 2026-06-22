@@ -25,6 +25,7 @@ public class BraixenRenderer extends MobRenderer<Braixen, BraixenModel> {
 
     public BraixenRenderer(EntityRendererProvider.Context context) {
         super(context, new BraixenModel(MODEL, ANIMATION), 0.5F);
+        this.addLayer(new BraixenHeldItemLayer(this, context.getItemInHandRenderer()));
     }
 
     @Override
