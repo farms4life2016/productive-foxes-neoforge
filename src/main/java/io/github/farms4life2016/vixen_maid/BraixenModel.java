@@ -14,6 +14,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec3;
 import org.joml.Vector4f;
 
@@ -24,41 +25,47 @@ public class BraixenModel extends EntityModel<Braixen> {
     private static final String IDLE_ANIMATION = "animation.braixen.ground_idle";
     private static final String WALK_ANIMATION = "animation.braixen.ground_walk";
     private static final String BLINK_ANIMATION = "animation.braixen.blink";
+    private static final String MUNCH_ANIMATION = "animation.braixen.munch";
+    private static final boolean FORCE_IDLE_DURING_MUNCH = false;
+    private static final float MAX_EATING_HEAD_YAW = 10.0F;
     private static final double MOVING_SPEED_THRESHOLD = 1.0E-5D;
     private static final float MIN_SECONDS_BETWEEN_BLINKS = 8.0F;
     private static final float MAX_SECONDS_BETWEEN_BLINKS = 30.0F;
     private static final float MODEL_Y_OFFSET = 1.5F;
     private static final String LEASH_BONE = "neck";
     private static final Vec3 LEASH_BONE_OFFSET_PIXELS = new Vec3(0.0D, -2.0D, 0.0D);
-    private static final String MOUTH_BONE = "muzzle2";
+    private static final String MOUTH_BONE = "muzzle";
+    private static final Vec3 MOUTH_BONE_OFFSET_PIXELS = new Vec3(0.0D, 0.0D, 0.25D);
     public static final String HELD_ITEM_BONE = "hand_left";
     private static final Vec3 HELD_ITEM_OFFSET_PIXELS = new Vec3(1.5D, 0.5D, 0.0D);
 
     private final ResourceLocation modelLocation;
-    private final ResourceLocation animationLocation;
+    private final ResourceLocation[] animationLocations;
     private final Map<Integer, BlinkState> blinkStates = new HashMap<>();
     private BedrockGeoModel model;
     private Braixen currentEntity;
     private String currentAnimation = IDLE_ANIMATION;
     private float currentAnimationSeconds;
     private float blinkAnimationSeconds = -1.0F;
+    private float munchAnimationSeconds = -1.0F;
     private float netHeadYaw;
     private float headPitch;
 
-    public BraixenModel(ResourceLocation modelLocation, ResourceLocation animationLocation) {
+    public BraixenModel(ResourceLocation modelLocation, ResourceLocation... animationLocations) {
         super(RenderType::entityCutout);
         this.modelLocation = modelLocation;
-        this.animationLocation = animationLocation;
+        this.animationLocations = animationLocations;
     }
 
     @Override
     public void setupAnim(Braixen entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
         this.currentEntity = entity;
         boolean moving = limbSwingAmount > 0.01F || entity.getDeltaMovement().horizontalDistanceSqr() > MOVING_SPEED_THRESHOLD;
-        this.currentAnimation = moving ? WALK_ANIMATION : IDLE_ANIMATION;
         this.currentAnimationSeconds = ageInTicks / 20.0F;
+        this.munchAnimationSeconds = entity.getEatingAnimationSeconds(ageInTicks);
+        this.currentAnimation = this.munchAnimationSeconds >= 0.0F && FORCE_IDLE_DURING_MUNCH ? IDLE_ANIMATION : moving ? WALK_ANIMATION : IDLE_ANIMATION;
         this.blinkAnimationSeconds = this.updateBlinkState(entity, this.currentAnimationSeconds);
-        this.netHeadYaw = netHeadYaw;
+        this.netHeadYaw = this.munchAnimationSeconds >= 0.0F ? Mth.clamp(netHeadYaw, -MAX_EATING_HEAD_YAW, MAX_EATING_HEAD_YAW) : netHeadYaw;
         this.headPitch = headPitch;
 
         if (this.model != null) {
@@ -70,11 +77,12 @@ public class BraixenModel extends EntityModel<Braixen> {
     @Override
     public void renderToBuffer(PoseStack poseStack, VertexConsumer consumer, int packedLight, int packedOverlay, int color) {
         if (this.model == null) {
-            this.model = BedrockGeoModel.load(this.modelLocation, this.animationLocation);
+            this.model = BedrockGeoModel.load(this.modelLocation, this.animationLocations);
         }
         this.applyCurrentPose();
         if (this.currentEntity != null) {
             this.updateEntityAnchors(this.currentEntity);
+            this.currentEntity.spawnPendingClientEatingParticles();
         }
 
         poseStack.pushPose();
@@ -87,13 +95,9 @@ public class BraixenModel extends EntityModel<Braixen> {
         return this.translateToBone(poseStack, HELD_ITEM_BONE, HELD_ITEM_OFFSET_PIXELS);
     }
 
-    public boolean translateToBone(PoseStack poseStack, String boneName) {
-        return this.translateToBone(poseStack, boneName, Vec3.ZERO);
-    }
-
     public boolean translateToBone(PoseStack poseStack, String boneName, Vec3 offsetPixels) {
         if (this.model == null) {
-            this.model = BedrockGeoModel.load(this.modelLocation, this.animationLocation);
+            this.model = BedrockGeoModel.load(this.modelLocation, this.animationLocations);
         }
 
         this.applyCurrentPose();
@@ -106,6 +110,9 @@ public class BraixenModel extends EntityModel<Braixen> {
         if (this.blinkAnimationSeconds >= 0.0F) {
             this.model.applyAnimationLayer(BLINK_ANIMATION, this.blinkAnimationSeconds);
         }
+        if (this.munchAnimationSeconds >= 0.0F) {
+            this.model.applyAnimationLayer(MUNCH_ANIMATION, this.munchAnimationSeconds);
+        }
         this.model.lookAt("head", this.netHeadYaw, this.headPitch);
         this.model.setVisible("hand_stick", false);
         this.model.setVisible("stick_tail", true);
@@ -113,7 +120,7 @@ public class BraixenModel extends EntityModel<Braixen> {
 
     private void updateEntityAnchors(Braixen entity) {
         Vec3 leashOffset = this.entityLocalBoneOrigin(LEASH_BONE, LEASH_BONE_OFFSET_PIXELS);
-        Vec3 mouthOffset = this.entityLocalBoneOrigin(MOUTH_BONE, Vec3.ZERO);
+        Vec3 mouthOffset = this.entityLocalBoneOrigin(MOUTH_BONE, MOUTH_BONE_OFFSET_PIXELS);
         if (leashOffset != null || mouthOffset != null) {
             entity.setClientAnchorOffsets(leashOffset, mouthOffset);
         }

@@ -60,10 +60,10 @@ public final class BedrockGeoModel {
     }
 
     public static BedrockGeoModel load(ResourceLocation location) {
-        return load(location, null);
+        return load(location, new ResourceLocation[0]);
     }
 
-    public static BedrockGeoModel load(ResourceLocation location, ResourceLocation animationLocation) {
+    public static BedrockGeoModel load(ResourceLocation location, ResourceLocation... animationLocations) {
         try {
             Optional<Resource> resource = Minecraft.getInstance().getResourceManager().getResource(location);
             if (resource.isEmpty()) {
@@ -77,7 +77,7 @@ public final class BedrockGeoModel {
                         model.root,
                         model.partsByName,
                         model.parentsByName,
-                        animationLocation != null ? loadAnimations(animationLocation) : Map.of()
+                        loadAnimations(animationLocations)
                 );
             }
         } catch (Exception exception) {
@@ -252,6 +252,20 @@ public final class BedrockGeoModel {
         }
 
         return new BakedBedrockModel(rootPart, bakedParts, bakedParents);
+    }
+
+    private static Map<String, BedrockAnimation> loadAnimations(ResourceLocation... locations) {
+        if (locations == null || locations.length == 0) {
+            return Map.of();
+        }
+
+        Map<String, BedrockAnimation> animations = new HashMap<>();
+        for (ResourceLocation location : locations) {
+            if (location != null) {
+                animations.putAll(loadAnimations(location));
+            }
+        }
+        return animations;
     }
 
     private static Map<String, BedrockAnimation> loadAnimations(ResourceLocation location) {

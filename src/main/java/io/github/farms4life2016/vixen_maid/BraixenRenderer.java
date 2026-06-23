@@ -14,6 +14,10 @@ public class BraixenRenderer extends MobRenderer<Braixen, BraixenModel> {
             ProductiveFoxes.MODID,
             "bedrock/vixen_maid/anim/braixen.animation.json"
     );
+    private static final ResourceLocation MUNCH_ANIMATION = ResourceLocation.fromNamespaceAndPath(
+            ProductiveFoxes.MODID,
+            "bedrock/vixen_maid/anim/braixen_munch.animation.json"
+    );
     private static final ResourceLocation YELLOW_TEXTURE = ResourceLocation.fromNamespaceAndPath(
             ProductiveFoxes.MODID,
             "textures/entity/vixen_maid/braixen_yellow.png"
@@ -24,7 +28,7 @@ public class BraixenRenderer extends MobRenderer<Braixen, BraixenModel> {
     );
 
     public BraixenRenderer(EntityRendererProvider.Context context) {
-        super(context, new BraixenModel(MODEL, ANIMATION), 0.5F);
+        super(context, new BraixenModel(MODEL, ANIMATION, MUNCH_ANIMATION), 0.5F);
         this.addLayer(new BraixenHeldItemLayer(this, context.getItemInHandRenderer()));
     }
 

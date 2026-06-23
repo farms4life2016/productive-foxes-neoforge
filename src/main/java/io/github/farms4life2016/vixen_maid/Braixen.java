@@ -62,8 +62,15 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
     private static final EntityDataAccessor<Optional<UUID>> DATA_TRUSTED_ID_0 = SynchedEntityData.defineId(Braixen.class, EntityDataSerializers.OPTIONAL_UUID);
     private static final EntityDataAccessor<Optional<UUID>> DATA_TRUSTED_ID_1 = SynchedEntityData.defineId(Braixen.class, EntityDataSerializers.OPTIONAL_UUID);
 
+    private static final byte EATING_PARTICLES_EVENT = -45;
+    private static final byte EATING_ANIMATION_EVENT = -46;
     private static final int FLAG_DEFENDING = 1;
-    private static final int MIN_TICKS_BEFORE_EAT = 600;
+    private static final int MIN_TICKS_BEFORE_EAT = 200; // was 600
+    private static final int EATING_ANIMATION_TICKS = 60;
+    private static final int EATING_ARM_RAISE_TICKS = 10;
+    private static final int EATING_CONSUME_TICK = 50;
+    private static final int EATING_PARTICLE_INTERVAL_TICKS = 5;
+    private static final int EATING_PARTICLES_SPAWNED = 8; // vanilla fox spawns 8 food particles
     private static final Vec3 DEFAULT_LEASH_OFFSET = new Vec3(0.0D, 26.0D / 16.0D, 2.0D / 16.0D);
     private static final Vec3 DEFAULT_MOUTH_OFFSET = new Vec3(0.0D, 29.0D / 16.0D, 7.0D / 16.0D);
     private static final Predicate<ItemEntity> ALLOWED_ITEMS = item -> !item.hasPickUpDelay() && item.isAlive();
@@ -73,6 +80,10 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
 
     private final List<ResourceKey<DamageType>> immuneTo = List.of(DamageTypes.SWEET_BERRY_BUSH);
     private int ticksSinceEaten;
+    private int eatingAnimationTicks = -1;
+    private int pendingClientEatingParticles; // if you want to be 100% correct, then this should be a queue
+    private ItemStack pendingClientEatingParticleItem = ItemStack.EMPTY;
+    private float clientEatingAnimationStartTicks = -1.0F;
     private Vec3 clientLeashOffset = DEFAULT_LEASH_OFFSET;
     private Vec3 clientMouthOffset = DEFAULT_MOUTH_OFFSET;
 
@@ -124,25 +135,41 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
     public void aiStep() {
         if (!this.level().isClientSide && this.isAlive() && this.isEffectiveAi()) {
             this.ticksSinceEaten++;
-            ItemStack heldItem = this.getItemBySlot(EquipmentSlot.MAINHAND);
-            if (this.canEat(heldItem)) {
-                if (this.ticksSinceEaten > MIN_TICKS_BEFORE_EAT) {
-                    ItemStack remainingItem = heldItem.finishUsingItem(this.level(), this);
-                    if (!remainingItem.isEmpty()) {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, remainingItem);
-                    }
-
-                    this.ticksSinceEaten = 0;
-                } else if (this.ticksSinceEaten > MIN_TICKS_BEFORE_EAT - 40 && this.random.nextFloat() < 0.1F) {
-                    this.playSound(this.getEatingSound(heldItem), 1.0F, 1.0F);
-                    this.level().broadcastEntityEvent(this, (byte) 45);
-                }
-            }
+            this.updateEatingAnimation();
         }
 
         super.aiStep();
         if (this.isDefending() && this.random.nextFloat() < 0.05F) {
             this.playSound(SoundEvents.FOX_AGGRO, 1.0F, 1.0F);
+        }
+    }
+
+    private void updateEatingAnimation() {
+        ItemStack heldItem = this.getItemBySlot(EquipmentSlot.MAINHAND);
+        boolean canEat = this.canEat(heldItem);
+        int eatingAnimationTicks = this.getEatingAnimationTicks();
+        if (eatingAnimationTicks >= 0) {
+            if (eatingAnimationTicks >= EATING_ANIMATION_TICKS) {
+                this.stopEatingAnimation();
+            } else if (eatingAnimationTicks < EATING_CONSUME_TICK && !canEat) {
+                this.stopEatingAnimation();
+            } else {
+                if (canEat && eatingAnimationTicks >= EATING_ARM_RAISE_TICKS && eatingAnimationTicks < EATING_CONSUME_TICK
+                        && (eatingAnimationTicks - EATING_ARM_RAISE_TICKS) % EATING_PARTICLE_INTERVAL_TICKS == 0) {
+                    this.playSound(this.getEatingSound(heldItem), 1.0F, 1.0F);
+                    this.level().broadcastEntityEvent(this, EATING_PARTICLES_EVENT);
+                }
+
+                if (canEat && eatingAnimationTicks == EATING_CONSUME_TICK) {
+                    ItemStack remainingItem = heldItem.finishUsingItem(this.level(), this);
+                    this.setItemSlot(EquipmentSlot.MAINHAND, remainingItem);
+                    this.ticksSinceEaten = 0;
+                }
+
+                this.advanceEatingAnimation(eatingAnimationTicks);
+            }
+        } else if (canEat && this.ticksSinceEaten > MIN_TICKS_BEFORE_EAT - EATING_CONSUME_TICK) {
+            this.startEatingAnimation();
         }
     }
 
@@ -153,6 +180,40 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
 
     private boolean canEat(ItemStack stack) {
         return stack.has(DataComponents.FOOD) && this.getTarget() == null && this.onGround();
+    }
+
+    public float getEatingAnimationSeconds(float ageInTicks) {
+        if (this.level().isClientSide) {
+            if (this.clientEatingAnimationStartTicks < 0.0F) {
+                return -1.0F;
+            }
+
+            float elapsedTicks = ageInTicks - this.clientEatingAnimationStartTicks;
+            if (elapsedTicks < 0.0F || elapsedTicks > EATING_ANIMATION_TICKS) {
+                return -1.0F;
+            }
+            return elapsedTicks / 20.0F;
+        }
+
+        int animationTicks = this.getEatingAnimationTicks();
+        return animationTicks >= 0 && animationTicks <= EATING_ANIMATION_TICKS ? animationTicks / 20.0F : -1.0F;
+    }
+
+    private int getEatingAnimationTicks() {
+        return this.eatingAnimationTicks;
+    }
+
+    private void startEatingAnimation() {
+        this.eatingAnimationTicks = 0;
+        this.level().broadcastEntityEvent(this, EATING_ANIMATION_EVENT);
+    }
+
+    private void advanceEatingAnimation(int eatingAnimationTicks) {
+        this.eatingAnimationTicks = eatingAnimationTicks + 1;
+    }
+
+    private void stopEatingAnimation() {
+        this.eatingAnimationTicks = -1;
     }
 
     void setClientAnchorOffsets(@Nullable Vec3 leashOffset, @Nullable Vec3 mouthOffset) {
@@ -166,27 +227,49 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
 
     @Override
     public void handleEntityEvent(byte id) {
-        if (id == 45) {
+        if (id == EATING_PARTICLES_EVENT) {
             ItemStack heldItem = this.getItemBySlot(EquipmentSlot.MAINHAND);
-            if (!heldItem.isEmpty()) {
-                for (int i = 0; i < 8; i++) {
-                    Vec3 motion = new Vec3(((double) this.random.nextFloat() - 0.5D) * 0.1D, Math.random() * 0.1D + 0.1D, 0.0D)
-                            .xRot(-this.getXRot() * (float) (Math.PI / 180.0D))
-                            .yRot(-this.getYRot() * (float) (Math.PI / 180.0D));
-                    Vec3 mouthPosition = this.getClientMouthPosition();
-                    this.level().addParticle(
-                            new net.minecraft.core.particles.ItemParticleOption(net.minecraft.core.particles.ParticleTypes.ITEM, heldItem),
-                            mouthPosition.x,
-                            mouthPosition.y,
-                            mouthPosition.z,
-                            motion.x,
-                            motion.y + 0.05D,
-                            motion.z
-                    );
-                }
+            // cap the number of pending particles
+            if (!heldItem.isEmpty() && this.pendingClientEatingParticles < 2 * EATING_PARTICLES_SPAWNED) {
+                this.pendingClientEatingParticles += EATING_PARTICLES_SPAWNED;
+                this.pendingClientEatingParticleItem = heldItem.copy();
             }
+        } else if (id == EATING_ANIMATION_EVENT) {
+            this.clientEatingAnimationStartTicks = this.tickCount;
         } else {
             super.handleEntityEvent(id);
+        }
+    }
+
+    void spawnPendingClientEatingParticles() {
+        if (this.pendingClientEatingParticles <= 0) {
+            return;
+        }
+
+        ItemStack particleItem = this.pendingClientEatingParticleItem;
+        if (particleItem.isEmpty()) {
+            this.pendingClientEatingParticles = 0;
+            return;
+        }
+
+        int particles = this.pendingClientEatingParticles;
+        this.pendingClientEatingParticles = 0;
+        this.pendingClientEatingParticleItem = ItemStack.EMPTY;
+        Vec3 mouthPosition = this.getClientMouthPosition();
+        for (int i = 0; i < particles; i++) {
+            Vec3 motion = new Vec3(((double) this.random.nextFloat() - 0.5D) * 0.1D, Math.random() * 0.1D + 0.1D, 0.0D)
+                    .xRot(-this.getXRot() * (float) (Math.PI / 180.0D))
+                    .yRot(-this.getYRot() * (float) (Math.PI / 180.0D));
+            this.level().addParticle(
+                    // note: both stored bursts of particles will be of `particleItem`, even if both items were different.
+                    new net.minecraft.core.particles.ItemParticleOption(net.minecraft.core.particles.ParticleTypes.ITEM, particleItem),
+                    mouthPosition.x,
+                    mouthPosition.y,
+                    mouthPosition.z,
+                    motion.x,
+                    motion.y + 0.05D,
+                    motion.z
+            );
         }
     }
 

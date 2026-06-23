@@ -9,5 +9,5 @@ https://gitlab.com/cable-mc/cobblemon/-/tree/30b769db132a81b83dc6b1d61fa6b21e2b8
 
 These animations are licensed under the MPL 2.0 License. Link: https://www.mozilla.org/en-US/MPL/2.0/
 
-Other animations were made by myself and are not subject to MPL 2.0.
+Other animations were made by myself and are not subject to MPL 2.0. (E.g. Braixen munching.)
 These animations, if copyrightable, shall inherit the same license as the root repository's license.
