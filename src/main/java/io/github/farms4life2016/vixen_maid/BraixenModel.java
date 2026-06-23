@@ -37,7 +37,7 @@ public class BraixenModel extends EntityModel<Braixen> {
     private static final String MOUTH_BONE = "muzzle";
     private static final Vec3 MOUTH_BONE_OFFSET_PIXELS = new Vec3(0.0D, 0.0D, 0.25D);
     public static final String HELD_ITEM_BONE = "hand_left";
-    private static final Vec3 HELD_ITEM_OFFSET_PIXELS = new Vec3(1.5D, 0.5D, 0.0D);
+    private static final Vec3 HELD_ITEM_OFFSET_PIXELS = new Vec3(4.0D, 0.0D, 0.0D);
 
     private final ResourceLocation modelLocation;
     private final ResourceLocation[] animationLocations;
