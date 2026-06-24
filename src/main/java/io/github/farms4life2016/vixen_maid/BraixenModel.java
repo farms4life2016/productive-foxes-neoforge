@@ -29,6 +29,7 @@ public class BraixenModel extends EntityModel<Braixen> {
     private static final boolean FORCE_IDLE_DURING_MUNCH = false;
     private static final float MAX_EATING_HEAD_YAW = 10.0F;
     private static final float LOCOMOTION_TRANSITION_SECONDS = 10.0F / 20.0F;
+    private static final float HEAD_YAW_TRANSITION_SECONDS = 6.0F / 20.0F;
     private static final double MOVING_SPEED_THRESHOLD = 1.0E-5D;
     private static final float MIN_SECONDS_BETWEEN_BLINKS = 8.0F;
     private static final float MAX_SECONDS_BETWEEN_BLINKS = 30.0F;
@@ -44,6 +45,7 @@ public class BraixenModel extends EntityModel<Braixen> {
     private final ResourceLocation[] animationLocations;
     private final Map<Integer, BlinkState> blinkStates = new HashMap<>();
     private final Map<Integer, LocomotionState> locomotionStates = new HashMap<>();
+    private final Map<Integer, HeadYawState> headYawStates = new HashMap<>();
     private BedrockGeoModel model;
     private Braixen currentEntity;
     private String targetLocomotionAnimation = IDLE_ANIMATION;
@@ -72,7 +74,7 @@ public class BraixenModel extends EntityModel<Braixen> {
             this.targetLocomotionAnimation = moving ? WALK_ANIMATION : IDLE_ANIMATION;
         }
         this.blinkAnimationSeconds = this.updateBlinkState(entity, this.currentAnimationSeconds);
-        this.netHeadYaw = this.munchAnimationSeconds >= 0.0F ? Mth.clamp(netHeadYaw, -MAX_EATING_HEAD_YAW, MAX_EATING_HEAD_YAW) : netHeadYaw;
+        this.netHeadYaw = this.updateHeadYawState(entity, netHeadYaw);
         this.headPitch = headPitch;
 
         if (this.model != null) {
@@ -173,6 +175,41 @@ public class BraixenModel extends EntityModel<Braixen> {
         return BedrockGeoModel.AnimationPose.blend(state.transitionStartPose, targetPose, easedProgress);
     }
 
+    private float updateHeadYawState(Braixen entity, float rawNetHeadYaw) {
+        boolean eating = this.munchAnimationSeconds >= 0.0F;
+        float targetYaw = eating ? Mth.clamp(rawNetHeadYaw, -MAX_EATING_HEAD_YAW, MAX_EATING_HEAD_YAW) : rawNetHeadYaw;
+        HeadYawState state = this.headYawStates.computeIfAbsent(entity.getId(), unused -> new HeadYawState());
+        if (!state.initialized) {
+            state.initialized = true;
+            state.eating = eating;
+            state.visualYaw = targetYaw;
+            return targetYaw;
+        }
+
+        if (state.eating != eating) {
+            state.eating = eating;
+            state.transitionStartYaw = state.visualYaw;
+            state.transitionStartSeconds = this.currentAnimationSeconds;
+        }
+
+        if (state.transitionStartSeconds < 0.0F) {
+            state.visualYaw = targetYaw;
+            return targetYaw;
+        }
+
+        float elapsedSeconds = this.currentAnimationSeconds - state.transitionStartSeconds;
+        float progress = Mth.clamp(elapsedSeconds / HEAD_YAW_TRANSITION_SECONDS, 0.0F, 1.0F);
+        if (progress >= 1.0F) {
+            state.transitionStartSeconds = -1.0F;
+            state.visualYaw = targetYaw;
+            return targetYaw;
+        }
+
+        float easedProgress = 0.5F - 0.5F * Mth.cos(progress * Mth.PI);
+        state.visualYaw = Mth.rotLerp(easedProgress, state.transitionStartYaw, targetYaw);
+        return state.visualYaw;
+    }
+
     private void updateEntityAnchors(Braixen entity) {
         Vec3 leashOffset = this.entityLocalBoneOrigin(LEASH_BONE, LEASH_BONE_OFFSET_PIXELS);
         Vec3 mouthOffset = this.entityLocalBoneOrigin(MOUTH_BONE, MOUTH_BONE_OFFSET_PIXELS);
@@ -230,5 +267,13 @@ public class BraixenModel extends EntityModel<Braixen> {
         private String targetAnimation;
         private BedrockGeoModel.AnimationPose transitionStartPose;
         private float transitionStartSeconds;
+    }
+
+    private static final class HeadYawState {
+        private boolean initialized;
+        private boolean eating;
+        private float visualYaw;
+        private float transitionStartYaw;
+        private float transitionStartSeconds = -1.0F;
     }
 }
