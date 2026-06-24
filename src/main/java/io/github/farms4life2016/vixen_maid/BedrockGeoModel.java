@@ -90,11 +90,29 @@ public final class BedrockGeoModel {
         this.applyAnimationLayer(animationName, animationSeconds);
     }
 
+    public void applyAnimationPose(AnimationPose pose) {
+        this.resetPose();
+        this.applyAnimationPoseLayer(pose, 1.0F);
+    }
+
+    public void applyAnimationPoseLayer(AnimationPose pose, float weight) {
+        pose.apply(this.partsByName, weight);
+    }
+
     public void applyAnimationLayer(String animationName, float animationSeconds) {
+        this.applyAnimationLayer(animationName, animationSeconds, 1.0F);
+    }
+
+    public void applyAnimationLayer(String animationName, float animationSeconds, float weight) {
         BedrockAnimation animation = this.findAnimation(animationName);
         if (animation != null) {
-            animation.apply(this.partsByName, animationSeconds);
+            animation.apply(this.partsByName, animationSeconds, weight);
         }
+    }
+
+    public AnimationPose createAnimationPose(String animationName, float animationSeconds) {
+        BedrockAnimation animation = this.findAnimation(animationName);
+        return animation != null ? animation.createPose(animationSeconds) : AnimationPose.empty();
     }
 
     public float getAnimationLength(String animationName) {
@@ -351,6 +369,58 @@ public final class BedrockGeoModel {
     private record BakedBedrockModel(ModelPart root, Map<String, ModelPart> partsByName, Map<String, String> parentsByName) {
     }
 
+    public static final class AnimationPose {
+        private static final AnimationPose EMPTY = new AnimationPose(Map.of());
+
+        private final Map<String, BoneTransform> transforms;
+
+        private AnimationPose(Map<String, BoneTransform> transforms) {
+            this.transforms = transforms;
+        }
+
+        public static AnimationPose empty() {
+            return EMPTY;
+        }
+
+        public static AnimationPose blend(AnimationPose from, AnimationPose to, float progress) {
+            if (progress <= 0.0F) {
+                return from;
+            }
+            if (progress >= 1.0F) {
+                return to;
+            }
+
+            Set<String> boneNames = new HashSet<>(from.transforms.keySet());
+            boneNames.addAll(to.transforms.keySet());
+
+            Map<String, BoneTransform> transforms = new HashMap<>();
+            for (String boneName : boneNames) {
+                BoneTransform transform = BoneTransform.lerp(
+                        from.transforms.getOrDefault(boneName, BoneTransform.ZERO),
+                        to.transforms.getOrDefault(boneName, BoneTransform.ZERO),
+                        progress
+                );
+                if (!transform.isZero()) {
+                    transforms.put(boneName, transform);
+                }
+            }
+            return transforms.isEmpty() ? EMPTY : new AnimationPose(transforms);
+        }
+
+        private void apply(Map<String, ModelPart> partsByName, float weight) {
+            if (weight <= 0.0F) {
+                return;
+            }
+
+            for (Map.Entry<String, BoneTransform> entry : this.transforms.entrySet()) {
+                ModelPart part = partsByName.get(entry.getKey());
+                if (part != null) {
+                    entry.getValue().apply(part, weight);
+                }
+            }
+        }
+    }
+
     private record BedrockAnimation(Map<String, BoneAnimation> bones, double animationLength, boolean shouldLoop) {
         private static BedrockAnimation read(JsonObject json) {
             Map<String, BoneAnimation> bones = new HashMap<>();
@@ -365,19 +435,47 @@ public final class BedrockGeoModel {
             return new BedrockAnimation(bones, animationLength, shouldLoop);
         }
 
-        private void apply(Map<String, ModelPart> partsByName, double animationSeconds) {
-            if (this.shouldLoop && this.animationLength > 0.0D) {
-                animationSeconds %= this.animationLength;
-            } else if (!this.shouldLoop && this.animationLength > 0.0D && animationSeconds > this.animationLength) {
+        private void apply(Map<String, ModelPart> partsByName, double animationSeconds, float weight) {
+            if (weight <= 0.0F) {
+                return;
+            }
+
+            double sampledSeconds = this.sampleSeconds(animationSeconds);
+            if (Double.isNaN(sampledSeconds)) {
                 return;
             }
 
             for (Map.Entry<String, BoneAnimation> entry : this.bones.entrySet()) {
                 ModelPart part = partsByName.get(entry.getKey());
                 if (part != null) {
-                    entry.getValue().apply(part, animationSeconds);
+                    entry.getValue().apply(part, sampledSeconds, weight);
                 }
             }
+        }
+
+        private AnimationPose createPose(double animationSeconds) {
+            double sampledSeconds = this.sampleSeconds(animationSeconds);
+            if (Double.isNaN(sampledSeconds)) {
+                return AnimationPose.empty();
+            }
+
+            Map<String, BoneTransform> transforms = new HashMap<>();
+            for (Map.Entry<String, BoneAnimation> entry : this.bones.entrySet()) {
+                BoneTransform transform = entry.getValue().evaluate(sampledSeconds);
+                if (!transform.isZero()) {
+                    transforms.put(entry.getKey(), transform);
+                }
+            }
+            return transforms.isEmpty() ? AnimationPose.empty() : new AnimationPose(transforms);
+        }
+
+        private double sampleSeconds(double animationSeconds) {
+            if (this.shouldLoop && this.animationLength > 0.0D) {
+                return animationSeconds % this.animationLength;
+            } else if (!this.shouldLoop && this.animationLength > 0.0D && animationSeconds > this.animationLength) {
+                return Double.NaN;
+            }
+            return animationSeconds;
         }
     }
 
@@ -389,20 +487,71 @@ public final class BedrockGeoModel {
             );
         }
 
-        private void apply(ModelPart part, double animationSeconds) {
+        private void apply(ModelPart part, double animationSeconds, float weight) {
+            this.evaluate(animationSeconds).apply(part, weight);
+        }
+
+        private BoneTransform evaluate(double animationSeconds) {
+            BoneTransform transform = BoneTransform.ZERO;
             if (this.position != null) {
                 double[] position = this.position.evaluate(animationSeconds);
-                part.x += (float) position[0];
-                part.y -= (float) position[1];
-                part.z += (float) position[2];
+                transform = transform.withPosition((float) position[0], (float) -position[1], (float) position[2]);
             }
 
             if (this.rotation != null) {
                 double[] rotation = this.rotation.evaluate(animationSeconds);
-                part.xRot += radians((float) rotation[0]);
-                part.yRot += radians((float) rotation[1]);
-                part.zRot += radians((float) rotation[2]);
+                transform = transform.withRotation(
+                        radians((float) rotation[0]),
+                        radians((float) rotation[1]),
+                        radians((float) rotation[2])
+                );
             }
+            return transform;
+        }
+    }
+
+    private record BoneTransform(float x, float y, float z, float xRot, float yRot, float zRot) {
+        private static final BoneTransform ZERO = new BoneTransform(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F);
+
+        private BoneTransform withPosition(float x, float y, float z) {
+            return new BoneTransform(x, y, z, this.xRot, this.yRot, this.zRot);
+        }
+
+        private BoneTransform withRotation(float xRot, float yRot, float zRot) {
+            return new BoneTransform(this.x, this.y, this.z, xRot, yRot, zRot);
+        }
+
+        private static BoneTransform lerp(BoneTransform from, BoneTransform to, float alpha) {
+            return new BoneTransform(
+                    lerpScalar(from.x, to.x, alpha),
+                    lerpScalar(from.y, to.y, alpha),
+                    lerpScalar(from.z, to.z, alpha),
+                    lerpScalar(from.xRot, to.xRot, alpha),
+                    lerpScalar(from.yRot, to.yRot, alpha),
+                    lerpScalar(from.zRot, to.zRot, alpha)
+            );
+        }
+
+        private static float lerpScalar(float from, float to, float alpha) {
+            return from + (to - from) * alpha;
+        }
+
+        private void apply(ModelPart part, float weight) {
+            part.x += this.x * weight;
+            part.y += this.y * weight;
+            part.z += this.z * weight;
+            part.xRot += this.xRot * weight;
+            part.yRot += this.yRot * weight;
+            part.zRot += this.zRot * weight;
+        }
+
+        private boolean isZero() {
+            return this.x == 0.0F
+                    && this.y == 0.0F
+                    && this.z == 0.0F
+                    && this.xRot == 0.0F
+                    && this.yRot == 0.0F
+                    && this.zRot == 0.0F;
         }
     }
 

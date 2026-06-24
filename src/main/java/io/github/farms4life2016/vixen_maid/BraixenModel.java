@@ -28,6 +28,7 @@ public class BraixenModel extends EntityModel<Braixen> {
     private static final String MUNCH_ANIMATION = "animation.braixen.munch";
     private static final boolean FORCE_IDLE_DURING_MUNCH = false;
     private static final float MAX_EATING_HEAD_YAW = 10.0F;
+    private static final float LOCOMOTION_TRANSITION_SECONDS = 10.0F / 20.0F;
     private static final double MOVING_SPEED_THRESHOLD = 1.0E-5D;
     private static final float MIN_SECONDS_BETWEEN_BLINKS = 8.0F;
     private static final float MAX_SECONDS_BETWEEN_BLINKS = 30.0F;
@@ -42,9 +43,10 @@ public class BraixenModel extends EntityModel<Braixen> {
     private final ResourceLocation modelLocation;
     private final ResourceLocation[] animationLocations;
     private final Map<Integer, BlinkState> blinkStates = new HashMap<>();
+    private final Map<Integer, LocomotionState> locomotionStates = new HashMap<>();
     private BedrockGeoModel model;
     private Braixen currentEntity;
-    private String currentAnimation = IDLE_ANIMATION;
+    private String targetLocomotionAnimation = IDLE_ANIMATION;
     private float currentAnimationSeconds;
     private float blinkAnimationSeconds = -1.0F;
     private float munchAnimationSeconds = -1.0F;
@@ -63,12 +65,18 @@ public class BraixenModel extends EntityModel<Braixen> {
         boolean moving = limbSwingAmount > 0.01F || entity.getDeltaMovement().horizontalDistanceSqr() > MOVING_SPEED_THRESHOLD;
         this.currentAnimationSeconds = ageInTicks / 20.0F;
         this.munchAnimationSeconds = entity.getEatingAnimationSeconds(ageInTicks);
-        this.currentAnimation = this.munchAnimationSeconds >= 0.0F && FORCE_IDLE_DURING_MUNCH ? IDLE_ANIMATION : moving ? WALK_ANIMATION : IDLE_ANIMATION;
+        // force idle during munch if setting is enabled
+        if (this.munchAnimationSeconds >= 0.0F && FORCE_IDLE_DURING_MUNCH) {
+            this.targetLocomotionAnimation = IDLE_ANIMATION;
+        } else { // otherwise get anim based on movement
+            this.targetLocomotionAnimation = moving ? WALK_ANIMATION : IDLE_ANIMATION;
+        }
         this.blinkAnimationSeconds = this.updateBlinkState(entity, this.currentAnimationSeconds);
         this.netHeadYaw = this.munchAnimationSeconds >= 0.0F ? Mth.clamp(netHeadYaw, -MAX_EATING_HEAD_YAW, MAX_EATING_HEAD_YAW) : netHeadYaw;
         this.headPitch = headPitch;
 
         if (this.model != null) {
+            this.updateLocomotionState(entity);
             this.applyCurrentPose();
             this.updateEntityAnchors(entity);
         }
@@ -78,6 +86,9 @@ public class BraixenModel extends EntityModel<Braixen> {
     public void renderToBuffer(PoseStack poseStack, VertexConsumer consumer, int packedLight, int packedOverlay, int color) {
         if (this.model == null) {
             this.model = BedrockGeoModel.load(this.modelLocation, this.animationLocations);
+        }
+        if (this.currentEntity != null) {
+            this.updateLocomotionState(this.currentEntity);
         }
         this.applyCurrentPose();
         if (this.currentEntity != null) {
@@ -106,7 +117,7 @@ public class BraixenModel extends EntityModel<Braixen> {
     }
 
     private void applyCurrentPose() {
-        this.model.applyAnimation(this.currentAnimation, this.currentAnimationSeconds);
+        this.model.applyAnimationPose(this.currentLocomotionPose());
         if (this.blinkAnimationSeconds >= 0.0F) {
             this.model.applyAnimationLayer(BLINK_ANIMATION, this.blinkAnimationSeconds);
         }
@@ -116,6 +127,50 @@ public class BraixenModel extends EntityModel<Braixen> {
         this.model.lookAt("head", this.netHeadYaw, this.headPitch);
         this.model.setVisible("hand_stick", false);
         this.model.setVisible("stick_tail", true);
+    }
+
+    private void updateLocomotionState(Braixen entity) {
+        LocomotionState state = this.locomotionStates.computeIfAbsent(entity.getId(), unused -> new LocomotionState());
+        if (state.targetAnimation == null) {
+            state.targetAnimation = this.targetLocomotionAnimation;
+            return;
+        }
+
+        if (!state.targetAnimation.equals(this.targetLocomotionAnimation)) {
+            state.transitionStartPose = this.locomotionPose(state);
+            state.transitionStartSeconds = this.currentAnimationSeconds;
+            state.targetAnimation = this.targetLocomotionAnimation;
+        }
+    }
+
+    private BedrockGeoModel.AnimationPose currentLocomotionPose() {
+        if (this.currentEntity == null) {
+            return this.model.createAnimationPose(this.targetLocomotionAnimation, this.currentAnimationSeconds);
+        }
+
+        LocomotionState state = this.locomotionStates.computeIfAbsent(this.currentEntity.getId(), unused -> {
+            LocomotionState created = new LocomotionState();
+            created.targetAnimation = this.targetLocomotionAnimation;
+            return created;
+        });
+        return this.locomotionPose(state);
+    }
+
+    private BedrockGeoModel.AnimationPose locomotionPose(LocomotionState state) {
+        BedrockGeoModel.AnimationPose targetPose = this.model.createAnimationPose(state.targetAnimation, this.currentAnimationSeconds);
+        if (state.transitionStartPose == null) {
+            return targetPose;
+        }
+
+        float elapsedSeconds = this.currentAnimationSeconds - state.transitionStartSeconds;
+        float progress = Mth.clamp(elapsedSeconds / LOCOMOTION_TRANSITION_SECONDS, 0.0F, 1.0F);
+        if (progress >= 1.0F) {
+            state.transitionStartPose = null;
+            return targetPose;
+        }
+
+        float easedProgress = 0.5F - 0.5F * Mth.cos(progress * Mth.PI);
+        return BedrockGeoModel.AnimationPose.blend(state.transitionStartPose, targetPose, easedProgress);
     }
 
     private void updateEntityAnchors(Braixen entity) {
@@ -169,5 +224,11 @@ public class BraixenModel extends EntityModel<Braixen> {
     private static final class BlinkState {
         private float nextBlinkSeconds = -1.0F;
         private float blinkStartSeconds = -1.0F;
+    }
+
+    private static final class LocomotionState {
+        private String targetAnimation;
+        private BedrockGeoModel.AnimationPose transitionStartPose;
+        private float transitionStartSeconds;
     }
 }
