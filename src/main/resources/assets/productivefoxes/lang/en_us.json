@@ -1,7 +1,8 @@
 {
-  "itemGroup.productivefoxes": "Example Mod Tab",
+  "itemGroup.productivefoxes": "Productive Foxes",
   "block.productivefoxes.example_block": "Example Block",
   "item.productivefoxes.example_item": "Example Item",
+  "item.productivefoxes.braixen_spawn_egg": "Braixen Spawn Egg",
 
   "entity.productivefoxes.braixen": "Braixen",
 

@@ -24,7 +24,7 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -55,13 +55,18 @@ public class ProductiveFoxes {
     public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
-    // Creates a creative tab with the id "productivefoxes:example_tab" for the example item, that is placed after the combat tab
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
+    public static final DeferredItem<DeferredSpawnEggItem> BRAIXEN_SPAWN_EGG = ITEMS.registerItem(
+            "braixen_spawn_egg",
+            properties -> new DeferredSpawnEggItem(ProductiveFoxesEntities.BRAIXEN, 14005919, 13396256, properties)
+    );
+
+    // Creates a creative tab with the id "productivefoxes:productivefoxes" that is placed before the vanilla spawn eggs tab.
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PRODUCTIVE_FOXES_TAB = CREATIVE_MODE_TABS.register(MODID, () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.productivefoxes")) //The language key for the title of your CreativeModeTab
-            .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
+            .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
+            .icon(() -> BRAIXEN_SPAWN_EGG.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(BRAIXEN_SPAWN_EGG.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -83,9 +88,6 @@ public class ProductiveFoxes {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
-
         // register entity attributes??
         modEventBus.addListener(this::registerEntityAttributes);
 
@@ -104,13 +106,6 @@ public class ProductiveFoxes {
         LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
 
         Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
-    }
-
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(EXAMPLE_BLOCK_ITEM);
-        }
     }
 
     private void registerEntityAttributes(EntityAttributeCreationEvent event) {
