@@ -14,8 +14,8 @@ and licensed under the same license found in the repo's root.
 
 ## Cobblemon
 
-Cobblemon is licensed under the Mozilla Public License 2.0.
-Cobblemon's Pokemon models are licensed under CCPL (a custom CC license?).
+Cobblemon's source code is licensed under the Mozilla Public License 2.0.
+Cobblemon's Pokemon assets are licensed under CCPL (a custom CC license?).
 
 Source code: https://gitlab.com/cable-mc/cobblemon/-/tree/main?ref_type=heads
 
@@ -24,8 +24,7 @@ MPL 2.0 License: https://www.mozilla.org/en-US/MPL/2.0/
 CCPL: pasted verbatim in the folder where it is applicable
 
 Assets and sources used:
-- a few Pokemon models (CCPL)
-- a few Pokemon textures (MPL2.0)
+- a few Pokemon assets (CCPL)
 - `BedrockGeoModel.java` is heavily adapted from source code (MPL2.0)
 
 ---

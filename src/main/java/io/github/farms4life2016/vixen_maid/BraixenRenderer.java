@@ -8,23 +8,23 @@ import net.minecraft.resources.ResourceLocation;
 public class BraixenRenderer extends MobRenderer<Braixen, BraixenModel> {
     private static final ResourceLocation MODEL = ResourceLocation.fromNamespaceAndPath(
             ProductiveFoxes.MODID,
-            "bedrock/vixen_maid/model/braixen.geo.json"
+            "vixen_maid/ccpl/braixen.geo.json"
     );
     private static final ResourceLocation ANIMATION = ResourceLocation.fromNamespaceAndPath(
             ProductiveFoxes.MODID,
-            "bedrock/vixen_maid/anim/braixen.animation.json"
+            "vixen_maid/ccpl/braixen.animation.json"
     );
     private static final ResourceLocation MUNCH_ANIMATION = ResourceLocation.fromNamespaceAndPath(
             ProductiveFoxes.MODID,
-            "bedrock/vixen_maid/anim/braixen_munch.animation.json"
+            "vixen_maid/custom/braixen_munch.animation.json"
     );
     private static final ResourceLocation YELLOW_TEXTURE = ResourceLocation.fromNamespaceAndPath(
             ProductiveFoxes.MODID,
-            "textures/entity/vixen_maid/braixen_yellow.png"
+            "vixen_maid/ccpl/braixen_yellow.png"
     );
     private static final ResourceLocation LAVENDER_TEXTURE = ResourceLocation.fromNamespaceAndPath(
             ProductiveFoxes.MODID,
-            "textures/entity/vixen_maid/braixen_lavender.png"
+            "vixen_maid/ccpl/braixen_lavender.png"
     );
 
     public BraixenRenderer(EntityRendererProvider.Context context) {
