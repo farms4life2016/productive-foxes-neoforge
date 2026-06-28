@@ -1,6 +1,5 @@
 package io.github.farms4life2016;
 
-import io.github.farms4life2016.vaporeon_port.Vaporeon;
 import io.github.farms4life2016.vixen_maid.Braixen;
 import org.slf4j.Logger;
 
@@ -115,7 +114,6 @@ public class ProductiveFoxes {
     }
 
     private void registerEntityAttributes(EntityAttributeCreationEvent event) {
-        event.put(ProductiveFoxesEntities.VAPOREON.get(), Vaporeon.createAttributes().build());
         event.put(ProductiveFoxesEntities.BRAIXEN.get(), Braixen.createAttributes().build());
     }
 
