@@ -57,7 +57,7 @@ public class ProductiveFoxes {
 
     public static final DeferredItem<DeferredSpawnEggItem> BRAIXEN_SPAWN_EGG = ITEMS.registerItem(
             "braixen_spawn_egg",
-            properties -> new DeferredSpawnEggItem(ProductiveFoxesEntities.BRAIXEN, 14005919, 13396256, properties)
+            properties -> new DeferredSpawnEggItem(ProductiveFoxesEntities.BRAIXEN, 0xddc16c, 0xd75a39, properties)
     );
 
     // Creates a creative tab with the id "productivefoxes:productivefoxes" that is placed before the vanilla spawn eggs tab.
