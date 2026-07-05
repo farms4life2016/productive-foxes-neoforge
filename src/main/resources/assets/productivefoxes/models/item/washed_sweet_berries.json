@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "productivefoxes:item/washed_sweet_berries"
+    "layer0": "productivefoxes:item/washed_sweet_berries",
+    "layer1": "productivefoxes:item/washed_sparkles"
   }
 }
