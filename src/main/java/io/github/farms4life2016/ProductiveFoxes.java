@@ -33,6 +33,7 @@ public class ProductiveFoxes {
 
         ProductiveFoxesBlocks.register(modEventBus);
         ProductiveFoxesItems.register(modEventBus);
+        ProductiveFoxesFluids.register(modEventBus);
         ProductiveFoxesCreativeModeTabs.register(modEventBus);
         ProductiveFoxesEntities.ENTITY_TYPES.register(modEventBus);
 

@@ -3,7 +3,9 @@ package io.github.farms4life2016;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -27,6 +29,18 @@ public final class ProductiveFoxesItems {
     public static final DeferredItem<Item> WASHED_SWEET_BERRIES = ITEMS.registerSimpleItem(
             "washed_sweet_berries",
             new Item.Properties().food(Foods.SWEET_BERRIES)
+    );
+
+    public static final DeferredItem<BucketItem> SWEET_BERRY_PULP_BUCKET = ITEMS.registerItem(
+            "sweet_berry_pulp_bucket",
+            properties -> new BucketItem(ProductiveFoxesFluids.SWEET_BERRY_PULP.get(),
+                    properties.craftRemainder(Items.BUCKET).stacksTo(1))
+    );
+
+    public static final DeferredItem<BucketItem> LIQUID_HONEY_BUCKET = ITEMS.registerItem(
+            "liquid_honey_bucket",
+            properties -> new BucketItem(ProductiveFoxesFluids.LIQUID_HONEY.get(),
+                    properties.craftRemainder(Items.BUCKET).stacksTo(1))
     );
 
     public static final DeferredItem<DeferredSpawnEggItem> BRAIXEN_SPAWN_EGG = ITEMS.registerItem(
