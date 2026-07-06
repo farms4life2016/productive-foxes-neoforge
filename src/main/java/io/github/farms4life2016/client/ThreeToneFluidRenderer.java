@@ -21,7 +21,6 @@ public final class ThreeToneFluidRenderer {
     private static final float MAX_FLUID_HEIGHT = 0.8888889F;
     private static final float TOP_FACE_OFFSET = 0.001F;
     private static final float SIDE_FACE_OFFSET = 0.001F;
-    private static final float LAYER_OFFSET = 0.0002F;
 
     private final Layer[] layers;
 
@@ -41,11 +40,10 @@ public final class ThreeToneFluidRenderer {
             return true;
         }
 
-        for (int i = 0; i < layers.length; i++) {
-            Layer layer = layers[i];
+        for (Layer layer : layers) {
             TextureAtlasSprite still = FluidSpriteCache.getSprite(layer.stillTexture());
             TextureAtlasSprite flowing = FluidSpriteCache.getSprite(layer.flowingTexture());
-            renderLayer(level, pos, fluidState, buffer, geometry, still, flowing, layer.argbTint(), i * LAYER_OFFSET);
+            renderLayer(level, pos, fluidState, buffer, geometry, still, flowing, layer.argbTint());
         }
         return true;
     }
@@ -58,8 +56,7 @@ public final class ThreeToneFluidRenderer {
             Geometry geometry,
             TextureAtlasSprite stillSprite,
             TextureAtlasSprite flowingSprite,
-            int argbTint,
-            float layerOffset
+            int argbTint
     ) {
         float alpha = (float)(argbTint >> 24 & 0xFF) / 255.0F;
         float red = (float)(argbTint >> 16 & 0xFF) / 255.0F;
@@ -78,7 +75,7 @@ public final class ThreeToneFluidRenderer {
 
         if (geometry.renderUp() && !isFaceOccludedByNeighbor(level, pos, Direction.UP, geometry.minTopHeight(), geometry.upBlock())) {
             renderTopFace(level, pos, fluidState, buffer, geometry, stillSprite, flowingSprite, x, y, z,
-                    upShade * red, upShade * green, upShade * blue, alpha, layerOffset);
+                    upShade * red, upShade * green, upShade * blue, alpha);
         }
 
         if (geometry.renderDown()) {
@@ -87,7 +84,7 @@ public final class ThreeToneFluidRenderer {
             float u1 = stillSprite.getU1();
             float v0 = stillSprite.getV0();
             float v1 = stillSprite.getV1();
-            float bottomY = y + bottom - layerOffset;
+            float bottomY = y + bottom;
             vertex(buffer, x, bottomY, z + 1.0F, downShade * red, downShade * green, downShade * blue, alpha, u0, v1, light);
             vertex(buffer, x, bottomY, z, downShade * red, downShade * green, downShade * blue, alpha, u0, v0, light);
             vertex(buffer, x + 1.0F, bottomY, z, downShade * red, downShade * green, downShade * blue, alpha, u1, v0, light);
@@ -97,7 +94,7 @@ public final class ThreeToneFluidRenderer {
         int light = getLightColor(level, pos);
         for (Direction direction : Direction.Plane.HORIZONTAL) {
             renderSideFace(level, pos, fluidState, buffer, geometry, flowingSprite, direction, x, y, z, bottom,
-                    upShade, northShade, westShade, red, green, blue, alpha, light, layerOffset);
+                    upShade, northShade, westShade, red, green, blue, alpha, light);
         }
     }
 
@@ -115,13 +112,12 @@ public final class ThreeToneFluidRenderer {
             float red,
             float green,
             float blue,
-            float alpha,
-            float layerOffset
+            float alpha
     ) {
-        float northEastHeight = geometry.northEastHeight() - TOP_FACE_OFFSET + layerOffset;
-        float northWestHeight = geometry.northWestHeight() - TOP_FACE_OFFSET + layerOffset;
-        float southEastHeight = geometry.southEastHeight() - TOP_FACE_OFFSET + layerOffset;
-        float southWestHeight = geometry.southWestHeight() - TOP_FACE_OFFSET + layerOffset;
+        float northEastHeight = geometry.northEastHeight() - TOP_FACE_OFFSET;
+        float northWestHeight = geometry.northWestHeight() - TOP_FACE_OFFSET;
+        float southEastHeight = geometry.southEastHeight() - TOP_FACE_OFFSET;
+        float southWestHeight = geometry.southWestHeight() - TOP_FACE_OFFSET;
         Vec3 flow = fluidState.getFlow(level, pos);
 
         float u0;
@@ -202,10 +198,9 @@ public final class ThreeToneFluidRenderer {
             float green,
             float blue,
             float alpha,
-            int light,
-            float layerOffset
+            int light
     ) {
-        SideGeometry side = geometry.side(direction, x, z, layerOffset);
+        SideGeometry side = geometry.side(direction, x, z);
         if (!side.render()
                 || isFaceOccludedByNeighbor(level, pos, direction, Math.max(side.leftHeight(), side.rightHeight()),
                 level.getBlockState(pos.relative(direction)))) {
@@ -437,16 +432,16 @@ public final class ThreeToneFluidRenderer {
             return Math.min(Math.min(northWestHeight, southWestHeight), Math.min(southEastHeight, northEastHeight));
         }
 
-        private SideGeometry side(Direction direction, float x, float z, float layerOffset) {
+        private SideGeometry side(Direction direction, float x, float z) {
             return switch (direction) {
                 case NORTH -> new SideGeometry(northWestHeight, northEastHeight, x, x + 1.0F,
-                        z + SIDE_FACE_OFFSET + layerOffset, z + SIDE_FACE_OFFSET + layerOffset, renderNorth);
+                        z + SIDE_FACE_OFFSET, z + SIDE_FACE_OFFSET, renderNorth);
                 case SOUTH -> new SideGeometry(southEastHeight, southWestHeight, x + 1.0F, x,
-                        z + 1.0F - SIDE_FACE_OFFSET - layerOffset, z + 1.0F - SIDE_FACE_OFFSET - layerOffset, renderSouth);
-                case WEST -> new SideGeometry(southWestHeight, northWestHeight, x + SIDE_FACE_OFFSET + layerOffset,
-                        x + SIDE_FACE_OFFSET + layerOffset, z + 1.0F, z, renderWest);
-                case EAST -> new SideGeometry(northEastHeight, southEastHeight, x + 1.0F - SIDE_FACE_OFFSET - layerOffset,
-                        x + 1.0F - SIDE_FACE_OFFSET - layerOffset, z, z + 1.0F, renderEast);
+                        z + 1.0F - SIDE_FACE_OFFSET, z + 1.0F - SIDE_FACE_OFFSET, renderSouth);
+                case WEST -> new SideGeometry(southWestHeight, northWestHeight, x + SIDE_FACE_OFFSET,
+                        x + SIDE_FACE_OFFSET, z + 1.0F, z, renderWest);
+                case EAST -> new SideGeometry(northEastHeight, southEastHeight, x + 1.0F - SIDE_FACE_OFFSET,
+                        x + 1.0F - SIDE_FACE_OFFSET, z, z + 1.0F, renderEast);
                 default -> throw new IllegalArgumentException("Expected horizontal direction, got " + direction);
             };
         }
