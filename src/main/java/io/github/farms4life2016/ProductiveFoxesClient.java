@@ -37,6 +37,13 @@ public class ProductiveFoxesClient {
             LIQUID_HONEY_TINTS.layer("liquid_honey_still_medium", "liquid_honey_flow_medium", LIQUID_HONEY_TINTS.medium()),
             LIQUID_HONEY_TINTS.layer("liquid_honey_still_light", "liquid_honey_flow_light", LIQUID_HONEY_TINTS.light())
     );
+    private static final ThreeToneFluidTint LIQUID_CHOCOLATE_TINTS =
+            new ThreeToneFluidTint(0xFF612A34, 0xFF9F4B3B, 0xFFE6855E);
+    private static final ThreeToneFluidRenderer LIQUID_CHOCOLATE_RENDERER = new ThreeToneFluidRenderer(
+            LIQUID_CHOCOLATE_TINTS.layer("liquid_chocolate_still_dark", "liquid_chocolate_flow_dark", LIQUID_CHOCOLATE_TINTS.dark()),
+            LIQUID_CHOCOLATE_TINTS.layer("liquid_chocolate_still_medium", "liquid_chocolate_flow_medium", LIQUID_CHOCOLATE_TINTS.medium()),
+            LIQUID_CHOCOLATE_TINTS.layer("liquid_chocolate_still_light", "liquid_chocolate_flow_light", LIQUID_CHOCOLATE_TINTS.light())
+    );
 
     public ProductiveFoxesClient(IEventBus modEventBus, ModContainer container) {
         modEventBus.addListener(this::registerEntityRenderers);
@@ -85,11 +92,20 @@ public class ProductiveFoxesClient {
                 LIQUID_HONEY_TINTS,
                 LIQUID_HONEY_RENDERER
         );
+        registerThreeToneFluid(
+                event,
+                ProductiveFoxesFluids.LIQUID_CHOCOLATE_TYPE.get(),
+                ResourceLocation.fromNamespaceAndPath(ProductiveFoxes.MODID, "block/liquid_chocolate_still"),
+                ResourceLocation.fromNamespaceAndPath(ProductiveFoxes.MODID, "block/liquid_chocolate_flow"),
+                LIQUID_CHOCOLATE_TINTS,
+                LIQUID_CHOCOLATE_RENDERER
+        );
     }
 
     private void registerItemColors(RegisterColorHandlersEvent.Item event) {
         event.register(new DynamicFluidContainerModel.Colors(), ProductiveFoxesItems.SWEET_BERRY_PULP_BUCKET.get());
         event.register(new DynamicFluidContainerModel.Colors(), ProductiveFoxesItems.LIQUID_HONEY_BUCKET.get());
+        event.register(new DynamicFluidContainerModel.Colors(), ProductiveFoxesItems.LIQUID_CHOCOLATE_BUCKET.get());
     }
 
     private static void registerThreeToneFluid(
@@ -174,6 +190,8 @@ public class ProductiveFoxesClient {
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(ProductiveFoxesFluids.LIQUID_HONEY.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ProductiveFoxesFluids.FLOWING_LIQUID_HONEY.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ProductiveFoxesFluids.LIQUID_CHOCOLATE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ProductiveFoxesFluids.FLOWING_LIQUID_CHOCOLATE.get(), RenderType.translucent());
         });
     }
 }

@@ -27,6 +27,11 @@ public final class ProductiveFoxesFluids {
                     .density(1400)
                     .viscosity(2400)));
 
+    public static final DeferredHolder<FluidType, FluidType> LIQUID_CHOCOLATE_TYPE =
+            FLUID_TYPES.register("liquid_chocolate", () -> new FluidType(baseProperties()
+                    .density(1400)
+                    .viscosity(2400)));
+
     public static final DeferredHolder<Fluid, BaseFlowingFluid.Source> SWEET_BERRY_PULP =
             FLUIDS.register("sweet_berry_pulp", () -> new BaseFlowingFluid.Source(sweetBerryPulpProperties()));
 
@@ -40,6 +45,13 @@ public final class ProductiveFoxesFluids {
     public static final DeferredHolder<Fluid, BaseFlowingFluid.Flowing> FLOWING_LIQUID_HONEY =
             FLUIDS.register("flowing_liquid_honey",
                     () -> new BaseFlowingFluid.Flowing(liquidHoneyProperties()));
+
+    public static final DeferredHolder<Fluid, BaseFlowingFluid.Source> LIQUID_CHOCOLATE =
+            FLUIDS.register("liquid_chocolate", () -> new BaseFlowingFluid.Source(liquidChocolateProperties()));
+
+    public static final DeferredHolder<Fluid, BaseFlowingFluid.Flowing> FLOWING_LIQUID_CHOCOLATE =
+            FLUIDS.register("flowing_liquid_chocolate",
+                    () -> new BaseFlowingFluid.Flowing(liquidChocolateProperties()));
 
     private static FluidType.Properties baseProperties() {
         return FluidType.Properties.create()
@@ -61,6 +73,16 @@ public final class ProductiveFoxesFluids {
         return new BaseFlowingFluid.Properties(LIQUID_HONEY_TYPE, LIQUID_HONEY, FLOWING_LIQUID_HONEY)
                 .bucket(ProductiveFoxesItems.LIQUID_HONEY_BUCKET)
                 .block(ProductiveFoxesBlocks.LIQUID_HONEY)
+                .slopeFindDistance(2)
+                .levelDecreasePerBlock(2)
+                .tickRate(30)
+                .explosionResistance(100.0F);
+    }
+
+    private static BaseFlowingFluid.Properties liquidChocolateProperties() {
+        return new BaseFlowingFluid.Properties(LIQUID_CHOCOLATE_TYPE, LIQUID_CHOCOLATE, FLOWING_LIQUID_CHOCOLATE)
+                .bucket(ProductiveFoxesItems.LIQUID_CHOCOLATE_BUCKET)
+                .block(ProductiveFoxesBlocks.LIQUID_CHOCOLATE)
                 .slopeFindDistance(2)
                 .levelDecreasePerBlock(2)
                 .tickRate(30)

@@ -21,6 +21,7 @@ public final class ProductiveFoxesCreativeModeTabs {
                         output.accept(ProductiveFoxesItems.WASHED_SWEET_BERRIES.get());
                         output.accept(ProductiveFoxesItems.SWEET_BERRY_PULP_BUCKET.get());
                         output.accept(ProductiveFoxesItems.LIQUID_HONEY_BUCKET.get());
+                        output.accept(ProductiveFoxesItems.LIQUID_CHOCOLATE_BUCKET.get());
                         output.accept(ProductiveFoxesItems.BRAIXEN_SPAWN_EGG.get());
                     })
                     .build());

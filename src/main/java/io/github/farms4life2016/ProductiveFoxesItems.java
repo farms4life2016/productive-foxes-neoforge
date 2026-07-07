@@ -43,6 +43,12 @@ public final class ProductiveFoxesItems {
                     properties.craftRemainder(Items.BUCKET).stacksTo(1))
     );
 
+    public static final DeferredItem<BucketItem> LIQUID_CHOCOLATE_BUCKET = ITEMS.registerItem(
+            "liquid_chocolate_bucket",
+            properties -> new BucketItem(ProductiveFoxesFluids.LIQUID_CHOCOLATE.get(),
+                    properties.craftRemainder(Items.BUCKET).stacksTo(1))
+    );
+
     public static final DeferredItem<DeferredSpawnEggItem> BRAIXEN_SPAWN_EGG = ITEMS.registerItem(
             "braixen_spawn_egg",
             properties -> new DeferredSpawnEggItem(ProductiveFoxesEntities.BRAIXEN, 0xddc16c, 0xd75a39, properties)
