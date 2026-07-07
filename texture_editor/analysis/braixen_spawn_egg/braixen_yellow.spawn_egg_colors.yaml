@@ -1,0 +1,47 @@
+version: 1
+source_png: src/main/resources/assets/productivefoxes/vixen_maid/ccpl/braixen_yellow.png
+method: HSL hue buckets, alpha/saturation/lightness weighted RGB average
+classification_rules:
+  transparent: alpha < 16
+  dark_outline: lightness < 0.14
+  neutral: saturation < 0.15
+  orange: 0 <= hue < 25 and saturation >= 0.45 and lightness >= 0.25
+  yellow: 40 <= hue <= 72 and saturation >= 0.35 and lightness >= 0.25
+  other: anything else
+  weight: alpha/255 * (0.5 + saturation) * (0.5 + lightness)
+width: 128
+height: 64
+class_counts:
+  neutral: 1438
+  orange: 1125
+  other: 1734
+  transparent: 2474
+  yellow: 1421
+bucket_color_counts:
+  yellow:
+    '#DDC16CFF': 458
+    '#ECD979FF': 437
+    '#CEAD61FF': 433
+    '#FBF187FF': 93
+  orange:
+    '#C5392FFF': 284
+    '#D44C36FF': 279
+    '#B62A28FF': 265
+    '#E3603DFF': 212
+    '#F27745FF': 42
+    '#C84732FF': 16
+    '#D75A39FF': 10
+    '#D44B35FF': 9
+    '#C5382EFF': 3
+    '#F27645FF': 3
+    '#E66F41FF': 2
+chosen_colors:
+  yellow:
+    hex: '#E1C870'
+    decimal: 14796912
+    pixel_count: 1421
+  orange:
+    hex: '#CF4734'
+    decimal: 13584180
+    pixel_count: 1125
+java: properties -> new DeferredSpawnEggItem(ProductiveFoxesEntities.BRAIXEN, 14796912, 13584180, properties)
