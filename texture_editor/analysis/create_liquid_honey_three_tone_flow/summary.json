@@ -1,0 +1,1970 @@
+{
+  "source": "texture_editor/create_liquid_honey/honey_flow.png",
+  "size": {
+    "width": 32,
+    "height": 1024
+  },
+  "visible_pixels": 32768,
+  "unique_visible_colors": 50,
+  "sorted_palette_by_luma": [
+    {
+      "hex": "#E48D12",
+      "rgba": "#E48D12FF",
+      "rgb": [
+        228,
+        141,
+        18
+      ],
+      "count": 80,
+      "luma": 150.6156
+    },
+    {
+      "hex": "#E48D13",
+      "rgba": "#E48D13FF",
+      "rgb": [
+        228,
+        141,
+        19
+      ],
+      "count": 1040,
+      "luma": 150.6878
+    },
+    {
+      "hex": "#E48E13",
+      "rgba": "#E48E13FF",
+      "rgb": [
+        228,
+        142,
+        19
+      ],
+      "count": 728,
+      "luma": 151.403
+    },
+    {
+      "hex": "#E58E13",
+      "rgba": "#E58E13FF",
+      "rgb": [
+        229,
+        142,
+        19
+      ],
+      "count": 600,
+      "luma": 151.6156
+    },
+    {
+      "hex": "#E58E14",
+      "rgba": "#E58E14FF",
+      "rgb": [
+        229,
+        142,
+        20
+      ],
+      "count": 304,
+      "luma": 151.6878
+    },
+    {
+      "hex": "#E5971D",
+      "rgba": "#E5971DFF",
+      "rgb": [
+        229,
+        151,
+        29
+      ],
+      "count": 680,
+      "luma": 158.7744
+    },
+    {
+      "hex": "#E6971D",
+      "rgba": "#E6971DFF",
+      "rgb": [
+        230,
+        151,
+        29
+      ],
+      "count": 40,
+      "luma": 158.987
+    },
+    {
+      "hex": "#E6971E",
+      "rgba": "#E6971EFF",
+      "rgb": [
+        230,
+        151,
+        30
+      ],
+      "count": 2136,
+      "luma": 159.0592
+    },
+    {
+      "hex": "#E6981E",
+      "rgba": "#E6981EFF",
+      "rgb": [
+        230,
+        152,
+        30
+      ],
+      "count": 2816,
+      "luma": 159.7744
+    },
+    {
+      "hex": "#E7981E",
+      "rgba": "#E7981EFF",
+      "rgb": [
+        231,
+        152,
+        30
+      ],
+      "count": 112,
+      "luma": 159.987
+    },
+    {
+      "hex": "#E7981F",
+      "rgba": "#E7981FFF",
+      "rgb": [
+        231,
+        152,
+        31
+      ],
+      "count": 136,
+      "luma": 160.0592
+    },
+    {
+      "hex": "#E79F25",
+      "rgba": "#E79F25FF",
+      "rgb": [
+        231,
+        159,
+        37
+      ],
+      "count": 208,
+      "luma": 165.4988
+    },
+    {
+      "hex": "#E7A025",
+      "rgba": "#E7A025FF",
+      "rgb": [
+        231,
+        160,
+        37
+      ],
+      "count": 384,
+      "luma": 166.214
+    },
+    {
+      "hex": "#E8A025",
+      "rgba": "#E8A025FF",
+      "rgb": [
+        232,
+        160,
+        37
+      ],
+      "count": 168,
+      "luma": 166.4266
+    },
+    {
+      "hex": "#E8A026",
+      "rgba": "#E8A026FF",
+      "rgb": [
+        232,
+        160,
+        38
+      ],
+      "count": 96,
+      "luma": 166.4988
+    },
+    {
+      "hex": "#E7A227",
+      "rgba": "#E7A227FF",
+      "rgb": [
+        231,
+        162,
+        39
+      ],
+      "count": 1312,
+      "luma": 167.7888
+    },
+    {
+      "hex": "#E7A327",
+      "rgba": "#E7A327FF",
+      "rgb": [
+        231,
+        163,
+        39
+      ],
+      "count": 352,
+      "luma": 168.504
+    },
+    {
+      "hex": "#E8A327",
+      "rgba": "#E8A327FF",
+      "rgb": [
+        232,
+        163,
+        39
+      ],
+      "count": 968,
+      "luma": 168.7166
+    },
+    {
+      "hex": "#E8A328",
+      "rgba": "#E8A328FF",
+      "rgb": [
+        232,
+        163,
+        40
+      ],
+      "count": 3344,
+      "luma": 168.7888
+    },
+    {
+      "hex": "#E9AD2E",
+      "rgba": "#E9AD2EFF",
+      "rgb": [
+        233,
+        173,
+        46
+      ],
+      "count": 80,
+      "luma": 176.5866
+    },
+    {
+      "hex": "#E9AD2F",
+      "rgba": "#E9AD2FFF",
+      "rgb": [
+        233,
+        173,
+        47
+      ],
+      "count": 2528,
+      "luma": 176.6588
+    },
+    {
+      "hex": "#E9AE2F",
+      "rgba": "#E9AE2FFF",
+      "rgb": [
+        233,
+        174,
+        47
+      ],
+      "count": 616,
+      "luma": 177.374
+    },
+    {
+      "hex": "#EAAE2F",
+      "rgba": "#EAAE2FFF",
+      "rgb": [
+        234,
+        174,
+        47
+      ],
+      "count": 2320,
+      "luma": 177.5866
+    },
+    {
+      "hex": "#EAAE30",
+      "rgba": "#EAAE30FF",
+      "rgb": [
+        234,
+        174,
+        48
+      ],
+      "count": 1312,
+      "luma": 177.6588
+    },
+    {
+      "hex": "#EAB231",
+      "rgba": "#EAB231FF",
+      "rgb": [
+        234,
+        178,
+        49
+      ],
+      "count": 56,
+      "luma": 180.5918
+    },
+    {
+      "hex": "#EAB232",
+      "rgba": "#EAB232FF",
+      "rgb": [
+        234,
+        178,
+        50
+      ],
+      "count": 504,
+      "luma": 180.664
+    },
+    {
+      "hex": "#EBB232",
+      "rgba": "#EBB232FF",
+      "rgb": [
+        235,
+        178,
+        50
+      ],
+      "count": 224,
+      "luma": 180.8766
+    },
+    {
+      "hex": "#EBB332",
+      "rgba": "#EBB332FF",
+      "rgb": [
+        235,
+        179,
+        50
+      ],
+      "count": 64,
+      "luma": 181.5918
+    },
+    {
+      "hex": "#EAB734",
+      "rgba": "#EAB734FF",
+      "rgb": [
+        234,
+        183,
+        52
+      ],
+      "count": 224,
+      "luma": 184.3844
+    },
+    {
+      "hex": "#EBB734",
+      "rgba": "#EBB734FF",
+      "rgb": [
+        235,
+        183,
+        52
+      ],
+      "count": 248,
+      "luma": 184.597
+    },
+    {
+      "hex": "#EBB735",
+      "rgba": "#EBB735FF",
+      "rgb": [
+        235,
+        183,
+        53
+      ],
+      "count": 1728,
+      "luma": 184.6692
+    },
+    {
+      "hex": "#EBB835",
+      "rgba": "#EBB835FF",
+      "rgb": [
+        235,
+        184,
+        53
+      ],
+      "count": 3096,
+      "luma": 185.3844
+    },
+    {
+      "hex": "#ECB835",
+      "rgba": "#ECB835FF",
+      "rgb": [
+        236,
+        184,
+        53
+      ],
+      "count": 368,
+      "luma": 185.597
+    },
+    {
+      "hex": "#ECB836",
+      "rgba": "#ECB836FF",
+      "rgb": [
+        236,
+        184,
+        54
+      ],
+      "count": 376,
+      "luma": 185.6692
+    },
+    {
+      "hex": "#EBB935",
+      "rgba": "#EBB935FF",
+      "rgb": [
+        235,
+        185,
+        53
+      ],
+      "count": 88,
+      "luma": 186.0996
+    },
+    {
+      "hex": "#EBBA36",
+      "rgba": "#EBBA36FF",
+      "rgb": [
+        235,
+        186,
+        54
+      ],
+      "count": 360,
+      "luma": 186.887
+    },
+    {
+      "hex": "#ECBA36",
+      "rgba": "#ECBA36FF",
+      "rgb": [
+        236,
+        186,
+        54
+      ],
+      "count": 496,
+      "luma": 187.0996
+    },
+    {
+      "hex": "#EBBC36",
+      "rgba": "#EBBC36FF",
+      "rgb": [
+        235,
+        188,
+        54
+      ],
+      "count": 328,
+      "luma": 188.3174
+    },
+    {
+      "hex": "#ECBC37",
+      "rgba": "#ECBC37FF",
+      "rgb": [
+        236,
+        188,
+        55
+      ],
+      "count": 160,
+      "luma": 188.6022
+    },
+    {
+      "hex": "#ECBD37",
+      "rgba": "#ECBD37FF",
+      "rgb": [
+        236,
+        189,
+        55
+      ],
+      "count": 408,
+      "luma": 189.3174
+    },
+    {
+      "hex": "#E7C473",
+      "rgba": "#E7C473FF",
+      "rgb": [
+        231,
+        196,
+        115
+      ],
+      "count": 16,
+      "luma": 197.5928
+    },
+    {
+      "hex": "#E8C473",
+      "rgba": "#E8C473FF",
+      "rgb": [
+        232,
+        196,
+        115
+      ],
+      "count": 144,
+      "luma": 197.8054
+    },
+    {
+      "hex": "#E8C474",
+      "rgba": "#E8C474FF",
+      "rgb": [
+        232,
+        196,
+        116
+      ],
+      "count": 232,
+      "luma": 197.8776
+    },
+    {
+      "hex": "#E8C574",
+      "rgba": "#E8C574FF",
+      "rgb": [
+        232,
+        197,
+        116
+      ],
+      "count": 688,
+      "luma": 198.5928
+    },
+    {
+      "hex": "#E9C574",
+      "rgba": "#E9C574FF",
+      "rgb": [
+        233,
+        197,
+        116
+      ],
+      "count": 336,
+      "luma": 198.8054
+    },
+    {
+      "hex": "#E9C575",
+      "rgba": "#E9C575FF",
+      "rgb": [
+        233,
+        197,
+        117
+      ],
+      "count": 48,
+      "luma": 198.8776
+    },
+    {
+      "hex": "#E8C674",
+      "rgba": "#E8C674FF",
+      "rgb": [
+        232,
+        198,
+        116
+      ],
+      "count": 24,
+      "luma": 199.308
+    },
+    {
+      "hex": "#E8C774",
+      "rgba": "#E8C774FF",
+      "rgb": [
+        232,
+        199,
+        116
+      ],
+      "count": 72,
+      "luma": 200.0232
+    },
+    {
+      "hex": "#E9C774",
+      "rgba": "#E9C774FF",
+      "rgb": [
+        233,
+        199,
+        116
+      ],
+      "count": 80,
+      "luma": 200.2358
+    },
+    {
+      "hex": "#E9C775",
+      "rgba": "#E9C775FF",
+      "rgb": [
+        233,
+        199,
+        117
+      ],
+      "count": 40,
+      "luma": 200.308
+    }
+  ],
+  "selected_anchors": {
+    "dark": {
+      "rgb": [
+        228,
+        141,
+        18
+      ],
+      "hex": "#E48D12",
+      "luma": 150.6156
+    },
+    "medium": {
+      "rgb": [
+        234,
+        178,
+        49
+      ],
+      "hex": "#EAB231",
+      "luma": 180.5918
+    },
+    "light": {
+      "rgb": [
+        233,
+        199,
+        117
+      ],
+      "hex": "#E9C775",
+      "luma": 200.308
+    },
+    "note": "automatic selection: dark is the leftmost color by luma, light is the rightmost color by luma, and medium is the lower median palette entry so the choice remains an actual source color when the palette count is even"
+  },
+  "minecraft_layer_model": {
+    "intent": "layer0 dark mask tinted dark, layer1 medium mask tinted medium, layer2 light mask tinted light",
+    "blend_order": "dark bottom, medium over dark, light over medium",
+    "compatibility_note": "This matches the standard alpha-over behavior used by layered item models. A normal fluid sprite has one tint; using three fluid-sprite colors would need a custom renderer, generated baked texture, or another modded rendering hook."
+  },
+  "class_grid_legend": {
+    ".": "transparent",
+    "D": "mostly dark",
+    "d": "dark/medium blend",
+    "M": "mostly medium",
+    "l": "medium/light blend",
+    "L": "mostly light"
+  },
+  "class_grid": "MMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMLMddLMMMMMMMMMMMLMddLMM\nLLMMMMMMLMdDDdLLLLMMMMMMLMdDDdLL\nMMMLLLLLLdDddDdMMMMLLLLLLdDddDdM\nDddMMMLLMdddddDDDddMMMLLMdddddDD\nddDDdMMMMDddddddddDDdMMMMDdddddd\nddddDddMMDddddddddddDddMMDdddddd\ndddddDDddDdddMdddddddDDddDdddMdd\ndddddddDDddddddddddddddDDddddddd\ndddddMddddddMddddddddMddddddMddd\nMMMMMdddddddMdddMMMMMdddddddMddd\nMMMMMMdMddMMMMMdMMMMMMdMddMMMMMd\nMMMMMMMddMMMMMdMMMMMMMMddMMMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMLMddLMMMMMMMMMMMLMddLMM\nLLMMMMMMLMdDDdLLLLMMMMMMLMdDDdLL\nMMMLLLLLLdDddDdMMMMLLLLLLdDddDdM\nDddMMMLLMdddddDDDddMMMLLMdddddDD\nddDDdMMMMDddddddddDDdMMMMDdddddd\nddddDddMMDddddddddddDddMMDdddddd\ndddddDDddDdddMdddddddDDddDdddMdd\ndddddddDDddddddddddddddDDddddddd\ndddddMddddddMddddddddMddddddMddd\nMMMMMdddddddMdddMMMMMdddddddMddd\nMMMMMMdMddMMMMMdMMMMMMdMddMMMMMd\nMMMMMMMddMMMMMdMMMMMMMMddMMMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMLMddLMMMMMMMMMMMLMddLMM\nLLMMMMMMMLdDDdLLLLMMMMMMMLdDDdLL\ndMMLLMMMMMDddDdMdMMLLMMMMMDddDdM\nDddMMLMMLMDdddDDDddMMLMMLMDdddDD\nddDDMMLLLdDdddddddDDMMLLLdDddddd\nddddDdMMMdddddddddddDdMMMddddddd\ndddddDDdMDdddddddddddDDdMDdddddd\ndddddddDDDddMddddddddddDDDddMddd\ndMddMdddddddMddddMddMdddddddMddd\ndMMMddddddMdMMMddMMMddddddMdMMMd\nMMMMMMdddMdMMdddMMMMMMdddMdMMddd\nMMMMMMMdddMMMdMdMMMMMMMdddMMMdMd\nMMMMMMMMMMMMMMdMMMMMMMMMMMMMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMLMddLMMMMMMMMMMMLMddLMM\nLLMMMMMMMLdDDdLLLLMMMMMMMLdDDdLL\ndMMLLMMMMMDddDdMdMMLLMMMMMDddDdM\nDddMMLMMLMDdddDDDddMMLMMLMDdddDD\nddDDMMLLLdDdddddddDDMMLLLdDddddd\nddddDdMMMdddddddddddDdMMMddddddd\ndddddDDdMDdddddddddddDDdMDdddddd\ndddddddDDDddMddddddddddDDDddMddd\ndMddMdddddddMddddMddMdddddddMddd\ndMMMddddddMdMMMddMMMddddddMdMMMd\nMMMMMMdddMdMMdddMMMMMMdddMdMMddd\nMMMMMMMdddMMMdMdMMMMMMMdddMMMdMd\nMMMMMMMMMMMMMMdMMMMMMMMMMMMMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMLMMMMMMMLMDDdMLMLMMMMMMMLMDDdML\ndMMLMMMMMLdDdDMMdMMLMMMMMLdDdDMM\nDDdMMLMMMMdddDDDDDdMMLMMMMdddDDD\nddDDdMLMLMDdddDdddDDdMLMLMDdddDd\nddddDDMMMdDdddddddddDDMMMdDddddd\nddddddDdMdddddddddddddDdMddddddd\ndMdddddDDDddMddddMdddddDDDddMddd\nddddddddddddMdddddddddddddddMddd\ndddMdddddddddddddddMdddddddddddd\ndMMMMMdddddMMdMddMMMMMdddddMMdMd\nMMMMMMMdddMMMdddMMMMMMMdddMMMddd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMLMMMMMMMLMDDdMLMLMMMMMMMLMDDdML\ndMMLMMMMMLdDdDMMdMMLMMMMMLdDdDMM\nDDdMMLMMMMdddDDDDDdMMLMMMMdddDDD\nddDDdMLMLMDdddDdddDDdMLMLMDdddDd\nddddDDMMMdDdddddddddDDMMMdDddddd\nddddddDdMdddddddddddddDdMddddddd\ndMdddddDDDddMddddMdddddDDDddMddd\nddddddddddddMdddddddddddddddMddd\ndddMdddddddddddddddMdddddddddddd\ndMMMMMdddddMMdMddMMMMMdddddMMdMd\nMMMMMMMdddMMMdddMMMMMMMdddMMMddd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMMMMdMMMMMMMMMMMMMMMdMMM\nMLLMMMMMMMMDDdMMMLLMMMMMMMMDDdMM\nddMMLMMMMMMDDDddddMMLMMMMMMDDDdd\nDDddMLMMMLdDdDDDDDddMLMMMLdDdDDD\ndddDdMMMMMddddDDdddDdMMMMMddddDD\ndddddDdMMMDddddddddddDdMMMDddddd\nddddddDMddddddddddddddDMdddddddd\ndddddddDDDdddddddddddddDDDdddddd\ndddddddddddddddddddddddddddddddd\nddddMdddddddMdddddddMdddddddMddd\ndddMMMdddddMMddddddMMMdddddMMddd\nddMMMMMddMMMMdddddMMMMMddMMMMddd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMMMMdMMMMMMMMMMMMMMMdMMM\nMLLMMMMMMMMDDdMMMLLMMMMMMMMDDdMM\nddMMLMMMMMMDDDddddMMLMMMMMMDDDdd\nDDddMLMMMLdDdDDDDDddMLMMMLdDdDDD\ndddDdMMMMMddddDDdddDdMMMMMddddDD\ndddddDdMMMDddddddddddDdMMMDddddd\nddddddDMddddddddddddddDMdddddddd\ndddddddDDDdddddddddddddDDDdddddd\ndddddddddddddddddddddddddddddddd\nddddMdddddddMdddddddMdddddddMddd\ndddMMMdddddMMddddddMMMdddddMMddd\nddMMMMMddMMMMdddddMMMMMddMMMMddd\ndMdMMMdddMMMMMdddMdMMMdddMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMM\nLMMMMMMMMMLMdMLMLMMMMMMMMMLMdMLM\nMMLMMMMMMMMdDdMMMMLMMMMMMMMdDdMM\nDddMLMMMMMMDDdddDddMLMMMMMMDDddd\nDDDddMMMMLMDDDdDDDDddMMMMLMDDDdD\nddddDMMLMMdDdDDDddddDMMLMMdDdDDD\ndddddDdMMMDdddDddddddDdMMMDdddDd\nddddddDDdDddddddddddddDDdDdddddd\nddddddddDdddddddddddddddDddddddd\nddddMdddddddMdddddddMdddddddMddd\ndddMdddddddddddddddMdddddddddddd\ndddddMddddMMMddddddddMddddMMMddd\ndMdMMMdddMMMMMdddMdMMMdddMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMM\nLMMMMMMMMMLMdMLMLMMMMMMMMMLMdMLM\nMMLMMMMMMMMdDdMMMMLMMMMMMMMdDdMM\nDddMLMMMMMMDDdddDddMLMMMMMMDDddd\nDDDddMMMMLMDDDdDDDDddMMMMLMDDDdD\nddddDMMLMMdDdDDDddddDMMLMMdDdDDD\ndddddDdMMMDdddDddddddDdMMMDdddDd\nddddddDDdDddddddddddddDDdDdddddd\nddddddddDdddddddddddddddDddddddd\nddddMdddddddMdddddddMdddddddMddd\ndddMdddddddddddddddMdddddddddddd\ndddddMddddMMMddddddddMddddMMMddd\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nMMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMM\nMLMMMMMMMMLMdMLLMLMMMMMMMMLMdMLL\ndMMLMMMMMMLddMMMdMMLMMMMMMLddMMM\nDDdMMLMMMMMdDdMdDDdMMLMMMMMdDdMd\nDDDDdMLMMLMDDDdDDDDDdMLMMLMDDDdD\nddddDDMLLMdDdDdDddddDDMLLMdDdDdD\nddddddDMMdDddDDDddddddDMMdDddDDD\ndddddddDDDddddDddddddddDDDddddDd\nddddMdddddddddddddddMddddddddddd\ndddMdddddddddddddddMdddddddddddd\ndddddMdddddMdddddddddMdddddMdddd\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nMMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMM\nMLMMMMMMMMLMdMLLMLMMMMMMMMLMdMLL\ndMMLMMMMMMLddMMMdMMLMMMMMMLddMMM\nDDdMMLMMMMMdDdMdDDdMMLMMMMMdDdMd\nDDDDdMLMMLMDDDdDDDDDdMLMMLMDDDdD\nddddDDMLLMdDdDdDddddDDMLLMdDdDdD\nddddddDMMdDddDDDddddddDMMdDddDDD\ndddddddDDDddddDddddddddDDDddddDd\nddddMdddddddddddddddMddddddddddd\ndddMdddddddddddddddMdddddddddddd\ndddddMdddddMdddddddddMdddddMdddd\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMddddddddMMMMMMdMddddddddMMMMMMd\nMMMMMMddMMMMMMMMMMMMMMddMMMMMMMM\nMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nLMMMMMMMMMMMMLMMLMMMMMMMMMMMMLMM\nMMLMMMMMMMMMdMLLMMLMMMMMMMMMdMLL\nddMMLMMMMMLMdMMMddMMLMMMMMLMdMMM\nDDDdMLMMMMMdDdMdDDDdMLMMMMMdDdMd\nDddDDdMMMLMDDdddDddDDdMMMLMDDddd\ndddddDdMMMdDDDdDdddddDdMMMdDDDdD\nddddddDdddDddDDDddddddDdddDddDDD\nddddddddDdddddDDddddddddDdddddDD\ndddMdddddddddddddddMdddddddddddd\ndddddMdddddddddddddddMdddddddddd\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMddddddddMMMMMMdMddddddddMMMMMMd\nMMMMMMddMMMMMMMMMMMMMMddMMMMMMMM\nMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nLMMMMMMMMMMMMLMMLMMMMMMMMMMMMLMM\nMMLMMMMMMMMMdMLLMMLMMMMMMMMMdMLL\nddMMLMMMMMLMdMMMddMMLMMMMMLMdMMM\nDDDdMLMMMMMdDdMdDDDdMLMMMMMdDdMd\nDddDDdMMMLMDDdddDddDDdMMMLMDDddd\ndddddDdMMMdDDDdDdddddDdMMMdDDDdD\nddddddDdddDddDDDddddddDdddDddDDD\nddddddddDdddddDDddddddddDdddddDD\ndddMdddddddddddddddMdddddddddddd\ndddddMdddddddddddddddMdddddddddd\nddddMddddddMMdddddddMddddddMMddd\ndddddddMdMMMMddddddddddMdMMMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMdddMdddMMMMMMMMMdddMdddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMdMMMMLMMMMMMMMMMdMMMMLMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nLLMMMMMMMMMLMLMMLLMMMMMMMMMLMLMM\nMMMLMMMMMMMMMMLMMMMLMMMMMMMMMMLM\ndddMMLMMMMLMMMMMdddMMLMMMMLMMMMM\nDDDDMMLMMMMddMMdDDDDMMLMMMMddMMd\nDDddDdMLLMMDDMMdDDddDdMLLMMDDMMd\nddddddDdMMDDDDddddddddDdMMDDDDdd\ndddddddDDDdddDDDdddddddDDDdddDDD\nddddddddddddddDDddddddddddddddDD\ndddddMdddddddddddddddMdddddddddd\nddddMddddddMMdddddddMddddddMMddd\ndddddddMdMMMMddddddddddMdMMMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMdddMdddMMMMMMMMMdddMdddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMdMMMMLMMMMMMMMMMdMMMMLMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nLLMMMMMMMMMLMLMMLLMMMMMMMMMLMLMM\nMMMLMMMMMMMMMMLMMMMLMMMMMMMMMMLM\ndddMMLMMMMLMMMMMdddMMLMMMMLMMMMM\nDDDDMMLMMMMddMMdDDDDMMLMMMMddMMd\nDDddDdMLLMMDDMMdDDddDdMLLMMDDMMd\nddddddDdMMDDDDddddddddDdMMDDDDdd\ndddddddDDDdddDDDdddddddDDDdddDDD\nddddddddddddddDDddddddddddddddDD\ndddddMdddddddddddddddMdddddddddd\nddddddddddddMdddddddddddddddMddd\ndddddddddMMMMddddddddddddMMMMddd\nddddddddddMMMMddddddddddddMMMMdd\ndddddMdddMMMMMMddddddMdddMMMMMMd\nMMMddMdddMMMMMMMMMMddMdddMMMMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMMdMMMMLMMMMMMMMMMdMMMMLMMM\nMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMM\nMLLMMMMMMMMLMLMLMLLMMMMMMMMLMLML\nMMMMLMMMMMMMMLLLMMMMLMMMMMMMMLLL\nddddMLMMMMLMMMLMddddMLMMMMLMMMLM\nDDDDDdMMMLMddMMMDDDDDdMMMLMddMMM\nDDddDDdMMMdDDdMdDDddDDdMMMdDDdMd\nDdddddDdddDddDMdDdddddDdddDddDMd\ndddddddDDddddDDDdddddddDDddddDDD\nddddddddddddddDDddddddddddddddDD\nddddddddddddMdddddddddddddddMddd\ndddddddddMMMMddddddddddddMMMMddd\nddddddddddMMMMddddddddddddMMMMdd\ndddddMdddMMMMMMddddddMdddMMMMMMd\nMMMddMdddMMMMMMMMMMddMdddMMMMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMMdMMMMLMMMMMMMMMMdMMMMLMMM\nMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMM\nMLLMMMMMMMMLMLMLMLLMMMMMMMMLMLML\nMMMMLMMMMMMMMLLLMMMMLMMMMMMMMLLL\nddddMLMMMMLMMMLMddddMLMMMMLMMMLM\nDDDDDdMMMLMddMMMDDDDDdMMMLMddMMM\nDDddDDdMMMdDDdMdDDddDDdMMMdDDdMd\nDdddddDdddDddDMdDdddddDdddDddDMd\ndddddddDDddddDDDdddddddDDddddDDD\nddddddddddddddDDddddddddddddddDD\nddddddddddddMdddddddddddddddMddd\ndddddddddMMMdddddddddddddMMMdddd\nddddddddddMMMdddddddddddddMMMddd\ndddddMddddMMMMdddddddMddddMMMMdd\nMMdddMdddMMMMMMMMMdddMdddMMMMMMM\nMMMMdddddMMMMMMMMMMMdddddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nLLMMMMMMMMMMLMMMLLMMMMMMMMMMLMMM\nMMMLMMMMMMMLMLMLMMMLMMMMMMMLMLML\nMMdMMLMMMMMMMLMLMMdMMLMMMMMMMLML\ndddddMLMMMLMMMLMdddddMLMMMLMMMLM\ndDDDDdMLLLMddMMMdDDDDdMLLLMddMMM\nDDDddDDdMdDDDdMdDDDddDDdMdDDDdMd\nDDddddDDDDdddDddDDddddDDDDdddDdd\nddddddddddddddDDddddddddddddddDD\nddddddddddddMdddddddddddddddMddd\ndddddddddMMMdddddddddddddMMMdddd\nddddddddddMMMdddddddddddddMMMddd\ndddddMddddMMMMdddddddMddddMMMMdd\nMMdddMdddMMMMMMMMMdddMdddMMMMMMM\nMMMMdddddMMMMMMMMMMMdddddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nLLMMMMMMMMMMLMMMLLMMMMMMMMMMLMMM\nMMMLMMMMMMMLMLMLMMMLMMMMMMMLMLML\nMMdMMLMMMMMMMLMLMMdMMLMMMMMMMLML\ndddddMLMMMLMMMLMdddddMLMMMLMMMLM\ndDDDDdMLLLMddMMMdDDDDdMLLLMddMMM\nDDDddDDdMdDDDdMdDDDddDDdMdDDDdMd\nDDddddDDDDdddDddDDddddDDDDdddDdd\nddddddddddddddDDddddddddddddddDD\nddddddddddddMdDDddddddddddddMdDD\nddddddddddMdddddddddddddddMddddd\ndddddddddddMMddddddddddddddMMddd\nddddddddddMMMMddddddddddddMMMMdd\ndddddMdddMMMMMMddddddMdddMMMMMMd\nMMMdddddddMMMMMMMMMdddddddMMMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLLMMMMMMMMMLMMMLLLMMMMMMMMMLMMM\nMMMMLMMMMMMLLMMMMMMMLMMMMMMLLMMM\nMMddMLMMMMMMMLMLMMddMLMMMMMMMLML\ndddDddMMMMMMdMLLdddDddMMMMMMdMLL\ndDDDDDdMMMdDDMMMdDDDDDdMMMdDDMMM\nDDDddDDdddDdddMMDDDddDDdddDdddMM\nDDdddddDDddddDddDDdddddDDddddDdd\nddddddddddddMdDDddddddddddddMdDD\nddddddddddMdddddddddddddddMddddd\ndddddddddddMMddddddddddddddMMddd\nddddddddddMMMMddddddddddddMMMMdd\ndddddMdddMMMMMMddddddMdddMMMMMMd\nMMMdddddddMMMMMMMMMdddddddMMMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLLMMMMMMMMMLMMMLLLMMMMMMMMMLMMM\nMMMMLMMMMMMLLMMMMMMMLMMMMMMLLMMM\nMMddMLMMMMMMMLMLMMddMLMMMMMMMLML\ndddDddMMMMMMdMLLdddDddMMMMMMdMLL\ndDDDDDdMMMdDDMMMdDDDDDdMMMdDDMMM\nDDDddDDdddDdddMMDDDddDDdddDdddMM\nDDdddddDDddddDddDDdddddDDddddDdd\nDDDdddDDDdddddDdDDDdddDDDdddddDd\nddddddddddMddddDddddddddddMddddD\ndddddddddddddddddddddddddddddddd\ndddddddddddMMddddddddddddddMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMddddddddMMMMMMMMddddddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLLLMMMMMMMMMMMMLLLLMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMddMMLMMMLMMLMMMMddMMLMMMLMMLMM\nMdddddMLLLMdMMLLMdddddMLLLMdMMLL\nddDDDDdMMdDDDMMMddDDDDdMMdDDDMMM\ndDDDDDDddDdddDMMdDDDDDDddDdddDMM\nDDDdddDDDdddddDdDDDdddDDDdddddDd\nddddddddddMddddDddddddddddMddddD\ndddddddddddddddddddddddddddddddd\ndddddddddddMMddddddddddddddMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMddddddddMMMMMMMMddddddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLLLMMMMMMMMMMMMLLLLMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMddMMLMMMLMMLMMMMddMMLMMMLMMLMM\nMdddddMLLLMdMMLLMdddddMLLLMdMMLL\nddDDDDdMMdDDDMMMddDDDDdMMdDDDMMM\ndDDDDDDddDdddDMMdDDDDDDddDdddDMM\nddDDDDDdDDdddDddddDDDDDdDDdddDdd\nDDDDDDDDDdddddDDDDDDDDDDDdddddDD\ndddddddDdddddddddddddddDdddddddd\ndddddddddddMMddddddddddddddMMddd\ndddddddddMdMMddddddddddddMdMMddd\ndddddddddddMMMMddddddddddddMMMMd\nMMMdMdddddMMMMMMMMMdMdddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMMddMdMMMMMMMMMMMMddMdMMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMLLLMMMMMMMMMMMMMLLLMMMMMMMMMMMM\nLMMMMLMMMMMLLMMMLMMMMLMMMMMLLMMM\nMMMdMMLMMMLMMLMMMMMdMMLMMMLMMLMM\nMMddddMMLMdddMMLMMddddMMLMdddMML\ndddDDDddMdDdDdMMdddDDDddMdDdDdMM\nddDDDDDdDDdddDddddDDDDDdDDdddDdd\nDDDDDDDDDdddddDDDDDDDDDDDdddddDD\ndddddddDdddddddddddddddDdddddddd\ndddddddddddMMddddddddddddddMMddd\ndddddddddMdMMddddddddddddMdMMddd\ndddddddddddMMMMddddddddddddMMMMd\nMMMdMdddddMMMMMMMMMdMdddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMMddMdMMMMMMMMMMMMddMdMMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMLLLMMMMMMMMMMMMMLLLMMMMMMMMMMMM\nLMMMMLMMMMMLLMMMLMMMMLMMMMMLLMMM\nMMMdMMLMMMLMMLMMMMMdMMLMMMLMMLMM\nMMddddMMLMdddMMLMMddddMMLMdddMML\ndddDDDddMdDdDdMMdddDDDddMdDdDdMM\nMMdddddMdDDdddMMMMdddddMdDDdddMM\nddddDDdddDdddDddddddDDdddDdddDdd\nDDDDDDDDDdddddDDDDDDDDDDDdddddDD\nddddDDDDDdddddddddddDDDDDddddddd\ndddddddDdddMMddddddddddDdddMMddd\ndddddddddddMMdMddddddddddddMMdMd\nMdddMddddddMMMddMdddMddddddMMMdd\nMMMddddddddMMMMMMMMddddddddMMMMM\nMMMMMdddMdMMMMMMMMMMMdddMdMMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMLLLMMMMMMMMMMMMMLLLMMMMMMMMMMM\nMLMMMLMMMMMLLMMMMLMMMLMMMMMLLMMM\nLMMMMMMMMLMMMLMMLMMMMMMMMLMMMLMM\nMMMddMMMMMdDDMLLMMMddMMMMMdDDMLL\nMMdddddMdDDdddMMMMdddddMdDDdddMM\nddddDDdddDdddDddddddDDdddDdddDdd\nDDDDDDDDDdddddDDDDDDDDDDDdddddDD\nddddDDDDDdddddddddddDDDDDddddddd\ndddddddDdddMMddddddddddDdddMMddd\ndddddddddddMMdMddddddddddddMMdMd\nMdddMddddddMMMddMdddMddddddMMMdd\nMMMddddddddMMMMMMMMddddddddMMMMM\nMMMMMdddMdMMMMMMMMMMMdddMdMMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMLLLMMMMMMMMMMMMMLLLMMMMMMMMMMM\nMLMMMLMMMMMLLMMMMLMMMLMMMMMLLMMM\nLMMMMMMMMLMMMLMMLMMMMMMMMLMMMLMM\nMMMddMMMMMdDDMLLMMMddMMMMMdDDMLL\nLMMMMMMMMMDDDMLLLMMMMMMMMMDDDMLL\nMMMMMMMMMDdddDMMMMMMMMMMMDdddDMM\nDddddddddDddddDdDddddddddDddddDd\ndDDDDdddDddddddDdDDDDdddDddddddD\nddddDDDDDddMddddddddDDDDDddMdddd\nddddddDDDddMMdMdddddddDDDddMMdMd\ndddddddDdddMMddddddddddDdddMMddd\nMMdddddddddMMMddMMdddddddddMMMdd\nMMMMdddddddMMMMMMMMMdddddddMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMLMMMMMMMMMMMMMMMLMMMMMMMMMMMM\nMMLLLLMMMMLMLMMMMMLLLLMMMMLMLMMM\nLLLMMMLLMLMddLMMLLLMMMLLMLMddLMM\nLMMMMMMMMMDDDMLLLMMMMMMMMMDDDMLL\nMMMMMMMMMDdddDMMMMMMMMMMMDdddDMM\nDddddddddDddddDdDddddddddDddddDd\ndDDDDdddDddddddDdDDDDdddDddddddD\nddddDDDDDddMddddddddDDDDDddMdddd\nddddddDDDddMMdMdddddddDDDddMMdMd\ndddddddDdddMMddddddddddDdddMMddd\nMMdddddddddMMMddMMdddddddddMMMdd\nMMMMdddddddMMMMMMMMMdddddddMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMLMMMMMMMMMMMMMMMLMMMMMMMMMMMM\nMMLLLLMMMMLMLMMMMMLLLLMMMMLMLMMM\nLLLMMMLLMLMddLMMLLLMMMLLMLMddLMM\nMMMLLLLMMMMdMLMMMMMLLLLMMMMdMLMM\nLLLLMLLLLMDDDMLLLLLLMLLLLMDDDMLL\nMMMMMMMMMddddDMMMMMMMMMMMddddDMM\nDdddMMMMMDddddDdDdddMMMMMDddddDd\ndDDDdMdMdDdMdddddDDDdMdMdDdMdddd\nddddDDdddddMddddddddDDdddddMdddd\nddddddDdDdddddddddddddDdDddddddd\ndddddddDDdddMMdddddddddDDdddMMdd\nMMddddddddddMdddMMddddddddddMddd\nMMMMdMdddddMMMdMMMMMdMdddddMMMdM\nMMMMMMdMdddMMMMMMMMMMMdMdddMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMLLLLMMMMdMLMMMMMLLLLMMMMdMLMM\nLLLLMLLLLMDDDMLLLLLLMLLLLMDDDMLL\nMMMMMMMMMddddDMMMMMMMMMMMddddDMM\nDdddMMMMMDddddDdDdddMMMMMDddddDd\ndDDDdMdMdDdMdddddDDDdMdMdDdMdddd\nddddDDdddddMddddddddDDdddddMdddd\nddddddDdDdddddddddddddDdDddddddd\ndddddddDDdddMMdddddddddDDdddMMdd\nMMddddddddddMdddMMddddddddddMddd\nMMMMdMdddddMMMdMMMMMdMdddddMMMdM\nMMMMMMdMdddMMMMMMMMMMMdMdddMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMLMddLMMMMMMMMMMMLMddLMM\nLLMMMMMMLMdDDdLLLLMMMMMMLMdDDdLL\nMMMLLLLLLdDddDdMMMMLLLLLLdDddDdM\nDddMMMLLMdddddDDDddMMMLLMdddddDD\nddDDdMMMMDddddddddDDdMMMMDdddddd\nddddDddMMDddddddddddDddMMDdddddd\ndddddDDddDdddMdddddddDDddDdddMdd\ndddddddDDddddddddddddddDDddddddd\ndddddMddddddMddddddddMddddddMddd\nMMMMMdddddddMdddMMMMMdddddddMddd\nMMMMMMdMddMMMMMdMMMMMMdMddMMMMMd\nMMMMMMMddMMMMMdMMMMMMMMddMMMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMLMddLMMMMMMMMMMMLMddLMM\nLLMMMMMMLMdDDdLLLLMMMMMMLMdDDdLL\nMMMLLLLLLdDddDdMMMMLLLLLLdDddDdM\nDddMMMLLMdddddDDDddMMMLLMdddddDD\nddDDdMMMMDddddddddDDdMMMMDdddddd\nddddDddMMDddddddddddDddMMDdddddd\ndddddDDddDdddMdddddddDDddDdddMdd\ndddddddDDddddddddddddddDDddddddd\ndddddMddddddMddddddddMddddddMddd\nMMMMMdddddddMdddMMMMMdddddddMddd\nMMMMMMdMddMMMMMdMMMMMMdMddMMMMMd\nMMMMMMMddMMMMMdMMMMMMMMddMMMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMLMddLMMMMMMMMMMMLMddLMM\nLLMMMMMMMLdDDdLLLLMMMMMMMLdDDdLL\ndMMLLMMMMMDddDdMdMMLLMMMMMDddDdM\nDddMMLMMLMDdddDDDddMMLMMLMDdddDD\nddDDMMLLLdDdddddddDDMMLLLdDddddd\nddddDdMMMdddddddddddDdMMMddddddd\ndddddDDdMDdddddddddddDDdMDdddddd\ndddddddDDDddMddddddddddDDDddMddd\ndMddMdddddddMddddMddMdddddddMddd\ndMMMddddddMdMMMddMMMddddddMdMMMd\nMMMMMMdddMdMMdddMMMMMMdddMdMMddd\nMMMMMMMdddMMMdMdMMMMMMMdddMMMdMd\nMMMMMMMMMMMMMMdMMMMMMMMMMMMMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMLMddLMMMMMMMMMMMLMddLMM\nLLMMMMMMMLdDDdLLLLMMMMMMMLdDDdLL\ndMMLLMMMMMDddDdMdMMLLMMMMMDddDdM\nDddMMLMMLMDdddDDDddMMLMMLMDdddDD\nddDDMMLLLdDdddddddDDMMLLLdDddddd\nddddDdMMMdddddddddddDdMMMddddddd\ndddddDDdMDdddddddddddDDdMDdddddd\ndddddddDDDddMddddddddddDDDddMddd\ndMddMdddddddMddddMddMdddddddMddd\ndMMMddddddMdMMMddMMMddddddMdMMMd\nMMMMMMdddMdMMdddMMMMMMdddMdMMddd\nMMMMMMMdddMMMdMdMMMMMMMdddMMMdMd\nMMMMMMMMMMMMMMdMMMMMMMMMMMMMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMLMMMMMMMLMDDdMLMLMMMMMMMLMDDdML\ndMMLMMMMMLdDdDMMdMMLMMMMMLdDdDMM\nDDdMMLMMMMdddDDDDDdMMLMMMMdddDDD\nddDDdMLMLMDdddDdddDDdMLMLMDdddDd\nddddDDMMMdDdddddddddDDMMMdDddddd\nddddddDdMdddddddddddddDdMddddddd\ndMdddddDDDddMddddMdddddDDDddMddd\nddddddddddddMdddddddddddddddMddd\ndddMdddddddddddddddMdddddddddddd\ndMMMMMdddddMMdMddMMMMMdddddMMdMd\nMMMMMMMdddMMMdddMMMMMMMdddMMMddd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMLMMMMMMMLMDDdMLMLMMMMMMMLMDDdML\ndMMLMMMMMLdDdDMMdMMLMMMMMLdDdDMM\nDDdMMLMMMMdddDDDDDdMMLMMMMdddDDD\nddDDdMLMLMDdddDdddDDdMLMLMDdddDd\nddddDDMMMdDdddddddddDDMMMdDddddd\nddddddDdMdddddddddddddDdMddddddd\ndMdddddDDDddMddddMdddddDDDddMddd\nddddddddddddMdddddddddddddddMddd\ndddMdddddddddddddddMdddddddddddd\ndMMMMMdddddMMdMddMMMMMdddddMMdMd\nMMMMMMMdddMMMdddMMMMMMMdddMMMddd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMMMMdMMMMMMMMMMMMMMMdMMM\nMLLMMMMMMMMDDdMMMLLMMMMMMMMDDdMM\nddMMLMMMMMMDDDddddMMLMMMMMMDDDdd\nDDddMLMMMLdDdDDDDDddMLMMMLdDdDDD\ndddDdMMMMMddddDDdddDdMMMMMddddDD\ndddddDdMMMDddddddddddDdMMMDddddd\nddddddDMddddddddddddddDMdddddddd\ndddddddDDDdddddddddddddDDDdddddd\ndddddddddddddddddddddddddddddddd\nddddMdddddddMdddddddMdddddddMddd\ndddMMMdddddMMddddddMMMdddddMMddd\nddMMMMMddMMMMdddddMMMMMddMMMMddd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMMMMMMMMMMdMMMMMMMMMMMMMMMdMMM\nMLLMMMMMMMMDDdMMMLLMMMMMMMMDDdMM\nddMMLMMMMMMDDDddddMMLMMMMMMDDDdd\nDDddMLMMMLdDdDDDDDddMLMMMLdDdDDD\ndddDdMMMMMddddDDdddDdMMMMMddddDD\ndddddDdMMMDddddddddddDdMMMDddddd\nddddddDMddddddddddddddDMdddddddd\ndddddddDDDdddddddddddddDDDdddddd\ndddddddddddddddddddddddddddddddd\nddddMdddddddMdddddddMdddddddMddd\ndddMMMdddddMMddddddMMMdddddMMddd\nddMMMMMddMMMMdddddMMMMMddMMMMddd\ndMdMMMdddMMMMMdddMdMMMdddMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMM\nLMMMMMMMMMLMdMLMLMMMMMMMMMLMdMLM\nMMLMMMMMMMMdDdMMMMLMMMMMMMMdDdMM\nDddMLMMMMMMDDdddDddMLMMMMMMDDddd\nDDDddMMMMLMDDDdDDDDddMMMMLMDDDdD\nddddDMMLMMdDdDDDddddDMMLMMdDdDDD\ndddddDdMMMDdddDddddddDdMMMDdddDd\nddddddDDdDddddddddddddDDdDdddddd\nddddddddDdddddddddddddddDddddddd\nddddMdddddddMdddddddMdddddddMddd\ndddMdddddddddddddddMdddddddddddd\ndddddMddddMMMddddddddMddddMMMddd\ndMdMMMdddMMMMMdddMdMMMdddMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMM\nLMMMMMMMMMLMdMLMLMMMMMMMMMLMdMLM\nMMLMMMMMMMMdDdMMMMLMMMMMMMMdDdMM\nDddMLMMMMMMDDdddDddMLMMMMMMDDddd\nDDDddMMMMLMDDDdDDDDddMMMMLMDDDdD\nddddDMMLMMdDdDDDddddDMMLMMdDdDDD\ndddddDdMMMDdddDddddddDdMMMDdddDd\nddddddDDdDddddddddddddDDdDdddddd\nddddddddDdddddddddddddddDddddddd\nddddMdddddddMdddddddMdddddddMddd\ndddMdddddddddddddddMdddddddddddd\ndddddMddddMMMddddddddMddddMMMddd\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nMMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMM\nMLMMMMMMMMLMdMLLMLMMMMMMMMLMdMLL\ndMMLMMMMMMLddMMMdMMLMMMMMMLddMMM\nDDdMMLMMMMMdDdMdDDdMMLMMMMMdDdMd\nDDDDdMLMMLMDDDdDDDDDdMLMMLMDDDdD\nddddDDMLLMdDdDdDddddDDMLLMdDdDdD\nddddddDMMdDddDDDddddddDMMdDddDDD\ndddddddDDDddddDddddddddDDDddddDd\nddddMdddddddddddddddMddddddddddd\ndddMdddddddddddddddMdddddddddddd\ndddddMdddddMdddddddddMdddddMdddd\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nMMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMM\nMLMMMMMMMMLMdMLLMLMMMMMMMMLMdMLL\ndMMLMMMMMMLddMMMdMMLMMMMMMLddMMM\nDDdMMLMMMMMdDdMdDDdMMLMMMMMdDdMd\nDDDDdMLMMLMDDDdDDDDDdMLMMLMDDDdD\nddddDDMLLMdDdDdDddddDDMLLMdDdDdD\nddddddDMMdDddDDDddddddDMMdDddDDD\ndddddddDDDddddDddddddddDDDddddDd\nddddMdddddddddddddddMddddddddddd\ndddMdddddddddddddddMdddddddddddd\ndddddMdddddMdddddddddMdddddMdddd\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMddddddddMMMMMMdMddddddddMMMMMMd\nMMMMMMddMMMMMMMMMMMMMMddMMMMMMMM\nMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nLMMMMMMMMMMMMLMMLMMMMMMMMMMMMLMM\nMMLMMMMMMMMMdMLLMMLMMMMMMMMMdMLL\nddMMLMMMMMLMdMMMddMMLMMMMMLMdMMM\nDDDdMLMMMMMdDdMdDDDdMLMMMMMdDdMd\nDddDDdMMMLMDDdddDddDDdMMMLMDDddd\ndddddDdMMMdDDDdDdddddDdMMMdDDDdD\nddddddDdddDddDDDddddddDdddDddDDD\nddddddddDdddddDDddddddddDdddddDD\ndddMdddddddddddddddMdddddddddddd\ndddddMdddddddddddddddMdddddddddd\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMddddddddMMMMMMdMddddddddMMMMMMd\nMMMMMMddMMMMMMMMMMMMMMddMMMMMMMM\nMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nLMMMMMMMMMMMMLMMLMMMMMMMMMMMMLMM\nMMLMMMMMMMMMdMLLMMLMMMMMMMMMdMLL\nddMMLMMMMMLMdMMMddMMLMMMMMLMdMMM\nDDDdMLMMMMMdDdMdDDDdMLMMMMMdDdMd\nDddDDdMMMLMDDdddDddDDdMMMLMDDddd\ndddddDdMMMdDDDdDdddddDdMMMdDDDdD\nddddddDdddDddDDDddddddDdddDddDDD\nddddddddDdddddDDddddddddDdddddDD\ndddMdddddddddddddddMdddddddddddd\ndddddMdddddddddddddddMdddddddddd\nddddMddddddMMdddddddMddddddMMddd\ndddddddMdMMMMddddddddddMdMMMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMdddMdddMMMMMMMMMdddMdddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMdMMMMLMMMMMMMMMMdMMMMLMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nLLMMMMMMMMMLMLMMLLMMMMMMMMMLMLMM\nMMMLMMMMMMMMMMLMMMMLMMMMMMMMMMLM\ndddMMLMMMMLMMMMMdddMMLMMMMLMMMMM\nDDDDMMLMMMMddMMdDDDDMMLMMMMddMMd\nDDddDdMLLMMDDMMdDDddDdMLLMMDDMMd\nddddddDdMMDDDDddddddddDdMMDDDDdd\ndddddddDDDdddDDDdddddddDDDdddDDD\nddddddddddddddDDddddddddddddddDD\ndddddMdddddddddddddddMdddddddddd\nddddMddddddMMdddddddMddddddMMddd\ndddddddMdMMMMddddddddddMdMMMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMdddMdddMMMMMMMMMdddMdddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMdMMMMLMMMMMMMMMMdMMMMLMMM\nMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMM\nLLMMMMMMMMMLMLMMLLMMMMMMMMMLMLMM\nMMMLMMMMMMMMMMLMMMMLMMMMMMMMMMLM\ndddMMLMMMMLMMMMMdddMMLMMMMLMMMMM\nDDDDMMLMMMMddMMdDDDDMMLMMMMddMMd\nDDddDdMLLMMDDMMdDDddDdMLLMMDDMMd\nddddddDdMMDDDDddddddddDdMMDDDDdd\ndddddddDDDdddDDDdddddddDDDdddDDD\nddddddddddddddDDddddddddddddddDD\ndddddMdddddddddddddddMdddddddddd\nddddddddddddMdddddddddddddddMddd\ndddddddddMMMMddddddddddddMMMMddd\nddddddddddMMMMddddddddddddMMMMdd\ndddddMdddMMMMMMddddddMdddMMMMMMd\nMMMddMdddMMMMMMMMMMddMdddMMMMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMMdMMMMLMMMMMMMMMMdMMMMLMMM\nMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMM\nMLLMMMMMMMMLMLMLMLLMMMMMMMMLMLML\nMMMMLMMMMMMMMLLLMMMMLMMMMMMMMLLL\nddddMLMMMMLMMMLMddddMLMMMMLMMMLM\nDDDDDdMMMLMddMMMDDDDDdMMMLMddMMM\nDDddDDdMMMdDDdMdDDddDDdMMMdDDdMd\nDdddddDdddDddDMdDdddddDdddDddDMd\ndddddddDDddddDDDdddddddDDddddDDD\nddddddddddddddDDddddddddddddddDD\nddddddddddddMdddddddddddddddMddd\ndddddddddMMMMddddddddddddMMMMddd\nddddddddddMMMMddddddddddddMMMMdd\ndddddMdddMMMMMMddddddMdddMMMMMMd\nMMMddMdddMMMMMMMMMMddMdddMMMMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMMdMMMMLMMMMMMMMMMdMMMMLMMM\nMMMMMMMMMMMMLMMMMMMMMMMMMMMMLMMM\nMLLMMMMMMMMLMLMLMLLMMMMMMMMLMLML\nMMMMLMMMMMMMMLLLMMMMLMMMMMMMMLLL\nddddMLMMMMLMMMLMddddMLMMMMLMMMLM\nDDDDDdMMMLMddMMMDDDDDdMMMLMddMMM\nDDddDDdMMMdDDdMdDDddDDdMMMdDDdMd\nDdddddDdddDddDMdDdddddDdddDddDMd\ndddddddDDddddDDDdddddddDDddddDDD\nddddddddddddddDDddddddddddddddDD\nddddddddddddMdddddddddddddddMddd\ndddddddddMMMdddddddddddddMMMdddd\nddddddddddMMMdddddddddddddMMMddd\ndddddMddddMMMMdddddddMddddMMMMdd\nMMdddMdddMMMMMMMMMdddMdddMMMMMMM\nMMMMdddddMMMMMMMMMMMdddddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nLLMMMMMMMMMMLMMMLLMMMMMMMMMMLMMM\nMMMLMMMMMMMLMLMLMMMLMMMMMMMLMLML\nMMdMMLMMMMMMMLMLMMdMMLMMMMMMMLML\ndddddMLMMMLMMMLMdddddMLMMMLMMMLM\ndDDDDdMLLLMddMMMdDDDDdMLLLMddMMM\nDDDddDDdMdDDDdMdDDDddDDdMdDDDdMd\nDDddddDDDDdddDddDDddddDDDDdddDdd\nddddddddddddddDDddddddddddddddDD\nddddddddddddMdddddddddddddddMddd\ndddddddddMMMdddddddddddddMMMdddd\nddddddddddMMMdddddddddddddMMMddd\ndddddMddddMMMMdddddddMddddMMMMdd\nMMdddMdddMMMMMMMMMdddMdddMMMMMMM\nMMMMdddddMMMMMMMMMMMdddddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nLLMMMMMMMMMMLMMMLLMMMMMMMMMMLMMM\nMMMLMMMMMMMLMLMLMMMLMMMMMMMLMLML\nMMdMMLMMMMMMMLMLMMdMMLMMMMMMMLML\ndddddMLMMMLMMMLMdddddMLMMMLMMMLM\ndDDDDdMLLLMddMMMdDDDDdMLLLMddMMM\nDDDddDDdMdDDDdMdDDDddDDdMdDDDdMd\nDDddddDDDDdddDddDDddddDDDDdddDdd\nddddddddddddddDDddddddddddddddDD\nddddddddddddMdDDddddddddddddMdDD\nddddddddddMdddddddddddddddMddddd\ndddddddddddMMddddddddddddddMMddd\nddddddddddMMMMddddddddddddMMMMdd\ndddddMdddMMMMMMddddddMdddMMMMMMd\nMMMdddddddMMMMMMMMMdddddddMMMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLLMMMMMMMMMLMMMLLLMMMMMMMMMLMMM\nMMMMLMMMMMMLLMMMMMMMLMMMMMMLLMMM\nMMddMLMMMMMMMLMLMMddMLMMMMMMMLML\ndddDddMMMMMMdMLLdddDddMMMMMMdMLL\ndDDDDDdMMMdDDMMMdDDDDDdMMMdDDMMM\nDDDddDDdddDdddMMDDDddDDdddDdddMM\nDDdddddDDddddDddDDdddddDDddddDdd\nddddddddddddMdDDddddddddddddMdDD\nddddddddddMdddddddddddddddMddddd\ndddddddddddMMddddddddddddddMMddd\nddddddddddMMMMddddddddddddMMMMdd\ndddddMdddMMMMMMddddddMdddMMMMMMd\nMMMdddddddMMMMMMMMMdddddddMMMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLLMMMMMMMMMLMMMLLLMMMMMMMMMLMMM\nMMMMLMMMMMMLLMMMMMMMLMMMMMMLLMMM\nMMddMLMMMMMMMLMLMMddMLMMMMMMMLML\ndddDddMMMMMMdMLLdddDddMMMMMMdMLL\ndDDDDDdMMMdDDMMMdDDDDDdMMMdDDMMM\nDDDddDDdddDdddMMDDDddDDdddDdddMM\nDDdddddDDddddDddDDdddddDDddddDdd\nDDDdddDDDdddddDdDDDdddDDDdddddDd\nddddddddddMddddDddddddddddMddddD\ndddddddddddddddddddddddddddddddd\ndddddddddddMMddddddddddddddMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMddddddddMMMMMMMMddddddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLLLMMMMMMMMMMMMLLLLMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMddMMLMMMLMMLMMMMddMMLMMMLMMLMM\nMdddddMLLLMdMMLLMdddddMLLLMdMMLL\nddDDDDdMMdDDDMMMddDDDDdMMdDDDMMM\ndDDDDDDddDdddDMMdDDDDDDddDdddDMM\nDDDdddDDDdddddDdDDDdddDDDdddddDd\nddddddddddMddddDddddddddddMddddD\ndddddddddddddddddddddddddddddddd\ndddddddddddMMddddddddddddddMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMddddddddMMMMMMMMddddddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLLLMMMMMMMMMMMMLLLLMMMMMMMMMMMM\nMMMMMMMMMMMLLMMMMMMMMMMMMMMLLMMM\nMMddMMLMMMLMMLMMMMddMMLMMMLMMLMM\nMdddddMLLLMdMMLLMdddddMLLLMdMMLL\nddDDDDdMMdDDDMMMddDDDDdMMdDDDMMM\ndDDDDDDddDdddDMMdDDDDDDddDdddDMM\nddDDDDDdDDdddDddddDDDDDdDDdddDdd\nDDDDDDDDDdddddDDDDDDDDDDDdddddDD\ndddddddDdddddddddddddddDdddddddd\ndddddddddddMMddddddddddddddMMddd\ndddddddddMdMMddddddddddddMdMMddd\ndddddddddddMMMMddddddddddddMMMMd\nMMMdMdddddMMMMMMMMMdMdddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMMddMdMMMMMMMMMMMMddMdMMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMLLLMMMMMMMMMMMMMLLLMMMMMMMMMMMM\nLMMMMLMMMMMLLMMMLMMMMLMMMMMLLMMM\nMMMdMMLMMMLMMLMMMMMdMMLMMMLMMLMM\nMMddddMMLMdddMMLMMddddMMLMdddMML\ndddDDDddMdDdDdMMdddDDDddMdDdDdMM\nddDDDDDdDDdddDddddDDDDDdDDdddDdd\nDDDDDDDDDdddddDDDDDDDDDDDdddddDD\ndddddddDdddddddddddddddDdddddddd\ndddddddddddMMddddddddddddddMMddd\ndddddddddMdMMddddddddddddMdMMddd\ndddddddddddMMMMddddddddddddMMMMd\nMMMdMdddddMMMMMMMMMdMdddddMMMMMM\nMMMMMdddddMMMMMMMMMMMdddddMMMMMM\nMMMMMMddMdMMMMMMMMMMMMddMdMMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMLLLMMMMMMMMMMMMMLLLMMMMMMMMMMMM\nLMMMMLMMMMMLLMMMLMMMMLMMMMMLLMMM\nMMMdMMLMMMLMMLMMMMMdMMLMMMLMMLMM\nMMddddMMLMdddMMLMMddddMMLMdddMML\ndddDDDddMdDdDdMMdddDDDddMdDdDdMM\nMMdddddMdDDdddMMMMdddddMdDDdddMM\nddddDDdddDdddDddddddDDdddDdddDdd\nDDDDDDDDDdddddDDDDDDDDDDDdddddDD\nddddDDDDDdddddddddddDDDDDddddddd\ndddddddDdddMMddddddddddDdddMMddd\ndddddddddddMMdMddddddddddddMMdMd\nMdddMddddddMMMddMdddMddddddMMMdd\nMMMddddddddMMMMMMMMddddddddMMMMM\nMMMMMdddMdMMMMMMMMMMMdddMdMMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMLLLMMMMMMMMMMMMMLLLMMMMMMMMMMM\nMLMMMLMMMMMLLMMMMLMMMLMMMMMLLMMM\nLMMMMMMMMLMMMLMMLMMMMMMMMLMMMLMM\nMMMddMMMMMdDDMLLMMMddMMMMMdDDMLL\nMMdddddMdDDdddMMMMdddddMdDDdddMM\nddddDDdddDdddDddddddDDdddDdddDdd\nDDDDDDDDDdddddDDDDDDDDDDDdddddDD\nddddDDDDDdddddddddddDDDDDddddddd\ndddddddDdddMMddddddddddDdddMMddd\ndddddddddddMMdMddddddddddddMMdMd\nMdddMddddddMMMddMdddMddddddMMMdd\nMMMddddddddMMMMMMMMddddddddMMMMM\nMMMMMdddMdMMMMMMMMMMMdddMdMMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMLLLMMMMMMMMMMMMMLLLMMMMMMMMMMM\nMLMMMLMMMMMLLMMMMLMMMLMMMMMLLMMM\nLMMMMMMMMLMMMLMMLMMMMMMMMLMMMLMM\nMMMddMMMMMdDDMLLMMMddMMMMMdDDMLL\nLMMMMMMMMMDDDMLLLMMMMMMMMMDDDMLL\nMMMMMMMMMDdddDMMMMMMMMMMMDdddDMM\nDddddddddDddddDdDddddddddDddddDd\ndDDDDdddDddddddDdDDDDdddDddddddD\nddddDDDDDddMddddddddDDDDDddMdddd\nddddddDDDddMMdMdddddddDDDddMMdMd\ndddddddDdddMMddddddddddDdddMMddd\nMMdddddddddMMMddMMdddddddddMMMdd\nMMMMdddddddMMMMMMMMMdddddddMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMLMMMMMMMMMMMMMMMLMMMMMMMMMMMM\nMMLLLLMMMMLMLMMMMMLLLLMMMMLMLMMM\nLLLMMMLLMLMddLMMLLLMMMLLMLMddLMM\nLMMMMMMMMMDDDMLLLMMMMMMMMMDDDMLL\nMMMMMMMMMDdddDMMMMMMMMMMMDdddDMM\nDddddddddDddddDdDddddddddDddddDd\ndDDDDdddDddddddDdDDDDdddDddddddD\nddddDDDDDddMddddddddDDDDDddMdddd\nddddddDDDddMMdMdddddddDDDddMMdMd\ndddddddDdddMMddddddddddDdddMMddd\nMMdddddddddMMMddMMdddddddddMMMdd\nMMMMdddddddMMMMMMMMMdddddddMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMLMMMMMMMMMMMMMMMLMMMMMMMMMMMM\nMMLLLLMMMMLMLMMMMMLLLLMMMMLMLMMM\nLLLMMMLLMLMddLMMLLLMMMLLMLMddLMM\nMMMLLLLMMMMdMLMMMMMLLLLMMMMdMLMM\nLLLLMLLLLMDDDMLLLLLLMLLLLMDDDMLL\nMMMMMMMMMddddDMMMMMMMMMMMddddDMM\nDdddMMMMMDddddDdDdddMMMMMDddddDd\ndDDDdMdMdDdMdddddDDDdMdMdDdMdddd\nddddDDdddddMddddddddDDdddddMdddd\nddddddDdDdddddddddddddDdDddddddd\ndddddddDDdddMMdddddddddDDdddMMdd\nMMddddddddddMdddMMddddddddddMddd\nMMMMdMdddddMMMdMMMMMdMdddddMMMdM\nMMMMMMdMdddMMMMMMMMMMMdMdddMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM\nMMMLLLLMMMMdMLMMMMMLLLLMMMMdMLMM\nLLLLMLLLLMDDDMLLLLLLMLLLLMDDDMLL\nMMMMMMMMMddddDMMMMMMMMMMMddddDMM\nDdddMMMMMDddddDdDdddMMMMMDddddDd\ndDDDdMdMdDdMdddddDDDdMdMdDdMdddd\nddddDDdddddMddddddddDDdddddMdddd\nddddddDdDdddddddddddddDdDddddddd\ndddddddDDdddMMdddddddddDDdddMMdd\nMMddddddddddMdddMMddddddddddMddd\nMMMMdMdddddMMMdMMMMMdMdddddMMMdM\nMMMMMMdMdddMMMMMMMMMMMdMdddMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMLMMMMMMMMMMMMMMMLMMMMM",
+  "per_source_color_blends": [
+    {
+      "source_rgb": [
+        228,
+        141,
+        18
+      ],
+      "source_hex": "#E48D12",
+      "count": 80,
+      "source_luma": 150.6156,
+      "approx_rgb": [
+        228,
+        141,
+        18
+      ],
+      "approx_hex": "#E48D12",
+      "composited_rgb": [
+        228,
+        141,
+        18
+      ],
+      "composited_hex": "#E48D12",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 1.0,
+      "medium_weight": 0.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        228,
+        141,
+        19
+      ],
+      "source_hex": "#E48D13",
+      "count": 1040,
+      "source_luma": 150.6878,
+      "approx_rgb": [
+        228,
+        141,
+        18
+      ],
+      "approx_hex": "#E48D12",
+      "composited_rgb": [
+        228,
+        141,
+        18
+      ],
+      "composited_hex": "#E48D12",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.986898,
+      "medium_weight": 0.013102,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        228,
+        142,
+        19
+      ],
+      "source_hex": "#E48E13",
+      "count": 728,
+      "source_luma": 151.403,
+      "approx_rgb": [
+        228,
+        142,
+        19
+      ],
+      "approx_hex": "#E48E13",
+      "composited_rgb": [
+        228,
+        142,
+        19
+      ],
+      "composited_hex": "#E48E13",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.97126,
+      "medium_weight": 0.02874,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        229,
+        142,
+        19
+      ],
+      "source_hex": "#E58E13",
+      "count": 600,
+      "source_luma": 151.6156,
+      "approx_rgb": [
+        228,
+        142,
+        19
+      ],
+      "approx_hex": "#E48E13",
+      "composited_rgb": [
+        228,
+        142,
+        19
+      ],
+      "composited_hex": "#E48E13",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.968724,
+      "medium_weight": 0.031276,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        229,
+        142,
+        20
+      ],
+      "source_hex": "#E58E14",
+      "count": 304,
+      "source_luma": 151.6878,
+      "approx_rgb": [
+        228,
+        143,
+        19
+      ],
+      "approx_hex": "#E48F13",
+      "composited_rgb": [
+        228,
+        143,
+        19
+      ],
+      "composited_hex": "#E48F13",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.955621,
+      "medium_weight": 0.044379,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        229,
+        151,
+        29
+      ],
+      "source_hex": "#E5971D",
+      "count": 680,
+      "source_luma": 158.7744,
+      "approx_rgb": [
+        230,
+        152,
+        27
+      ],
+      "approx_hex": "#E6981B",
+      "composited_rgb": [
+        230,
+        152,
+        27
+      ],
+      "composited_hex": "#E6981B",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.696957,
+      "medium_weight": 0.303043,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        230,
+        151,
+        29
+      ],
+      "source_hex": "#E6971D",
+      "count": 40,
+      "source_luma": 158.987,
+      "approx_rgb": [
+        230,
+        152,
+        27
+      ],
+      "approx_hex": "#E6981B",
+      "composited_rgb": [
+        230,
+        152,
+        27
+      ],
+      "composited_hex": "#E6981B",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.694421,
+      "medium_weight": 0.305579,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        230,
+        151,
+        30
+      ],
+      "source_hex": "#E6971E",
+      "count": 2136,
+      "source_luma": 159.0592,
+      "approx_rgb": [
+        230,
+        153,
+        28
+      ],
+      "approx_hex": "#E6991C",
+      "composited_rgb": [
+        230,
+        153,
+        28
+      ],
+      "composited_hex": "#E6991C",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.681319,
+      "medium_weight": 0.318681,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        230,
+        152,
+        30
+      ],
+      "source_hex": "#E6981E",
+      "count": 2816,
+      "source_luma": 159.7744,
+      "approx_rgb": [
+        230,
+        153,
+        28
+      ],
+      "approx_hex": "#E6991C",
+      "composited_rgb": [
+        230,
+        153,
+        28
+      ],
+      "composited_hex": "#E6991C",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.66568,
+      "medium_weight": 0.33432,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        152,
+        30
+      ],
+      "source_hex": "#E7981E",
+      "count": 112,
+      "source_luma": 159.987,
+      "approx_rgb": [
+        230,
+        153,
+        28
+      ],
+      "approx_hex": "#E6991C",
+      "composited_rgb": [
+        230,
+        153,
+        28
+      ],
+      "composited_hex": "#E6991C",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.663145,
+      "medium_weight": 0.336855,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        152,
+        31
+      ],
+      "source_hex": "#E7981F",
+      "count": 136,
+      "source_luma": 160.0592,
+      "approx_rgb": [
+        230,
+        154,
+        29
+      ],
+      "approx_hex": "#E69A1D",
+      "composited_rgb": [
+        230,
+        154,
+        29
+      ],
+      "composited_hex": "#E69A1D",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.650042,
+      "medium_weight": 0.349958,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        159,
+        37
+      ],
+      "source_hex": "#E79F25",
+      "count": 208,
+      "source_luma": 165.4988,
+      "approx_rgb": [
+        231,
+        161,
+        35
+      ],
+      "approx_hex": "#E7A123",
+      "composited_rgb": [
+        231,
+        161,
+        35
+      ],
+      "composited_hex": "#E7A123",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.461961,
+      "medium_weight": 0.538039,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        160,
+        37
+      ],
+      "source_hex": "#E7A025",
+      "count": 384,
+      "source_luma": 166.214,
+      "approx_rgb": [
+        231,
+        161,
+        35
+      ],
+      "approx_hex": "#E7A123",
+      "composited_rgb": [
+        231,
+        161,
+        35
+      ],
+      "composited_hex": "#E7A123",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.446323,
+      "medium_weight": 0.553677,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        232,
+        160,
+        37
+      ],
+      "source_hex": "#E8A025",
+      "count": 168,
+      "source_luma": 166.4266,
+      "approx_rgb": [
+        231,
+        162,
+        35
+      ],
+      "approx_hex": "#E7A223",
+      "composited_rgb": [
+        231,
+        162,
+        35
+      ],
+      "composited_hex": "#E7A223",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.443787,
+      "medium_weight": 0.556213,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        232,
+        160,
+        38
+      ],
+      "source_hex": "#E8A026",
+      "count": 96,
+      "source_luma": 166.4988,
+      "approx_rgb": [
+        231,
+        162,
+        36
+      ],
+      "approx_hex": "#E7A224",
+      "composited_rgb": [
+        231,
+        162,
+        36
+      ],
+      "composited_hex": "#E7A224",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.430685,
+      "medium_weight": 0.569315,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        162,
+        39
+      ],
+      "source_hex": "#E7A227",
+      "count": 1312,
+      "source_luma": 167.7888,
+      "approx_rgb": [
+        232,
+        164,
+        37
+      ],
+      "approx_hex": "#E8A425",
+      "composited_rgb": [
+        232,
+        164,
+        37
+      ],
+      "composited_hex": "#E8A425",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.388842,
+      "medium_weight": 0.611158,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        163,
+        39
+      ],
+      "source_hex": "#E7A327",
+      "count": 352,
+      "source_luma": 168.504,
+      "approx_rgb": [
+        232,
+        164,
+        37
+      ],
+      "approx_hex": "#E8A425",
+      "composited_rgb": [
+        232,
+        164,
+        37
+      ],
+      "composited_hex": "#E8A425",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.373204,
+      "medium_weight": 0.626796,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        232,
+        163,
+        39
+      ],
+      "source_hex": "#E8A327",
+      "count": 968,
+      "source_luma": 168.7166,
+      "approx_rgb": [
+        232,
+        164,
+        38
+      ],
+      "approx_hex": "#E8A426",
+      "composited_rgb": [
+        232,
+        164,
+        37
+      ],
+      "composited_hex": "#E8A425",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.370668,
+      "medium_weight": 0.629332,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        232,
+        163,
+        40
+      ],
+      "source_hex": "#E8A328",
+      "count": 3344,
+      "source_luma": 168.7888,
+      "approx_rgb": [
+        232,
+        165,
+        38
+      ],
+      "approx_hex": "#E8A526",
+      "composited_rgb": [
+        232,
+        165,
+        38
+      ],
+      "composited_hex": "#E8A526",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.357566,
+      "medium_weight": 0.642434,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        233,
+        173,
+        46
+      ],
+      "source_hex": "#E9AD2E",
+      "count": 80,
+      "source_luma": 176.5866,
+      "approx_rgb": [
+        233,
+        174,
+        45
+      ],
+      "approx_hex": "#E9AE2D",
+      "composited_rgb": [
+        233,
+        174,
+        45
+      ],
+      "composited_hex": "#E9AE2D",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.120034,
+      "medium_weight": 0.879966,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        233,
+        173,
+        47
+      ],
+      "source_hex": "#E9AD2F",
+      "count": 2528,
+      "source_luma": 176.6588,
+      "approx_rgb": [
+        233,
+        174,
+        46
+      ],
+      "approx_hex": "#E9AE2E",
+      "composited_rgb": [
+        233,
+        174,
+        46
+      ],
+      "composited_hex": "#E9AE2E",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.106932,
+      "medium_weight": 0.893068,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        233,
+        174,
+        47
+      ],
+      "source_hex": "#E9AE2F",
+      "count": 616,
+      "source_luma": 177.374,
+      "approx_rgb": [
+        233,
+        175,
+        46
+      ],
+      "approx_hex": "#E9AF2E",
+      "composited_rgb": [
+        233,
+        175,
+        46
+      ],
+      "composited_hex": "#E9AF2E",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.091293,
+      "medium_weight": 0.908707,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        234,
+        174,
+        47
+      ],
+      "source_hex": "#EAAE2F",
+      "count": 2320,
+      "source_luma": 177.5866,
+      "approx_rgb": [
+        233,
+        175,
+        46
+      ],
+      "approx_hex": "#E9AF2E",
+      "composited_rgb": [
+        233,
+        175,
+        46
+      ],
+      "composited_hex": "#E9AF2E",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.088757,
+      "medium_weight": 0.911243,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        234,
+        174,
+        48
+      ],
+      "source_hex": "#EAAE30",
+      "count": 1312,
+      "source_luma": 177.6588,
+      "approx_rgb": [
+        234,
+        175,
+        47
+      ],
+      "approx_hex": "#EAAF2F",
+      "composited_rgb": [
+        234,
+        175,
+        47
+      ],
+      "composited_hex": "#EAAF2F",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.075655,
+      "medium_weight": 0.924345,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        234,
+        178,
+        49
+      ],
+      "source_hex": "#EAB231",
+      "count": 56,
+      "source_luma": 180.5918,
+      "approx_rgb": [
+        234,
+        178,
+        49
+      ],
+      "approx_hex": "#EAB231",
+      "composited_rgb": [
+        234,
+        178,
+        49
+      ],
+      "composited_hex": "#EAB231",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.0,
+      "medium_weight": 1.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        234,
+        178,
+        50
+      ],
+      "source_hex": "#EAB232",
+      "count": 504,
+      "source_luma": 180.664,
+      "approx_rgb": [
+        234,
+        178,
+        50
+      ],
+      "approx_hex": "#EAB232",
+      "composited_rgb": [
+        234,
+        178,
+        50
+      ],
+      "composited_hex": "#EAB232",
+      "max_channel_error": 0,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.986577,
+      "light_weight": 0.013423
+    },
+    {
+      "source_rgb": [
+        235,
+        178,
+        50
+      ],
+      "source_hex": "#EBB232",
+      "count": 224,
+      "source_luma": 180.8766,
+      "approx_rgb": [
+        234,
+        178,
+        50
+      ],
+      "approx_hex": "#EAB232",
+      "composited_rgb": [
+        234,
+        178,
+        50
+      ],
+      "composited_hex": "#EAB232",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.986775,
+      "light_weight": 0.013225
+    },
+    {
+      "source_rgb": [
+        235,
+        179,
+        50
+      ],
+      "source_hex": "#EBB332",
+      "count": 64,
+      "source_luma": 181.5918,
+      "approx_rgb": [
+        234,
+        178,
+        50
+      ],
+      "approx_hex": "#EAB232",
+      "composited_rgb": [
+        234,
+        178,
+        50
+      ],
+      "composited_hex": "#EAB232",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.982629,
+      "light_weight": 0.017371
+    },
+    {
+      "source_rgb": [
+        234,
+        183,
+        52
+      ],
+      "source_hex": "#EAB734",
+      "count": 224,
+      "source_luma": 184.3844,
+      "approx_rgb": [
+        234,
+        179,
+        53
+      ],
+      "approx_hex": "#EAB335",
+      "composited_rgb": [
+        234,
+        179,
+        53
+      ],
+      "composited_hex": "#EAB335",
+      "max_channel_error": 4,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.939005,
+      "light_weight": 0.060995
+    },
+    {
+      "source_rgb": [
+        235,
+        183,
+        52
+      ],
+      "source_hex": "#EBB734",
+      "count": 248,
+      "source_luma": 184.597,
+      "approx_rgb": [
+        234,
+        179,
+        53
+      ],
+      "approx_hex": "#EAB335",
+      "composited_rgb": [
+        234,
+        179,
+        53
+      ],
+      "composited_hex": "#EAB335",
+      "max_channel_error": 4,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.939203,
+      "light_weight": 0.060797
+    },
+    {
+      "source_rgb": [
+        235,
+        183,
+        53
+      ],
+      "source_hex": "#EBB735",
+      "count": 1728,
+      "source_luma": 184.6692,
+      "approx_rgb": [
+        234,
+        180,
+        54
+      ],
+      "approx_hex": "#EAB436",
+      "composited_rgb": [
+        234,
+        180,
+        54
+      ],
+      "composited_hex": "#EAB436",
+      "max_channel_error": 3,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.92578,
+      "light_weight": 0.07422
+    },
+    {
+      "source_rgb": [
+        235,
+        184,
+        53
+      ],
+      "source_hex": "#EBB835",
+      "count": 3096,
+      "source_luma": 185.3844,
+      "approx_rgb": [
+        234,
+        180,
+        54
+      ],
+      "approx_hex": "#EAB436",
+      "composited_rgb": [
+        234,
+        180,
+        54
+      ],
+      "composited_hex": "#EAB436",
+      "max_channel_error": 4,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.921634,
+      "light_weight": 0.078366
+    },
+    {
+      "source_rgb": [
+        236,
+        184,
+        53
+      ],
+      "source_hex": "#ECB835",
+      "count": 368,
+      "source_luma": 185.597,
+      "approx_rgb": [
+        234,
+        180,
+        54
+      ],
+      "approx_hex": "#EAB436",
+      "composited_rgb": [
+        234,
+        180,
+        54
+      ],
+      "composited_hex": "#EAB436",
+      "max_channel_error": 4,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.921832,
+      "light_weight": 0.078168
+    },
+    {
+      "source_rgb": [
+        236,
+        184,
+        54
+      ],
+      "source_hex": "#ECB836",
+      "count": 376,
+      "source_luma": 185.6692,
+      "approx_rgb": [
+        234,
+        180,
+        55
+      ],
+      "approx_hex": "#EAB437",
+      "composited_rgb": [
+        234,
+        180,
+        55
+      ],
+      "composited_hex": "#EAB437",
+      "max_channel_error": 4,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.908409,
+      "light_weight": 0.091591
+    },
+    {
+      "source_rgb": [
+        235,
+        185,
+        53
+      ],
+      "source_hex": "#EBB935",
+      "count": 88,
+      "source_luma": 186.0996,
+      "approx_rgb": [
+        234,
+        180,
+        55
+      ],
+      "approx_hex": "#EAB437",
+      "composited_rgb": [
+        234,
+        180,
+        55
+      ],
+      "composited_hex": "#EAB437",
+      "max_channel_error": 5,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.917489,
+      "light_weight": 0.082511
+    },
+    {
+      "source_rgb": [
+        235,
+        186,
+        54
+      ],
+      "source_hex": "#EBBA36",
+      "count": 360,
+      "source_luma": 186.887,
+      "approx_rgb": [
+        234,
+        180,
+        56
+      ],
+      "approx_hex": "#EAB438",
+      "composited_rgb": [
+        234,
+        180,
+        56
+      ],
+      "composited_hex": "#EAB438",
+      "max_channel_error": 6,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.899921,
+      "light_weight": 0.100079
+    },
+    {
+      "source_rgb": [
+        236,
+        186,
+        54
+      ],
+      "source_hex": "#ECBA36",
+      "count": 496,
+      "source_luma": 187.0996,
+      "approx_rgb": [
+        234,
+        180,
+        56
+      ],
+      "approx_hex": "#EAB438",
+      "composited_rgb": [
+        234,
+        180,
+        56
+      ],
+      "composited_hex": "#EAB438",
+      "max_channel_error": 6,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.900118,
+      "light_weight": 0.099882
+    },
+    {
+      "source_rgb": [
+        235,
+        188,
+        54
+      ],
+      "source_hex": "#EBBC36",
+      "count": 328,
+      "source_luma": 188.3174,
+      "approx_rgb": [
+        234,
+        180,
+        56
+      ],
+      "approx_hex": "#EAB438",
+      "composited_rgb": [
+        234,
+        180,
+        56
+      ],
+      "composited_hex": "#EAB438",
+      "max_channel_error": 8,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.89163,
+      "light_weight": 0.10837
+    },
+    {
+      "source_rgb": [
+        236,
+        188,
+        55
+      ],
+      "source_hex": "#ECBC37",
+      "count": 160,
+      "source_luma": 188.6022,
+      "approx_rgb": [
+        234,
+        181,
+        57
+      ],
+      "approx_hex": "#EAB539",
+      "composited_rgb": [
+        234,
+        181,
+        57
+      ],
+      "composited_hex": "#EAB539",
+      "max_channel_error": 7,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.878405,
+      "light_weight": 0.121595
+    },
+    {
+      "source_rgb": [
+        236,
+        189,
+        55
+      ],
+      "source_hex": "#ECBD37",
+      "count": 408,
+      "source_luma": 189.3174,
+      "approx_rgb": [
+        234,
+        181,
+        58
+      ],
+      "approx_hex": "#EAB53A",
+      "composited_rgb": [
+        234,
+        181,
+        58
+      ],
+      "composited_hex": "#EAB53A",
+      "max_channel_error": 8,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.87426,
+      "light_weight": 0.12574
+    },
+    {
+      "source_rgb": [
+        231,
+        196,
+        115
+      ],
+      "source_hex": "#E7C473",
+      "count": 16,
+      "source_luma": 197.5928,
+      "approx_rgb": [
+        233,
+        198,
+        114
+      ],
+      "approx_hex": "#E9C672",
+      "composited_rgb": [
+        233,
+        198,
+        114
+      ],
+      "composited_hex": "#E9C672",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.038887,
+      "light_weight": 0.961113
+    },
+    {
+      "source_rgb": [
+        232,
+        196,
+        115
+      ],
+      "source_hex": "#E8C473",
+      "count": 144,
+      "source_luma": 197.8054,
+      "approx_rgb": [
+        233,
+        198,
+        114
+      ],
+      "approx_hex": "#E9C672",
+      "composited_rgb": [
+        233,
+        198,
+        114
+      ],
+      "composited_hex": "#E9C672",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.039084,
+      "light_weight": 0.960916
+    },
+    {
+      "source_rgb": [
+        232,
+        196,
+        116
+      ],
+      "source_hex": "#E8C474",
+      "count": 232,
+      "source_luma": 197.8776,
+      "approx_rgb": [
+        233,
+        198,
+        115
+      ],
+      "approx_hex": "#E9C673",
+      "composited_rgb": [
+        233,
+        198,
+        115
+      ],
+      "composited_hex": "#E9C673",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.025661,
+      "light_weight": 0.974339
+    },
+    {
+      "source_rgb": [
+        232,
+        197,
+        116
+      ],
+      "source_hex": "#E8C574",
+      "count": 688,
+      "source_luma": 198.5928,
+      "approx_rgb": [
+        233,
+        199,
+        116
+      ],
+      "approx_hex": "#E9C774",
+      "composited_rgb": [
+        233,
+        199,
+        116
+      ],
+      "composited_hex": "#E9C774",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.021516,
+      "light_weight": 0.978484
+    },
+    {
+      "source_rgb": [
+        233,
+        197,
+        116
+      ],
+      "source_hex": "#E9C574",
+      "count": 336,
+      "source_luma": 198.8054,
+      "approx_rgb": [
+        233,
+        199,
+        116
+      ],
+      "approx_hex": "#E9C774",
+      "composited_rgb": [
+        233,
+        199,
+        115
+      ],
+      "composited_hex": "#E9C773",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.021713,
+      "light_weight": 0.978287
+    },
+    {
+      "source_rgb": [
+        233,
+        197,
+        117
+      ],
+      "source_hex": "#E9C575",
+      "count": 48,
+      "source_luma": 198.8776,
+      "approx_rgb": [
+        233,
+        199,
+        116
+      ],
+      "approx_hex": "#E9C774",
+      "composited_rgb": [
+        233,
+        199,
+        116
+      ],
+      "composited_hex": "#E9C774",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.008291,
+      "light_weight": 0.991709
+    },
+    {
+      "source_rgb": [
+        232,
+        198,
+        116
+      ],
+      "source_hex": "#E8C674",
+      "count": 24,
+      "source_luma": 199.308,
+      "approx_rgb": [
+        233,
+        199,
+        116
+      ],
+      "approx_hex": "#E9C774",
+      "composited_rgb": [
+        233,
+        199,
+        116
+      ],
+      "composited_hex": "#E9C774",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.017371,
+      "light_weight": 0.982629
+    },
+    {
+      "source_rgb": [
+        232,
+        199,
+        116
+      ],
+      "source_hex": "#E8C774",
+      "count": 72,
+      "source_luma": 200.0232,
+      "approx_rgb": [
+        233,
+        199,
+        116
+      ],
+      "approx_hex": "#E9C774",
+      "composited_rgb": [
+        233,
+        199,
+        116
+      ],
+      "composited_hex": "#E9C774",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.013225,
+      "light_weight": 0.986775
+    },
+    {
+      "source_rgb": [
+        233,
+        199,
+        116
+      ],
+      "source_hex": "#E9C774",
+      "count": 80,
+      "source_luma": 200.2358,
+      "approx_rgb": [
+        233,
+        199,
+        116
+      ],
+      "approx_hex": "#E9C774",
+      "composited_rgb": [
+        233,
+        199,
+        116
+      ],
+      "composited_hex": "#E9C774",
+      "max_channel_error": 0,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.013423,
+      "light_weight": 0.986577
+    },
+    {
+      "source_rgb": [
+        233,
+        199,
+        117
+      ],
+      "source_hex": "#E9C775",
+      "count": 40,
+      "source_luma": 200.308,
+      "approx_rgb": [
+        233,
+        199,
+        117
+      ],
+      "approx_hex": "#E9C775",
+      "composited_rgb": [
+        233,
+        199,
+        117
+      ],
+      "composited_hex": "#E9C775",
+      "max_channel_error": 0,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.0,
+      "light_weight": 1.0
+    }
+  ],
+  "recombined_error": {
+    "visible_pixels": 32768,
+    "mean_abs_channel_error": 0.9688,
+    "rmse_channel_error": 1.5543,
+    "max_abs_channel_error": 8,
+    "exact_pixel_percent": 4.541
+  },
+  "outputs": {
+    "dark_layer_mask": "texture_editor/analysis/create_liquid_honey_three_tone_flow/honey_flow/honey_flow.layer_dark_mask.png",
+    "medium_layer_mask": "texture_editor/analysis/create_liquid_honey_three_tone_flow/honey_flow/honey_flow.layer_medium_mask.png",
+    "light_layer_mask": "texture_editor/analysis/create_liquid_honey_three_tone_flow/honey_flow/honey_flow.layer_light_mask.png",
+    "recombined": "texture_editor/analysis/create_liquid_honey_three_tone_flow/honey_flow/honey_flow.recombined_three_tone.png"
+  }
+}

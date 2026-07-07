@@ -1,0 +1,1970 @@
+{
+  "source": "texture_editor/create_liquid_honey/honey_flow.png",
+  "size": {
+    "width": 32,
+    "height": 1024
+  },
+  "visible_pixels": 32768,
+  "unique_visible_colors": 50,
+  "sorted_palette_by_luma": [
+    {
+      "hex": "#E48D12",
+      "rgba": "#E48D12FF",
+      "rgb": [
+        228,
+        141,
+        18
+      ],
+      "count": 80,
+      "luma": 150.6156
+    },
+    {
+      "hex": "#E48D13",
+      "rgba": "#E48D13FF",
+      "rgb": [
+        228,
+        141,
+        19
+      ],
+      "count": 1040,
+      "luma": 150.6878
+    },
+    {
+      "hex": "#E48E13",
+      "rgba": "#E48E13FF",
+      "rgb": [
+        228,
+        142,
+        19
+      ],
+      "count": 728,
+      "luma": 151.403
+    },
+    {
+      "hex": "#E58E13",
+      "rgba": "#E58E13FF",
+      "rgb": [
+        229,
+        142,
+        19
+      ],
+      "count": 600,
+      "luma": 151.6156
+    },
+    {
+      "hex": "#E58E14",
+      "rgba": "#E58E14FF",
+      "rgb": [
+        229,
+        142,
+        20
+      ],
+      "count": 304,
+      "luma": 151.6878
+    },
+    {
+      "hex": "#E5971D",
+      "rgba": "#E5971DFF",
+      "rgb": [
+        229,
+        151,
+        29
+      ],
+      "count": 680,
+      "luma": 158.7744
+    },
+    {
+      "hex": "#E6971D",
+      "rgba": "#E6971DFF",
+      "rgb": [
+        230,
+        151,
+        29
+      ],
+      "count": 40,
+      "luma": 158.987
+    },
+    {
+      "hex": "#E6971E",
+      "rgba": "#E6971EFF",
+      "rgb": [
+        230,
+        151,
+        30
+      ],
+      "count": 2136,
+      "luma": 159.0592
+    },
+    {
+      "hex": "#E6981E",
+      "rgba": "#E6981EFF",
+      "rgb": [
+        230,
+        152,
+        30
+      ],
+      "count": 2816,
+      "luma": 159.7744
+    },
+    {
+      "hex": "#E7981E",
+      "rgba": "#E7981EFF",
+      "rgb": [
+        231,
+        152,
+        30
+      ],
+      "count": 112,
+      "luma": 159.987
+    },
+    {
+      "hex": "#E7981F",
+      "rgba": "#E7981FFF",
+      "rgb": [
+        231,
+        152,
+        31
+      ],
+      "count": 136,
+      "luma": 160.0592
+    },
+    {
+      "hex": "#E79F25",
+      "rgba": "#E79F25FF",
+      "rgb": [
+        231,
+        159,
+        37
+      ],
+      "count": 208,
+      "luma": 165.4988
+    },
+    {
+      "hex": "#E7A025",
+      "rgba": "#E7A025FF",
+      "rgb": [
+        231,
+        160,
+        37
+      ],
+      "count": 384,
+      "luma": 166.214
+    },
+    {
+      "hex": "#E8A025",
+      "rgba": "#E8A025FF",
+      "rgb": [
+        232,
+        160,
+        37
+      ],
+      "count": 168,
+      "luma": 166.4266
+    },
+    {
+      "hex": "#E8A026",
+      "rgba": "#E8A026FF",
+      "rgb": [
+        232,
+        160,
+        38
+      ],
+      "count": 96,
+      "luma": 166.4988
+    },
+    {
+      "hex": "#E7A227",
+      "rgba": "#E7A227FF",
+      "rgb": [
+        231,
+        162,
+        39
+      ],
+      "count": 1312,
+      "luma": 167.7888
+    },
+    {
+      "hex": "#E7A327",
+      "rgba": "#E7A327FF",
+      "rgb": [
+        231,
+        163,
+        39
+      ],
+      "count": 352,
+      "luma": 168.504
+    },
+    {
+      "hex": "#E8A327",
+      "rgba": "#E8A327FF",
+      "rgb": [
+        232,
+        163,
+        39
+      ],
+      "count": 968,
+      "luma": 168.7166
+    },
+    {
+      "hex": "#E8A328",
+      "rgba": "#E8A328FF",
+      "rgb": [
+        232,
+        163,
+        40
+      ],
+      "count": 3344,
+      "luma": 168.7888
+    },
+    {
+      "hex": "#E9AD2E",
+      "rgba": "#E9AD2EFF",
+      "rgb": [
+        233,
+        173,
+        46
+      ],
+      "count": 80,
+      "luma": 176.5866
+    },
+    {
+      "hex": "#E9AD2F",
+      "rgba": "#E9AD2FFF",
+      "rgb": [
+        233,
+        173,
+        47
+      ],
+      "count": 2528,
+      "luma": 176.6588
+    },
+    {
+      "hex": "#E9AE2F",
+      "rgba": "#E9AE2FFF",
+      "rgb": [
+        233,
+        174,
+        47
+      ],
+      "count": 616,
+      "luma": 177.374
+    },
+    {
+      "hex": "#EAAE2F",
+      "rgba": "#EAAE2FFF",
+      "rgb": [
+        234,
+        174,
+        47
+      ],
+      "count": 2320,
+      "luma": 177.5866
+    },
+    {
+      "hex": "#EAAE30",
+      "rgba": "#EAAE30FF",
+      "rgb": [
+        234,
+        174,
+        48
+      ],
+      "count": 1312,
+      "luma": 177.6588
+    },
+    {
+      "hex": "#EAB231",
+      "rgba": "#EAB231FF",
+      "rgb": [
+        234,
+        178,
+        49
+      ],
+      "count": 56,
+      "luma": 180.5918
+    },
+    {
+      "hex": "#EAB232",
+      "rgba": "#EAB232FF",
+      "rgb": [
+        234,
+        178,
+        50
+      ],
+      "count": 504,
+      "luma": 180.664
+    },
+    {
+      "hex": "#EBB232",
+      "rgba": "#EBB232FF",
+      "rgb": [
+        235,
+        178,
+        50
+      ],
+      "count": 224,
+      "luma": 180.8766
+    },
+    {
+      "hex": "#EBB332",
+      "rgba": "#EBB332FF",
+      "rgb": [
+        235,
+        179,
+        50
+      ],
+      "count": 64,
+      "luma": 181.5918
+    },
+    {
+      "hex": "#EAB734",
+      "rgba": "#EAB734FF",
+      "rgb": [
+        234,
+        183,
+        52
+      ],
+      "count": 224,
+      "luma": 184.3844
+    },
+    {
+      "hex": "#EBB734",
+      "rgba": "#EBB734FF",
+      "rgb": [
+        235,
+        183,
+        52
+      ],
+      "count": 248,
+      "luma": 184.597
+    },
+    {
+      "hex": "#EBB735",
+      "rgba": "#EBB735FF",
+      "rgb": [
+        235,
+        183,
+        53
+      ],
+      "count": 1728,
+      "luma": 184.6692
+    },
+    {
+      "hex": "#EBB835",
+      "rgba": "#EBB835FF",
+      "rgb": [
+        235,
+        184,
+        53
+      ],
+      "count": 3096,
+      "luma": 185.3844
+    },
+    {
+      "hex": "#ECB835",
+      "rgba": "#ECB835FF",
+      "rgb": [
+        236,
+        184,
+        53
+      ],
+      "count": 368,
+      "luma": 185.597
+    },
+    {
+      "hex": "#ECB836",
+      "rgba": "#ECB836FF",
+      "rgb": [
+        236,
+        184,
+        54
+      ],
+      "count": 376,
+      "luma": 185.6692
+    },
+    {
+      "hex": "#EBB935",
+      "rgba": "#EBB935FF",
+      "rgb": [
+        235,
+        185,
+        53
+      ],
+      "count": 88,
+      "luma": 186.0996
+    },
+    {
+      "hex": "#EBBA36",
+      "rgba": "#EBBA36FF",
+      "rgb": [
+        235,
+        186,
+        54
+      ],
+      "count": 360,
+      "luma": 186.887
+    },
+    {
+      "hex": "#ECBA36",
+      "rgba": "#ECBA36FF",
+      "rgb": [
+        236,
+        186,
+        54
+      ],
+      "count": 496,
+      "luma": 187.0996
+    },
+    {
+      "hex": "#EBBC36",
+      "rgba": "#EBBC36FF",
+      "rgb": [
+        235,
+        188,
+        54
+      ],
+      "count": 328,
+      "luma": 188.3174
+    },
+    {
+      "hex": "#ECBC37",
+      "rgba": "#ECBC37FF",
+      "rgb": [
+        236,
+        188,
+        55
+      ],
+      "count": 160,
+      "luma": 188.6022
+    },
+    {
+      "hex": "#ECBD37",
+      "rgba": "#ECBD37FF",
+      "rgb": [
+        236,
+        189,
+        55
+      ],
+      "count": 408,
+      "luma": 189.3174
+    },
+    {
+      "hex": "#E7C473",
+      "rgba": "#E7C473FF",
+      "rgb": [
+        231,
+        196,
+        115
+      ],
+      "count": 16,
+      "luma": 197.5928
+    },
+    {
+      "hex": "#E8C473",
+      "rgba": "#E8C473FF",
+      "rgb": [
+        232,
+        196,
+        115
+      ],
+      "count": 144,
+      "luma": 197.8054
+    },
+    {
+      "hex": "#E8C474",
+      "rgba": "#E8C474FF",
+      "rgb": [
+        232,
+        196,
+        116
+      ],
+      "count": 232,
+      "luma": 197.8776
+    },
+    {
+      "hex": "#E8C574",
+      "rgba": "#E8C574FF",
+      "rgb": [
+        232,
+        197,
+        116
+      ],
+      "count": 688,
+      "luma": 198.5928
+    },
+    {
+      "hex": "#E9C574",
+      "rgba": "#E9C574FF",
+      "rgb": [
+        233,
+        197,
+        116
+      ],
+      "count": 336,
+      "luma": 198.8054
+    },
+    {
+      "hex": "#E9C575",
+      "rgba": "#E9C575FF",
+      "rgb": [
+        233,
+        197,
+        117
+      ],
+      "count": 48,
+      "luma": 198.8776
+    },
+    {
+      "hex": "#E8C674",
+      "rgba": "#E8C674FF",
+      "rgb": [
+        232,
+        198,
+        116
+      ],
+      "count": 24,
+      "luma": 199.308
+    },
+    {
+      "hex": "#E8C774",
+      "rgba": "#E8C774FF",
+      "rgb": [
+        232,
+        199,
+        116
+      ],
+      "count": 72,
+      "luma": 200.0232
+    },
+    {
+      "hex": "#E9C774",
+      "rgba": "#E9C774FF",
+      "rgb": [
+        233,
+        199,
+        116
+      ],
+      "count": 80,
+      "luma": 200.2358
+    },
+    {
+      "hex": "#E9C775",
+      "rgba": "#E9C775FF",
+      "rgb": [
+        233,
+        199,
+        117
+      ],
+      "count": 40,
+      "luma": 200.308
+    }
+  ],
+  "selected_anchors": {
+    "dark": {
+      "rgb": [
+        229,
+        142,
+        20
+      ],
+      "hex": "#E58E14",
+      "luma": 151.6878
+    },
+    "medium": {
+      "rgb": [
+        232,
+        163,
+        39
+      ],
+      "hex": "#E8A327",
+      "luma": 168.7166
+    },
+    "light": {
+      "rgb": [
+        233,
+        197,
+        116
+      ],
+      "hex": "#E9C574",
+      "luma": 198.8054
+    },
+    "note": "manual selection from --dark, --medium, and --light"
+  },
+  "minecraft_layer_model": {
+    "intent": "layer0 dark mask tinted dark, layer1 medium mask tinted medium, layer2 light mask tinted light",
+    "blend_order": "dark bottom, medium over dark, light over medium",
+    "compatibility_note": "This matches the standard alpha-over behavior used by layered item models. A normal fluid sprite has one tint; using three fluid-sprite colors would need a custom renderer, generated baked texture, or another modded rendering hook."
+  },
+  "class_grid_legend": {
+    ".": "transparent",
+    "D": "mostly dark",
+    "d": "dark/medium blend",
+    "M": "mostly medium",
+    "l": "medium/light blend",
+    "L": "mostly light"
+  },
+  "class_grid": "llllllllllLlllllllllllllllLlllll\nlllllllllLldMLlllllllllllLldMLll\nLLllllllLMdDDMLLLLllllllLMdDDMLL\nMMlLLLLLLMDddDMMMMlLLLLLLMDddDMM\nDdMMMlLLlMdMddDDDdMMMlLLlMdMddDD\nddDDMMllMDdMMdMdddDDMMllMDdMMdMd\nddddDdMMMDdMMdddddddDdMMMDdMMddd\nMMdddDDMdDdMMMdMMMdddDDMdDdMMMdM\nMMMMdddDDddMMMMMMMMMdddDDddMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMlMMMMMMddMMlMMMMlMMMMMMddMMlMMM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMllMMMMMMMlMlMMMMllMMMMMMMlMlM\nMMllllMMMMlllMMMMMllllMMMMlllMMM\nllllllllllllllMMllllllllllllllMM\nllllllllllLlllllllllllllllLlllll\nlllllllllLldMLlllllllllllLldMLll\nLLllllllLMdDDMLLLLllllllLMdDDMLL\nMMlLLLLLLMDddDMMMMlLLLLLLMDddDMM\nDdMMMlLLlMdMddDDDdMMMlLLlMdMddDD\nddDDMMllMDdMMdMdddDDMMllMDdMMdMd\nddddDdMMMDdMMdddddddDdMMMDdMMddd\nMMdddDDMdDdMMMdMMMdddDDMdDdMMMdM\nMMMMdddDDddMMMMMMMMMdddDDddMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMlMMMMMMddMMlMMMMlMMMMMMddMMlMMM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMllMMMMMMMlMlMMMMllMMMMMMMlMlM\nMMllllMMMMlllMMMMMllllMMMMlllMMM\nllllllllllllllMMllllllllllllllMM\nMlMllllMMlllllMMMlMllllMMlllllMM\nllllllllllLMllllllllllllllLMllll\nlllllllllLMdMLlllllllllllLMdMLll\nLLlllllllLMDDMLLLLlllllllLMDDMLL\nMMlLLlllllDMdDMMMMlLLlllllDMdDMM\nDdMMlLllLMDMddDDDdMMlLllLMDMddDD\nddDDMMLLLMDdddddddDDMMLLLMDddddd\nddddDdMlldddMMddddddDdMlldddMMdd\nMMdddDDMMDddMdddMMdddDDMMDddMddd\nMMMMdMdDDDdMMMdMMMMMdMdDDDdMMMdM\nMMMMMMdMdddMMMMMMMMMMMdMdddMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMllMMMMlllMMMMMMMllMMMMlllMMM\nMlMllllMMlllllMMMlMllllMMlllllMM\nllllllllllLMllllllllllllllLMllll\nlllllllllLMdMLlllllllllllLMdMLll\nLLlllllllLMDDMLLLLlllllllLMDDMLL\nMMlLLlllllDMdDMMMMlLLlllllDMdDMM\nDdMMlLllLMDMddDDDdMMlLllLMDMddDD\nddDDMMLLLMDdddddddDDMMLLLMDddddd\nddddDdMlldddMMddddddDdMlldddMMdd\nMMdddDDMMDddMdddMMdddDDMMDddMddd\nMMMMdMdDDDdMMMdMMMMMdMdDDDdMMMdM\nMMMMMMdMdddMMMMMMMMMMMdMdddMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMllMMMMlllMMMMMMMllMMMMlllMMM\nMlMMlMMMMMlllMMMMlMMlMMMMMlllMMM\nMMMMMMMlMllLllMMMMMMMMMlMllLllMM\nllllllMMllLMllllllllllMMllLMllll\nlllllllllllddllllllllllllllddlll\nlLlllllllLMDDMlLlLlllllllLMDDMlL\nMMlLlllllLMDdDMMMMlLlllllLMDdDMM\nDDdMlLlllldddDDDDDdMlLlllldddDDD\nddDDdMLlLMDddMDdddDDdMLlLMDddMDd\nddddDDMllMDdddddddddDDMllMDddddd\nMMdddMDMMdddMdddMMdddMDMMdddMddd\nMMMMMddDDDddMdddMMMMMddDDDddMddd\nMMMMMMdMddMMMMMdMMMMMMdMddMMMMMd\nMMMMMMMddMMMMMdMMMMMMMMddMMMMMdM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMM\nMlMMlMMMMMlllMMMMlMMlMMMMMlllMMM\nMMMMMMMlMllLllMMMMMMMMMlMllLllMM\nllllllMMllLMllllllllllMMllLMllll\nlllllllllllddllllllllllllllddlll\nlLlllllllLMDDMlLlLlllllllLMDDMlL\nMMlLlllllLMDdDMMMMlLlllllLMDdDMM\nDDdMlLlllldddDDDDDdMlLlllldddDDD\nddDDdMLlLMDddMDdddDDdMLlLMDddMDd\nddddDDMllMDdddddddddDDMllMDddddd\nMMdddMDMMdddMdddMMdddMDMMdddMddd\nMMMMMddDDDddMdddMMMMMddDDDddMddd\nMMMMMMdMddMMMMMdMMMMMMdMddMMMMMd\nMMMMMMMddMMMMMdMMMMMMMMddMMMMMdM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMM\nMlMMlMMMMMMllMMMMlMMlMMMMMMllMMM\nMMMMMMMlMllllMMMMMMMMMMlMllllMMM\nMMMMMMMMMllLLlMMMMMMMMMMMllLLlMM\nlllMMlMMMlLMMllllllMMlMMMlLMMlll\nllllllMMlllMdlllllllllMMlllMdlll\nlLLlllllllMDDMlllLLlllllllMDDMll\ndMMlLlllllMDDDMMdMMlLlllllMDDDMM\nDDdMMLlllLMDdDDDDDdMMLlllLMDdDDD\ndddDdMllllddddDDdddDdMllllddddDD\ndddddDMllMDdMddddddddDMllMDdMddd\ndMddMdDMMdddMddddMddMdDMMdddMddd\nMMMMMddDDDMdMMMdMMMMMddDDDMdMMMd\nMMMMMMdddMdMMdddMMMMMMdddMdMMddd\nMMMMMMMddMMMMMMdMMMMMMMddMMMMMMd\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMM\nMlMMlMMMMMMllMMMMlMMlMMMMMMllMMM\nMMMMMMMlMllllMMMMMMMMMMlMllllMMM\nMMMMMMMMMllLLlMMMMMMMMMMMllLLlMM\nlllMMlMMMlLMMllllllMMlMMMlLMMlll\nllllllMMlllMdlllllllllMMlllMdlll\nlLLlllllllMDDMlllLLlllllllMDDMll\ndMMlLlllllMDDDMMdMMlLlllllMDDDMM\nDDdMMLlllLMDdDDDDDdMMLlllLMDdDDD\ndddDdMllllddddDDdddDdMllllddddDD\ndddddDMllMDdMddddddddDMllMDdMddd\ndMddMdDMMdddMddddMddMdDMMdddMddd\nMMMMMddDDDMdMMMdMMMMMddDDDMdMMMd\nMMMMMMdddMdMMdddMMMMMMdddMdMMddd\nMMMMMMMddMMMMMMdMMMMMMMddMMMMMMd\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMMMMMlMllllMMMMMMMMMMlMllllMMM\nMMMMMMMMMMllllMMMMMMMMMMMMllllMM\nlMMMMlMMMllLLllMlMMMMlMMMllLLllM\nlllMMlMMMlllMLlllllMMlMMMlllMLll\nLllllMMMMlLMMlLlLllllMMMMlLMMlLl\nMlLllllMllldDMllMlLllllMllldDMll\nDdMlLllllllDDMMMDdMlLllllllDDMMM\nDDDdMllllLMDDDdDDDDdMllllLMDDDdD\nddddDMlLllMDMDDDddddDMlLllMDMDDD\ndMddMDdllMDdMdDddMddMDdllMDdMdDd\nddddddDDMDMdMMMdddddddDDMDMdMMMd\ndMMMMdddDMdddddddMMMMdddDMdddddd\nMMMMMMddddMMMdMdMMMMMMddddMMMdMd\nMMMMMMMMdMMMMMddMMMMMMMMdMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMMMMMlMllllMMMMMMMMMMlMllllMMM\nMMMMMMMMMMllllMMMMMMMMMMMMllllMM\nlMMMMlMMMllLLllMlMMMMlMMMllLLllM\nlllMMlMMMlllMLlllllMMlMMMlllMLll\nLllllMMMMlLMMlLlLllllMMMMlLMMlLl\nMlLllllMllldDMllMlLllllMllldDMll\nDdMlLllllllDDMMMDdMlLllllllDDMMM\nDDDdMllllLMDDDdDDDDdMllllLMDDDdD\nddddDMlLllMDMDDDddddDMlLllMDMDDD\ndMddMDdllMDdMdDddMddMDdllMDdMdDd\nddddddDDMDMdMMMdddddddDDMDMdMMMd\ndMMMMdddDMdddddddMMMMdddDMdddddd\nMMMMMMddddMMMdMdMMMMMMddddMMMdMd\nMMMMMMMMdMMMMMddMMMMMMMMdMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nMMMMMMMMMllMMMMMMMMMMMMMMllMMMMM\nMMMMMMMMMMlllMMMMMMMMMMMMMlllMMM\nMMMMMlMMMMllllMMMMMMMlMMMMllllMM\nllMMMlMMMllLllllllMMMlMMMllLllll\nllllMMMMMlllMLllllllMMMMMlllMLll\nlLllllMMMlLMMlLLlLllllMMMlLMMlLL\nMMlLlllMMlLMdllMMMlLlllMMlLMdllM\nDDdMlLllllldDMMMDDdMlLllllldDMMM\nDDDDdlLllLMDDDMDDDDDdlLllLMDDDMD\ndMddDDMLLlMDMDdDdMddDDMLLlMDMDdD\nddddddDMMMDdMDDDddddddDMMMDdMDDD\ndddddddDDDddddDddddddddDDDddddDd\nddMMMdddddddMdMdddMMMdddddddMdMd\ndMMMMMMdddMMMddddMMMMMMdddMMMddd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nMMMMMMMMMllMMMMMMMMMMMMMMllMMMMM\nMMMMMMMMMMlllMMMMMMMMMMMMMlllMMM\nMMMMMlMMMMllllMMMMMMMlMMMMllllMM\nllMMMlMMMllLllllllMMMlMMMllLllll\nllllMMMMMlllMLllllllMMMMMlllMLll\nlLllllMMMlLMMlLLlLllllMMMlLMMlLL\nMMlLlllMMlLMdllMMMlLlllMMlLMdllM\nDDdMlLllllldDMMMDDdMlLllllldDMMM\nDDDDdlLllLMDDDMDDDDDdlLllLMDDDMD\ndMddDDMLLlMDMDdDdMddDDMLLlMDMDdD\nddddddDMMMDdMDDDddddddDMMMDdMDDD\ndddddddDDDddddDddddddddDDDddddDd\nddMMMdddddddMdMdddMMMdddddddMdMd\ndMMMMMMdddMMMddddMMMMMMdddMMMddd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMlMddMMMMMMMMMMMMlMdd\nMMMMMMMMMllMMMMMMMMMMMMMMllMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMMlllMMMMMMMMMMMMMlllMMM\nMMMMMlMMMlllLlMMMMMMMlMMMlllLlMM\nlllMMMMMMMlLlllllllMMMMMMMlLllll\nLllllMMMMlllMLllLllllMMMMlllMLll\nllLlllMMMllMMlLLllLlllMMMllMMlLL\nMMMlLllMllLMMMlMMMMlLllMllLMMMlM\nDDDdMLlllllMDMMMDDDdMLlllllMDMMM\nDMdDDMlllLMDDdMdDMdDDMlllLMDDdMd\ndddddDMllMMDDDMDdddddDMllMMDDDMD\nddddddDdMMDddDDDddddddDdMMDddDDD\nddddMdddDdddMdDDddddMdddDdddMdDD\ndddMMMdddddMMddddddMMMdddddMMddd\nddMMMMMddMMMMdddddMMMMMddMMMMddd\nMMMMMMMMMMMMlMddMMMMMMMMMMMMlMdd\nMMMMMMMMMllMMMMMMMMMMMMMMllMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMMlllMMMMMMMMMMMMMlllMMM\nMMMMMlMMMlllLlMMMMMMMlMMMlllLlMM\nlllMMMMMMMlLlllllllMMMMMMMlLllll\nLllllMMMMlllMLllLllllMMMMlllMLll\nllLlllMMMllMMlLLllLlllMMMllMMlLL\nMMMlLllMllLMMMlMMMMlLllMllLMMMlM\nDDDdMLlllllMDMMMDDDdMLlllllMDMMM\nDMdDDMlllLMDDdMdDMdDDMlllLMDDdMd\ndddddDMllMMDDDMDdddddDMllMMDDDMD\nddddddDdMMDddDDDddddddDdMMDddDDD\nddddMdddDdddMdDDddddMdddDdddMdDD\ndddMMMdddddMMddddddMMMdddddMMddd\nddMMMMMddMMMMdddddMMMMMddMMMMddd\ndMMMMMMddMMMMMdddMMMMMMddMMMMMdd\nMMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMlllllMMMMMMMMMMMlllllMM\nlMMMMMMMMMllLllllMMMMMMMMMllLlll\nlllllMMMMMlLlllllllllMMMMMlLllll\nLLlllMMMMMlLlLllLLlllMMMMMlLlLll\nMMlLlllMllllMlLlMMlLlllMllllMlLl\nddMMlLllllLMMMlMddMMlLllllLMMMlM\nDDDDMMLllllMMMMMDDDDMMLllllMMMMM\nDDddDdMLLllDDMlMDDddDdMLLllDDMlM\nddddddDMMMDDDDMdddddddDMMMDDDDMd\nddddMddDDDddMDDDddddMddDDDddMDDD\ndddMddddddddddDDdddMddddddddddDD\nddddMMddddMMMdddddddMMddddMMMddd\ndMMMMMMddMMMMMdddMMMMMMddMMMMMdd\nMMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMlllllMMMMMMMMMMMlllllMM\nlMMMMMMMMMllLllllMMMMMMMMMllLlll\nlllllMMMMMlLlllllllllMMMMMlLllll\nLLlllMMMMMlLlLllLLlllMMMMMlLlLll\nMMlLlllMllllMlLlMMlLlllMllllMlLl\nddMMlLllllLMMMlMddMMlLllllLMMMlM\nDDDDMMLllllMMMMMDDDDMMLllllMMMMM\nDDddDdMLLllDDMlMDDddDdMLLllDDMlM\nddddddDMMMDDDDMdddddddDMMMDDDDMd\nddddMddDDDddMDDDddddMddDDDddMDDD\ndddMddddddddddDDdddMddddddddddDD\nddddMMddddMMMdddddddMMddddMMMddd\ndMddMddddMMMMddddMddMddddMMMMddd\ndddMMMMMMMMMMMdddddMMMMMMMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMlMllMMMMMMMMMMMMlMllMMM\nMMMMMMMMMMlllllMMMMMMMMMMMlllllM\nlllMlMMMMMllLllllllMlMMMMMllLlll\nlllllMMMMMllLllllllllMMMMMllLlll\nlLLlllMMlMlLlLlLlLLlllMMlMlLlLlL\nMMMlLllMMllllLLLMMMlLllMMllllLLL\ndMdMlLllllLMMlLldMdMlLllllLMMlLl\nDDDDDMlllLlMMllMDDDDDMlllLlMMllM\nDDddDDMlllMDDMMMDDddDDMlllMDDMMM\nDdddMdDdMdDdMDMdDdddMdDdMdDdMDMd\ndddMdddDDddddDDDdddMdddDDddddDDD\ndddddMdddddMMdDDdddddMdddddMMdDD\ndMddMddddMMMMddddMddMddddMMMMddd\ndddMMMMMMMMMMMdddddMMMMMMMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMlMllMMMMMMMMMMMMlMllMMM\nMMMMMMMMMMlllllMMMMMMMMMMMlllllM\nlllMlMMMMMllLllllllMlMMMMMllLlll\nlllllMMMMMllLllllllllMMMMMllLlll\nlLLlllMMlMlLlLlLlLLlllMMlMlLlLlL\nMMMlLllMMllllLLLMMMlLllMMllllLLL\ndMdMlLllllLMMlLldMdMlLllllLMMlLl\nDDDDDMlllLlMMllMDDDDDMlllLlMMllM\nDDddDDMlllMDDMMMDDddDDMlllMDDMMM\nDdddMdDdMdDdMDMdDdddMdDdMdDdMDMd\ndddMdddDDddddDDDdddMdddDDddddDDD\ndddddMdddddMMdDDdddddMdddddMMdDD\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMMddddddMMMMMMMMMMddddddMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMMMllllMMMMMMMMMMMMllllM\nlMMMlMMMMMMllllllMMMlMMMMMMlllll\nllllMMMMMMllllllllllMMMMMMllllll\nLLlllMMMlMllLlllLLlllMMMlMllLlll\nlllLlllMMMlLlLlLlllLlllMMMlLlLlL\nMMMMlLllMllllLlLMMMMlLllMllllLlL\nMdddMMLlllLMllLlMdddMMLlllLMllLl\ndDDDDdMLLLMddMlMdDDDDdMLLLMddMlM\nDDDdMDDMMMDDDMlMDDDdMDDMMMDDDMlM\nDDdMddDDDDdddDMdDDdMddDDDDdddDMd\ndddddMddddddddDDdddddMddddddddDD\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMMddddddMMMMMMMMMMddddddMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMMMllllMMMMMMMMMMMMllllM\nlMMMlMMMMMMllllllMMMlMMMMMMlllll\nllllMMMMMMllllllllllMMMMMMllllll\nLLlllMMMlMllLlllLLlllMMMlMllLlll\nlllLlllMMMlLlLlLlllLlllMMMlLlLlL\nMMMMlLllMllllLlLMMMMlLllMllllLlL\nMdddMMLlllLMllLlMdddMMLlllLMllLl\ndDDDDdMLLLMddMlMdDDDDdMLLLMddMlM\nDDDdMDDMMMDDDMlMDDDdMDDMMMDDDMlM\nDDdMddDDDDdddDMdDDdMddDDDDdddDMd\ndddddMddddddddDDdddddMddddddddDD\ndMddMddddddMMdDDdMddMddddddMMdDD\ndddddddMdMMMMddddddddddMdMMMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMMMdMdddMMMMMMMMMMMdMdddMMMMMMM\nMMMMMMddMMMlMMMMMMMMMMddMMMlMMMM\nMMMMMMMMMMMllMlMMMMMMMMMMMMllMlM\nMMMMlMMMMMMlllMMMMMMlMMMMMMlllMM\nlllMMMMMMMMllllllllMMMMMMMMlllll\nlllllMMMlMMllllllllllMMMlMMlllll\nLLLlllMMMMllLlllLLLlllMMMMllLlll\nllllLlllMllLLlllllllLlllMllLLlll\nMMMMMLlllllllLlLMMMMMLlllllllLlL\nMMdDdMlllllMMlLLMMdDdMlllllMMlLL\ndDDDDDMllMMDDMlldDDDDDMllMMDDMll\nDDDMdDDdMdDdddMMDDDMdDDdMdDdddMM\nDDdddMdDDddddDddDDdddMdDDddddDdd\ndMddMddddddMMdDDdMddMddddddMMdDD\ndddddddMdMMMMddddddddddMdMMMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMMMdMdddMMMMMMMMMMMdMdddMMMMMMM\nMMMMMMddMMMlMMMMMMMMMMddMMMlMMMM\nMMMMMMMMMMMllMlMMMMMMMMMMMMllMlM\nMMMMlMMMMMMlllMMMMMMlMMMMMMlllMM\nlllMMMMMMMMllllllllMMMMMMMMlllll\nlllllMMMlMMllllllllllMMMlMMlllll\nLLLlllMMMMllLlllLLLlllMMMMllLlll\nllllLlllMllLLlllllllLlllMllLLlll\nMMMMMLlllllllLlLMMMMMLlllllllLlL\nMMdDdMlllllMMlLLMMdDdMlllllMMlLL\ndDDDDDMllMMDDMlldDDDDDMllMMDDMll\nDDDMdDDdMdDdddMMDDDMdDDdMdDdddMM\nDDdddMdDDddddDddDDdddMdDDddddDdd\nDDDdMdDDDdddMdDdDDDdMdDDDdddMdDd\ndddddddMdMMMMddDdddddddMdMMMMddD\nddddddddddMMMMddddddddddddMMMMdd\nMddddMdddMMMMMMMMddddMdddMMMMMMM\nMMMMdMdddMMlMMMMMMMMdMdddMMlMMMM\nMMMMMMdddMMlMMlMMMMMMMdddMMlMMlM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nlMMMMMMMMMMlllMMlMMMMMMMMMMlllMM\nllllMMMMMMMlllllllllMMMMMMMlllll\nllllllMMMMMlllllllllllMMMMMlllll\nLLLLllMlMMllllllLLLLllMlMMllllll\nllMlllllMllLLlllllMlllllMllLLlll\nlMMMMlLlllLllLlllMMMMlLlllLllLll\nMMddMMMLLLMMMlLLMMddMMMLLLMMMlLL\nMdDDDDdMMMDDDMllMdDDDDdMMMDDDMll\ndDDDDDDddDdddDMMdDDDDDDddDdddDMM\nDDDdMdDDDdddMdDdDDDdMdDDDdddMdDd\ndddddddMdMMMMddDdddddddMdMMMMddD\nddddddddddMMMMddddddddddddMMMMdd\nMddddMdddMMMMMMMMddddMdddMMMMMMM\nMMMMdMdddMMlMMMMMMMMdMdddMMlMMMM\nMMMMMMdddMMlMMlMMMMMMMdddMMlMMlM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nlMMMMMMMMMMlllMMlMMMMMMMMMMlllMM\nllllMMMMMMMlllllllllMMMMMMMlllll\nllllllMMMMMlllllllllllMMMMMlllll\nLLLLllMlMMllllllLLLLllMlMMllllll\nllMlllllMllLLlllllMlllllMllLLlll\nlMMMMlLlllLllLlllMMMMlLlllLllLll\nMMddMMMLLLMMMlLLMMddMMMLLLMMMlLL\nMdDDDDdMMMDDDMllMdDDDDdMMMDDDMll\ndDDDDDDddDdddDMMdDDDDDDddDdddDMM\ndMDDDDDdDDddMDMMdMDDDDDdDDddMDMM\nDDDDDDDDDMMMMdDDDDDDDDDDDMMMMdDD\ndddddddDddMMMddddddddddDddMMMddd\ndddddMddddMMMMdddddddMddddMMMMdd\nMMdddMdddMMlMMMMMMdddMdddMMlMMMM\nMMMMMddddMMlMMMMMMMMMddddMMlMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMllMMMMMMMMMMMMMMllMM\nllMMMMMMMMMMlMMMllMMMMMMMMMMlMMM\nllllMlMMMMMlllMlllllMlMMMMMlllMl\nllllllMlMMMlllllllllllMlMMMlllll\nlLLLllllMMlllllllLLLllllMMllllll\nLllllLlllllLLlllLllllLlllllLLlll\nllMMlMLlllLMlLllllMMlMLlllLMlLll\nMMMMdMMlLlMddllLMMMMdMMlLlMddllL\nMMdDDDdMMdDdDMllMMdDDDdMMdDdDMll\ndMDDDDDdDDddMDMMdMDDDDDdDDddMDMM\nDDDDDDDDDMMMMdDDDDDDDDDDDMMMMdDD\ndddddddDddMMMddddddddddDddMMMddd\ndddddMddddMMMMdddddddMddddMMMMdd\nMMdddMdddMMlMMMMMMdddMdddMMlMMMM\nMMMMMddddMMlMMMMMMMMMddddMMlMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMllMMMMMMMMMMMMMMllMM\nllMMMMMMMMMMlMMMllMMMMMMMMMMlMMM\nllllMlMMMMMlllMlllllMlMMMMMlllMl\nllllllMlMMMlllllllllllMlMMMlllll\nlLLLllllMMlllllllLLLllllMMllllll\nLllllLlllllLLlllLllllLlllllLLlll\nllMMlMLlllLMlLllllMMlMLlllLMlLll\nMMMMdMMlLlMddllLMMMMdMMlLlMddllL\nMMdDDDdMMdDdDMllMMdDDDdMMdDdDMll\nMlMMMdMMMDDdMdllMlMMMdMMMDDdMdll\nddddDDdMdDMddDdMddddDDdMdDMddDdM\nDDDDDDDDDddMMdDDDDDDDDDDDddMMdDD\nddddDDDDDdMMMMddddddDDDDDdMMMMdd\nMddddMdDdMMMMMMdMddddMdDdMMMMMMd\nMMMdddddddMlMMMMMMMdddddddMlMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMdddMMMMlMMMMMMMMdddMMMMlMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlllMMlMMMMMMlMMMlllMMlMMMMMMlMMM\nlllllMMlMMMllMMMlllllMMlMMMllMMM\nllllllMlMMllllllllllllMlMMllllll\nllLLLllMMlllllllllLLLllMMlllllll\nlLlllLlllllLLllllLlllLlllllLLlll\nLlllMMlllLlMMLllLlllMMlllLlMMLll\nllMMMMMllMdDDlLLllMMMMMllMdDDlLL\nMlMMMdMMMDDdMdllMlMMMdMMMDDdMdll\nddddDDdMdDMddDdMddddDDdMdDMddDdM\nDDDDDDDDDddMMdDDDDDDDDDDDddMMdDD\nddddDDDDDdMMMMddddddDDDDDdMMMMdd\nMddddMdDdMMMMMMdMddddMdDdMMMMMMd\nMMMdddddddMlMMMMMMMdddddddMlMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMdddMMMMlMMMMMMMMdddMMMMlMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlllMMlMMMMMMlMMMlllMMlMMMMMMlMMM\nlllllMMlMMMllMMMlllllMMlMMMllMMM\nllllllMlMMllllllllllllMlMMllllll\nllLLLllMMlllllllllLLLllMMlllllll\nlLlllLlllllLLllllLlllLlllllLLlll\nLlllMMlllLlMMLllLlllMMlllLlMMLll\nllMMMMMllMdDDlLLllMMMMMllMdDDlLL\nLllllMlllMDDDMLLLllllMlllMDDDMLL\nMMMMMMMlMDMddDMlMMMMMMMlMDMddDMl\nDdMMMMMMMDddddDdDdMMMMMMMDddddDd\ndDDDDMdMDddMMddDdDDDDMdMDddMMddD\nddddDDDDDMMMMMddddddDDDDDMMMMMdd\nMdddddDDDdMMMMMMMdddddDDDdMMMMMM\nMMMMMddDddMMMMMMMMMMMddDddMMMMMM\nMMMMMdddddMMMlMMMMMMMdddddMMMlMM\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nlllMlMMMMMMMlMMMlllMlMMMMMMMlMMM\nlllllMMlMMlMlllMlllllMMlMMlMlllM\nlllllllMMllllMMMlllllllMMllllMMM\nlllLllllMllllllllllLllllMlllllll\nllLLLLllllLlLlllllLLLLllllLlLlll\nLLLlllLLlLMMMLllLLLlllLLlLMMMLll\nLllllMlllMDDDMLLLllllMlllMDDDMLL\nMMMMMMMlMDMddDMlMMMMMMMlMDMddDMl\nDdMMMMMMMDddddDdDdMMMMMMMDddddDd\ndDDDDMdMDddMMddDdDDDDMdMDddMMddD\nddddDDDDDMMMMMddddddDDDDDMMMMMdd\nMdddddDDDdMMMMMMMdddddDDDdMMMMMM\nMMMMMddDddMMMMMMMMMMMddDddMMMMMM\nMMMMMdddddMMMlMMMMMMMdddddMMMlMM\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nlllMlMMMMMMMlMMMlllMlMMMMMMMlMMM\nlllllMMlMMlMlllMlllllMMlMMlMlllM\nlllllllMMllllMMMlllllllMMllllMMM\nlllLllllMllllllllllLllllMlllllll\nllLLLLllllLlLlllllLLLLllllLlLlll\nLLLlllLLlLMMMLllLLLlllLLlLMMMLll\nlllLLLLlllMdMLlllllLLLLlllMdMLll\nLLLLlLLLLlDDDMLLLLLLlLLLLlDDDMLL\nMMlllllllddddDMMMMlllllllddddDMM\nDdMMMlMlMDddddDdDdMMMlMlMDddddDd\ndDDDdMMMMDdMMddddDDDdMMMMDdMMddd\nddddDDdMdddMMMMdddddDDdMdddMMMMd\nMMddMdDdDddMMMMMMMddMdDdDddMMMMM\nMMMMdddDDdMMMMMMMMMMdddDDdMMMMMM\nMMMMMdddMdMMMMMMMMMMMdddMdMMMMMM\nMMMMMMMdddMMlMMMMMMMMMMdddMMlMMM\nMlMMlMMMMMMMlMMMMlMMlMMMMMMMlMMM\nMMMMMMMMMMlMlllMMMMMMMMMMMlMlllM\nMllllMMMMlMMMMMMMllllMMMMlMMMMMM\nlllllllMMMlllMlMlllllllMMMlllMlM\nllllllllllllllMMllllllllllllllMM\nllllllllllLlllllllllllllllLlllll\nlllLLLLlllMdMLlllllLLLLlllMdMLll\nLLLLlLLLLlDDDMLLLLLLlLLLLlDDDMLL\nMMlllllllddddDMMMMlllllllddddDMM\nDdMMMlMlMDddddDdDdMMMlMlMDddddDd\ndDDDdMMMMDdMMddddDDDdMMMMDdMMddd\nddddDDdMdddMMMMdddddDDdMdddMMMMd\nMMddMdDdDddMMMMMMMddMdDdDddMMMMM\nMMMMdddDDdMMMMMMMMMMdddDDdMMMMMM\nMMMMMdddMdMMMMMMMMMMMdddMdMMMMMM\nMMMMMMMdddMMlMMMMMMMMMMdddMMlMMM\nMlMMlMMMMMMMlMMMMlMMlMMMMMMMlMMM\nMMMMMMMMMMlMlllMMMMMMMMMMMlMlllM\nMllllMMMMlMMMMMMMllllMMMMlMMMMMM\nlllllllMMMlllMlMlllllllMMMlllMlM\nllllllllllllllMMllllllllllllllMM\nllllllllllLlllllllllllllllLlllll\nllllllllllLlllllllllllllllLlllll\nlllllllllLldMLlllllllllllLldMLll\nLLllllllLMdDDMLLLLllllllLMdDDMLL\nMMlLLLLLLMDddDMMMMlLLLLLLMDddDMM\nDdMMMlLLlMdMddDDDdMMMlLLlMdMddDD\nddDDMMllMDdMMdMdddDDMMllMDdMMdMd\nddddDdMMMDdMMdddddddDdMMMDdMMddd\nMMdddDDMdDdMMMdMMMdddDDMdDdMMMdM\nMMMMdddDDddMMMMMMMMMdddDDddMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMlMMMMMMddMMlMMMMlMMMMMMddMMlMMM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMllMMMMMMMlMlMMMMllMMMMMMMlMlM\nMMllllMMMMlllMMMMMllllMMMMlllMMM\nllllllllllllllMMllllllllllllllMM\nllllllllllLlllllllllllllllLlllll\nlllllllllLldMLlllllllllllLldMLll\nLLllllllLMdDDMLLLLllllllLMdDDMLL\nMMlLLLLLLMDddDMMMMlLLLLLLMDddDMM\nDdMMMlLLlMdMddDDDdMMMlLLlMdMddDD\nddDDMMllMDdMMdMdddDDMMllMDdMMdMd\nddddDdMMMDdMMdddddddDdMMMDdMMddd\nMMdddDDMdDdMMMdMMMdddDDMdDdMMMdM\nMMMMdddDDddMMMMMMMMMdddDDddMMMMM\nMMMMMMddddMMMMMMMMMMMMddddMMMMMM\nMlMMMMMMddMMlMMMMlMMMMMMddMMlMMM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMllMMMMMMMlMlMMMMllMMMMMMMlMlM\nMMllllMMMMlllMMMMMllllMMMMlllMMM\nllllllllllllllMMllllllllllllllMM\nMlMllllMMlllllMMMlMllllMMlllllMM\nllllllllllLMllllllllllllllLMllll\nlllllllllLMdMLlllllllllllLMdMLll\nLLlllllllLMDDMLLLLlllllllLMDDMLL\nMMlLLlllllDMdDMMMMlLLlllllDMdDMM\nDdMMlLllLMDMddDDDdMMlLllLMDMddDD\nddDDMMLLLMDdddddddDDMMLLLMDddddd\nddddDdMlldddMMddddddDdMlldddMMdd\nMMdddDDMMDddMdddMMdddDDMMDddMddd\nMMMMdMdDDDdMMMdMMMMMdMdDDDdMMMdM\nMMMMMMdMdddMMMMMMMMMMMdMdddMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMllMMMMlllMMMMMMMllMMMMlllMMM\nMlMllllMMlllllMMMlMllllMMlllllMM\nllllllllllLMllllllllllllllLMllll\nlllllllllLMdMLlllllllllllLMdMLll\nLLlllllllLMDDMLLLLlllllllLMDDMLL\nMMlLLlllllDMdDMMMMlLLlllllDMdDMM\nDdMMlLllLMDMddDDDdMMlLllLMDMddDD\nddDDMMLLLMDdddddddDDMMLLLMDddddd\nddddDdMlldddMMddddddDdMlldddMMdd\nMMdddDDMMDddMdddMMdddDDMMDddMddd\nMMMMdMdDDDdMMMdMMMMMdMdDDDdMMMdM\nMMMMMMdMdddMMMMMMMMMMMdMdddMMMMM\nMMMMMMMMddMMMMMMMMMMMMMMddMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMllMMMMlllMMMMMMMllMMMMlllMMM\nMlMMlMMMMMlllMMMMlMMlMMMMMlllMMM\nMMMMMMMlMllLllMMMMMMMMMlMllLllMM\nllllllMMllLMllllllllllMMllLMllll\nlllllllllllddllllllllllllllddlll\nlLlllllllLMDDMlLlLlllllllLMDDMlL\nMMlLlllllLMDdDMMMMlLlllllLMDdDMM\nDDdMlLlllldddDDDDDdMlLlllldddDDD\nddDDdMLlLMDddMDdddDDdMLlLMDddMDd\nddddDDMllMDdddddddddDDMllMDddddd\nMMdddMDMMdddMdddMMdddMDMMdddMddd\nMMMMMddDDDddMdddMMMMMddDDDddMddd\nMMMMMMdMddMMMMMdMMMMMMdMddMMMMMd\nMMMMMMMddMMMMMdMMMMMMMMddMMMMMdM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMM\nMlMMlMMMMMlllMMMMlMMlMMMMMlllMMM\nMMMMMMMlMllLllMMMMMMMMMlMllLllMM\nllllllMMllLMllllllllllMMllLMllll\nlllllllllllddllllllllllllllddlll\nlLlllllllLMDDMlLlLlllllllLMDDMlL\nMMlLlllllLMDdDMMMMlLlllllLMDdDMM\nDDdMlLlllldddDDDDDdMlLlllldddDDD\nddDDdMLlLMDddMDdddDDdMLlLMDddMDd\nddddDDMllMDdddddddddDDMllMDddddd\nMMdddMDMMdddMdddMMdddMDMMdddMddd\nMMMMMddDDDddMdddMMMMMddDDDddMddd\nMMMMMMdMddMMMMMdMMMMMMdMddMMMMMd\nMMMMMMMddMMMMMdMMMMMMMMddMMMMMdM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMM\nMlMMlMMMMMMllMMMMlMMlMMMMMMllMMM\nMMMMMMMlMllllMMMMMMMMMMlMllllMMM\nMMMMMMMMMllLLlMMMMMMMMMMMllLLlMM\nlllMMlMMMlLMMllllllMMlMMMlLMMlll\nllllllMMlllMdlllllllllMMlllMdlll\nlLLlllllllMDDMlllLLlllllllMDDMll\ndMMlLlllllMDDDMMdMMlLlllllMDDDMM\nDDdMMLlllLMDdDDDDDdMMLlllLMDdDDD\ndddDdMllllddddDDdddDdMllllddddDD\ndddddDMllMDdMddddddddDMllMDdMddd\ndMddMdDMMdddMddddMddMdDMMdddMddd\nMMMMMddDDDMdMMMdMMMMMddDDDMdMMMd\nMMMMMMdddMdMMdddMMMMMMdddMdMMddd\nMMMMMMMddMMMMMMdMMMMMMMddMMMMMMd\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMM\nMlMMlMMMMMMllMMMMlMMlMMMMMMllMMM\nMMMMMMMlMllllMMMMMMMMMMlMllllMMM\nMMMMMMMMMllLLlMMMMMMMMMMMllLLlMM\nlllMMlMMMlLMMllllllMMlMMMlLMMlll\nllllllMMlllMdlllllllllMMlllMdlll\nlLLlllllllMDDMlllLLlllllllMDDMll\ndMMlLlllllMDDDMMdMMlLlllllMDDDMM\nDDdMMLlllLMDdDDDDDdMMLlllLMDdDDD\ndddDdMllllddddDDdddDdMllllddddDD\ndddddDMllMDdMddddddddDMllMDdMddd\ndMddMdDMMdddMddddMddMdDMMdddMddd\nMMMMMddDDDMdMMMdMMMMMddDDDMdMMMd\nMMMMMMdddMdMMdddMMMMMMdddMdMMddd\nMMMMMMMddMMMMMMdMMMMMMMddMMMMMMd\nMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMMM\nMMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMMMMMlMllllMMMMMMMMMMlMllllMMM\nMMMMMMMMMMllllMMMMMMMMMMMMllllMM\nlMMMMlMMMllLLllMlMMMMlMMMllLLllM\nlllMMlMMMlllMLlllllMMlMMMlllMLll\nLllllMMMMlLMMlLlLllllMMMMlLMMlLl\nMlLllllMllldDMllMlLllllMllldDMll\nDdMlLllllllDDMMMDdMlLllllllDDMMM\nDDDdMllllLMDDDdDDDDdMllllLMDDDdD\nddddDMlLllMDMDDDddddDMlLllMDMDDD\ndMddMDdllMDdMdDddMddMDdllMDdMdDd\nddddddDDMDMdMMMdddddddDDMDMdMMMd\ndMMMMdddDMdddddddMMMMdddDMdddddd\nMMMMMMddddMMMdMdMMMMMMddddMMMdMd\nMMMMMMMMdMMMMMddMMMMMMMMdMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlMMMMMMMlMMMMMMMlMMMMMMMlMMM\nMMMMMMMlMllllMMMMMMMMMMlMllllMMM\nMMMMMMMMMMllllMMMMMMMMMMMMllllMM\nlMMMMlMMMllLLllMlMMMMlMMMllLLllM\nlllMMlMMMlllMLlllllMMlMMMlllMLll\nLllllMMMMlLMMlLlLllllMMMMlLMMlLl\nMlLllllMllldDMllMlLllllMllldDMll\nDdMlLllllllDDMMMDdMlLllllllDDMMM\nDDDdMllllLMDDDdDDDDdMllllLMDDDdD\nddddDMlLllMDMDDDddddDMlLllMDMDDD\ndMddMDdllMDdMdDddMddMDdllMDdMdDd\nddddddDDMDMdMMMdddddddDDMDMdMMMd\ndMMMMdddDMdddddddMMMMdddDMdddddd\nMMMMMMddddMMMdMdMMMMMMddddMMMdMd\nMMMMMMMMdMMMMMddMMMMMMMMdMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nMMMMMMMMMllMMMMMMMMMMMMMMllMMMMM\nMMMMMMMMMMlllMMMMMMMMMMMMMlllMMM\nMMMMMlMMMMllllMMMMMMMlMMMMllllMM\nllMMMlMMMllLllllllMMMlMMMllLllll\nllllMMMMMlllMLllllllMMMMMlllMLll\nlLllllMMMlLMMlLLlLllllMMMlLMMlLL\nMMlLlllMMlLMdllMMMlLlllMMlLMdllM\nDDdMlLllllldDMMMDDdMlLllllldDMMM\nDDDDdlLllLMDDDMDDDDDdlLllLMDDDMD\ndMddDDMLLlMDMDdDdMddDDMLLlMDMDdD\nddddddDMMMDdMDDDddddddDMMMDdMDDD\ndddddddDDDddddDddddddddDDDddddDd\nddMMMdddddddMdMdddMMMdddddddMdMd\ndMMMMMMdddMMMddddMMMMMMdddMMMddd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nMMMMMMMMMllMMMMMMMMMMMMMMllMMMMM\nMMMMMMMMMMlllMMMMMMMMMMMMMlllMMM\nMMMMMlMMMMllllMMMMMMMlMMMMllllMM\nllMMMlMMMllLllllllMMMlMMMllLllll\nllllMMMMMlllMLllllllMMMMMlllMLll\nlLllllMMMlLMMlLLlLllllMMMlLMMlLL\nMMlLlllMMlLMdllMMMlLlllMMlLMdllM\nDDdMlLllllldDMMMDDdMlLllllldDMMM\nDDDDdlLllLMDDDMDDDDDdlLllLMDDDMD\ndMddDDMLLlMDMDdDdMddDDMLLlMDMDdD\nddddddDMMMDdMDDDddddddDMMMDdMDDD\ndddddddDDDddddDddddddddDDDddddDd\nddMMMdddddddMdMdddMMMdddddddMdMd\ndMMMMMMdddMMMddddMMMMMMdddMMMddd\nMMMMMMMMMMMMMMddMMMMMMMMMMMMMMdd\nMMMMMMMMMMMMlMddMMMMMMMMMMMMlMdd\nMMMMMMMMMllMMMMMMMMMMMMMMllMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMMlllMMMMMMMMMMMMMlllMMM\nMMMMMlMMMlllLlMMMMMMMlMMMlllLlMM\nlllMMMMMMMlLlllllllMMMMMMMlLllll\nLllllMMMMlllMLllLllllMMMMlllMLll\nllLlllMMMllMMlLLllLlllMMMllMMlLL\nMMMlLllMllLMMMlMMMMlLllMllLMMMlM\nDDDdMLlllllMDMMMDDDdMLlllllMDMMM\nDMdDDMlllLMDDdMdDMdDDMlllLMDDdMd\ndddddDMllMMDDDMDdddddDMllMMDDDMD\nddddddDdMMDddDDDddddddDdMMDddDDD\nddddMdddDdddMdDDddddMdddDdddMdDD\ndddMMMdddddMMddddddMMMdddddMMddd\nddMMMMMddMMMMdddddMMMMMddMMMMddd\nMMMMMMMMMMMMlMddMMMMMMMMMMMMlMdd\nMMMMMMMMMllMMMMMMMMMMMMMMllMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMMlllMMMMMMMMMMMMMlllMMM\nMMMMMlMMMlllLlMMMMMMMlMMMlllLlMM\nlllMMMMMMMlLlllllllMMMMMMMlLllll\nLllllMMMMlllMLllLllllMMMMlllMLll\nllLlllMMMllMMlLLllLlllMMMllMMlLL\nMMMlLllMllLMMMlMMMMlLllMllLMMMlM\nDDDdMLlllllMDMMMDDDdMLlllllMDMMM\nDMdDDMlllLMDDdMdDMdDDMlllLMDDdMd\ndddddDMllMMDDDMDdddddDMllMMDDDMD\nddddddDdMMDddDDDddddddDdMMDddDDD\nddddMdddDdddMdDDddddMdddDdddMdDD\ndddMMMdddddMMddddddMMMdddddMMddd\nddMMMMMddMMMMdddddMMMMMddMMMMddd\ndMMMMMMddMMMMMdddMMMMMMddMMMMMdd\nMMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMlllllMMMMMMMMMMMlllllMM\nlMMMMMMMMMllLllllMMMMMMMMMllLlll\nlllllMMMMMlLlllllllllMMMMMlLllll\nLLlllMMMMMlLlLllLLlllMMMMMlLlLll\nMMlLlllMllllMlLlMMlLlllMllllMlLl\nddMMlLllllLMMMlMddMMlLllllLMMMlM\nDDDDMMLllllMMMMMDDDDMMLllllMMMMM\nDDddDdMLLllDDMlMDDddDdMLLllDDMlM\nddddddDMMMDDDDMdddddddDMMMDDDDMd\nddddMddDDDddMDDDddddMddDDDddMDDD\ndddMddddddddddDDdddMddddddddddDD\nddddMMddddMMMdddddddMMddddMMMddd\ndMMMMMMddMMMMMdddMMMMMMddMMMMMdd\nMMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMlllllMMMMMMMMMMMlllllMM\nlMMMMMMMMMllLllllMMMMMMMMMllLlll\nlllllMMMMMlLlllllllllMMMMMlLllll\nLLlllMMMMMlLlLllLLlllMMMMMlLlLll\nMMlLlllMllllMlLlMMlLlllMllllMlLl\nddMMlLllllLMMMlMddMMlLllllLMMMlM\nDDDDMMLllllMMMMMDDDDMMLllllMMMMM\nDDddDdMLLllDDMlMDDddDdMLLllDDMlM\nddddddDMMMDDDDMdddddddDMMMDDDDMd\nddddMddDDDddMDDDddddMddDDDddMDDD\ndddMddddddddddDDdddMddddddddddDD\nddddMMddddMMMdddddddMMddddMMMddd\ndMddMddddMMMMddddMddMddddMMMMddd\ndddMMMMMMMMMMMdddddMMMMMMMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMlMllMMMMMMMMMMMMlMllMMM\nMMMMMMMMMMlllllMMMMMMMMMMMlllllM\nlllMlMMMMMllLllllllMlMMMMMllLlll\nlllllMMMMMllLllllllllMMMMMllLlll\nlLLlllMMlMlLlLlLlLLlllMMlMlLlLlL\nMMMlLllMMllllLLLMMMlLllMMllllLLL\ndMdMlLllllLMMlLldMdMlLllllLMMlLl\nDDDDDMlllLlMMllMDDDDDMlllLlMMllM\nDDddDDMlllMDDMMMDDddDDMlllMDDMMM\nDdddMdDdMdDdMDMdDdddMdDdMdDdMDMd\ndddMdddDDddddDDDdddMdddDDddddDDD\ndddddMdddddMMdDDdddddMdddddMMdDD\ndMddMddddMMMMddddMddMddddMMMMddd\ndddMMMMMMMMMMMdddddMMMMMMMMMMMdd\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMlMllMMMMMMMMMMMMlMllMMM\nMMMMMMMMMMlllllMMMMMMMMMMMlllllM\nlllMlMMMMMllLllllllMlMMMMMllLlll\nlllllMMMMMllLllllllllMMMMMllLlll\nlLLlllMMlMlLlLlLlLLlllMMlMlLlLlL\nMMMlLllMMllllLLLMMMlLllMMllllLLL\ndMdMlLllllLMMlLldMdMlLllllLMMlLl\nDDDDDMlllLlMMllMDDDDDMlllLlMMllM\nDDddDDMlllMDDMMMDDddDDMlllMDDMMM\nDdddMdDdMdDdMDMdDdddMdDdMdDdMDMd\ndddMdddDDddddDDDdddMdddDDddddDDD\ndddddMdddddMMdDDdddddMdddddMMdDD\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMMddddddMMMMMMMMMMddddddMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMMMllllMMMMMMMMMMMMllllM\nlMMMlMMMMMMllllllMMMlMMMMMMlllll\nllllMMMMMMllllllllllMMMMMMllllll\nLLlllMMMlMllLlllLLlllMMMlMllLlll\nlllLlllMMMlLlLlLlllLlllMMMlLlLlL\nMMMMlLllMllllLlLMMMMlLllMllllLlL\nMdddMMLlllLMllLlMdddMMLlllLMllLl\ndDDDDdMLLLMddMlMdDDDDdMLLLMddMlM\nDDDdMDDMMMDDDMlMDDDdMDDMMMDDDMlM\nDDdMddDDDDdddDMdDDdMddDDDDdddDMd\ndddddMddddddddDDdddddMddddddddDD\ndMddMdddddMMMddddMddMdddddMMMddd\ndddddddMdMMMMMdddddddddMdMMMMMdd\nMMddddddMMMMMMMMMMddddddMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMllMMMMMMMMMMMMMMllMMM\nMMMMMMMMMMMllllMMMMMMMMMMMMllllM\nlMMMlMMMMMMllllllMMMlMMMMMMlllll\nllllMMMMMMllllllllllMMMMMMllllll\nLLlllMMMlMllLlllLLlllMMMlMllLlll\nlllLlllMMMlLlLlLlllLlllMMMlLlLlL\nMMMMlLllMllllLlLMMMMlLllMllllLlL\nMdddMMLlllLMllLlMdddMMLlllLMllLl\ndDDDDdMLLLMddMlMdDDDDdMLLLMddMlM\nDDDdMDDMMMDDDMlMDDDdMDDMMMDDDMlM\nDDdMddDDDDdddDMdDDdMddDDDDdddDMd\ndddddMddddddddDDdddddMddddddddDD\ndMddMddddddMMdDDdMddMddddddMMdDD\ndddddddMdMMMMddddddddddMdMMMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMMMdMdddMMMMMMMMMMMdMdddMMMMMMM\nMMMMMMddMMMlMMMMMMMMMMddMMMlMMMM\nMMMMMMMMMMMllMlMMMMMMMMMMMMllMlM\nMMMMlMMMMMMlllMMMMMMlMMMMMMlllMM\nlllMMMMMMMMllllllllMMMMMMMMlllll\nlllllMMMlMMllllllllllMMMlMMlllll\nLLLlllMMMMllLlllLLLlllMMMMllLlll\nllllLlllMllLLlllllllLlllMllLLlll\nMMMMMLlllllllLlLMMMMMLlllllllLlL\nMMdDdMlllllMMlLLMMdDdMlllllMMlLL\ndDDDDDMllMMDDMlldDDDDDMllMMDDMll\nDDDMdDDdMdDdddMMDDDMdDDdMdDdddMM\nDDdddMdDDddddDddDDdddMdDDddddDdd\ndMddMddddddMMdDDdMddMddddddMMdDD\ndddddddMdMMMMddddddddddMdMMMMddd\ndddddddddMMMMMdddddddddddMMMMMdd\nMMMMdMdddMMMMMMMMMMMdMdddMMMMMMM\nMMMMMMddMMMlMMMMMMMMMMddMMMlMMMM\nMMMMMMMMMMMllMlMMMMMMMMMMMMllMlM\nMMMMlMMMMMMlllMMMMMMlMMMMMMlllMM\nlllMMMMMMMMllllllllMMMMMMMMlllll\nlllllMMMlMMllllllllllMMMlMMlllll\nLLLlllMMMMllLlllLLLlllMMMMllLlll\nllllLlllMllLLlllllllLlllMllLLlll\nMMMMMLlllllllLlLMMMMMLlllllllLlL\nMMdDdMlllllMMlLLMMdDdMlllllMMlLL\ndDDDDDMllMMDDMlldDDDDDMllMMDDMll\nDDDMdDDdMdDdddMMDDDMdDDdMdDdddMM\nDDdddMdDDddddDddDDdddMdDDddddDdd\nDDDdMdDDDdddMdDdDDDdMdDDDdddMdDd\ndddddddMdMMMMddDdddddddMdMMMMddD\nddddddddddMMMMddddddddddddMMMMdd\nMddddMdddMMMMMMMMddddMdddMMMMMMM\nMMMMdMdddMMlMMMMMMMMdMdddMMlMMMM\nMMMMMMdddMMlMMlMMMMMMMdddMMlMMlM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nlMMMMMMMMMMlllMMlMMMMMMMMMMlllMM\nllllMMMMMMMlllllllllMMMMMMMlllll\nllllllMMMMMlllllllllllMMMMMlllll\nLLLLllMlMMllllllLLLLllMlMMllllll\nllMlllllMllLLlllllMlllllMllLLlll\nlMMMMlLlllLllLlllMMMMlLlllLllLll\nMMddMMMLLLMMMlLLMMddMMMLLLMMMlLL\nMdDDDDdMMMDDDMllMdDDDDdMMMDDDMll\ndDDDDDDddDdddDMMdDDDDDDddDdddDMM\nDDDdMdDDDdddMdDdDDDdMdDDDdddMdDd\ndddddddMdMMMMddDdddddddMdMMMMddD\nddddddddddMMMMddddddddddddMMMMdd\nMddddMdddMMMMMMMMddddMdddMMMMMMM\nMMMMdMdddMMlMMMMMMMMdMdddMMlMMMM\nMMMMMMdddMMlMMlMMMMMMMdddMMlMMlM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nlMMMMMMMMMMlllMMlMMMMMMMMMMlllMM\nllllMMMMMMMlllllllllMMMMMMMlllll\nllllllMMMMMlllllllllllMMMMMlllll\nLLLLllMlMMllllllLLLLllMlMMllllll\nllMlllllMllLLlllllMlllllMllLLlll\nlMMMMlLlllLllLlllMMMMlLlllLllLll\nMMddMMMLLLMMMlLLMMddMMMLLLMMMlLL\nMdDDDDdMMMDDDMllMdDDDDdMMMDDDMll\ndDDDDDDddDdddDMMdDDDDDDddDdddDMM\ndMDDDDDdDDddMDMMdMDDDDDdDDddMDMM\nDDDDDDDDDMMMMdDDDDDDDDDDDMMMMdDD\ndddddddDddMMMddddddddddDddMMMddd\ndddddMddddMMMMdddddddMddddMMMMdd\nMMdddMdddMMlMMMMMMdddMdddMMlMMMM\nMMMMMddddMMlMMMMMMMMMddddMMlMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMllMMMMMMMMMMMMMMllMM\nllMMMMMMMMMMlMMMllMMMMMMMMMMlMMM\nllllMlMMMMMlllMlllllMlMMMMMlllMl\nllllllMlMMMlllllllllllMlMMMlllll\nlLLLllllMMlllllllLLLllllMMllllll\nLllllLlllllLLlllLllllLlllllLLlll\nllMMlMLlllLMlLllllMMlMLlllLMlLll\nMMMMdMMlLlMddllLMMMMdMMlLlMddllL\nMMdDDDdMMdDdDMllMMdDDDdMMdDdDMll\ndMDDDDDdDDddMDMMdMDDDDDdDDddMDMM\nDDDDDDDDDMMMMdDDDDDDDDDDDMMMMdDD\ndddddddDddMMMddddddddddDddMMMddd\ndddddMddddMMMMdddddddMddddMMMMdd\nMMdddMdddMMlMMMMMMdddMdddMMlMMMM\nMMMMMddddMMlMMMMMMMMMddddMMlMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMllMMMMMMMMMMMMMMllMM\nllMMMMMMMMMMlMMMllMMMMMMMMMMlMMM\nllllMlMMMMMlllMlllllMlMMMMMlllMl\nllllllMlMMMlllllllllllMlMMMlllll\nlLLLllllMMlllllllLLLllllMMllllll\nLllllLlllllLLlllLllllLlllllLLlll\nllMMlMLlllLMlLllllMMlMLlllLMlLll\nMMMMdMMlLlMddllLMMMMdMMlLlMddllL\nMMdDDDdMMdDdDMllMMdDDDdMMdDdDMll\nMlMMMdMMMDDdMdllMlMMMdMMMDDdMdll\nddddDDdMdDMddDdMddddDDdMdDMddDdM\nDDDDDDDDDddMMdDDDDDDDDDDDddMMdDD\nddddDDDDDdMMMMddddddDDDDDdMMMMdd\nMddddMdDdMMMMMMdMddddMdDdMMMMMMd\nMMMdddddddMlMMMMMMMdddddddMlMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMdddMMMMlMMMMMMMMdddMMMMlMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlllMMlMMMMMMlMMMlllMMlMMMMMMlMMM\nlllllMMlMMMllMMMlllllMMlMMMllMMM\nllllllMlMMllllllllllllMlMMllllll\nllLLLllMMlllllllllLLLllMMlllllll\nlLlllLlllllLLllllLlllLlllllLLlll\nLlllMMlllLlMMLllLlllMMlllLlMMLll\nllMMMMMllMdDDlLLllMMMMMllMdDDlLL\nMlMMMdMMMDDdMdllMlMMMdMMMDDdMdll\nddddDDdMdDMddDdMddddDDdMdDMddDdM\nDDDDDDDDDddMMdDDDDDDDDDDDddMMdDD\nddddDDDDDdMMMMddddddDDDDDdMMMMdd\nMddddMdDdMMMMMMdMddddMdDdMMMMMMd\nMMMdddddddMlMMMMMMMdddddddMlMMMM\nMMMMMddddMMMMMMMMMMMMddddMMMMMMM\nMMMMMMdddMMMMlMMMMMMMMdddMMMMlMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlllMMlMMMMMMlMMMlllMMlMMMMMMlMMM\nlllllMMlMMMllMMMlllllMMlMMMllMMM\nllllllMlMMllllllllllllMlMMllllll\nllLLLllMMlllllllllLLLllMMlllllll\nlLlllLlllllLLllllLlllLlllllLLlll\nLlllMMlllLlMMLllLlllMMlllLlMMLll\nllMMMMMllMdDDlLLllMMMMMllMdDDlLL\nLllllMlllMDDDMLLLllllMlllMDDDMLL\nMMMMMMMlMDMddDMlMMMMMMMlMDMddDMl\nDdMMMMMMMDddddDdDdMMMMMMMDddddDd\ndDDDDMdMDddMMddDdDDDDMdMDddMMddD\nddddDDDDDMMMMMddddddDDDDDMMMMMdd\nMdddddDDDdMMMMMMMdddddDDDdMMMMMM\nMMMMMddDddMMMMMMMMMMMddDddMMMMMM\nMMMMMdddddMMMlMMMMMMMdddddMMMlMM\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nlllMlMMMMMMMlMMMlllMlMMMMMMMlMMM\nlllllMMlMMlMlllMlllllMMlMMlMlllM\nlllllllMMllllMMMlllllllMMllllMMM\nlllLllllMllllllllllLllllMlllllll\nllLLLLllllLlLlllllLLLLllllLlLlll\nLLLlllLLlLMMMLllLLLlllLLlLMMMLll\nLllllMlllMDDDMLLLllllMlllMDDDMLL\nMMMMMMMlMDMddDMlMMMMMMMlMDMddDMl\nDdMMMMMMMDddddDdDdMMMMMMMDddddDd\ndDDDDMdMDddMMddDdDDDDMdMDddMMddD\nddddDDDDDMMMMMddddddDDDDDMMMMMdd\nMdddddDDDdMMMMMMMdddddDDDdMMMMMM\nMMMMMddDddMMMMMMMMMMMddDddMMMMMM\nMMMMMdddddMMMlMMMMMMMdddddMMMlMM\nMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMMM\nMMMMMMMMMMMMlMMMMMMMMMMMMMMMlMMM\nlllMlMMMMMMMlMMMlllMlMMMMMMMlMMM\nlllllMMlMMlMlllMlllllMMlMMlMlllM\nlllllllMMllllMMMlllllllMMllllMMM\nlllLllllMllllllllllLllllMlllllll\nllLLLLllllLlLlllllLLLLllllLlLlll\nLLLlllLLlLMMMLllLLLlllLLlLMMMLll\nlllLLLLlllMdMLlllllLLLLlllMdMLll\nLLLLlLLLLlDDDMLLLLLLlLLLLlDDDMLL\nMMlllllllddddDMMMMlllllllddddDMM\nDdMMMlMlMDddddDdDdMMMlMlMDddddDd\ndDDDdMMMMDdMMddddDDDdMMMMDdMMddd\nddddDDdMdddMMMMdddddDDdMdddMMMMd\nMMddMdDdDddMMMMMMMddMdDdDddMMMMM\nMMMMdddDDdMMMMMMMMMMdddDDdMMMMMM\nMMMMMdddMdMMMMMMMMMMMdddMdMMMMMM\nMMMMMMMdddMMlMMMMMMMMMMdddMMlMMM\nMlMMlMMMMMMMlMMMMlMMlMMMMMMMlMMM\nMMMMMMMMMMlMlllMMMMMMMMMMMlMlllM\nMllllMMMMlMMMMMMMllllMMMMlMMMMMM\nlllllllMMMlllMlMlllllllMMMlllMlM\nllllllllllllllMMllllllllllllllMM\nllllllllllLlllllllllllllllLlllll\nlllLLLLlllMdMLlllllLLLLlllMdMLll\nLLLLlLLLLlDDDMLLLLLLlLLLLlDDDMLL\nMMlllllllddddDMMMMlllllllddddDMM\nDdMMMlMlMDddddDdDdMMMlMlMDddddDd\ndDDDdMMMMDdMMddddDDDdMMMMDdMMddd\nddddDDdMdddMMMMdddddDDdMdddMMMMd\nMMddMdDdDddMMMMMMMddMdDdDddMMMMM\nMMMMdddDDdMMMMMMMMMMdddDDdMMMMMM\nMMMMMdddMdMMMMMMMMMMMdddMdMMMMMM\nMMMMMMMdddMMlMMMMMMMMMMdddMMlMMM\nMlMMlMMMMMMMlMMMMlMMlMMMMMMMlMMM\nMMMMMMMMMMlMlllMMMMMMMMMMMlMlllM\nMllllMMMMlMMMMMMMllllMMMMlMMMMMM\nlllllllMMMlllMlMlllllllMMMlllMlM\nllllllllllllllMMllllllllllllllMM\nllllllllllLlllllllllllllllLlllll",
+  "per_source_color_blends": [
+    {
+      "source_rgb": [
+        228,
+        141,
+        18
+      ],
+      "source_hex": "#E48D12",
+      "count": 80,
+      "source_luma": 150.6156,
+      "approx_rgb": [
+        229,
+        142,
+        20
+      ],
+      "approx_hex": "#E58E14",
+      "composited_rgb": [
+        229,
+        142,
+        20
+      ],
+      "composited_hex": "#E58E14",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 1.0,
+      "medium_weight": 0.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        228,
+        141,
+        19
+      ],
+      "source_hex": "#E48D13",
+      "count": 1040,
+      "source_luma": 150.6878,
+      "approx_rgb": [
+        229,
+        142,
+        20
+      ],
+      "approx_hex": "#E58E14",
+      "composited_rgb": [
+        229,
+        142,
+        20
+      ],
+      "composited_hex": "#E58E14",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 1.0,
+      "medium_weight": 0.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        228,
+        142,
+        19
+      ],
+      "source_hex": "#E48E13",
+      "count": 728,
+      "source_luma": 151.403,
+      "approx_rgb": [
+        229,
+        142,
+        20
+      ],
+      "approx_hex": "#E58E14",
+      "composited_rgb": [
+        229,
+        142,
+        20
+      ],
+      "composited_hex": "#E58E14",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 1.0,
+      "medium_weight": 0.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        229,
+        142,
+        19
+      ],
+      "source_hex": "#E58E13",
+      "count": 600,
+      "source_luma": 151.6156,
+      "approx_rgb": [
+        229,
+        142,
+        20
+      ],
+      "approx_hex": "#E58E14",
+      "composited_rgb": [
+        229,
+        142,
+        20
+      ],
+      "composited_hex": "#E58E14",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 1.0,
+      "medium_weight": 0.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        229,
+        142,
+        20
+      ],
+      "source_hex": "#E58E14",
+      "count": 304,
+      "source_luma": 151.6878,
+      "approx_rgb": [
+        229,
+        142,
+        20
+      ],
+      "approx_hex": "#E58E14",
+      "composited_rgb": [
+        229,
+        142,
+        20
+      ],
+      "composited_hex": "#E58E14",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 1.0,
+      "medium_weight": 0.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        229,
+        151,
+        29
+      ],
+      "source_hex": "#E5971D",
+      "count": 680,
+      "source_luma": 158.7744,
+      "approx_rgb": [
+        230,
+        151,
+        28
+      ],
+      "approx_hex": "#E6971C",
+      "composited_rgb": [
+        230,
+        151,
+        28
+      ],
+      "composited_hex": "#E6971C",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.556104,
+      "medium_weight": 0.443896,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        230,
+        151,
+        29
+      ],
+      "source_hex": "#E6971D",
+      "count": 40,
+      "source_luma": 158.987,
+      "approx_rgb": [
+        230,
+        151,
+        29
+      ],
+      "approx_hex": "#E6971D",
+      "composited_rgb": [
+        230,
+        151,
+        28
+      ],
+      "composited_hex": "#E6971C",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.552404,
+      "medium_weight": 0.447596,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        230,
+        151,
+        30
+      ],
+      "source_hex": "#E6971E",
+      "count": 2136,
+      "source_luma": 159.0592,
+      "approx_rgb": [
+        230,
+        152,
+        29
+      ],
+      "approx_hex": "#E6981D",
+      "composited_rgb": [
+        230,
+        152,
+        29
+      ],
+      "composited_hex": "#E6981D",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.528977,
+      "medium_weight": 0.471023,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        230,
+        152,
+        30
+      ],
+      "source_hex": "#E6981E",
+      "count": 2816,
+      "source_luma": 159.7744,
+      "approx_rgb": [
+        230,
+        152,
+        29
+      ],
+      "approx_hex": "#E6981D",
+      "composited_rgb": [
+        230,
+        152,
+        29
+      ],
+      "composited_hex": "#E6981D",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.503083,
+      "medium_weight": 0.496917,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        152,
+        30
+      ],
+      "source_hex": "#E7981E",
+      "count": 112,
+      "source_luma": 159.987,
+      "approx_rgb": [
+        231,
+        153,
+        30
+      ],
+      "approx_hex": "#E7991E",
+      "composited_rgb": [
+        231,
+        153,
+        30
+      ],
+      "composited_hex": "#E7991E",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.499383,
+      "medium_weight": 0.500617,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        152,
+        31
+      ],
+      "source_hex": "#E7981F",
+      "count": 136,
+      "source_luma": 160.0592,
+      "approx_rgb": [
+        231,
+        153,
+        30
+      ],
+      "approx_hex": "#E7991E",
+      "composited_rgb": [
+        231,
+        153,
+        30
+      ],
+      "composited_hex": "#E7991E",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.475956,
+      "medium_weight": 0.524044,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        159,
+        37
+      ],
+      "source_hex": "#E79F25",
+      "count": 208,
+      "source_luma": 165.4988,
+      "approx_rgb": [
+        232,
+        160,
+        36
+      ],
+      "approx_hex": "#E8A024",
+      "composited_rgb": [
+        232,
+        160,
+        36
+      ],
+      "composited_hex": "#E8A024",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.154131,
+      "medium_weight": 0.845869,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        160,
+        37
+      ],
+      "source_hex": "#E7A025",
+      "count": 384,
+      "source_luma": 166.214,
+      "approx_rgb": [
+        232,
+        160,
+        37
+      ],
+      "approx_hex": "#E8A025",
+      "composited_rgb": [
+        232,
+        160,
+        37
+      ],
+      "composited_hex": "#E8A025",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.128237,
+      "medium_weight": 0.871763,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        232,
+        160,
+        37
+      ],
+      "source_hex": "#E8A025",
+      "count": 168,
+      "source_luma": 166.4266,
+      "approx_rgb": [
+        232,
+        160,
+        37
+      ],
+      "approx_hex": "#E8A025",
+      "composited_rgb": [
+        232,
+        160,
+        37
+      ],
+      "composited_hex": "#E8A025",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.124538,
+      "medium_weight": 0.875462,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        232,
+        160,
+        38
+      ],
+      "source_hex": "#E8A026",
+      "count": 96,
+      "source_luma": 166.4988,
+      "approx_rgb": [
+        232,
+        161,
+        37
+      ],
+      "approx_hex": "#E8A125",
+      "composited_rgb": [
+        232,
+        161,
+        37
+      ],
+      "composited_hex": "#E8A125",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.10111,
+      "medium_weight": 0.89889,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        162,
+        39
+      ],
+      "source_hex": "#E7A227",
+      "count": 1312,
+      "source_luma": 167.7888,
+      "approx_rgb": [
+        232,
+        162,
+        38
+      ],
+      "approx_hex": "#E8A226",
+      "composited_rgb": [
+        232,
+        162,
+        38
+      ],
+      "composited_hex": "#E8A226",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.029593,
+      "medium_weight": 0.970407,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        231,
+        163,
+        39
+      ],
+      "source_hex": "#E7A327",
+      "count": 352,
+      "source_luma": 168.504,
+      "approx_rgb": [
+        232,
+        163,
+        39
+      ],
+      "approx_hex": "#E8A327",
+      "composited_rgb": [
+        232,
+        163,
+        39
+      ],
+      "composited_hex": "#E8A327",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.003699,
+      "medium_weight": 0.996301,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        232,
+        163,
+        39
+      ],
+      "source_hex": "#E8A327",
+      "count": 968,
+      "source_luma": 168.7166,
+      "approx_rgb": [
+        232,
+        163,
+        39
+      ],
+      "approx_hex": "#E8A327",
+      "composited_rgb": [
+        232,
+        163,
+        39
+      ],
+      "composited_hex": "#E8A327",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.0,
+      "medium_weight": 1.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        232,
+        163,
+        40
+      ],
+      "source_hex": "#E8A328",
+      "count": 3344,
+      "source_luma": 168.7888,
+      "approx_rgb": [
+        232,
+        163,
+        40
+      ],
+      "approx_hex": "#E8A328",
+      "composited_rgb": [
+        232,
+        163,
+        40
+      ],
+      "composited_hex": "#E8A328",
+      "max_channel_error": 0,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.989134,
+      "light_weight": 0.010866
+    },
+    {
+      "source_rgb": [
+        233,
+        173,
+        46
+      ],
+      "source_hex": "#E9AD2E",
+      "count": 80,
+      "source_luma": 176.5866,
+      "approx_rgb": [
+        232,
+        167,
+        49
+      ],
+      "approx_hex": "#E8A731",
+      "composited_rgb": [
+        232,
+        167,
+        49
+      ],
+      "composited_hex": "#E8A731",
+      "max_channel_error": 6,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.875811,
+      "light_weight": 0.124189
+    },
+    {
+      "source_rgb": [
+        233,
+        173,
+        47
+      ],
+      "source_hex": "#E9AD2F",
+      "count": 2528,
+      "source_luma": 176.6588,
+      "approx_rgb": [
+        232,
+        168,
+        49
+      ],
+      "approx_hex": "#E8A831",
+      "composited_rgb": [
+        232,
+        168,
+        49
+      ],
+      "composited_hex": "#E8A831",
+      "max_channel_error": 5,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.864945,
+      "light_weight": 0.135055
+    },
+    {
+      "source_rgb": [
+        233,
+        174,
+        47
+      ],
+      "source_hex": "#E9AE2F",
+      "count": 616,
+      "source_luma": 177.374,
+      "approx_rgb": [
+        232,
+        168,
+        50
+      ],
+      "approx_hex": "#E8A832",
+      "composited_rgb": [
+        232,
+        168,
+        50
+      ],
+      "composited_hex": "#E8A832",
+      "max_channel_error": 6,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.860147,
+      "light_weight": 0.139853
+    },
+    {
+      "source_rgb": [
+        234,
+        174,
+        47
+      ],
+      "source_hex": "#EAAE2F",
+      "count": 2320,
+      "source_luma": 177.5866,
+      "approx_rgb": [
+        232,
+        168,
+        50
+      ],
+      "approx_hex": "#E8A832",
+      "composited_rgb": [
+        232,
+        168,
+        50
+      ],
+      "composited_hex": "#E8A832",
+      "max_channel_error": 6,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.860006,
+      "light_weight": 0.139994
+    },
+    {
+      "source_rgb": [
+        234,
+        174,
+        48
+      ],
+      "source_hex": "#EAAE30",
+      "count": 1312,
+      "source_luma": 177.6588,
+      "approx_rgb": [
+        232,
+        168,
+        51
+      ],
+      "approx_hex": "#E8A833",
+      "composited_rgb": [
+        232,
+        168,
+        50
+      ],
+      "composited_hex": "#E8A832",
+      "max_channel_error": 6,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.849139,
+      "light_weight": 0.150861
+    },
+    {
+      "source_rgb": [
+        234,
+        178,
+        49
+      ],
+      "source_hex": "#EAB231",
+      "count": 56,
+      "source_luma": 180.5918,
+      "approx_rgb": [
+        232,
+        169,
+        53
+      ],
+      "approx_hex": "#E8A935",
+      "composited_rgb": [
+        232,
+        169,
+        53
+      ],
+      "composited_hex": "#E8A935",
+      "max_channel_error": 9,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.81908,
+      "light_weight": 0.18092
+    },
+    {
+      "source_rgb": [
+        234,
+        178,
+        50
+      ],
+      "source_hex": "#EAB232",
+      "count": 504,
+      "source_luma": 180.664,
+      "approx_rgb": [
+        232,
+        170,
+        54
+      ],
+      "approx_hex": "#E8AA36",
+      "composited_rgb": [
+        232,
+        170,
+        54
+      ],
+      "composited_hex": "#E8AA36",
+      "max_channel_error": 8,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.808213,
+      "light_weight": 0.191787
+    },
+    {
+      "source_rgb": [
+        235,
+        178,
+        50
+      ],
+      "source_hex": "#EBB232",
+      "count": 224,
+      "source_luma": 180.8766,
+      "approx_rgb": [
+        232,
+        170,
+        54
+      ],
+      "approx_hex": "#E8AA36",
+      "composited_rgb": [
+        232,
+        170,
+        54
+      ],
+      "composited_hex": "#E8AA36",
+      "max_channel_error": 8,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.808072,
+      "light_weight": 0.191928
+    },
+    {
+      "source_rgb": [
+        235,
+        179,
+        50
+      ],
+      "source_hex": "#EBB332",
+      "count": 64,
+      "source_luma": 181.5918,
+      "approx_rgb": [
+        232,
+        170,
+        54
+      ],
+      "approx_hex": "#E8AA36",
+      "composited_rgb": [
+        232,
+        170,
+        54
+      ],
+      "composited_hex": "#E8AA36",
+      "max_channel_error": 9,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.803274,
+      "light_weight": 0.196726
+    },
+    {
+      "source_rgb": [
+        234,
+        183,
+        52
+      ],
+      "source_hex": "#EAB734",
+      "count": 224,
+      "source_luma": 184.3844,
+      "approx_rgb": [
+        232,
+        171,
+        57
+      ],
+      "approx_hex": "#E8AB39",
+      "composited_rgb": [
+        232,
+        171,
+        57
+      ],
+      "composited_hex": "#E8AB39",
+      "max_channel_error": 12,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.762489,
+      "light_weight": 0.237511
+    },
+    {
+      "source_rgb": [
+        235,
+        183,
+        52
+      ],
+      "source_hex": "#EBB734",
+      "count": 248,
+      "source_luma": 184.597,
+      "approx_rgb": [
+        232,
+        171,
+        57
+      ],
+      "approx_hex": "#E8AB39",
+      "composited_rgb": [
+        232,
+        171,
+        57
+      ],
+      "composited_hex": "#E8AB39",
+      "max_channel_error": 12,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.762348,
+      "light_weight": 0.237652
+    },
+    {
+      "source_rgb": [
+        235,
+        183,
+        53
+      ],
+      "source_hex": "#EBB735",
+      "count": 1728,
+      "source_luma": 184.6692,
+      "approx_rgb": [
+        232,
+        171,
+        58
+      ],
+      "approx_hex": "#E8AB3A",
+      "composited_rgb": [
+        232,
+        171,
+        58
+      ],
+      "composited_hex": "#E8AB3A",
+      "max_channel_error": 12,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.751482,
+      "light_weight": 0.248518
+    },
+    {
+      "source_rgb": [
+        235,
+        184,
+        53
+      ],
+      "source_hex": "#EBB835",
+      "count": 3096,
+      "source_luma": 185.3844,
+      "approx_rgb": [
+        232,
+        172,
+        59
+      ],
+      "approx_hex": "#E8AC3B",
+      "composited_rgb": [
+        232,
+        172,
+        59
+      ],
+      "composited_hex": "#E8AC3B",
+      "max_channel_error": 12,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.746684,
+      "light_weight": 0.253316
+    },
+    {
+      "source_rgb": [
+        236,
+        184,
+        53
+      ],
+      "source_hex": "#ECB835",
+      "count": 368,
+      "source_luma": 185.597,
+      "approx_rgb": [
+        232,
+        172,
+        59
+      ],
+      "approx_hex": "#E8AC3B",
+      "composited_rgb": [
+        232,
+        172,
+        59
+      ],
+      "composited_hex": "#E8AC3B",
+      "max_channel_error": 12,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.746542,
+      "light_weight": 0.253458
+    },
+    {
+      "source_rgb": [
+        236,
+        184,
+        54
+      ],
+      "source_hex": "#ECB836",
+      "count": 376,
+      "source_luma": 185.6692,
+      "approx_rgb": [
+        232,
+        172,
+        59
+      ],
+      "approx_hex": "#E8AC3B",
+      "composited_rgb": [
+        232,
+        172,
+        59
+      ],
+      "composited_hex": "#E8AC3B",
+      "max_channel_error": 12,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.735676,
+      "light_weight": 0.264324
+    },
+    {
+      "source_rgb": [
+        235,
+        185,
+        53
+      ],
+      "source_hex": "#EBB935",
+      "count": 88,
+      "source_luma": 186.0996,
+      "approx_rgb": [
+        232,
+        172,
+        59
+      ],
+      "approx_hex": "#E8AC3B",
+      "composited_rgb": [
+        232,
+        172,
+        59
+      ],
+      "composited_hex": "#E8AC3B",
+      "max_channel_error": 13,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.741885,
+      "light_weight": 0.258115
+    },
+    {
+      "source_rgb": [
+        235,
+        186,
+        54
+      ],
+      "source_hex": "#EBBA36",
+      "count": 360,
+      "source_luma": 186.887,
+      "approx_rgb": [
+        232,
+        172,
+        60
+      ],
+      "approx_hex": "#E8AC3C",
+      "composited_rgb": [
+        232,
+        172,
+        60
+      ],
+      "composited_hex": "#E8AC3C",
+      "max_channel_error": 14,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.726221,
+      "light_weight": 0.273779
+    },
+    {
+      "source_rgb": [
+        236,
+        186,
+        54
+      ],
+      "source_hex": "#ECBA36",
+      "count": 496,
+      "source_luma": 187.0996,
+      "approx_rgb": [
+        232,
+        172,
+        60
+      ],
+      "approx_hex": "#E8AC3C",
+      "composited_rgb": [
+        232,
+        172,
+        60
+      ],
+      "composited_hex": "#E8AC3C",
+      "max_channel_error": 14,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.72608,
+      "light_weight": 0.27392
+    },
+    {
+      "source_rgb": [
+        235,
+        188,
+        54
+      ],
+      "source_hex": "#EBBC36",
+      "count": 328,
+      "source_luma": 188.3174,
+      "approx_rgb": [
+        232,
+        173,
+        61
+      ],
+      "approx_hex": "#E8AD3D",
+      "composited_rgb": [
+        232,
+        173,
+        61
+      ],
+      "composited_hex": "#E8AD3D",
+      "max_channel_error": 15,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.716624,
+      "light_weight": 0.283376
+    },
+    {
+      "source_rgb": [
+        236,
+        188,
+        55
+      ],
+      "source_hex": "#ECBC37",
+      "count": 160,
+      "source_luma": 188.6022,
+      "approx_rgb": [
+        232,
+        173,
+        62
+      ],
+      "approx_hex": "#E8AD3E",
+      "composited_rgb": [
+        232,
+        173,
+        62
+      ],
+      "composited_hex": "#E8AD3E",
+      "max_channel_error": 15,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.705617,
+      "light_weight": 0.294383
+    },
+    {
+      "source_rgb": [
+        236,
+        189,
+        55
+      ],
+      "source_hex": "#ECBD37",
+      "count": 408,
+      "source_luma": 189.3174,
+      "approx_rgb": [
+        232,
+        173,
+        62
+      ],
+      "approx_hex": "#E8AD3E",
+      "composited_rgb": [
+        232,
+        173,
+        62
+      ],
+      "composited_hex": "#E8AD3E",
+      "max_channel_error": 16,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.700819,
+      "light_weight": 0.299181
+    },
+    {
+      "source_rgb": [
+        231,
+        196,
+        115
+      ],
+      "source_hex": "#E7C473",
+      "count": 16,
+      "source_luma": 197.5928,
+      "approx_rgb": [
+        233,
+        196,
+        115
+      ],
+      "approx_hex": "#E9C473",
+      "composited_rgb": [
+        233,
+        196,
+        115
+      ],
+      "composited_hex": "#E9C473",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.015947,
+      "light_weight": 0.984053
+    },
+    {
+      "source_rgb": [
+        232,
+        196,
+        115
+      ],
+      "source_hex": "#E8C473",
+      "count": 144,
+      "source_luma": 197.8054,
+      "approx_rgb": [
+        233,
+        196,
+        115
+      ],
+      "approx_hex": "#E9C473",
+      "composited_rgb": [
+        233,
+        196,
+        115
+      ],
+      "composited_hex": "#E9C473",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.015806,
+      "light_weight": 0.984194
+    },
+    {
+      "source_rgb": [
+        232,
+        196,
+        116
+      ],
+      "source_hex": "#E8C474",
+      "count": 232,
+      "source_luma": 197.8776,
+      "approx_rgb": [
+        233,
+        197,
+        116
+      ],
+      "approx_hex": "#E9C574",
+      "composited_rgb": [
+        233,
+        197,
+        116
+      ],
+      "composited_hex": "#E9C574",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.004939,
+      "light_weight": 0.995061
+    },
+    {
+      "source_rgb": [
+        232,
+        197,
+        116
+      ],
+      "source_hex": "#E8C574",
+      "count": 688,
+      "source_luma": 198.5928,
+      "approx_rgb": [
+        233,
+        197,
+        116
+      ],
+      "approx_hex": "#E9C574",
+      "composited_rgb": [
+        233,
+        197,
+        116
+      ],
+      "composited_hex": "#E9C574",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.000141,
+      "light_weight": 0.999859
+    },
+    {
+      "source_rgb": [
+        233,
+        197,
+        116
+      ],
+      "source_hex": "#E9C574",
+      "count": 336,
+      "source_luma": 198.8054,
+      "approx_rgb": [
+        233,
+        197,
+        116
+      ],
+      "approx_hex": "#E9C574",
+      "composited_rgb": [
+        233,
+        197,
+        116
+      ],
+      "composited_hex": "#E9C574",
+      "max_channel_error": 0,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.0,
+      "light_weight": 1.0
+    },
+    {
+      "source_rgb": [
+        233,
+        197,
+        117
+      ],
+      "source_hex": "#E9C575",
+      "count": 48,
+      "source_luma": 198.8776,
+      "approx_rgb": [
+        233,
+        197,
+        116
+      ],
+      "approx_hex": "#E9C574",
+      "composited_rgb": [
+        233,
+        197,
+        116
+      ],
+      "composited_hex": "#E9C574",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.0,
+      "light_weight": 1.0
+    },
+    {
+      "source_rgb": [
+        232,
+        198,
+        116
+      ],
+      "source_hex": "#E8C674",
+      "count": 24,
+      "source_luma": 199.308,
+      "approx_rgb": [
+        233,
+        197,
+        116
+      ],
+      "approx_hex": "#E9C574",
+      "composited_rgb": [
+        233,
+        197,
+        116
+      ],
+      "composited_hex": "#E9C574",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.0,
+      "light_weight": 1.0
+    },
+    {
+      "source_rgb": [
+        232,
+        199,
+        116
+      ],
+      "source_hex": "#E8C774",
+      "count": 72,
+      "source_luma": 200.0232,
+      "approx_rgb": [
+        233,
+        197,
+        116
+      ],
+      "approx_hex": "#E9C574",
+      "composited_rgb": [
+        233,
+        197,
+        116
+      ],
+      "composited_hex": "#E9C574",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.0,
+      "light_weight": 1.0
+    },
+    {
+      "source_rgb": [
+        233,
+        199,
+        116
+      ],
+      "source_hex": "#E9C774",
+      "count": 80,
+      "source_luma": 200.2358,
+      "approx_rgb": [
+        233,
+        197,
+        116
+      ],
+      "approx_hex": "#E9C574",
+      "composited_rgb": [
+        233,
+        197,
+        116
+      ],
+      "composited_hex": "#E9C574",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.0,
+      "light_weight": 1.0
+    },
+    {
+      "source_rgb": [
+        233,
+        199,
+        117
+      ],
+      "source_hex": "#E9C775",
+      "count": 40,
+      "source_luma": 200.308,
+      "approx_rgb": [
+        233,
+        197,
+        116
+      ],
+      "approx_hex": "#E9C574",
+      "composited_rgb": [
+        233,
+        197,
+        116
+      ],
+      "composited_hex": "#E9C574",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.0,
+      "light_weight": 1.0
+    }
+  ],
+  "recombined_error": {
+    "visible_pixels": 32768,
+    "mean_abs_channel_error": 2.0511,
+    "rmse_channel_error": 3.8976,
+    "max_abs_channel_error": 16,
+    "exact_pixel_percent": 15.625
+  },
+  "outputs": {
+    "dark_layer_mask": "texture_editor/analysis/create_liquid_honey_three_tone_manual_still_anchors/honey_flow/honey_flow.layer_dark_mask.png",
+    "medium_layer_mask": "texture_editor/analysis/create_liquid_honey_three_tone_manual_still_anchors/honey_flow/honey_flow.layer_medium_mask.png",
+    "light_layer_mask": "texture_editor/analysis/create_liquid_honey_three_tone_manual_still_anchors/honey_flow/honey_flow.layer_light_mask.png",
+    "recombined": "texture_editor/analysis/create_liquid_honey_three_tone_manual_still_anchors/honey_flow/honey_flow.recombined_three_tone.png"
+  }
+}

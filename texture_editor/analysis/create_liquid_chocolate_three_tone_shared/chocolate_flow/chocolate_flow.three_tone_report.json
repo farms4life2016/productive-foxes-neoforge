@@ -1,0 +1,2806 @@
+{
+  "source": "texture_editor/create_liquid_chocolate/chocolate_flow.png",
+  "size": {
+    "width": 32,
+    "height": 1024
+  },
+  "visible_pixels": 32768,
+  "unique_visible_colors": 72,
+  "sorted_palette_by_luma": [
+    {
+      "hex": "#612A34",
+      "rgba": "#612A34FF",
+      "rgb": [
+        97,
+        42,
+        52
+      ],
+      "count": 8,
+      "luma": 54.415
+    },
+    {
+      "hex": "#622A34",
+      "rgba": "#622A34FF",
+      "rgb": [
+        98,
+        42,
+        52
+      ],
+      "count": 120,
+      "luma": 54.6276
+    },
+    {
+      "hex": "#622B34",
+      "rgba": "#622B34FF",
+      "rgb": [
+        98,
+        43,
+        52
+      ],
+      "count": 216,
+      "luma": 55.3428
+    },
+    {
+      "hex": "#622B35",
+      "rgba": "#622B35FF",
+      "rgb": [
+        98,
+        43,
+        53
+      ],
+      "count": 616,
+      "luma": 55.415
+    },
+    {
+      "hex": "#632B35",
+      "rgba": "#632B35FF",
+      "rgb": [
+        99,
+        43,
+        53
+      ],
+      "count": 400,
+      "luma": 55.6276
+    },
+    {
+      "hex": "#632C35",
+      "rgba": "#632C35FF",
+      "rgb": [
+        99,
+        44,
+        53
+      ],
+      "count": 72,
+      "luma": 56.3428
+    },
+    {
+      "hex": "#6F3235",
+      "rgba": "#6F3235FF",
+      "rgb": [
+        111,
+        50,
+        53
+      ],
+      "count": 144,
+      "luma": 63.1852
+    },
+    {
+      "hex": "#6F3236",
+      "rgba": "#6F3236FF",
+      "rgb": [
+        111,
+        50,
+        54
+      ],
+      "count": 72,
+      "luma": 63.2574
+    },
+    {
+      "hex": "#6F3336",
+      "rgba": "#6F3336FF",
+      "rgb": [
+        111,
+        51,
+        54
+      ],
+      "count": 672,
+      "luma": 63.9726
+    },
+    {
+      "hex": "#703336",
+      "rgba": "#703336FF",
+      "rgb": [
+        112,
+        51,
+        54
+      ],
+      "count": 496,
+      "luma": 64.1852
+    },
+    {
+      "hex": "#703337",
+      "rgba": "#703337FF",
+      "rgb": [
+        112,
+        51,
+        55
+      ],
+      "count": 48,
+      "luma": 64.2574
+    },
+    {
+      "hex": "#703437",
+      "rgba": "#703437FF",
+      "rgb": [
+        112,
+        52,
+        55
+      ],
+      "count": 16,
+      "luma": 64.9726
+    },
+    {
+      "hex": "#7B3536",
+      "rgba": "#7B3536FF",
+      "rgb": [
+        123,
+        53,
+        54
+      ],
+      "count": 16,
+      "luma": 67.9542
+    },
+    {
+      "hex": "#7C3536",
+      "rgba": "#7C3536FF",
+      "rgb": [
+        124,
+        53,
+        54
+      ],
+      "count": 240,
+      "luma": 68.1668
+    },
+    {
+      "hex": "#7C3636",
+      "rgba": "#7C3636FF",
+      "rgb": [
+        124,
+        54,
+        54
+      ],
+      "count": 120,
+      "luma": 68.882
+    },
+    {
+      "hex": "#7C3637",
+      "rgba": "#7C3637FF",
+      "rgb": [
+        124,
+        54,
+        55
+      ],
+      "count": 792,
+      "luma": 68.9542
+    },
+    {
+      "hex": "#7D3637",
+      "rgba": "#7D3637FF",
+      "rgb": [
+        125,
+        54,
+        55
+      ],
+      "count": 304,
+      "luma": 69.1668
+    },
+    {
+      "hex": "#7D3737",
+      "rgba": "#7D3737FF",
+      "rgb": [
+        125,
+        55,
+        55
+      ],
+      "count": 16,
+      "luma": 69.882
+    },
+    {
+      "hex": "#823B37",
+      "rgba": "#823B37FF",
+      "rgb": [
+        130,
+        59,
+        55
+      ],
+      "count": 80,
+      "luma": 73.8058
+    },
+    {
+      "hex": "#833B37",
+      "rgba": "#833B37FF",
+      "rgb": [
+        131,
+        59,
+        55
+      ],
+      "count": 136,
+      "luma": 74.0184
+    },
+    {
+      "hex": "#833C37",
+      "rgba": "#833C37FF",
+      "rgb": [
+        131,
+        60,
+        55
+      ],
+      "count": 336,
+      "luma": 74.7336
+    },
+    {
+      "hex": "#833C38",
+      "rgba": "#833C38FF",
+      "rgb": [
+        131,
+        60,
+        56
+      ],
+      "count": 784,
+      "luma": 74.8058
+    },
+    {
+      "hex": "#873B37",
+      "rgba": "#873B37FF",
+      "rgb": [
+        135,
+        59,
+        55
+      ],
+      "count": 64,
+      "luma": 74.8688
+    },
+    {
+      "hex": "#843C38",
+      "rgba": "#843C38FF",
+      "rgb": [
+        132,
+        60,
+        56
+      ],
+      "count": 80,
+      "luma": 75.0184
+    },
+    {
+      "hex": "#873C37",
+      "rgba": "#873C37FF",
+      "rgb": [
+        135,
+        60,
+        55
+      ],
+      "count": 184,
+      "luma": 75.584
+    },
+    {
+      "hex": "#873C38",
+      "rgba": "#873C38FF",
+      "rgb": [
+        135,
+        60,
+        56
+      ],
+      "count": 176,
+      "luma": 75.6562
+    },
+    {
+      "hex": "#843D38",
+      "rgba": "#843D38FF",
+      "rgb": [
+        132,
+        61,
+        56
+      ],
+      "count": 16,
+      "luma": 75.7336
+    },
+    {
+      "hex": "#883C38",
+      "rgba": "#883C38FF",
+      "rgb": [
+        136,
+        60,
+        56
+      ],
+      "count": 3584,
+      "luma": 75.8688
+    },
+    {
+      "hex": "#883D38",
+      "rgba": "#883D38FF",
+      "rgb": [
+        136,
+        61,
+        56
+      ],
+      "count": 680,
+      "luma": 76.584
+    },
+    {
+      "hex": "#883D39",
+      "rgba": "#883D39FF",
+      "rgb": [
+        136,
+        61,
+        57
+      ],
+      "count": 192,
+      "luma": 76.6562
+    },
+    {
+      "hex": "#893D39",
+      "rgba": "#893D39FF",
+      "rgb": [
+        137,
+        61,
+        57
+      ],
+      "count": 240,
+      "luma": 76.8688
+    },
+    {
+      "hex": "#914238",
+      "rgba": "#914238FF",
+      "rgb": [
+        145,
+        66,
+        56
+      ],
+      "count": 8,
+      "luma": 82.0734
+    },
+    {
+      "hex": "#924238",
+      "rgba": "#924238FF",
+      "rgb": [
+        146,
+        66,
+        56
+      ],
+      "count": 48,
+      "luma": 82.286
+    },
+    {
+      "hex": "#924239",
+      "rgba": "#924239FF",
+      "rgb": [
+        146,
+        66,
+        57
+      ],
+      "count": 536,
+      "luma": 82.3582
+    },
+    {
+      "hex": "#934239",
+      "rgba": "#934239FF",
+      "rgb": [
+        147,
+        66,
+        57
+      ],
+      "count": 1168,
+      "luma": 82.5708
+    },
+    {
+      "hex": "#924339",
+      "rgba": "#924339FF",
+      "rgb": [
+        146,
+        67,
+        57
+      ],
+      "count": 504,
+      "luma": 83.0734
+    },
+    {
+      "hex": "#934339",
+      "rgba": "#934339FF",
+      "rgb": [
+        147,
+        67,
+        57
+      ],
+      "count": 1016,
+      "luma": 83.286
+    },
+    {
+      "hex": "#93433A",
+      "rgba": "#93433AFF",
+      "rgb": [
+        147,
+        67,
+        58
+      ],
+      "count": 160,
+      "luma": 83.3582
+    },
+    {
+      "hex": "#944339",
+      "rgba": "#944339FF",
+      "rgb": [
+        148,
+        67,
+        57
+      ],
+      "count": 1024,
+      "luma": 83.4986
+    },
+    {
+      "hex": "#94433A",
+      "rgba": "#94433AFF",
+      "rgb": [
+        148,
+        67,
+        58
+      ],
+      "count": 2152,
+      "luma": 83.5708
+    },
+    {
+      "hex": "#9E483A",
+      "rgba": "#9E483AFF",
+      "rgb": [
+        158,
+        72,
+        58
+      ],
+      "count": 208,
+      "luma": 89.2728
+    },
+    {
+      "hex": "#9E493A",
+      "rgba": "#9E493AFF",
+      "rgb": [
+        158,
+        73,
+        58
+      ],
+      "count": 208,
+      "luma": 89.988
+    },
+    {
+      "hex": "#9E493B",
+      "rgba": "#9E493BFF",
+      "rgb": [
+        158,
+        73,
+        59
+      ],
+      "count": 1208,
+      "luma": 90.0602
+    },
+    {
+      "hex": "#9F493B",
+      "rgba": "#9F493BFF",
+      "rgb": [
+        159,
+        73,
+        59
+      ],
+      "count": 2824,
+      "luma": 90.2728
+    },
+    {
+      "hex": "#9F4A3B",
+      "rgba": "#9F4A3BFF",
+      "rgb": [
+        159,
+        74,
+        59
+      ],
+      "count": 312,
+      "luma": 90.988
+    },
+    {
+      "hex": "#9F4A3C",
+      "rgba": "#9F4A3CFF",
+      "rgb": [
+        159,
+        74,
+        60
+      ],
+      "count": 248,
+      "luma": 91.0602
+    },
+    {
+      "hex": "#A84E3C",
+      "rgba": "#A84E3CFF",
+      "rgb": [
+        168,
+        78,
+        60
+      ],
+      "count": 1184,
+      "luma": 95.8344
+    },
+    {
+      "hex": "#A84F3C",
+      "rgba": "#A84F3CFF",
+      "rgb": [
+        168,
+        79,
+        60
+      ],
+      "count": 584,
+      "luma": 96.5496
+    },
+    {
+      "hex": "#A94F3C",
+      "rgba": "#A94F3CFF",
+      "rgb": [
+        169,
+        79,
+        60
+      ],
+      "count": 1344,
+      "luma": 96.7622
+    },
+    {
+      "hex": "#A94F3D",
+      "rgba": "#A94F3DFF",
+      "rgb": [
+        169,
+        79,
+        61
+      ],
+      "count": 1976,
+      "luma": 96.8344
+    },
+    {
+      "hex": "#B0533D",
+      "rgba": "#B0533DFF",
+      "rgb": [
+        176,
+        83,
+        61
+      ],
+      "count": 48,
+      "luma": 101.1834
+    },
+    {
+      "hex": "#B1533D",
+      "rgba": "#B1533DFF",
+      "rgb": [
+        177,
+        83,
+        61
+      ],
+      "count": 920,
+      "luma": 101.396
+    },
+    {
+      "hex": "#B1533E",
+      "rgba": "#B1533EFF",
+      "rgb": [
+        177,
+        83,
+        62
+      ],
+      "count": 392,
+      "luma": 101.4682
+    },
+    {
+      "hex": "#B1543E",
+      "rgba": "#B1543EFF",
+      "rgb": [
+        177,
+        84,
+        62
+      ],
+      "count": 1392,
+      "luma": 102.1834
+    },
+    {
+      "hex": "#B2543E",
+      "rgba": "#B2543EFF",
+      "rgb": [
+        178,
+        84,
+        62
+      ],
+      "count": 584,
+      "luma": 102.396
+    },
+    {
+      "hex": "#B7573E",
+      "rgba": "#B7573EFF",
+      "rgb": [
+        183,
+        87,
+        62
+      ],
+      "count": 16,
+      "luma": 105.6046
+    },
+    {
+      "hex": "#B8573F",
+      "rgba": "#B8573FFF",
+      "rgb": [
+        184,
+        87,
+        63
+      ],
+      "count": 56,
+      "luma": 105.8894
+    },
+    {
+      "hex": "#C46649",
+      "rgba": "#C46649FF",
+      "rgb": [
+        196,
+        102,
+        73
+      ],
+      "count": 8,
+      "luma": 119.8906
+    },
+    {
+      "hex": "#C4674A",
+      "rgba": "#C4674AFF",
+      "rgb": [
+        196,
+        103,
+        74
+      ],
+      "count": 176,
+      "luma": 120.678
+    },
+    {
+      "hex": "#C5674A",
+      "rgba": "#C5674AFF",
+      "rgb": [
+        197,
+        103,
+        74
+      ],
+      "count": 176,
+      "luma": 120.8906
+    },
+    {
+      "hex": "#C5684A",
+      "rgba": "#C5684AFF",
+      "rgb": [
+        197,
+        104,
+        74
+      ],
+      "count": 32,
+      "luma": 121.6058
+    },
+    {
+      "hex": "#C5684B",
+      "rgba": "#C5684BFF",
+      "rgb": [
+        197,
+        104,
+        75
+      ],
+      "count": 40,
+      "luma": 121.678
+    },
+    {
+      "hex": "#D57654",
+      "rgba": "#D57654FF",
+      "rgb": [
+        213,
+        118,
+        84
+      ],
+      "count": 16,
+      "luma": 135.7422
+    },
+    {
+      "hex": "#D57754",
+      "rgba": "#D57754FF",
+      "rgb": [
+        213,
+        119,
+        84
+      ],
+      "count": 80,
+      "luma": 136.4574
+    },
+    {
+      "hex": "#D67754",
+      "rgba": "#D67754FF",
+      "rgb": [
+        214,
+        119,
+        84
+      ],
+      "count": 328,
+      "luma": 136.67
+    },
+    {
+      "hex": "#D67755",
+      "rgba": "#D67755FF",
+      "rgb": [
+        214,
+        119,
+        85
+      ],
+      "count": 112,
+      "luma": 136.7422
+    },
+    {
+      "hex": "#D67855",
+      "rgba": "#D67855FF",
+      "rgb": [
+        214,
+        120,
+        85
+      ],
+      "count": 32,
+      "luma": 137.4574
+    },
+    {
+      "hex": "#E4845C",
+      "rgba": "#E4845CFF",
+      "rgb": [
+        228,
+        132,
+        92
+      ],
+      "count": 16,
+      "luma": 149.5216
+    },
+    {
+      "hex": "#E5845D",
+      "rgba": "#E5845DFF",
+      "rgb": [
+        229,
+        132,
+        93
+      ],
+      "count": 360,
+      "luma": 149.8064
+    },
+    {
+      "hex": "#E5855D",
+      "rgba": "#E5855DFF",
+      "rgb": [
+        229,
+        133,
+        93
+      ],
+      "count": 208,
+      "luma": 150.5216
+    },
+    {
+      "hex": "#E6855D",
+      "rgba": "#E6855DFF",
+      "rgb": [
+        230,
+        133,
+        93
+      ],
+      "count": 72,
+      "luma": 150.7342
+    },
+    {
+      "hex": "#E6855E",
+      "rgba": "#E6855EFF",
+      "rgb": [
+        230,
+        133,
+        94
+      ],
+      "count": 72,
+      "luma": 150.8064
+    }
+  ],
+  "selected_anchors": {
+    "dark": {
+      "rgb": [
+        97,
+        42,
+        52
+      ],
+      "hex": "#612A34",
+      "luma": 54.415
+    },
+    "medium": {
+      "rgb": [
+        159,
+        75,
+        59
+      ],
+      "hex": "#9F4B3B",
+      "luma": 91.7032
+    },
+    "light": {
+      "rgb": [
+        230,
+        133,
+        94
+      ],
+      "hex": "#E6855E",
+      "luma": 150.8064
+    },
+    "note": "manual selection from --dark, --medium, and --light"
+  },
+  "minecraft_layer_model": {
+    "intent": "layer0 dark mask tinted dark, layer1 medium mask tinted medium, layer2 light mask tinted light",
+    "blend_order": "dark bottom, medium over dark, light over medium",
+    "compatibility_note": "This matches the standard alpha-over behavior used by layered item models. A normal fluid sprite has one tint; using three fluid-sprite colors would need a custom renderer, generated baked texture, or another modded rendering hook."
+  },
+  "class_grid_legend": {
+    ".": "transparent",
+    "D": "mostly dark",
+    "d": "dark/medium blend",
+    "M": "mostly medium",
+    "l": "medium/light blend",
+    "L": "mostly light"
+  },
+  "class_grid": "MlllMMMlLlMMMMMMMlllMMMlLlMMMMMM\nlMMddddMlLMMMMMLlMMddddMlLMMMMML\ndddddddlMlLMMlMMdddddddlMlLMMlMM\ndDDddDddMMMllMdddDDddDddMMMllMdd\nddddddddddllddddddddddddddlldddd\nddddddDddddddDddddddddDddddddDdd\nddddddDddDDDddddddddddDddDDDdddd\nMddddddDddddddMMMddddddDddddddMM\nMMMdddddddddMMddMMMdddddddddMMdd\ndddMMddddddMMMMMdddMMddddddMMMMM\ndMMMddMMddMMMMMMdMMMddMMddMMMMMM\nMdMddMdMMMMMMMMMMdMddMdMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlLlMMlMMMMMMMMMMlLlMMlMMMMMM\nMlllMMMlLlMMMMMMMlllMMMlLlMMMMMM\nlMMddddMlLMMMMMLlMMddddMlLMMMMML\ndddddddlMlLMMlMMdddddddlMlLMMlMM\ndDDddDddMMMllMdddDDddDddMMMllMdd\nddddddddddllddddddddddddddlldddd\nddddddDddddddDddddddddDddddddDdd\nddddddDddDDDddddddddddDddDDDdddd\nMddddddDddddddMMMddddddDddddddMM\nMMMdddddddddMMddMMMdddddddddMMdd\ndddMMddddddMMMMMdddMMddddddMMMMM\ndMMMddMMddMMMMMMdMMMddMMddMMMMMM\nMdMddMdMMMMMMMMMMdMddMdMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlLlMMlMMMMMMMMMMlLlMMlMMMMMM\nMMMMlLMMMMMMMMMMMMMMlLMMMMMMMMMM\nMMLMMMlMMMMMMMMMMMLMMMlMMMMMMMMM\nlMMdddMLMlMMMMMLlMMdddMLMlMMMMML\nddddddlllMMMlMMdddddddlllMMMlMMd\ndDDDDddMllLLlMdddDDDDddMllLLlMdd\nddddDddMMMMMddDdddddDddMMMMMddDd\ndddddDdddddddDdddddddDdddddddDdd\nddddddddddDdddddddddddddddDddddd\ndddddddDDddddddddddddddDDddddddd\ndddddddddddMMMMMdddddddddddMMMMM\ndMddddddddMdMdMMdMddddddddMdMdMM\nMdMddMdMMdMMdMMMMdMddMdMMdMMdMMM\nMdMMddMMMMMMMMMMMdMMddMMMMMMMMMM\ndMMMMMMMMMMMMMMMdMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlLMMMMMMMMMMMMMMlLMMMMMMMMMM\nMMLMMMlMMMMMMMMMMMLMMMlMMMMMMMMM\nlMMdddMLMlMMMMMLlMMdddMLMlMMMMML\nddddddlllMMMlMMdddddddlllMMMlMMd\ndDDDDddMllLLlMdddDDDDddMllLLlMdd\nddddDddMMMMMddDdddddDddMMMMMddDd\ndddddDdddddddDdddddddDdddddddDdd\nddddddddddDdddddddddddddddDddddd\ndddddddDDddddddddddddddDDddddddd\ndddddddddddMMMMMdddddddddddMMMMM\ndMddddddddMdMdMMdMddddddddMdMdMM\nMdMddMdMMdMMdMMMMdMddMdMMdMMdMMM\nMdMMddMMMMMMMMMMMdMMddMMMMMMMMMM\ndMMMMMMMMMMMMMMMdMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlLMMMMMMMMMMMMMMlLMMMMMMMMMM\nMlLMMMlMMMMMMMMMMlLMMMlMMMMMMMMM\nlllddMllMMMMMMMllllddMllMMMMMMMl\nddddddlMMMMMMLMdddddddlMMMMMMLMd\nddddddMLlLLLMMddddddddMLlLLLMMdd\nddDDdddMMMMdddDdddDDdddMMMMdddDd\ndddDDddlddddDddddddDDddlddddDddd\nddddDDdddDddddddddddDDdddDdddddd\nddddddDDdddddddMddddddDDdddddddM\nddddddddddddMdMMddddddddddddMdMM\nMdddddddMddMdMMMMdddddddMddMdMMM\nMddMddMMMMMdMMdMMddMddMMMMMdMMdM\ndMMdMMMMMMMMdMMddMMdMMMMMMMMdMMd\ndMdMMMMMMMMMMMMMdMdMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlLMMMMMMMMMMMMMMlLMMMMMMMMMM\nMlLMMMlMMMMMMMMMMlLMMMlMMMMMMMMM\nlllddMllMMMMMMMllllddMllMMMMMMMl\nddddddlMMMMMMLMdddddddlMMMMMMLMd\nddddddMLlLLLMMddddddddMLlLLLMMdd\nddDDdddMMMMdddDdddDDdddMMMMdddDd\ndddDDddlddddDddddddDDddlddddDddd\nddddDDdddDddddddddddDDdddDdddddd\nddddddDDdddddddMddddddDDdddddddM\nddddddddddddMdMMddddddddddddMdMM\nMdddddddMddMdMMMMdddddddMddMdMMM\nMddMddMMMMMdMMdMMddMddMMMMMdMMdM\ndMMdMMMMMMMMdMMddMMdMMMMMMMMdMMd\ndMdMMMMMMMMMMMMMdMdMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMM\nlLlMllMMMMMMMMMMlLlMllMMMMMMMMMM\nlMdlMllMMMMMMMlMlMdlMllMMMMMMMlM\ndddddMLMMMMMMlMddddddMLMMMMMMlMd\nDdddddlMMLllMddDDdddddlMMLllMddD\ndDddddMlMMddddDddDddddMlMMddddDd\nddDddddddddDDdddddDddddddddDDddd\ndddDDddddddddddddddDDddddddddddd\ndddddddddddddddddddddddddddddddd\ndddddddddddMdddddddddddddddMdddd\nddddddMMMMMdMMdMddddddMMMMMdMMdM\nddddMMMMMMMddMMdddddMMMMMMMddMMd\ndMddMMMMMMMMMMMMdMddMMMMMMMMMMMM\ndMMMMMMMMMMMMMMMdMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMM\nlLlMllMMMMMMMMMMlLlMllMMMMMMMMMM\nlMdlMllMMMMMMMlMlMdlMllMMMMMMMlM\ndddddMLMMMMMMlMddddddMLMMMMMMlMd\nDdddddlMMLllMddDDdddddlMMLllMddD\ndDddddMlMMddddDddDddddMlMMddddDd\nddDddddddddDDdddddDddddddddDDddd\ndddDDddddddddddddddDDddddddddddd\ndddddddddddddddddddddddddddddddd\ndddddddddddMdddddddddddddddMdddd\nddddddMMMMMdMMdMddddddMMMMMdMMdM\nddddMMMMMMMddMMdddddMMMMMMMddMMd\ndMddMMMMMMMMMMMMdMddMMMMMMMMMMMM\ndMMMMMMMMMMMMMMMdMMMMMMMMMMMMMMM\ndMMMMMMMMMMMMMdMdMMMMMMMMMMMMMdM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMlMllMMMMMMMMMMMMlMllMMMMMMMMMMM\nlllMllMMMMMMMMMLlllMllMMMMMMMMML\nddMMMlMMMMMMMMlMddMMMlMMMMMMMMlM\nddddMMlMMMMlLlddddddMMlMMMMlLldd\ndddddlLMMllldddDdddddlLMMllldddD\nDdddddMMMddddDddDdddddMMMddddDdd\ndDddddddddDDdddddDddddddddDDdddd\nddDdDDddDdddddddddDdDDddDddddddd\ndddddddddddddddddddddddddddddddd\ndddddddddMMddddddddddddddMMddddd\nddddMMMMMMMdddddddddMMMMMMMddddd\nddddMMMMMMdMMMMMddddMMMMMMdMMMMM\ndMMMMMMMMMdMMMMMdMMMMMMMMMdMMMMM\ndMMMMMMMMMMMMMdMdMMMMMMMMMMMMMdM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMlMllMMMMMMMMMMMMlMllMMMMMMMMMMM\nlllMllMMMMMMMMMLlllMllMMMMMMMMML\nddMMMlMMMMMMMMlMddMMMlMMMMMMMMlM\nddddMMlMMMMlLlddddddMMlMMMMlLldd\ndddddlLMMllldddDdddddlLMMllldddD\nDdddddMMMddddDddDdddddMMMddddDdd\ndDddddddddDDdddddDddddddddDDdddd\nddDdDDddDdddddddddDdDDddDddddddd\ndddddddddddddddddddddddddddddddd\ndddddddddMMddddddddddddddMMddddd\nddddMMMMMMMdddddddddMMMMMMMddddd\nddddMMMMMMdMMMMMddddMMMMMMdMMMMM\ndMMMMMMMMMdMMMMMdMMMMMMMMMdMMMMM\ndMMMMMMMMMdMMMdMdMMMMMMMMMdMMMdM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMMMMMMMMMMMdddMMMMMMMMMMMMMdddMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlMlMMMMMMMMMMMMMlMlMMMMMMMMMMMMM\nMMMlLMMMMMMMMMMlMMMlLMMMMMMMMMMl\ndMlMllMMMMMMMLMddMlMllMMMMMMMLMd\ndddlMlMMMMlllddddddlMlMMMMlllddd\nddddMMLMLMMddddDddddMMLMLMMddddD\nDdddddMMddddDDddDdddddMMddddDDdd\nDddddddddDddddddDddddddddDdddddd\ndDddDDDDdddddddddDddDDDDdddddddd\ndddddddddddddddddddddddddddddddd\nddddddddMMMdddddddddddddMMMddddd\nddddMMMMMMdMddddddddMMMMMMdMdddd\ndMMdMMMMdMdMMdMMdMMdMMMMdMdMMdMM\ndMMMMMMMMMdMMMdMdMMMMMMMMMdMMMdM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMMMMMMMMMMMdddMMMMMMMMMMMMMdddMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlMlMMMMMMMMMMMMMlMlMMMMMMMMMMMMM\nMMMlLMMMMMMMMMMlMMMlLMMMMMMMMMMl\ndMlMllMMMMMMMLMddMlMllMMMMMMMLMd\ndddlMlMMMMlllddddddlMlMMMMlllddd\nddddMMLMLMMddddDddddMMLMLMMddddD\nDdddddMMddddDDddDdddddMMddddDDdd\nDddddddddDddddddDddddddddDdddddd\ndDddDDDDdddddddddDddDDDDdddddddd\ndddddddddddddddddddddddddddddddd\nddddddddMMMdddddddddddddMMMddddd\nddddMMMMMMdMddddddddMMMMMMdMdddd\ndMMdMMMMdMdMMdMMdMMdMMMMdMdMMdMM\ndMddMMMddMdMdddMdMddMMMddMdMdddM\ndMMMMMMMdMMddMMddMMMMMMMdMMddMMd\nMMMMMMMMMMMdddMMMMMMMMMMMMMdddMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlllMMMMMMMMMMMMllllMMMMMMMMMMMMl\nlMlLMMMMMMMMMllMlMlLMMMMMMMMMllM\ndMMlLlMMMMMlLMdddMMlLlMMMMMlLMdd\nddMMlLMMMLMMldddddMMlLMMMLMMlddd\ndddMMMllMddddddDdddMMMllMddddddD\nddddddddddDDDDDDddddddddddDDDDDD\nDdddddddDdddddddDdddddddDddddddd\nDDDDddddddddddddDDDDdddddddddddd\ndddddddddddddddddddddddddddddddd\ndddddMMMMMdddddddddddMMMMMdddddd\nddMdMdMMdMddddddddMdMdMMdMdddddd\ndMddMMMddMdMdddMdMddMMMddMdMdddM\ndMMMMMMMdMMddMMddMMMMMMMdMMddMMd\nMMMMMMMMMMMdddMMMMMMMMMMMMMdddMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlllMMMMMMMMMMMMllllMMMMMMMMMMMMl\nlMlLMMMMMMMMMllMlMlLMMMMMMMMMllM\ndMMlLlMMMMMlLMdddMMlLlMMMMMlLMdd\nddMMlLMMMLMMldddddMMlLMMMLMMlddd\ndddMMMllMddddddDdddMMMllMddddddD\nddddddddddDDDDDDddddddddddDDDDDD\nDdddddddDdddddddDdddddddDddddddd\nDDDDddddddddddddDDDDdddddddddddd\ndddddddddddddddddddddddddddddddd\ndddddMMMMMdddddddddddMMMMMdddddd\nddMdMdMMdMddddddddMdMdMMdMdddddd\ndMddMMMddMdddddddMddMMMddMdddddd\nddMMMMMMdMMdddMdddMMMMMMdMMdddMd\nMMMMMMMMdMMdddMMMMMMMMMMdMMdddMM\nMMMMMMMMMMdMMMMMMMMMMMMMMMdMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLlMMMMMMMMMMMMlLLlMMMMMMMMMMMMl\nMMLlMMMMMMMMlLMMMMLlMMMMMMMMlLMM\ndMlLMMMMMMlLMMdddMlLMMMMMMlLMMdd\ndMMllLlMLMMddddddMMllLlMLMMddddd\nddMMMMMMddddddddddMMMMMMdddddddd\ndddddddddDDDDDDDdddddddddDDDDDDD\nddddDDDDdddddddDddddDDDDdddddddD\nDDDdddddddddddddDDDddddddddddddd\ndddddddddddddddddddddddddddddddd\nddddMdMMdMddddddddddMdMMdMdddddd\ndMddMMMddMdddddddMddMMMddMdddddd\nddMMMMMMdMMdddMdddMMMMMMdMMdddMd\nMMMMMMMMdMMdddMMMMMMMMMMdMMdddMM\nMMMMMMMMMMdMMMMMMMMMMMMMMMdMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLlMMMMMMMMMMMMlLLlMMMMMMMMMMMMl\nMMLlMMMMMMMMlLMMMMLlMMMMMMMMlLMM\ndMlLMMMMMMlLMMdddMlLMMMMMMlLMMdd\ndMMllLlMLMMddddddMMllLlMLMMddddd\nddMMMMMMddddddddddMMMMMMdddddddd\ndddddddddDDDDDDDdddddddddDDDDDDD\nddddDDDDdddddddDddddDDDDdddddddD\nDDDdddddddddddddDDDddddddddddddd\ndddddddddddddddddddddddddddddddd\nddddMdMMdMddddddddddMdMMdMdddddd\nddddMMMddMddddddddddMMMddMdddddd\ndddMMMdMdMdddddddddMMMdMdMdddddd\ndMMMMMMMdMMdddMddMMMMMMMdMMdddMd\nMMMMMMMMMMdMMMdMMMMMMMMMMMdMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlMMMMMMMMMMMMMMMlMMMMMMMMMMMMMMM\nllMMMMMMMMMMMMLMllMMMMMMMMMMMMLM\nMllMMMMMMMMMLMMlMllMMMMMMMMMLMMl\nMMLlMMMMMLMlMdddMMLlMMMMMLMlMddd\ndlMllMlLMddddddddlMllMlLMddddddd\nddMMddddddddddddddMMdddddddddddd\nddddddddDddDDDddddddddddDddDDDdd\ndddDdddddddddDDDdddDdddddddddDDD\nDDddddddddddddddDDdddddddddddddd\nddddMdMdddddddddddddMdMddddddddd\nddddMMMddMddddddddddMMMddMdddddd\ndddMMMdMdMdddddddddMMMdMdMdddddd\ndMMMMMMMdMMdddMddMMMMMMMdMMdddMd\nMMMMMMMMMMdMMMdMMMMMMMMMMMdMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlMMMMMMMMMMMMMMMlMMMMMMMMMMMMMMM\nllMMMMMMMMMMMMLMllMMMMMMMMMMMMLM\nMllMMMMMMMMMLMMlMllMMMMMMMMMLMMl\nMMLlMMMMMLMlMdddMMLlMMMMMLMlMddd\ndlMllMlLMddddddddlMllMlLMddddddd\nddMMddddddddddddddMMdddddddddddd\nddddddddDddDDDddddddddddDddDDDdd\ndddDdddddddddDDDdddDdddddddddDDD\nDDddddddddddddddDDdddddddddddddd\nddddMdMdddddddddddddMdMddddddddd\nddddMMMdddddddddddddMMMddddddddd\ndddMdMdMdddddddddddMdMdMdddddddd\ndMMMMMMMdMddddMddMMMMMMMdMddddMd\nMMMMMMMMMMddMMdMMMMMMMMMMMddMMdM\nMMMMMMMdMMMMMdMMMMMMMMMdMMMMMdMM\nMMMMMMMdMdMdMMMMMMMMMMMdMdMdMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMML\nLMMMMMMMMMMMMllMLMMMMMMMMMMMMllM\nMLMMMMMMMMLlMMMlMLMMMMMMMMLlMMMl\nMlLMllMMLMMdddddMlLMllMMLMMddddd\nMMMlMMMMddddddddMMMlMMMMdddddddd\ndlMddddddDDddddddlMddddddDDddddd\nddddDDDDdddDDdddddddDDDDdddDDddd\nddDdddddddddDDDDddDdddddddddDDDD\ndddddddddddddDdddddddddddddddDdd\nddddMMMdddddddddddddMMMddddddddd\ndddMdMdMdddddddddddMdMdMdddddddd\ndMMMMMMMdMddddMddMMMMMMMdMddddMd\nMMMMMMMMMMddMMdMMMMMMMMMMMddMMdM\nMMMMMMMdMMMMMdMMMMMMMMMdMMMMMdMM\nMMMMMMMdMdMdMMMMMMMMMMMdMdMdMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMML\nLMMMMMMMMMMMMllMLMMMMMMMMMMMMllM\nMLMMMMMMMMLlMMMlMLMMMMMMMMLlMMMl\nMlLMllMMLMMdddddMlLMllMMLMMddddd\nMMMlMMMMddddddddMMMlMMMMdddddddd\ndlMddddddDDddddddlMddddddDDddddd\nddddDDDDdddDDdddddddDDDDdddDDddd\nddDdddddddddDDDDddDdddddddddDDDD\ndddddddddddddDdddddddddddddddDdd\nddddMMddddddDDddddddMMddddddDDdd\ndddMdMdddddddddddddMdMdddddddddd\ndMMdMdMMdddddddddMMdMdMMdddddddd\nMMMMMMMMMddddddMMMMMMMMMMddddddM\nMMMMMMMdMMMMMdMMMMMMMMMdMMMMMdMM\nMMMMMMMdMdMdMMMMMMMMMMMdMdMdMMMM\nMMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMML\nlMMMMMMMMMMllLMllMMMMMMMMMMllLMl\nllMMMMMMMLMMMMllllMMMMMMMLMMMMll\nMLllLlllMdddddddMLllLlllMddddddd\nMMMlMdddddddddddMMMlMddddddddddd\nddddddddDDDdddddddddddddDDDddddd\ndddDdddddddDdddddddDdddddddDdddd\nDDddddddddddDddDDDddddddddddDddD\nddddMMddddddDDddddddMMddddddDDdd\ndddMdMdddddddddddddMdMdddddddddd\ndMMdMdMMdddddddddMMdMdMMdddddddd\nMMMMMMMMMddddddMMMMMMMMMMddddddM\nMMMMMMMdMMMMMdMMMMMMMMMdMMMMMdMM\nMMMMMMMdMdMdMMMMMMMMMMMdMdMdMMMM\nMMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMML\nlMMMMMMMMMMllLMllMMMMMMMMMMllLMl\nllMMMMMMMLMMMMllllMMMMMMMLMMMMll\nMLllLlllMdddddddMLllLlllMddddddd\nMMMlMdddddddddddMMMlMddddddddddd\nddddddddDDDdddddddddddddDDDddddd\ndddDdddddddDdddddddDdddddddDdddd\nDDddddddddddDddDDDddddddddddDddD\ndddddddddddDdddDdddddddddddDdddD\ndddMdMddddddDDdddddMdMddddddDDdd\ndMMdddMddddddddddMMdddMddddddddd\nMMMMMdMddddddddMMMMMMdMddddddddM\nMMMMMMMdddddddMMMMMMMMMdddddddMM\nMMMMMMddMdMdMMMMMMMMMMddMdMdMMMM\nMMMMMMMMdMdMMMMMMMMMMMMMdMdMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMllMMMMMMMMMMMMMMll\nMMMMMMMMMMlLLlllMMMMMMMMMMlLLlll\nLMMMMMMMLMMMMMMMLMMMMMMMLMMMMMMM\nlLlLMMMMdddddlMMlLlLMMMMdddddlMM\nMMMMddddddddddddMMMMdddddddddddd\ndddddDDDDDDddddddddddDDDDDDddddd\nddDdddddddddddddddDddddddddddddd\ndddddddddddDdddDdddddddddddDdddD\ndddMdMddddddDDdddddMdMddddddDDdd\ndMMdddMddddddddddMMdddMddddddddd\nMMMMMdMddddddddMMMMMMdMddddddddM\nMMMMMMMdddddddMMMMMMMMMdddddddMM\nMMMMMMddMdMdMMMMMMMMMMddMdMdMMMM\nMMMMMMMMdMdMMMMMMMMMMMMMdMdMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMllMMMMMMMMMMMMMMll\nMMMMMMMMMMlLLlllMMMMMMMMMMlLLlll\nLMMMMMMMLMMMMMMMLMMMMMMMLMMMMMMM\nlLlLMMMMdddddlMMlLlLMMMMdddddlMM\nMMMMddddddddddddMMMMdddddddddddd\ndddddDDDDDDddddddddddDDDDDDddddd\nddDdddddddddddddddDddddddddddddd\ndDddddddddDddddddDddddddddDddddd\nddddddddddDdddDdddddddddddDdddDd\nddMddddddddDDdddddMddddddddDDddd\nMMMMMdMddddddddMMMMMMdMddddddddM\nMMMMMMMdddddddMdMMMMMMMdddddddMd\nMMMMMMddddddMMMMMMMMMMddddddMMMM\nMMMMMMMMdMdMMMMMMMMMMMMMdMdMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMllMMMMMMMMMMMMMMll\nMMMMMMMMMLllLLLlMMMMMMMMMLllLLLl\nMMMlMLLLMlMMMlllMMMlMLLLMlMMMlll\nLLLlMdddddddMllMLLLlMdddddddMllM\nMMMddddddddddMMMMMMddddddddddMMM\nddddDddDDDddddddddddDddDDDdddddd\ndDddddddddDddddddDddddddddDddddd\nddddddddddDdddDdddddddddddDdddDd\nddMddddddddDDdddddMddddddddDDddd\nMMMMMdMddddddddMMMMMMdMddddddddM\nMMMMMMMdddddddMdMMMMMMMdddddddMd\nMMMMMMddddddMMMMMMMMMMddddddMMMM\nMMMMMMMMdMdMMMMMMMMMMMMMdMdMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMllMMMMMMMMMMMMMMll\nMMMMMMMMMLllLLLlMMMMMMMMMLllLLLl\nMMMlMLLLMlMMMlllMMMlMLLLMlMMMlll\nLLLlMdddddddMllMLLLlMdddddddMllM\nMMMddddddddddMMMMMMddddddddddMMM\nddddDddDDDddddddddddDddDDDdddddd\ndddDdddDddddlMdddddDdddDddddlMdd\nDdddddddDDdddddDDdddddddDDdddddD\ndddddddddDDdddDddddddddddDDdddDd\ndMMMMddddddDDddddMMMMddddddDDddd\nMMMMMMddddddddddMMMMMMdddddddddd\nMMdMMMdddddddMMdMMdMMMdddddddMMd\nMMMMdMMddddMMMMMMMMMdMMddddMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMdMdMMMMMMMMMMMMMdMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMlllLllMMMMMMMMMMlllLllMM\nMMMMLMllMlMMlLllMMMMLMllMlMMlLll\nLLlMdddddddlMlllLLlMdddddddlMlll\nMMdddDddddddMllMMMdddDddddddMllM\ndddDdddDddddlMdddddDdddDddddlMdd\nDdddddddDDdddddDDdddddddDDdddddD\ndddddddddDDdddDddddddddddDDdddDd\ndMMMMddddddDDddddMMMMddddddDDddd\nMMMMMMddddddddddMMMMMMdddddddddd\nMMdMMMdddddddMMdMMdMMMdddddddMMd\nMMMMdMMddddMMMMMMMMMdMMddddMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMdMdMMMMMMMMMMMMMdMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMlllLllMMMMMMMMMMlllLllMM\nMMMMLMllMlMMlLllMMMMLMllMlMMlLll\nLLlMdddddddlMlllLLlMdddddddlMlll\nMMdddDddddddMllMMMdddDddddddMllM\nMdddDDdddddlllMMMdddDDdddddlllMM\nddDddddddddMMMddddDddddddddMMMdd\ndddddddDdddddddDdddddddDdddddddD\nddddddddDdddddddddddddddDddddddd\nMMMMMddddDDDddddMMMMMddddDDDdddd\nMddMMMddddddddMdMddMMMddddddddMd\nMdMddMdddddddMdMMdMddMdddddddMdM\nMMdMMMdddMMMMMMMMMdMMMdddMMMMMMM\nMMMdMddMdMMMMMMMMMMdMddMdMMMMMMM\nMMMMMdMdMMMMMMMMMMMMMdMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMMM\nMMMMMMllLllMMMMMMMMMMMllLllMMMMM\nMMMLMMMMlMMLMMMMMMMLMMMMlMMLMMMM\nLlMMddddddMMLllLLlMMddddddMMLllL\nMdddDDdddddlllMMMdddDDdddddlllMM\nddDddddddddMMMddddDddddddddMMMdd\ndddddddDdddddddDdddddddDdddddddD\nddddddddDdddddddddddddddDddddddd\nMMMMMddddDDDddddMMMMMddddDDDdddd\nMddMMMddddddddMdMddMMMddddddddMd\nMdMddMdddddddMdMMdMddMdddddddMdM\nMMdMMMdddMMMMMMMMMdMMMdddMMMMMMM\nMMMdMddMdMMMMMMMMMMdMddMdMMMMMMM\nMMMMMdMdMMMMMMMMMMMMMdMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMMM\nMMMMMMllLllMMMMMMMMMMMllLllMMMMM\nMMMLMMMMlMMLMMMMMMMLMMMMlMMLMMMM\nLlMMddddddMMLllLLlMMddddddMMLllL\nLlMdddddMMllMMMLLlMdddddMMllMMML\nddddDDdddMMLlLMMddddDDdddMMLlLMM\ndDDdddDdddMMMMdddDDdddDdddMMMMdd\nddddddDdddddddddddddddDddddddddd\ndddddddddddddDdddddddddddddddDdd\nMddddddDDDDDddddMddddddDDDDDdddd\nMdMdddddddddddddMdMddddddddddddd\nMddMMdddddddMMMMMddMMdddddddMMMM\nMMMdMddddMMdMMMMMMMdMddddMMdMMMM\nMMdMMdMdMdMMMMMMMMdMMdMdMdMMMMMM\nMMMMddMMMMMMMMMMMMMMddMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMMM\nMMMMMLlMlLMMMMMMMMMMMLlMlLMMMMMM\nMMMllMlMMlLMMMMMMMMllMlMMlLMMMMM\nLlMdddddMMllMMMLLlMdddddMMllMMML\nddddDDdddMMLlLMMddddDDdddMMLlLMM\ndDDdddDdddMMMMdddDDdddDdddMMMMdd\nddddddDdddddddddddddddDddddddddd\ndddddddddddddDdddddddddddddddDdd\nMddddddDDDDDddddMddddddDDDDDdddd\nMdMdddddddddddddMdMddddddddddddd\nMddMMdddddddMMMMMddMMdddddddMMMM\nMMMdMddddMMdMMMMMMMdMddddMMdMMMM\nMMdMMdMdMdMMMMMMMMdMMdMdMdMMMMMM\nMMMMddMMMMMMMMMMMMMMddMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMMM\nMMMMMLlMlLMMMMMMMMMMMLlMlLMMMMMM\nMMMllMlMMlLMMMMMMMMllMlMMlLMMMMM\nMlllMMMlLlMMMMMMMlllMMMlLlMMMMMM\nlMMddddMlLMMMMMLlMMddddMlLMMMMML\ndddddddlMlLMMlMMdddddddlMlLMMlMM\ndDDddDddMMMllMdddDDddDddMMMllMdd\nddddddddddllddddddddddddddlldddd\nddddddDddddddDddddddddDddddddDdd\nddddddDddDDDddddddddddDddDDDdddd\nMddddddDddddddMMMddddddDddddddMM\nMMMdddddddddMMddMMMdddddddddMMdd\ndddMMddddddMMMMMdddMMddddddMMMMM\ndMMMddMMddMMMMMMdMMMddMMddMMMMMM\nMdMddMdMMMMMMMMMMdMddMdMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlLlMMlMMMMMMMMMMlLlMMlMMMMMM\nMlllMMMlLlMMMMMMMlllMMMlLlMMMMMM\nlMMddddMlLMMMMMLlMMddddMlLMMMMML\ndddddddlMlLMMlMMdddddddlMlLMMlMM\ndDDddDddMMMllMdddDDddDddMMMllMdd\nddddddddddllddddddddddddddlldddd\nddddddDddddddDddddddddDddddddDdd\nddddddDddDDDddddddddddDddDDDdddd\nMddddddDddddddMMMddddddDddddddMM\nMMMdddddddddMMddMMMdddddddddMMdd\ndddMMddddddMMMMMdddMMddddddMMMMM\ndMMMddMMddMMMMMMdMMMddMMddMMMMMM\nMdMddMdMMMMMMMMMMdMddMdMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlLlMMlMMMMMMMMMMlLlMMlMMMMMM\nMMMMlLMMMMMMMMMMMMMMlLMMMMMMMMMM\nMMLMMMlMMMMMMMMMMMLMMMlMMMMMMMMM\nlMMdddMLMlMMMMMLlMMdddMLMlMMMMML\nddddddlllMMMlMMdddddddlllMMMlMMd\ndDDDDddMllLLlMdddDDDDddMllLLlMdd\nddddDddMMMMMddDdddddDddMMMMMddDd\ndddddDdddddddDdddddddDdddddddDdd\nddddddddddDdddddddddddddddDddddd\ndddddddDDddddddddddddddDDddddddd\ndddddddddddMMMMMdddddddddddMMMMM\ndMddddddddMdMdMMdMddddddddMdMdMM\nMdMddMdMMdMMdMMMMdMddMdMMdMMdMMM\nMdMMddMMMMMMMMMMMdMMddMMMMMMMMMM\ndMMMMMMMMMMMMMMMdMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlLMMMMMMMMMMMMMMlLMMMMMMMMMM\nMMLMMMlMMMMMMMMMMMLMMMlMMMMMMMMM\nlMMdddMLMlMMMMMLlMMdddMLMlMMMMML\nddddddlllMMMlMMdddddddlllMMMlMMd\ndDDDDddMllLLlMdddDDDDddMllLLlMdd\nddddDddMMMMMddDdddddDddMMMMMddDd\ndddddDdddddddDdddddddDdddddddDdd\nddddddddddDdddddddddddddddDddddd\ndddddddDDddddddddddddddDDddddddd\ndddddddddddMMMMMdddddddddddMMMMM\ndMddddddddMdMdMMdMddddddddMdMdMM\nMdMddMdMMdMMdMMMMdMddMdMMdMMdMMM\nMdMMddMMMMMMMMMMMdMMddMMMMMMMMMM\ndMMMMMMMMMMMMMMMdMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlLMMMMMMMMMMMMMMlLMMMMMMMMMM\nMlLMMMlMMMMMMMMMMlLMMMlMMMMMMMMM\nlllddMllMMMMMMMllllddMllMMMMMMMl\nddddddlMMMMMMLMdddddddlMMMMMMLMd\nddddddMLlLLLMMddddddddMLlLLLMMdd\nddDDdddMMMMdddDdddDDdddMMMMdddDd\ndddDDddlddddDddddddDDddlddddDddd\nddddDDdddDddddddddddDDdddDdddddd\nddddddDDdddddddMddddddDDdddddddM\nddddddddddddMdMMddddddddddddMdMM\nMdddddddMddMdMMMMdddddddMddMdMMM\nMddMddMMMMMdMMdMMddMddMMMMMdMMdM\ndMMdMMMMMMMMdMMddMMdMMMMMMMMdMMd\ndMdMMMMMMMMMMMMMdMdMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlLMMMMMMMMMMMMMMlLMMMMMMMMMM\nMlLMMMlMMMMMMMMMMlLMMMlMMMMMMMMM\nlllddMllMMMMMMMllllddMllMMMMMMMl\nddddddlMMMMMMLMdddddddlMMMMMMLMd\nddddddMLlLLLMMddddddddMLlLLLMMdd\nddDDdddMMMMdddDdddDDdddMMMMdddDd\ndddDDddlddddDddddddDDddlddddDddd\nddddDDdddDddddddddddDDdddDdddddd\nddddddDDdddddddMddddddDDdddddddM\nddddddddddddMdMMddddddddddddMdMM\nMdddddddMddMdMMMMdddddddMddMdMMM\nMddMddMMMMMdMMdMMddMddMMMMMdMMdM\ndMMdMMMMMMMMdMMddMMdMMMMMMMMdMMd\ndMdMMMMMMMMMMMMMdMdMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMM\nlLlMllMMMMMMMMMMlLlMllMMMMMMMMMM\nlMdlMllMMMMMMMlMlMdlMllMMMMMMMlM\ndddddMLMMMMMMlMddddddMLMMMMMMlMd\nDdddddlMMLllMddDDdddddlMMLllMddD\ndDddddMlMMddddDddDddddMlMMddddDd\nddDddddddddDDdddddDddddddddDDddd\ndddDDddddddddddddddDDddddddddddd\ndddddddddddddddddddddddddddddddd\ndddddddddddMdddddddddddddddMdddd\nddddddMMMMMdMMdMddddddMMMMMdMMdM\nddddMMMMMMMddMMdddddMMMMMMMddMMd\ndMddMMMMMMMMMMMMdMddMMMMMMMMMMMM\ndMMMMMMMMMMMMMMMdMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMlMMMMMMMMMMMMMMMlMMMMMMMMMMM\nlLlMllMMMMMMMMMMlLlMllMMMMMMMMMM\nlMdlMllMMMMMMMlMlMdlMllMMMMMMMlM\ndddddMLMMMMMMlMddddddMLMMMMMMlMd\nDdddddlMMLllMddDDdddddlMMLllMddD\ndDddddMlMMddddDddDddddMlMMddddDd\nddDddddddddDDdddddDddddddddDDddd\ndddDDddddddddddddddDDddddddddddd\ndddddddddddddddddddddddddddddddd\ndddddddddddMdddddddddddddddMdddd\nddddddMMMMMdMMdMddddddMMMMMdMMdM\nddddMMMMMMMddMMdddddMMMMMMMddMMd\ndMddMMMMMMMMMMMMdMddMMMMMMMMMMMM\ndMMMMMMMMMMMMMMMdMMMMMMMMMMMMMMM\ndMMMMMMMMMMMMMdMdMMMMMMMMMMMMMdM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMlMllMMMMMMMMMMMMlMllMMMMMMMMMMM\nlllMllMMMMMMMMMLlllMllMMMMMMMMML\nddMMMlMMMMMMMMlMddMMMlMMMMMMMMlM\nddddMMlMMMMlLlddddddMMlMMMMlLldd\ndddddlLMMllldddDdddddlLMMllldddD\nDdddddMMMddddDddDdddddMMMddddDdd\ndDddddddddDDdddddDddddddddDDdddd\nddDdDDddDdddddddddDdDDddDddddddd\ndddddddddddddddddddddddddddddddd\ndddddddddMMddddddddddddddMMddddd\nddddMMMMMMMdddddddddMMMMMMMddddd\nddddMMMMMMdMMMMMddddMMMMMMdMMMMM\ndMMMMMMMMMdMMMMMdMMMMMMMMMdMMMMM\ndMMMMMMMMMMMMMdMdMMMMMMMMMMMMMdM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMlMllMMMMMMMMMMMMlMllMMMMMMMMMMM\nlllMllMMMMMMMMMLlllMllMMMMMMMMML\nddMMMlMMMMMMMMlMddMMMlMMMMMMMMlM\nddddMMlMMMMlLlddddddMMlMMMMlLldd\ndddddlLMMllldddDdddddlLMMllldddD\nDdddddMMMddddDddDdddddMMMddddDdd\ndDddddddddDDdddddDddddddddDDdddd\nddDdDDddDdddddddddDdDDddDddddddd\ndddddddddddddddddddddddddddddddd\ndddddddddMMddddddddddddddMMddddd\nddddMMMMMMMdddddddddMMMMMMMddddd\nddddMMMMMMdMMMMMddddMMMMMMdMMMMM\ndMMMMMMMMMdMMMMMdMMMMMMMMMdMMMMM\ndMMMMMMMMMdMMMdMdMMMMMMMMMdMMMdM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMMMMMMMMMMMdddMMMMMMMMMMMMMdddMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlMlMMMMMMMMMMMMMlMlMMMMMMMMMMMMM\nMMMlLMMMMMMMMMMlMMMlLMMMMMMMMMMl\ndMlMllMMMMMMMLMddMlMllMMMMMMMLMd\ndddlMlMMMMlllddddddlMlMMMMlllddd\nddddMMLMLMMddddDddddMMLMLMMddddD\nDdddddMMddddDDddDdddddMMddddDDdd\nDddddddddDddddddDddddddddDdddddd\ndDddDDDDdddddddddDddDDDDdddddddd\ndddddddddddddddddddddddddddddddd\nddddddddMMMdddddddddddddMMMddddd\nddddMMMMMMdMddddddddMMMMMMdMdddd\ndMMdMMMMdMdMMdMMdMMdMMMMdMdMMdMM\ndMMMMMMMMMdMMMdMdMMMMMMMMMdMMMdM\nMMMMMMMMMMMddMMMMMMMMMMMMMMddMMM\nMMMMMMMMMMMdddMMMMMMMMMMMMMdddMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlMlMMMMMMMMMMMMMlMlMMMMMMMMMMMMM\nMMMlLMMMMMMMMMMlMMMlLMMMMMMMMMMl\ndMlMllMMMMMMMLMddMlMllMMMMMMMLMd\ndddlMlMMMMlllddddddlMlMMMMlllddd\nddddMMLMLMMddddDddddMMLMLMMddddD\nDdddddMMddddDDddDdddddMMddddDDdd\nDddddddddDddddddDddddddddDdddddd\ndDddDDDDdddddddddDddDDDDdddddddd\ndddddddddddddddddddddddddddddddd\nddddddddMMMdddddddddddddMMMddddd\nddddMMMMMMdMddddddddMMMMMMdMdddd\ndMMdMMMMdMdMMdMMdMMdMMMMdMdMMdMM\ndMddMMMddMdMdddMdMddMMMddMdMdddM\ndMMMMMMMdMMddMMddMMMMMMMdMMddMMd\nMMMMMMMMMMMdddMMMMMMMMMMMMMdddMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlllMMMMMMMMMMMMllllMMMMMMMMMMMMl\nlMlLMMMMMMMMMllMlMlLMMMMMMMMMllM\ndMMlLlMMMMMlLMdddMMlLlMMMMMlLMdd\nddMMlLMMMLMMldddddMMlLMMMLMMlddd\ndddMMMllMddddddDdddMMMllMddddddD\nddddddddddDDDDDDddddddddddDDDDDD\nDdddddddDdddddddDdddddddDddddddd\nDDDDddddddddddddDDDDdddddddddddd\ndddddddddddddddddddddddddddddddd\ndddddMMMMMdddddddddddMMMMMdddddd\nddMdMdMMdMddddddddMdMdMMdMdddddd\ndMddMMMddMdMdddMdMddMMMddMdMdddM\ndMMMMMMMdMMddMMddMMMMMMMdMMddMMd\nMMMMMMMMMMMdddMMMMMMMMMMMMMdddMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlllMMMMMMMMMMMMllllMMMMMMMMMMMMl\nlMlLMMMMMMMMMllMlMlLMMMMMMMMMllM\ndMMlLlMMMMMlLMdddMMlLlMMMMMlLMdd\nddMMlLMMMLMMldddddMMlLMMMLMMlddd\ndddMMMllMddddddDdddMMMllMddddddD\nddddddddddDDDDDDddddddddddDDDDDD\nDdddddddDdddddddDdddddddDddddddd\nDDDDddddddddddddDDDDdddddddddddd\ndddddddddddddddddddddddddddddddd\ndddddMMMMMdddddddddddMMMMMdddddd\nddMdMdMMdMddddddddMdMdMMdMdddddd\ndMddMMMddMdddddddMddMMMddMdddddd\nddMMMMMMdMMdddMdddMMMMMMdMMdddMd\nMMMMMMMMdMMdddMMMMMMMMMMdMMdddMM\nMMMMMMMMMMdMMMMMMMMMMMMMMMdMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLlMMMMMMMMMMMMlLLlMMMMMMMMMMMMl\nMMLlMMMMMMMMlLMMMMLlMMMMMMMMlLMM\ndMlLMMMMMMlLMMdddMlLMMMMMMlLMMdd\ndMMllLlMLMMddddddMMllLlMLMMddddd\nddMMMMMMddddddddddMMMMMMdddddddd\ndddddddddDDDDDDDdddddddddDDDDDDD\nddddDDDDdddddddDddddDDDDdddddddD\nDDDdddddddddddddDDDddddddddddddd\ndddddddddddddddddddddddddddddddd\nddddMdMMdMddddddddddMdMMdMdddddd\ndMddMMMddMdddddddMddMMMddMdddddd\nddMMMMMMdMMdddMdddMMMMMMdMMdddMd\nMMMMMMMMdMMdddMMMMMMMMMMdMMdddMM\nMMMMMMMMMMdMMMMMMMMMMMMMMMdMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nLLlMMMMMMMMMMMMlLLlMMMMMMMMMMMMl\nMMLlMMMMMMMMlLMMMMLlMMMMMMMMlLMM\ndMlLMMMMMMlLMMdddMlLMMMMMMlLMMdd\ndMMllLlMLMMddddddMMllLlMLMMddddd\nddMMMMMMddddddddddMMMMMMdddddddd\ndddddddddDDDDDDDdddddddddDDDDDDD\nddddDDDDdddddddDddddDDDDdddddddD\nDDDdddddddddddddDDDddddddddddddd\ndddddddddddddddddddddddddddddddd\nddddMdMMdMddddddddddMdMMdMdddddd\nddddMMMddMddddddddddMMMddMdddddd\ndddMMMdMdMdddddddddMMMdMdMdddddd\ndMMMMMMMdMMdddMddMMMMMMMdMMdddMd\nMMMMMMMMMMdMMMdMMMMMMMMMMMdMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlMMMMMMMMMMMMMMMlMMMMMMMMMMMMMMM\nllMMMMMMMMMMMMLMllMMMMMMMMMMMMLM\nMllMMMMMMMMMLMMlMllMMMMMMMMMLMMl\nMMLlMMMMMLMlMdddMMLlMMMMMLMlMddd\ndlMllMlLMddddddddlMllMlLMddddddd\nddMMddddddddddddddMMdddddddddddd\nddddddddDddDDDddddddddddDddDDDdd\ndddDdddddddddDDDdddDdddddddddDDD\nDDddddddddddddddDDdddddddddddddd\nddddMdMdddddddddddddMdMddddddddd\nddddMMMddMddddddddddMMMddMdddddd\ndddMMMdMdMdddddddddMMMdMdMdddddd\ndMMMMMMMdMMdddMddMMMMMMMdMMdddMd\nMMMMMMMMMMdMMMdMMMMMMMMMMMdMMMdM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nlMMMMMMMMMMMMMMMlMMMMMMMMMMMMMMM\nllMMMMMMMMMMMMLMllMMMMMMMMMMMMLM\nMllMMMMMMMMMLMMlMllMMMMMMMMMLMMl\nMMLlMMMMMLMlMdddMMLlMMMMMLMlMddd\ndlMllMlLMddddddddlMllMlLMddddddd\nddMMddddddddddddddMMdddddddddddd\nddddddddDddDDDddddddddddDddDDDdd\ndddDdddddddddDDDdddDdddddddddDDD\nDDddddddddddddddDDdddddddddddddd\nddddMdMdddddddddddddMdMddddddddd\nddddMMMdddddddddddddMMMddddddddd\ndddMdMdMdddddddddddMdMdMdddddddd\ndMMMMMMMdMddddMddMMMMMMMdMddddMd\nMMMMMMMMMMddMMdMMMMMMMMMMMddMMdM\nMMMMMMMdMMMMMdMMMMMMMMMdMMMMMdMM\nMMMMMMMdMdMdMMMMMMMMMMMdMdMdMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMML\nLMMMMMMMMMMMMllMLMMMMMMMMMMMMllM\nMLMMMMMMMMLlMMMlMLMMMMMMMMLlMMMl\nMlLMllMMLMMdddddMlLMllMMLMMddddd\nMMMlMMMMddddddddMMMlMMMMdddddddd\ndlMddddddDDddddddlMddddddDDddddd\nddddDDDDdddDDdddddddDDDDdddDDddd\nddDdddddddddDDDDddDdddddddddDDDD\ndddddddddddddDdddddddddddddddDdd\nddddMMMdddddddddddddMMMddddddddd\ndddMdMdMdddddddddddMdMdMdddddddd\ndMMMMMMMdMddddMddMMMMMMMdMddddMd\nMMMMMMMMMMddMMdMMMMMMMMMMMddMMdM\nMMMMMMMdMMMMMdMMMMMMMMMdMMMMMdMM\nMMMMMMMdMdMdMMMMMMMMMMMdMdMdMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMML\nLMMMMMMMMMMMMllMLMMMMMMMMMMMMllM\nMLMMMMMMMMLlMMMlMLMMMMMMMMLlMMMl\nMlLMllMMLMMdddddMlLMllMMLMMddddd\nMMMlMMMMddddddddMMMlMMMMdddddddd\ndlMddddddDDddddddlMddddddDDddddd\nddddDDDDdddDDdddddddDDDDdddDDddd\nddDdddddddddDDDDddDdddddddddDDDD\ndddddddddddddDdddddddddddddddDdd\nddddMMddddddDDddddddMMddddddDDdd\ndddMdMdddddddddddddMdMdddddddddd\ndMMdMdMMdddddddddMMdMdMMdddddddd\nMMMMMMMMMddddddMMMMMMMMMMddddddM\nMMMMMMMdMMMMMdMMMMMMMMMdMMMMMdMM\nMMMMMMMdMdMdMMMMMMMMMMMdMdMdMMMM\nMMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMML\nlMMMMMMMMMMllLMllMMMMMMMMMMllLMl\nllMMMMMMMLMMMMllllMMMMMMMLMMMMll\nMLllLlllMdddddddMLllLlllMddddddd\nMMMlMdddddddddddMMMlMddddddddddd\nddddddddDDDdddddddddddddDDDddddd\ndddDdddddddDdddddddDdddddddDdddd\nDDddddddddddDddDDDddddddddddDddD\nddddMMddddddDDddddddMMddddddDDdd\ndddMdMdddddddddddddMdMdddddddddd\ndMMdMdMMdddddddddMMdMdMMdddddddd\nMMMMMMMMMddddddMMMMMMMMMMddddddM\nMMMMMMMdMMMMMdMMMMMMMMMdMMMMMdMM\nMMMMMMMdMdMdMMMMMMMMMMMdMdMdMMMM\nMMMMMMMMdMMMMMMMMMMMMMMMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMML\nlMMMMMMMMMMllLMllMMMMMMMMMMllLMl\nllMMMMMMMLMMMMllllMMMMMMMLMMMMll\nMLllLlllMdddddddMLllLlllMddddddd\nMMMlMdddddddddddMMMlMddddddddddd\nddddddddDDDdddddddddddddDDDddddd\ndddDdddddddDdddddddDdddddddDdddd\nDDddddddddddDddDDDddddddddddDddD\ndddddddddddDdddDdddddddddddDdddD\ndddMdMddddddDDdddddMdMddddddDDdd\ndMMdddMddddddddddMMdddMddddddddd\nMMMMMdMddddddddMMMMMMdMddddddddM\nMMMMMMMdddddddMMMMMMMMMdddddddMM\nMMMMMMddMdMdMMMMMMMMMMddMdMdMMMM\nMMMMMMMMdMdMMMMMMMMMMMMMdMdMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMllMMMMMMMMMMMMMMll\nMMMMMMMMMMlLLlllMMMMMMMMMMlLLlll\nLMMMMMMMLMMMMMMMLMMMMMMMLMMMMMMM\nlLlLMMMMdddddlMMlLlLMMMMdddddlMM\nMMMMddddddddddddMMMMdddddddddddd\ndddddDDDDDDddddddddddDDDDDDddddd\nddDdddddddddddddddDddddddddddddd\ndddddddddddDdddDdddddddddddDdddD\ndddMdMddddddDDdddddMdMddddddDDdd\ndMMdddMddddddddddMMdddMddddddddd\nMMMMMdMddddddddMMMMMMdMddddddddM\nMMMMMMMdddddddMMMMMMMMMdddddddMM\nMMMMMMddMdMdMMMMMMMMMMddMdMdMMMM\nMMMMMMMMdMdMMMMMMMMMMMMMdMdMMMMM\nMMMMMMMddMMMMMMMMMMMMMMddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMllMMMMMMMMMMMMMMll\nMMMMMMMMMMlLLlllMMMMMMMMMMlLLlll\nLMMMMMMMLMMMMMMMLMMMMMMMLMMMMMMM\nlLlLMMMMdddddlMMlLlLMMMMdddddlMM\nMMMMddddddddddddMMMMdddddddddddd\ndddddDDDDDDddddddddddDDDDDDddddd\nddDdddddddddddddddDddddddddddddd\ndDddddddddDddddddDddddddddDddddd\nddddddddddDdddDdddddddddddDdddDd\nddMddddddddDDdddddMddddddddDDddd\nMMMMMdMddddddddMMMMMMdMddddddddM\nMMMMMMMdddddddMdMMMMMMMdddddddMd\nMMMMMMddddddMMMMMMMMMMddddddMMMM\nMMMMMMMMdMdMMMMMMMMMMMMMdMdMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMllMMMMMMMMMMMMMMll\nMMMMMMMMMLllLLLlMMMMMMMMMLllLLLl\nMMMlMLLLMlMMMlllMMMlMLLLMlMMMlll\nLLLlMdddddddMllMLLLlMdddddddMllM\nMMMddddddddddMMMMMMddddddddddMMM\nddddDddDDDddddddddddDddDDDdddddd\ndDddddddddDddddddDddddddddDddddd\nddddddddddDdddDdddddddddddDdddDd\nddMddddddddDDdddddMddddddddDDddd\nMMMMMdMddddddddMMMMMMdMddddddddM\nMMMMMMMdddddddMdMMMMMMMdddddddMd\nMMMMMMddddddMMMMMMMMMMddddddMMMM\nMMMMMMMMdMdMMMMMMMMMMMMMdMdMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMllMMMMMMMMMMMMMMll\nMMMMMMMMMLllLLLlMMMMMMMMMLllLLLl\nMMMlMLLLMlMMMlllMMMlMLLLMlMMMlll\nLLLlMdddddddMllMLLLlMdddddddMllM\nMMMddddddddddMMMMMMddddddddddMMM\nddddDddDDDddddddddddDddDDDdddddd\ndddDdddDddddlMdddddDdddDddddlMdd\nDdddddddDDdddddDDdddddddDDdddddD\ndddddddddDDdddDddddddddddDDdddDd\ndMMMMddddddDDddddMMMMddddddDDddd\nMMMMMMddddddddddMMMMMMdddddddddd\nMMdMMMdddddddMMdMMdMMMdddddddMMd\nMMMMdMMddddMMMMMMMMMdMMddddMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMdMdMMMMMMMMMMMMMdMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMlllLllMMMMMMMMMMlllLllMM\nMMMMLMllMlMMlLllMMMMLMllMlMMlLll\nLLlMdddddddlMlllLLlMdddddddlMlll\nMMdddDddddddMllMMMdddDddddddMllM\ndddDdddDddddlMdddddDdddDddddlMdd\nDdddddddDDdddddDDdddddddDDdddddD\ndddddddddDDdddDddddddddddDDdddDd\ndMMMMddddddDDddddMMMMddddddDDddd\nMMMMMMddddddddddMMMMMMdddddddddd\nMMdMMMdddddddMMdMMdMMMdddddddMMd\nMMMMdMMddddMMMMMMMMMdMMddddMMMMM\nMMMMMMdddMMMMMMMMMMMMMdddMMMMMMM\nMMMMMMdMdMMMMMMMMMMMMMdMdMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMlllLllMMMMMMMMMMlllLllMM\nMMMMLMllMlMMlLllMMMMLMllMlMMlLll\nLLlMdddddddlMlllLLlMdddddddlMlll\nMMdddDddddddMllMMMdddDddddddMllM\nMdddDDdddddlllMMMdddDDdddddlllMM\nddDddddddddMMMddddDddddddddMMMdd\ndddddddDdddddddDdddddddDdddddddD\nddddddddDdddddddddddddddDddddddd\nMMMMMddddDDDddddMMMMMddddDDDdddd\nMddMMMddddddddMdMddMMMddddddddMd\nMdMddMdddddddMdMMdMddMdddddddMdM\nMMdMMMdddMMMMMMMMMdMMMdddMMMMMMM\nMMMdMddMdMMMMMMMMMMdMddMdMMMMMMM\nMMMMMdMdMMMMMMMMMMMMMdMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMMM\nMMMMMMllLllMMMMMMMMMMMllLllMMMMM\nMMMLMMMMlMMLMMMMMMMLMMMMlMMLMMMM\nLlMMddddddMMLllLLlMMddddddMMLllL\nMdddDDdddddlllMMMdddDDdddddlllMM\nddDddddddddMMMddddDddddddddMMMdd\ndddddddDdddddddDdddddddDdddddddD\nddddddddDdddddddddddddddDddddddd\nMMMMMddddDDDddddMMMMMddddDDDdddd\nMddMMMddddddddMdMddMMMddddddddMd\nMdMddMdddddddMdMMdMddMdddddddMdM\nMMdMMMdddMMMMMMMMMdMMMdddMMMMMMM\nMMMdMddMdMMMMMMMMMMdMddMdMMMMMMM\nMMMMMdMdMMMMMMMMMMMMMdMdMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMMM\nMMMMMMllLllMMMMMMMMMMMllLllMMMMM\nMMMLMMMMlMMLMMMMMMMLMMMMlMMLMMMM\nLlMMddddddMMLllLLlMMddddddMMLllL\nLlMdddddMMllMMMLLlMdddddMMllMMML\nddddDDdddMMLlLMMddddDDdddMMLlLMM\ndDDdddDdddMMMMdddDDdddDdddMMMMdd\nddddddDdddddddddddddddDddddddddd\ndddddddddddddDdddddddddddddddDdd\nMddddddDDDDDddddMddddddDDDDDdddd\nMdMdddddddddddddMdMddddddddddddd\nMddMMdddddddMMMMMddMMdddddddMMMM\nMMMdMddddMMdMMMMMMMdMddddMMdMMMM\nMMdMMdMdMdMMMMMMMMdMMdMdMdMMMMMM\nMMMMddMMMMMMMMMMMMMMddMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMMM\nMMMMMLlMlLMMMMMMMMMMMLlMlLMMMMMM\nMMMllMlMMlLMMMMMMMMllMlMMlLMMMMM\nLlMdddddMMllMMMLLlMdddddMMllMMML\nddddDDdddMMLlLMMddddDDdddMMLlLMM\ndDDdddDdddMMMMdddDDdddDdddMMMMdd\nddddddDdddddddddddddddDddddddddd\ndddddddddddddDdddddddddddddddDdd\nMddddddDDDDDddddMddddddDDDDDdddd\nMdMdddddddddddddMdMddddddddddddd\nMddMMdddddddMMMMMddMMdddddddMMMM\nMMMdMddddMMdMMMMMMMdMddddMMdMMMM\nMMdMMdMdMdMMMMMMMMdMMdMdMdMMMMMM\nMMMMddMMMMMMMMMMMMMMddMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\nMMMMMMMMMlMMMMMMMMMMMMMMMlMMMMMM\nMMMMMLlMlLMMMMMMMMMMMLlMlLMMMMMM\nMMMllMlMMlLMMMMMMMMllMlMMlLMMMMM",
+  "per_source_color_blends": [
+    {
+      "source_rgb": [
+        97,
+        42,
+        52
+      ],
+      "source_hex": "#612A34",
+      "count": 8,
+      "source_luma": 54.415,
+      "approx_rgb": [
+        97,
+        42,
+        52
+      ],
+      "approx_hex": "#612A34",
+      "composited_rgb": [
+        97,
+        42,
+        52
+      ],
+      "composited_hex": "#612A34",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 1.0,
+      "medium_weight": 0.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        98,
+        42,
+        52
+      ],
+      "source_hex": "#622A34",
+      "count": 120,
+      "source_luma": 54.6276,
+      "approx_rgb": [
+        98,
+        42,
+        52
+      ],
+      "approx_hex": "#622A34",
+      "composited_rgb": [
+        98,
+        42,
+        52
+      ],
+      "composited_hex": "#622A34",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.987555,
+      "medium_weight": 0.012445,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        98,
+        43,
+        52
+      ],
+      "source_hex": "#622B34",
+      "count": 216,
+      "source_luma": 55.3428,
+      "approx_rgb": [
+        98,
+        43,
+        52
+      ],
+      "approx_hex": "#622B34",
+      "composited_rgb": [
+        98,
+        43,
+        52
+      ],
+      "composited_hex": "#622B34",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.980931,
+      "medium_weight": 0.019069,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        98,
+        43,
+        53
+      ],
+      "source_hex": "#622B35",
+      "count": 616,
+      "source_luma": 55.415,
+      "approx_rgb": [
+        98,
+        43,
+        52
+      ],
+      "approx_hex": "#622B34",
+      "composited_rgb": [
+        98,
+        43,
+        52
+      ],
+      "composited_hex": "#622B34",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.979526,
+      "medium_weight": 0.020474,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        99,
+        43,
+        53
+      ],
+      "source_hex": "#632B35",
+      "count": 400,
+      "source_luma": 55.6276,
+      "approx_rgb": [
+        99,
+        43,
+        52
+      ],
+      "approx_hex": "#632B34",
+      "composited_rgb": [
+        99,
+        43,
+        52
+      ],
+      "composited_hex": "#632B34",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.967081,
+      "medium_weight": 0.032919,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        99,
+        44,
+        53
+      ],
+      "source_hex": "#632C35",
+      "count": 72,
+      "source_luma": 56.3428,
+      "approx_rgb": [
+        99,
+        43,
+        52
+      ],
+      "approx_hex": "#632B34",
+      "composited_rgb": [
+        99,
+        43,
+        52
+      ],
+      "composited_hex": "#632B34",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.960458,
+      "medium_weight": 0.039542,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        111,
+        50,
+        53
+      ],
+      "source_hex": "#6F3235",
+      "count": 144,
+      "source_luma": 63.1852,
+      "approx_rgb": [
+        111,
+        50,
+        54
+      ],
+      "approx_hex": "#6F3236",
+      "composited_rgb": [
+        111,
+        50,
+        54
+      ],
+      "composited_hex": "#6F3236",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.771377,
+      "medium_weight": 0.228623,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        111,
+        50,
+        54
+      ],
+      "source_hex": "#6F3236",
+      "count": 72,
+      "source_luma": 63.2574,
+      "approx_rgb": [
+        111,
+        50,
+        54
+      ],
+      "approx_hex": "#6F3236",
+      "composited_rgb": [
+        111,
+        50,
+        54
+      ],
+      "composited_hex": "#6F3236",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.769972,
+      "medium_weight": 0.230028,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        111,
+        51,
+        54
+      ],
+      "source_hex": "#6F3336",
+      "count": 672,
+      "source_luma": 63.9726,
+      "approx_rgb": [
+        112,
+        50,
+        54
+      ],
+      "approx_hex": "#703236",
+      "composited_rgb": [
+        112,
+        50,
+        54
+      ],
+      "composited_hex": "#703236",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.763348,
+      "medium_weight": 0.236652,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        112,
+        51,
+        54
+      ],
+      "source_hex": "#703336",
+      "count": 496,
+      "source_luma": 64.1852,
+      "approx_rgb": [
+        112,
+        50,
+        54
+      ],
+      "approx_hex": "#703236",
+      "composited_rgb": [
+        113,
+        50,
+        54
+      ],
+      "composited_hex": "#713236",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.750903,
+      "medium_weight": 0.249097,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        112,
+        51,
+        55
+      ],
+      "source_hex": "#703337",
+      "count": 48,
+      "source_luma": 64.2574,
+      "approx_rgb": [
+        113,
+        50,
+        54
+      ],
+      "approx_hex": "#713236",
+      "composited_rgb": [
+        113,
+        50,
+        54
+      ],
+      "composited_hex": "#713236",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.749498,
+      "medium_weight": 0.250502,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        112,
+        52,
+        55
+      ],
+      "source_hex": "#703437",
+      "count": 16,
+      "source_luma": 64.9726,
+      "approx_rgb": [
+        113,
+        50,
+        54
+      ],
+      "approx_hex": "#713236",
+      "composited_rgb": [
+        113,
+        51,
+        54
+      ],
+      "composited_hex": "#713336",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.742874,
+      "medium_weight": 0.257126,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        123,
+        53,
+        54
+      ],
+      "source_hex": "#7B3536",
+      "count": 16,
+      "source_luma": 67.9542,
+      "approx_rgb": [
+        122,
+        55,
+        55
+      ],
+      "approx_hex": "#7A3737",
+      "composited_rgb": [
+        122,
+        55,
+        55
+      ],
+      "composited_hex": "#7A3737",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.600763,
+      "medium_weight": 0.399237,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        124,
+        53,
+        54
+      ],
+      "source_hex": "#7C3536",
+      "count": 240,
+      "source_luma": 68.1668,
+      "approx_rgb": [
+        123,
+        56,
+        55
+      ],
+      "approx_hex": "#7B3837",
+      "composited_rgb": [
+        123,
+        56,
+        55
+      ],
+      "composited_hex": "#7B3837",
+      "max_channel_error": 3,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.588318,
+      "medium_weight": 0.411682,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        124,
+        54,
+        54
+      ],
+      "source_hex": "#7C3636",
+      "count": 120,
+      "source_luma": 68.882,
+      "approx_rgb": [
+        123,
+        56,
+        55
+      ],
+      "approx_hex": "#7B3837",
+      "composited_rgb": [
+        123,
+        56,
+        55
+      ],
+      "composited_hex": "#7B3837",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.581694,
+      "medium_weight": 0.418306,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        124,
+        54,
+        55
+      ],
+      "source_hex": "#7C3637",
+      "count": 792,
+      "source_luma": 68.9542,
+      "approx_rgb": [
+        123,
+        56,
+        55
+      ],
+      "approx_hex": "#7B3837",
+      "composited_rgb": [
+        123,
+        56,
+        55
+      ],
+      "composited_hex": "#7B3837",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.580289,
+      "medium_weight": 0.419711,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        125,
+        54,
+        55
+      ],
+      "source_hex": "#7D3637",
+      "count": 304,
+      "source_luma": 69.1668,
+      "approx_rgb": [
+        124,
+        56,
+        55
+      ],
+      "approx_hex": "#7C3837",
+      "composited_rgb": [
+        124,
+        56,
+        55
+      ],
+      "composited_hex": "#7C3837",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.567844,
+      "medium_weight": 0.432156,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        125,
+        55,
+        55
+      ],
+      "source_hex": "#7D3737",
+      "count": 16,
+      "source_luma": 69.882,
+      "approx_rgb": [
+        124,
+        56,
+        55
+      ],
+      "approx_hex": "#7C3837",
+      "composited_rgb": [
+        124,
+        56,
+        55
+      ],
+      "composited_hex": "#7C3837",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.56122,
+      "medium_weight": 0.43878,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        130,
+        59,
+        55
+      ],
+      "source_hex": "#823B37",
+      "count": 80,
+      "source_luma": 73.8058,
+      "approx_rgb": [
+        130,
+        59,
+        56
+      ],
+      "approx_hex": "#823B38",
+      "composited_rgb": [
+        130,
+        59,
+        56
+      ],
+      "composited_hex": "#823B38",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.472501,
+      "medium_weight": 0.527499,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        131,
+        59,
+        55
+      ],
+      "source_hex": "#833B37",
+      "count": 136,
+      "source_luma": 74.0184,
+      "approx_rgb": [
+        130,
+        60,
+        56
+      ],
+      "approx_hex": "#823C38",
+      "composited_rgb": [
+        131,
+        60,
+        56
+      ],
+      "composited_hex": "#833C38",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.460056,
+      "medium_weight": 0.539944,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        131,
+        60,
+        55
+      ],
+      "source_hex": "#833C37",
+      "count": 336,
+      "source_luma": 74.7336,
+      "approx_rgb": [
+        131,
+        60,
+        56
+      ],
+      "approx_hex": "#833C38",
+      "composited_rgb": [
+        131,
+        60,
+        56
+      ],
+      "composited_hex": "#833C38",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.453432,
+      "medium_weight": 0.546568,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        131,
+        60,
+        56
+      ],
+      "source_hex": "#833C38",
+      "count": 784,
+      "source_luma": 74.8058,
+      "approx_rgb": [
+        131,
+        60,
+        56
+      ],
+      "approx_hex": "#833C38",
+      "composited_rgb": [
+        131,
+        60,
+        56
+      ],
+      "composited_hex": "#833C38",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.452027,
+      "medium_weight": 0.547973,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        135,
+        59,
+        55
+      ],
+      "source_hex": "#873B37",
+      "count": 64,
+      "source_luma": 74.8688,
+      "approx_rgb": [
+        134,
+        61,
+        56
+      ],
+      "approx_hex": "#863D38",
+      "composited_rgb": [
+        133,
+        61,
+        56
+      ],
+      "composited_hex": "#853D38",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.410277,
+      "medium_weight": 0.589723,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        132,
+        60,
+        56
+      ],
+      "source_hex": "#843C38",
+      "count": 80,
+      "source_luma": 75.0184,
+      "approx_rgb": [
+        132,
+        60,
+        56
+      ],
+      "approx_hex": "#843C38",
+      "composited_rgb": [
+        132,
+        61,
+        56
+      ],
+      "composited_hex": "#843D38",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.439582,
+      "medium_weight": 0.560418,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        135,
+        60,
+        55
+      ],
+      "source_hex": "#873C37",
+      "count": 184,
+      "source_luma": 75.584,
+      "approx_rgb": [
+        134,
+        62,
+        56
+      ],
+      "approx_hex": "#863E38",
+      "composited_rgb": [
+        134,
+        62,
+        56
+      ],
+      "composited_hex": "#863E38",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.403653,
+      "medium_weight": 0.596347,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        135,
+        60,
+        56
+      ],
+      "source_hex": "#873C38",
+      "count": 176,
+      "source_luma": 75.6562,
+      "approx_rgb": [
+        134,
+        62,
+        56
+      ],
+      "approx_hex": "#863E38",
+      "composited_rgb": [
+        134,
+        62,
+        56
+      ],
+      "composited_hex": "#863E38",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.402248,
+      "medium_weight": 0.597752,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        132,
+        61,
+        56
+      ],
+      "source_hex": "#843D38",
+      "count": 16,
+      "source_luma": 75.7336,
+      "approx_rgb": [
+        132,
+        61,
+        56
+      ],
+      "approx_hex": "#843D38",
+      "composited_rgb": [
+        132,
+        61,
+        56
+      ],
+      "composited_hex": "#843D38",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.432959,
+      "medium_weight": 0.567041,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        136,
+        60,
+        56
+      ],
+      "source_hex": "#883C38",
+      "count": 3584,
+      "source_luma": 75.8688,
+      "approx_rgb": [
+        135,
+        62,
+        56
+      ],
+      "approx_hex": "#873E38",
+      "composited_rgb": [
+        135,
+        62,
+        56
+      ],
+      "composited_hex": "#873E38",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.389803,
+      "medium_weight": 0.610197,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        136,
+        61,
+        56
+      ],
+      "source_hex": "#883D38",
+      "count": 680,
+      "source_luma": 76.584,
+      "approx_rgb": [
+        135,
+        62,
+        56
+      ],
+      "approx_hex": "#873E38",
+      "composited_rgb": [
+        135,
+        62,
+        56
+      ],
+      "composited_hex": "#873E38",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.383179,
+      "medium_weight": 0.616821,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        136,
+        61,
+        57
+      ],
+      "source_hex": "#883D39",
+      "count": 192,
+      "source_luma": 76.6562,
+      "approx_rgb": [
+        135,
+        62,
+        56
+      ],
+      "approx_hex": "#873E38",
+      "composited_rgb": [
+        135,
+        62,
+        56
+      ],
+      "composited_hex": "#873E38",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.381774,
+      "medium_weight": 0.618226,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        137,
+        61,
+        57
+      ],
+      "source_hex": "#893D39",
+      "count": 240,
+      "source_luma": 76.8688,
+      "approx_rgb": [
+        136,
+        63,
+        56
+      ],
+      "approx_hex": "#883F38",
+      "composited_rgb": [
+        136,
+        63,
+        56
+      ],
+      "composited_hex": "#883F38",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.36933,
+      "medium_weight": 0.63067,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        145,
+        66,
+        56
+      ],
+      "source_hex": "#914238",
+      "count": 8,
+      "source_luma": 82.0734,
+      "approx_rgb": [
+        144,
+        67,
+        57
+      ],
+      "approx_hex": "#904339",
+      "composited_rgb": [
+        144,
+        67,
+        57
+      ],
+      "composited_hex": "#904339",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.238057,
+      "medium_weight": 0.761943,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        146,
+        66,
+        56
+      ],
+      "source_hex": "#924238",
+      "count": 48,
+      "source_luma": 82.286,
+      "approx_rgb": [
+        145,
+        68,
+        57
+      ],
+      "approx_hex": "#914439",
+      "composited_rgb": [
+        145,
+        67,
+        57
+      ],
+      "composited_hex": "#914339",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.225612,
+      "medium_weight": 0.774388,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        146,
+        66,
+        57
+      ],
+      "source_hex": "#924239",
+      "count": 536,
+      "source_luma": 82.3582,
+      "approx_rgb": [
+        145,
+        68,
+        57
+      ],
+      "approx_hex": "#914439",
+      "composited_rgb": [
+        145,
+        68,
+        57
+      ],
+      "composited_hex": "#914439",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.224207,
+      "medium_weight": 0.775793,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        147,
+        66,
+        57
+      ],
+      "source_hex": "#934239",
+      "count": 1168,
+      "source_luma": 82.5708,
+      "approx_rgb": [
+        146,
+        68,
+        58
+      ],
+      "approx_hex": "#92443A",
+      "composited_rgb": [
+        146,
+        68,
+        58
+      ],
+      "composited_hex": "#92443A",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.211762,
+      "medium_weight": 0.788238,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        146,
+        67,
+        57
+      ],
+      "source_hex": "#924339",
+      "count": 504,
+      "source_luma": 83.0734,
+      "approx_rgb": [
+        146,
+        68,
+        57
+      ],
+      "approx_hex": "#924439",
+      "composited_rgb": [
+        146,
+        68,
+        57
+      ],
+      "composited_hex": "#924439",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.217583,
+      "medium_weight": 0.782417,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        147,
+        67,
+        57
+      ],
+      "source_hex": "#934339",
+      "count": 1016,
+      "source_luma": 83.286,
+      "approx_rgb": [
+        146,
+        68,
+        58
+      ],
+      "approx_hex": "#92443A",
+      "composited_rgb": [
+        146,
+        68,
+        58
+      ],
+      "composited_hex": "#92443A",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.205138,
+      "medium_weight": 0.794862,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        147,
+        67,
+        58
+      ],
+      "source_hex": "#93433A",
+      "count": 160,
+      "source_luma": 83.3582,
+      "approx_rgb": [
+        146,
+        68,
+        58
+      ],
+      "approx_hex": "#92443A",
+      "composited_rgb": [
+        146,
+        68,
+        58
+      ],
+      "composited_hex": "#92443A",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.203733,
+      "medium_weight": 0.796267,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        148,
+        67,
+        57
+      ],
+      "source_hex": "#944339",
+      "count": 1024,
+      "source_luma": 83.4986,
+      "approx_rgb": [
+        147,
+        69,
+        58
+      ],
+      "approx_hex": "#93453A",
+      "composited_rgb": [
+        147,
+        69,
+        58
+      ],
+      "composited_hex": "#93453A",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.192694,
+      "medium_weight": 0.807306,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        148,
+        67,
+        58
+      ],
+      "source_hex": "#94433A",
+      "count": 2152,
+      "source_luma": 83.5708,
+      "approx_rgb": [
+        147,
+        69,
+        58
+      ],
+      "approx_hex": "#93453A",
+      "composited_rgb": [
+        147,
+        69,
+        58
+      ],
+      "composited_hex": "#93453A",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.191289,
+      "medium_weight": 0.808711,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        158,
+        72,
+        58
+      ],
+      "source_hex": "#9E483A",
+      "count": 208,
+      "source_luma": 89.2728,
+      "approx_rgb": [
+        157,
+        74,
+        59
+      ],
+      "approx_hex": "#9D4A3B",
+      "composited_rgb": [
+        157,
+        74,
+        59
+      ],
+      "composited_hex": "#9D4A3B",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.033721,
+      "medium_weight": 0.966279,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        158,
+        73,
+        58
+      ],
+      "source_hex": "#9E493A",
+      "count": 208,
+      "source_luma": 89.988,
+      "approx_rgb": [
+        157,
+        74,
+        59
+      ],
+      "approx_hex": "#9D4A3B",
+      "composited_rgb": [
+        157,
+        74,
+        59
+      ],
+      "composited_hex": "#9D4A3B",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.027098,
+      "medium_weight": 0.972902,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        158,
+        73,
+        59
+      ],
+      "source_hex": "#9E493B",
+      "count": 1208,
+      "source_luma": 90.0602,
+      "approx_rgb": [
+        157,
+        74,
+        59
+      ],
+      "approx_hex": "#9D4A3B",
+      "composited_rgb": [
+        157,
+        74,
+        59
+      ],
+      "composited_hex": "#9D4A3B",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.025692,
+      "medium_weight": 0.974308,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        159,
+        73,
+        59
+      ],
+      "source_hex": "#9F493B",
+      "count": 2824,
+      "source_luma": 90.2728,
+      "approx_rgb": [
+        158,
+        75,
+        59
+      ],
+      "approx_hex": "#9E4B3B",
+      "composited_rgb": [
+        158,
+        75,
+        59
+      ],
+      "composited_hex": "#9E4B3B",
+      "max_channel_error": 2,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.013248,
+      "medium_weight": 0.986752,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        159,
+        74,
+        59
+      ],
+      "source_hex": "#9F4A3B",
+      "count": 312,
+      "source_luma": 90.988,
+      "approx_rgb": [
+        159,
+        75,
+        59
+      ],
+      "approx_hex": "#9F4B3B",
+      "composited_rgb": [
+        159,
+        75,
+        59
+      ],
+      "composited_hex": "#9F4B3B",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.006624,
+      "medium_weight": 0.993376,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        159,
+        74,
+        60
+      ],
+      "source_hex": "#9F4A3C",
+      "count": 248,
+      "source_luma": 91.0602,
+      "approx_rgb": [
+        159,
+        75,
+        59
+      ],
+      "approx_hex": "#9F4B3B",
+      "composited_rgb": [
+        159,
+        75,
+        59
+      ],
+      "composited_hex": "#9F4B3B",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.005219,
+      "medium_weight": 0.994781,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        168,
+        78,
+        60
+      ],
+      "source_hex": "#A84E3C",
+      "count": 1184,
+      "source_luma": 95.8344,
+      "approx_rgb": [
+        165,
+        80,
+        62
+      ],
+      "approx_hex": "#A5503E",
+      "composited_rgb": [
+        165,
+        80,
+        62
+      ],
+      "composited_hex": "#A5503E",
+      "max_channel_error": 3,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.911942,
+      "light_weight": 0.088058
+    },
+    {
+      "source_rgb": [
+        168,
+        79,
+        60
+      ],
+      "source_hex": "#A84F3C",
+      "count": 584,
+      "source_luma": 96.5496,
+      "approx_rgb": [
+        166,
+        80,
+        62
+      ],
+      "approx_hex": "#A6503E",
+      "composited_rgb": [
+        166,
+        80,
+        62
+      ],
+      "composited_hex": "#A6503E",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.905919,
+      "light_weight": 0.094081
+    },
+    {
+      "source_rgb": [
+        169,
+        79,
+        60
+      ],
+      "source_hex": "#A94F3C",
+      "count": 1344,
+      "source_luma": 96.7622,
+      "approx_rgb": [
+        166,
+        81,
+        63
+      ],
+      "approx_hex": "#A6513F",
+      "composited_rgb": [
+        166,
+        81,
+        63
+      ],
+      "composited_hex": "#A6513F",
+      "max_channel_error": 3,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.898546,
+      "light_weight": 0.101454
+    },
+    {
+      "source_rgb": [
+        169,
+        79,
+        61
+      ],
+      "source_hex": "#A94F3D",
+      "count": 1976,
+      "source_luma": 96.8344,
+      "approx_rgb": [
+        166,
+        81,
+        63
+      ],
+      "approx_hex": "#A6513F",
+      "composited_rgb": [
+        167,
+        81,
+        63
+      ],
+      "composited_hex": "#A7513F",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.894912,
+      "light_weight": 0.105088
+    },
+    {
+      "source_rgb": [
+        176,
+        83,
+        61
+      ],
+      "source_hex": "#B0533D",
+      "count": 48,
+      "source_luma": 101.1834,
+      "approx_rgb": [
+        172,
+        85,
+        65
+      ],
+      "approx_hex": "#AC5541",
+      "composited_rgb": [
+        172,
+        85,
+        65
+      ],
+      "composited_hex": "#AC5541",
+      "max_channel_error": 4,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.819211,
+      "light_weight": 0.180789
+    },
+    {
+      "source_rgb": [
+        177,
+        83,
+        61
+      ],
+      "source_hex": "#B1533D",
+      "count": 920,
+      "source_luma": 101.396,
+      "approx_rgb": [
+        172,
+        86,
+        66
+      ],
+      "approx_hex": "#AC5642",
+      "composited_rgb": [
+        172,
+        86,
+        66
+      ],
+      "composited_hex": "#AC5642",
+      "max_channel_error": 5,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.811838,
+      "light_weight": 0.188162
+    },
+    {
+      "source_rgb": [
+        177,
+        83,
+        62
+      ],
+      "source_hex": "#B1533E",
+      "count": 392,
+      "source_luma": 101.4682,
+      "approx_rgb": [
+        173,
+        86,
+        66
+      ],
+      "approx_hex": "#AD5642",
+      "composited_rgb": [
+        173,
+        86,
+        66
+      ],
+      "composited_hex": "#AD5642",
+      "max_channel_error": 4,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.808204,
+      "light_weight": 0.191796
+    },
+    {
+      "source_rgb": [
+        177,
+        84,
+        62
+      ],
+      "source_hex": "#B1543E",
+      "count": 1392,
+      "source_luma": 102.1834,
+      "approx_rgb": [
+        173,
+        86,
+        66
+      ],
+      "approx_hex": "#AD5642",
+      "composited_rgb": [
+        173,
+        86,
+        66
+      ],
+      "composited_hex": "#AD5642",
+      "max_channel_error": 4,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.802181,
+      "light_weight": 0.197819
+    },
+    {
+      "source_rgb": [
+        178,
+        84,
+        62
+      ],
+      "source_hex": "#B2543E",
+      "count": 584,
+      "source_luma": 102.396,
+      "approx_rgb": [
+        174,
+        87,
+        66
+      ],
+      "approx_hex": "#AE5742",
+      "composited_rgb": [
+        173,
+        87,
+        66
+      ],
+      "composited_hex": "#AD5742",
+      "max_channel_error": 5,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.794808,
+      "light_weight": 0.205192
+    },
+    {
+      "source_rgb": [
+        183,
+        87,
+        62
+      ],
+      "source_hex": "#B7573E",
+      "count": 16,
+      "source_luma": 105.6046,
+      "approx_rgb": [
+        177,
+        90,
+        68
+      ],
+      "approx_hex": "#B15A44",
+      "composited_rgb": [
+        177,
+        90,
+        68
+      ],
+      "composited_hex": "#B15A44",
+      "max_channel_error": 6,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.739875,
+      "light_weight": 0.260125
+    },
+    {
+      "source_rgb": [
+        184,
+        87,
+        63
+      ],
+      "source_hex": "#B8573F",
+      "count": 56,
+      "source_luma": 105.8894,
+      "approx_rgb": [
+        178,
+        91,
+        68
+      ],
+      "approx_hex": "#B25B44",
+      "composited_rgb": [
+        178,
+        91,
+        68
+      ],
+      "composited_hex": "#B25B44",
+      "max_channel_error": 6,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.728868,
+      "light_weight": 0.271132
+    },
+    {
+      "source_rgb": [
+        196,
+        102,
+        73
+      ],
+      "source_hex": "#C46649",
+      "count": 8,
+      "source_luma": 119.8906,
+      "approx_rgb": [
+        194,
+        103,
+        76
+      ],
+      "approx_hex": "#C2674C",
+      "composited_rgb": [
+        194,
+        103,
+        76
+      ],
+      "composited_hex": "#C2674C",
+      "max_channel_error": 3,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.513707,
+      "light_weight": 0.486293
+    },
+    {
+      "source_rgb": [
+        196,
+        103,
+        74
+      ],
+      "source_hex": "#C4674A",
+      "count": 176,
+      "source_luma": 120.678,
+      "approx_rgb": [
+        194,
+        104,
+        76
+      ],
+      "approx_hex": "#C2684C",
+      "composited_rgb": [
+        194,
+        104,
+        76
+      ],
+      "composited_hex": "#C2684C",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.50405,
+      "light_weight": 0.49595
+    },
+    {
+      "source_rgb": [
+        197,
+        103,
+        74
+      ],
+      "source_hex": "#C5674A",
+      "count": 176,
+      "source_luma": 120.8906,
+      "approx_rgb": [
+        195,
+        104,
+        77
+      ],
+      "approx_hex": "#C3684D",
+      "composited_rgb": [
+        195,
+        104,
+        77
+      ],
+      "composited_hex": "#C3684D",
+      "max_channel_error": 3,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.496677,
+      "light_weight": 0.503323
+    },
+    {
+      "source_rgb": [
+        197,
+        104,
+        74
+      ],
+      "source_hex": "#C5684A",
+      "count": 32,
+      "source_luma": 121.6058,
+      "approx_rgb": [
+        195,
+        105,
+        77
+      ],
+      "approx_hex": "#C3694D",
+      "composited_rgb": [
+        195,
+        105,
+        77
+      ],
+      "composited_hex": "#C3694D",
+      "max_channel_error": 3,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.490654,
+      "light_weight": 0.509346
+    },
+    {
+      "source_rgb": [
+        197,
+        104,
+        75
+      ],
+      "source_hex": "#C5684B",
+      "count": 40,
+      "source_luma": 121.678,
+      "approx_rgb": [
+        195,
+        105,
+        77
+      ],
+      "approx_hex": "#C3694D",
+      "composited_rgb": [
+        195,
+        105,
+        77
+      ],
+      "composited_hex": "#C3694D",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.48702,
+      "light_weight": 0.51298
+    },
+    {
+      "source_rgb": [
+        213,
+        118,
+        84
+      ],
+      "source_hex": "#D57654",
+      "count": 16,
+      "source_luma": 135.7422,
+      "approx_rgb": [
+        212,
+        118,
+        85
+      ],
+      "approx_hex": "#D47655",
+      "composited_rgb": [
+        212,
+        118,
+        85
+      ],
+      "composited_hex": "#D47655",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.252025,
+      "light_weight": 0.747975
+    },
+    {
+      "source_rgb": [
+        213,
+        119,
+        84
+      ],
+      "source_hex": "#D57754",
+      "count": 80,
+      "source_luma": 136.4574,
+      "approx_rgb": [
+        213,
+        119,
+        85
+      ],
+      "approx_hex": "#D57755",
+      "composited_rgb": [
+        212,
+        119,
+        85
+      ],
+      "composited_hex": "#D47755",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.246002,
+      "light_weight": 0.753998
+    },
+    {
+      "source_rgb": [
+        214,
+        119,
+        84
+      ],
+      "source_hex": "#D67754",
+      "count": 328,
+      "source_luma": 136.67,
+      "approx_rgb": [
+        213,
+        119,
+        86
+      ],
+      "approx_hex": "#D57756",
+      "composited_rgb": [
+        213,
+        119,
+        86
+      ],
+      "composited_hex": "#D57756",
+      "max_channel_error": 2,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.238629,
+      "light_weight": 0.761371
+    },
+    {
+      "source_rgb": [
+        214,
+        119,
+        85
+      ],
+      "source_hex": "#D67755",
+      "count": 112,
+      "source_luma": 136.7422,
+      "approx_rgb": [
+        213,
+        119,
+        86
+      ],
+      "approx_hex": "#D57756",
+      "composited_rgb": [
+        213,
+        119,
+        86
+      ],
+      "composited_hex": "#D57756",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.234995,
+      "light_weight": 0.765005
+    },
+    {
+      "source_rgb": [
+        214,
+        120,
+        85
+      ],
+      "source_hex": "#D67855",
+      "count": 32,
+      "source_luma": 137.4574,
+      "approx_rgb": [
+        214,
+        120,
+        86
+      ],
+      "approx_hex": "#D67856",
+      "composited_rgb": [
+        214,
+        120,
+        86
+      ],
+      "composited_hex": "#D67856",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.228972,
+      "light_weight": 0.771028
+    },
+    {
+      "source_rgb": [
+        228,
+        132,
+        92
+      ],
+      "source_hex": "#E4845C",
+      "count": 16,
+      "source_luma": 149.5216,
+      "approx_rgb": [
+        228,
+        131,
+        93
+      ],
+      "approx_hex": "#E4835D",
+      "composited_rgb": [
+        228,
+        131,
+        93
+      ],
+      "composited_hex": "#E4835D",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.028037,
+      "light_weight": 0.971963
+    },
+    {
+      "source_rgb": [
+        229,
+        132,
+        93
+      ],
+      "source_hex": "#E5845D",
+      "count": 360,
+      "source_luma": 149.8064,
+      "approx_rgb": [
+        229,
+        132,
+        93
+      ],
+      "approx_hex": "#E5845D",
+      "composited_rgb": [
+        229,
+        132,
+        93
+      ],
+      "composited_hex": "#E5845D",
+      "max_channel_error": 0,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.01703,
+      "light_weight": 0.98297
+    },
+    {
+      "source_rgb": [
+        229,
+        133,
+        93
+      ],
+      "source_hex": "#E5855D",
+      "count": 208,
+      "source_luma": 150.5216,
+      "approx_rgb": [
+        229,
+        132,
+        94
+      ],
+      "approx_hex": "#E5845E",
+      "composited_rgb": [
+        229,
+        132,
+        94
+      ],
+      "composited_hex": "#E5845E",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.011007,
+      "light_weight": 0.988993
+    },
+    {
+      "source_rgb": [
+        230,
+        133,
+        93
+      ],
+      "source_hex": "#E6855D",
+      "count": 72,
+      "source_luma": 150.7342,
+      "approx_rgb": [
+        230,
+        133,
+        94
+      ],
+      "approx_hex": "#E6855E",
+      "composited_rgb": [
+        230,
+        133,
+        94
+      ],
+      "composited_hex": "#E6855E",
+      "max_channel_error": 1,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.003634,
+      "light_weight": 0.996366
+    },
+    {
+      "source_rgb": [
+        230,
+        133,
+        94
+      ],
+      "source_hex": "#E6855E",
+      "count": 72,
+      "source_luma": 150.8064,
+      "approx_rgb": [
+        230,
+        133,
+        94
+      ],
+      "approx_hex": "#E6855E",
+      "composited_rgb": [
+        230,
+        133,
+        94
+      ],
+      "composited_hex": "#E6855E",
+      "max_channel_error": 0,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.0,
+      "light_weight": 1.0
+    }
+  ],
+  "recombined_error": {
+    "visible_pixels": 32768,
+    "mean_abs_channel_error": 1.0363,
+    "rmse_channel_error": 1.588,
+    "max_abs_channel_error": 6,
+    "exact_pixel_percent": 5.0293
+  },
+  "outputs": {
+    "dark_layer_mask": "texture_editor/analysis/create_liquid_chocolate_three_tone_shared/chocolate_flow/chocolate_flow.layer_dark_mask.png",
+    "medium_layer_mask": "texture_editor/analysis/create_liquid_chocolate_three_tone_shared/chocolate_flow/chocolate_flow.layer_medium_mask.png",
+    "light_layer_mask": "texture_editor/analysis/create_liquid_chocolate_three_tone_shared/chocolate_flow/chocolate_flow.layer_light_mask.png",
+    "recombined": "texture_editor/analysis/create_liquid_chocolate_three_tone_shared/chocolate_flow/chocolate_flow.recombined_three_tone.png"
+  }
+}

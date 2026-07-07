@@ -1,0 +1,298 @@
+{
+  "source": "texture_editor/create_liquid_honey/honey_still.png",
+  "size": {
+    "width": 16,
+    "height": 16
+  },
+  "visible_pixels": 256,
+  "unique_visible_colors": 6,
+  "sorted_palette_by_luma": [
+    {
+      "hex": "#E58E14",
+      "rgba": "#E58E14FF",
+      "rgb": [
+        229,
+        142,
+        20
+      ],
+      "count": 46,
+      "luma": 151.6878
+    },
+    {
+      "hex": "#E6981E",
+      "rgba": "#E6981EFF",
+      "rgb": [
+        230,
+        152,
+        30
+      ],
+      "count": 66,
+      "luma": 159.7744
+    },
+    {
+      "hex": "#E8A327",
+      "rgba": "#E8A327FF",
+      "rgb": [
+        232,
+        163,
+        39
+      ],
+      "count": 68,
+      "luma": 168.7166
+    },
+    {
+      "hex": "#EAAE30",
+      "rgba": "#EAAE30FF",
+      "rgb": [
+        234,
+        174,
+        48
+      ],
+      "count": 55,
+      "luma": 177.6588
+    },
+    {
+      "hex": "#EBB835",
+      "rgba": "#EBB835FF",
+      "rgb": [
+        235,
+        184,
+        53
+      ],
+      "count": 14,
+      "luma": 185.3844
+    },
+    {
+      "hex": "#E9C574",
+      "rgba": "#E9C574FF",
+      "rgb": [
+        233,
+        197,
+        116
+      ],
+      "count": 7,
+      "luma": 198.8054
+    }
+  ],
+  "selected_anchors": {
+    "dark": {
+      "rgb": [
+        229,
+        142,
+        20
+      ],
+      "hex": "#E58E14",
+      "luma": 151.6878
+    },
+    "medium": {
+      "rgb": [
+        232,
+        163,
+        39
+      ],
+      "hex": "#E8A327",
+      "luma": 168.7166
+    },
+    "light": {
+      "rgb": [
+        233,
+        197,
+        116
+      ],
+      "hex": "#E9C574",
+      "luma": 198.8054
+    },
+    "note": "automatic selection: dark is the leftmost color by luma, light is the rightmost color by luma, and medium is the lower median palette entry so the choice remains an actual source color when the palette count is even"
+  },
+  "minecraft_layer_model": {
+    "intent": "layer0 dark mask tinted dark, layer1 medium mask tinted medium, layer2 light mask tinted light",
+    "blend_order": "dark bottom, medium over dark, light over medium",
+    "compatibility_note": "This matches the standard alpha-over behavior used by layered item models. A normal fluid sprite has one tint; using three fluid-sprite colors would need a custom renderer, generated baked texture, or another modded rendering hook."
+  },
+  "class_grid_legend": {
+    ".": "transparent",
+    "D": "mostly dark",
+    "d": "dark/medium blend",
+    "M": "mostly medium",
+    "l": "medium/light blend",
+    "L": "mostly light"
+  },
+  "class_grid": "DDMMMMMMMMMMMlMd\nDMMMMMMMddMMLMMd\nDMMMMMddMMLLMMdD\ndMMMMddddMMMdddD\nMMMMMMMMdddddDDd\nMMMMMMdDDDDDDDdM\nMMMdDDDDDDDddMMM\nMMdddDDDddddMMMM\nMMddDDDddddMMMMM\nMddDDddMMMMMMMMM\nMdDDDMMMMMMMMMdM\nddDDMMMMlllMMMDd\ndDDdMMlLLlMMMdDd\ndDddMlLLMMlMddDM\nDDddMllMMlMMdddM\nDDdMllMMMlMddDMd",
+  "per_source_color_blends": [
+    {
+      "source_rgb": [
+        229,
+        142,
+        20
+      ],
+      "source_hex": "#E58E14",
+      "count": 46,
+      "source_luma": 151.6878,
+      "approx_rgb": [
+        229,
+        142,
+        20
+      ],
+      "approx_hex": "#E58E14",
+      "composited_rgb": [
+        229,
+        142,
+        20
+      ],
+      "composited_hex": "#E58E14",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 1.0,
+      "medium_weight": 0.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        230,
+        152,
+        30
+      ],
+      "source_hex": "#E6981E",
+      "count": 66,
+      "source_luma": 159.7744,
+      "approx_rgb": [
+        230,
+        152,
+        29
+      ],
+      "approx_hex": "#E6981D",
+      "composited_rgb": [
+        230,
+        152,
+        29
+      ],
+      "composited_hex": "#E6981D",
+      "max_channel_error": 1,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.503083,
+      "medium_weight": 0.496917,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        232,
+        163,
+        39
+      ],
+      "source_hex": "#E8A327",
+      "count": 68,
+      "source_luma": 168.7166,
+      "approx_rgb": [
+        232,
+        163,
+        39
+      ],
+      "approx_hex": "#E8A327",
+      "composited_rgb": [
+        232,
+        163,
+        39
+      ],
+      "composited_hex": "#E8A327",
+      "max_channel_error": 0,
+      "segment": "dark_to_medium",
+      "dark_weight": 0.0,
+      "medium_weight": 1.0,
+      "light_weight": 0.0
+    },
+    {
+      "source_rgb": [
+        234,
+        174,
+        48
+      ],
+      "source_hex": "#EAAE30",
+      "count": 55,
+      "source_luma": 177.6588,
+      "approx_rgb": [
+        232,
+        168,
+        51
+      ],
+      "approx_hex": "#E8A833",
+      "composited_rgb": [
+        232,
+        168,
+        50
+      ],
+      "composited_hex": "#E8A832",
+      "max_channel_error": 6,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.849139,
+      "light_weight": 0.150861
+    },
+    {
+      "source_rgb": [
+        235,
+        184,
+        53
+      ],
+      "source_hex": "#EBB835",
+      "count": 14,
+      "source_luma": 185.3844,
+      "approx_rgb": [
+        232,
+        172,
+        59
+      ],
+      "approx_hex": "#E8AC3B",
+      "composited_rgb": [
+        232,
+        172,
+        59
+      ],
+      "composited_hex": "#E8AC3B",
+      "max_channel_error": 12,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.746684,
+      "light_weight": 0.253316
+    },
+    {
+      "source_rgb": [
+        233,
+        197,
+        116
+      ],
+      "source_hex": "#E9C574",
+      "count": 7,
+      "source_luma": 198.8054,
+      "approx_rgb": [
+        233,
+        197,
+        116
+      ],
+      "approx_hex": "#E9C574",
+      "composited_rgb": [
+        233,
+        197,
+        116
+      ],
+      "composited_hex": "#E9C574",
+      "max_channel_error": 0,
+      "segment": "medium_to_light",
+      "dark_weight": 0.0,
+      "medium_weight": 0.0,
+      "light_weight": 1.0
+    }
+  ],
+  "recombined_error": {
+    "visible_pixels": 256,
+    "mean_abs_channel_error": 0.8887,
+    "rmse_channel_error": 2.2387,
+    "max_abs_channel_error": 12,
+    "exact_pixel_percent": 47.2656
+  },
+  "outputs": {
+    "dark_layer_mask": "texture_editor/analysis/create_liquid_honey_three_tone/honey_still/honey_still.layer_dark_mask.png",
+    "medium_layer_mask": "texture_editor/analysis/create_liquid_honey_three_tone/honey_still/honey_still.layer_medium_mask.png",
+    "light_layer_mask": "texture_editor/analysis/create_liquid_honey_three_tone/honey_still/honey_still.layer_light_mask.png",
+    "recombined": "texture_editor/analysis/create_liquid_honey_three_tone/honey_still/honey_still.recombined_three_tone.png"
+  }
+}

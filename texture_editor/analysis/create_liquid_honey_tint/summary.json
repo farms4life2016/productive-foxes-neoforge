@@ -1,0 +1,200 @@
+[
+  {
+    "source": "texture_editor/create_liquid_honey/honey_still.png",
+    "size": {
+      "width": 16,
+      "height": 16
+    },
+    "pixels": 256,
+    "visible_pixels": 256,
+    "tint_candidate_pixels": 256,
+    "candidate_rules": {
+      "alpha_min": 16,
+      "saturation_min": 0.18,
+      "luma_min": 16.0,
+      "luma_max": 248.0
+    },
+    "weighted_average_rgb": {
+      "rgb": [
+        232,
+        161,
+        39
+      ],
+      "hex": "#E8A127"
+    },
+    "normalized_tint_rgb": {
+      "rgb": [
+        255,
+        177,
+        43
+      ],
+      "hex": "#FFB12B",
+      "note": "max channel normalized to 255 so bright grayscale pixels can recover source highlights"
+    },
+    "unique_colors": {
+      "original": 6,
+      "generic_all": 6,
+      "recombined_all": 6
+    },
+    "single_tinted_layer_error": {
+      "compared_pixels": 256,
+      "mean_abs_channel_error": 7.0625,
+      "rmse_channel_error": 10.663,
+      "max_abs_channel_error": 73,
+      "exact_pixel_percent": 0.0
+    },
+    "colored_pixels_only_error": {
+      "compared_pixels": 256,
+      "mean_abs_channel_error": 7.0625,
+      "rmse_channel_error": 10.663,
+      "max_abs_channel_error": 73,
+      "exact_pixel_percent": 0.0
+    },
+    "base_plus_tinted_layer_error": {
+      "compared_pixels": 256,
+      "mean_abs_channel_error": 7.0625,
+      "rmse_channel_error": 10.663,
+      "max_abs_channel_error": 73,
+      "exact_pixel_percent": 0.0
+    },
+    "outputs": {
+      "generic_all": "texture_editor/analysis/create_liquid_honey_tint/honey_still/honey_still.generic_all.png",
+      "recombined_all": "texture_editor/analysis/create_liquid_honey_tint/honey_still/honey_still.recombined_all.png",
+      "generic_colored": "texture_editor/analysis/create_liquid_honey_tint/honey_still/honey_still.generic_colored.png",
+      "base_passthrough": "texture_editor/analysis/create_liquid_honey_tint/honey_still/honey_still.base_passthrough.png",
+      "recombined_with_base": "texture_editor/analysis/create_liquid_honey_tint/honey_still/honey_still.recombined_with_base.png"
+    }
+  },
+  {
+    "source": "texture_editor/create_liquid_honey/honey_flow.png",
+    "size": {
+      "width": 32,
+      "height": 1024
+    },
+    "pixels": 32768,
+    "visible_pixels": 32768,
+    "tint_candidate_pixels": 32768,
+    "candidate_rules": {
+      "alpha_min": 16,
+      "saturation_min": 0.18,
+      "luma_min": 16.0,
+      "luma_max": 248.0
+    },
+    "weighted_average_rgb": {
+      "rgb": [
+        232,
+        169,
+        46
+      ],
+      "hex": "#E8A92E"
+    },
+    "normalized_tint_rgb": {
+      "rgb": [
+        255,
+        186,
+        51
+      ],
+      "hex": "#FFBA33",
+      "note": "max channel normalized to 255 so bright grayscale pixels can recover source highlights"
+    },
+    "unique_colors": {
+      "original": 50,
+      "generic_all": 23,
+      "recombined_all": 23
+    },
+    "single_tinted_layer_error": {
+      "compared_pixels": 32768,
+      "mean_abs_channel_error": 8.0181,
+      "rmse_channel_error": 12.2027,
+      "max_abs_channel_error": 66,
+      "exact_pixel_percent": 0.0
+    },
+    "colored_pixels_only_error": {
+      "compared_pixels": 32768,
+      "mean_abs_channel_error": 8.0181,
+      "rmse_channel_error": 12.2027,
+      "max_abs_channel_error": 66,
+      "exact_pixel_percent": 0.0
+    },
+    "base_plus_tinted_layer_error": {
+      "compared_pixels": 32768,
+      "mean_abs_channel_error": 8.0181,
+      "rmse_channel_error": 12.2027,
+      "max_abs_channel_error": 66,
+      "exact_pixel_percent": 0.0
+    },
+    "outputs": {
+      "generic_all": "texture_editor/analysis/create_liquid_honey_tint/honey_flow/honey_flow.generic_all.png",
+      "recombined_all": "texture_editor/analysis/create_liquid_honey_tint/honey_flow/honey_flow.recombined_all.png",
+      "generic_colored": "texture_editor/analysis/create_liquid_honey_tint/honey_flow/honey_flow.generic_colored.png",
+      "base_passthrough": "texture_editor/analysis/create_liquid_honey_tint/honey_flow/honey_flow.base_passthrough.png",
+      "recombined_with_base": "texture_editor/analysis/create_liquid_honey_tint/honey_flow/honey_flow.recombined_with_base.png"
+    }
+  },
+  {
+    "source": "texture_editor/create_liquid_honey/honey_bucket.png",
+    "size": {
+      "width": 16,
+      "height": 16
+    },
+    "pixels": 256,
+    "visible_pixels": 146,
+    "tint_candidate_pixels": 48,
+    "candidate_rules": {
+      "alpha_min": 16,
+      "saturation_min": 0.18,
+      "luma_min": 16.0,
+      "luma_max": 248.0
+    },
+    "weighted_average_rgb": {
+      "rgb": [
+        224,
+        156,
+        27
+      ],
+      "hex": "#E09C1B"
+    },
+    "normalized_tint_rgb": {
+      "rgb": [
+        255,
+        178,
+        31
+      ],
+      "hex": "#FFB21F",
+      "note": "max channel normalized to 255 so bright grayscale pixels can recover source highlights"
+    },
+    "unique_colors": {
+      "original": 13,
+      "generic_all": 11,
+      "recombined_all": 11
+    },
+    "single_tinted_layer_error": {
+      "compared_pixels": 146,
+      "mean_abs_channel_error": 38.0639,
+      "rmse_channel_error": 60.032,
+      "max_abs_channel_error": 224,
+      "exact_pixel_percent": 0.0
+    },
+    "colored_pixels_only_error": {
+      "compared_pixels": 48,
+      "mean_abs_channel_error": 13.8125,
+      "rmse_channel_error": 18.8343,
+      "max_abs_channel_error": 53,
+      "exact_pixel_percent": 0.0
+    },
+    "base_plus_tinted_layer_error": {
+      "compared_pixels": 146,
+      "mean_abs_channel_error": 4.5411,
+      "rmse_channel_error": 10.7992,
+      "max_abs_channel_error": 53,
+      "exact_pixel_percent": 67.1233
+    },
+    "outputs": {
+      "generic_all": "texture_editor/analysis/create_liquid_honey_tint/honey_bucket/honey_bucket.generic_all.png",
+      "recombined_all": "texture_editor/analysis/create_liquid_honey_tint/honey_bucket/honey_bucket.recombined_all.png",
+      "generic_colored": "texture_editor/analysis/create_liquid_honey_tint/honey_bucket/honey_bucket.generic_colored.png",
+      "base_passthrough": "texture_editor/analysis/create_liquid_honey_tint/honey_bucket/honey_bucket.base_passthrough.png",
+      "recombined_with_base": "texture_editor/analysis/create_liquid_honey_tint/honey_bucket/honey_bucket.recombined_with_base.png"
+    }
+  }
+]
