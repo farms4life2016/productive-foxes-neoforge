@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MC Texture Editor</title>
+<style>
+  /* ── Minecraft palette ─────────────────────────────────────────────────── */
+  :root {
+    --mc-bg:        #c6c6c6;   /* inventory background grey */
+    --mc-dark:      #555555;   /* dark bevel */
+    --mc-darker:    #373737;   /* outer border */
+    --mc-light:     #ffffff;   /* light bevel */
+    --mc-panel:     #8b8b8b;   /* panel face */
+    --mc-slot:      #8b8b8b;
+    --mc-slot-in:   #373737;
+    --mc-text:      #ffffff;
+    --mc-shadow:    #3f3f3f;
+    --mc-btn:       #c6c6c6;
+    --mc-btn-hi:    #e0e0e0;
+    --mc-btn-sh:    #555555;
+    --mc-hotbar:    #8b8b8b;
+    --mc-selected:  #ffffa0;
+    --mc-green:     #55ff55;
+    --mc-red:       #ff5555;
+    --cell: 24px;
+    --grid-w: 16;
+    --grid-h: 16;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #1a1a1a;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: var(--mc-text);
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+
+  /* ── MC panel bevel mixin ─────────────────────────────────────────────── */
+  .mc-panel {
+    background: var(--mc-bg);
+    border: 2px solid var(--mc-darker);
+    box-shadow:
+      inset 1px 1px 0 var(--mc-light),
+      inset -1px -1px 0 var(--mc-dark);
+    color: var(--mc-shadow);
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+  }
+
+  /* ── App shell ─────────────────────────────────────────────────────────── */
+  #app {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: fit-content;
+  }
+
+  h1 {
+    font-size: 15px;
+    color: var(--mc-text);
+    text-shadow: 2px 2px 0 #000;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 4px 0 2px;
+  }
+
+  /* ── Main row: left panel + canvas + right panel ───────────────────────── */
+  #main-row {
+    display: flex;
+    gap: 6px;
+    align-items: flex-start;
+  }
+
+  /* ── Side panels ─────────────────────────────────────────────────────── */
+  .side-panel {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .mc-box {
+    background: var(--mc-panel);
+    border: 2px solid var(--mc-darker);
+    box-shadow:
+      inset 1px 1px 0 rgba(255,255,255,0.3),
+      inset -1px -1px 0 rgba(0,0,0,0.4);
+    padding: 8px;
+  }
+
+  .box-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--mc-text);
+    text-shadow: 1px 1px 0 #000;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--mc-darker);
+    padding-bottom: 4px;
+  }
+
+  /* ── MC button ──────────────────────────────────────────────────────────── */
+  .mc-btn {
+    display: block;
+    width: 100%;
+    padding: 5px 8px;
+    background: var(--mc-btn);
+    border: 2px solid var(--mc-darker);
+    box-shadow:
+      inset 1px 1px 0 var(--mc-light),
+      inset -1px -1px 0 var(--mc-dark);
+    color: #3f3f3f;
+    text-shadow: none;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.03em;
+    user-select: none;
+    margin-bottom: 4px;
+  }
+  .mc-btn:last-child { margin-bottom: 0; }
+  .mc-btn:hover { background: var(--mc-btn-hi); }
+  .mc-btn:active {
+    box-shadow:
+      inset -1px -1px 0 var(--mc-light),
+      inset 1px 1px 0 var(--mc-dark);
+    transform: translate(1px,1px);
+  }
+  .mc-btn.active {
+    background: #aaa;
+    box-shadow:
+      inset -1px -1px 0 var(--mc-light),
+      inset 1px 1px 0 var(--mc-dark);
+    color: #000;
+  }
+  .mc-btn:disabled, .mc-btn.disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  .mc-btn-row {
+    display: flex;
+    gap: 4px;
+  }
+  .mc-btn-row .mc-btn {
+    flex: 1;
+    padding: 5px 4px;
+  }
+
+  /* ── Canvas area ────────────────────────────────────────────────────────── */
+  #canvas-wrap {
+    position: relative;
+    background: #222;
+    border: 3px solid var(--mc-darker);
+    box-shadow:
+      inset 1px 1px 0 rgba(255,255,255,0.1),
+      inset -1px -1px 0 rgba(0,0,0,0.6),
+      0 0 0 1px #000;
+    cursor: crosshair;
+    flex-shrink: 0;
+  }
+  #main-canvas {
+    display: block;
+    image-rendering: pixelated;
+  }
+  #grid-canvas {
+    position: absolute;
+    top: 0; left: 0;
+    pointer-events: none;
+    image-rendering: pixelated;
+  }
+  #hover-canvas {
+    position: absolute;
+    top: 0; left: 0;
+    pointer-events: none;
+    image-rendering: pixelated;
+  }
+  #drop-overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--mc-green);
+    text-shadow: 1px 1px 0 #000;
+    z-index: 20;
+  }
+  #drop-overlay.show { display: flex; }
+
+  /* ── Status bar ─────────────────────────────────────────────────────────── */
+  #status-bar {
+    background: var(--mc-darker);
+    border: 2px solid #000;
+    box-shadow: inset 1px 1px 0 rgba(255,255,255,0.08);
+    padding: 4px 8px;
+    font-size: 11px;
+    color: #aaa;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  #status-bar span { color: #ddd; }
+
+  /* ── Colour picker ──────────────────────────────────────────────────────── */
+  .color-preview-wrap {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  #color-preview {
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--mc-darker);
+    box-shadow: inset 1px 1px 0 rgba(255,255,255,0.2);
+    cursor: pointer;
+    flex-shrink: 0;
+    background-image:
+      linear-gradient(45deg, #888 25%, transparent 25%),
+      linear-gradient(-45deg, #888 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #888 75%),
+      linear-gradient(-45deg, transparent 75%, #888 75%);
+    background-size: 8px 8px;
+    background-position: 0 0, 0 4px, 4px -4px, -4px 0;
+    position: relative;
+  }
+  #color-preview-inner {
+    position: absolute;
+    inset: 0;
+  }
+  #native-picker { display: none; }
+
+  .mc-input {
+    width: 100%;
+    background: var(--mc-slot-in);
+    border: 2px solid var(--mc-darker);
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,0.5);
+    color: var(--mc-green);
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    padding: 4px 6px;
+    outline: none;
+    margin-bottom: 4px;
+  }
+  .mc-input:focus { box-shadow: inset 1px 1px 0 rgba(0,0,0,0.5), 0 0 0 1px var(--mc-green); }
+
+  .alpha-row {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .alpha-row label { font-size: 11px; color: #ccc; min-width: 12px; }
+  .alpha-row input[type=range] { flex: 1; accent-color: var(--mc-green); }
+  .alpha-row .val { font-size: 11px; color: var(--mc-green); min-width: 24px; text-align: right; }
+
+  /* ── Palette grid ───────────────────────────────────────────────────────── */
+  #palette-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3px;
+    margin-bottom: 6px;
+  }
+  .pal-swatch {
+    aspect-ratio: 1;
+    border: 2px solid var(--mc-darker);
+    box-shadow: inset 1px 1px 0 rgba(255,255,255,0.2), inset -1px -1px 0 rgba(0,0,0,0.3);
+    cursor: pointer;
+    position: relative;
+    background-image:
+      linear-gradient(45deg, #888 25%, transparent 25%),
+      linear-gradient(-45deg, #888 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #888 75%),
+      linear-gradient(-45deg, transparent 75%, #888 75%);
+    background-size: 8px 8px;
+    background-position: 0 0, 0 4px, 4px -4px, -4px 0;
+  }
+  .pal-swatch-inner {
+    position: absolute;
+    inset: 0;
+  }
+  .pal-swatch.selected {
+    box-shadow:
+      inset 1px 1px 0 rgba(255,255,255,0.2),
+      inset -1px -1px 0 rgba(0,0,0,0.3),
+      0 0 0 2px var(--mc-selected);
+  }
+
+  /* ── YAML area ──────────────────────────────────────────────────────────── */
+  #yaml-box {
+    width: 100%;
+    height: 130px;
+    background: var(--mc-slot-in);
+    border: 2px solid var(--mc-darker);
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,0.5);
+    color: #b8ffb8;
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    padding: 5px;
+    resize: vertical;
+    outline: none;
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+  #yaml-box:focus { box-shadow: inset 1px 1px 0 rgba(0,0,0,0.5), 0 0 0 1px var(--mc-green); }
+
+  #io-status {
+    font-size: 10px;
+    color: var(--mc-green);
+    text-shadow: 1px 1px 0 #000;
+    min-height: 14px;
+    padding: 2px 0;
+  }
+  #io-status.err { color: var(--mc-red); }
+
+  /* ── Bottom bar: zoom ───────────────────────────────────────────────────── */
+  #bottom-bar {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+  }
+  #bottom-bar label { font-size: 11px; color: #aaa; }
+  #zoom-slider { width: 100px; accent-color: var(--mc-green); }
+
+  input[type=file] { display: none; }
+</style>
+</head>
+<body>
+<div id="app">
+  <h1>⛏ MC Texture Editor</h1>
+
+  <div id="main-row">
+
+    <!-- LEFT PANEL: tools + colour -->
+    <div class="side-panel">
+
+      <div class="mc-box">
+        <div class="box-title">Tools</div>
+        <button class="mc-btn active" id="btn-pencil">✏ Pencil</button>
+        <button class="mc-btn" id="btn-fill">◈ Fill All</button>
+        <button class="mc-btn" id="btn-pick">⊕ Pick</button>
+        <div style="height:4px"></div>
+        <div class="mc-btn-row">
+          <button class="mc-btn" id="btn-undo">↩ Undo</button>
+          <button class="mc-btn" id="btn-redo">↪ Redo</button>
+        </div>
+      </div>
+
+      <div class="mc-box">
+        <div class="box-title">Colour</div>
+        <div class="color-preview-wrap">
+          <div id="color-preview" title="Click to open colour picker">
+            <div id="color-preview-inner"></div>
+          </div>
+          <div style="flex:1">
+            <input type="color" id="native-picker">
+            <input class="mc-input" type="text" id="color-hex" value="#FF5500FF" maxlength="9" placeholder="#RRGGBBAA">
+          </div>
+        </div>
+        <div class="alpha-row">
+          <label>α</label>
+          <input type="range" id="alpha-slider" min="0" max="255" value="255" step="1">
+          <span class="val" id="alpha-val">255</span>
+        </div>
+      </div>
+
+      <div class="mc-box">
+        <div class="box-title">Palette</div>
+        <div id="palette-grid"></div>
+        <div class="mc-btn-row">
+          <button class="mc-btn" id="btn-add-pal">+ Add</button>
+          <button class="mc-btn" id="btn-clear-pal">Prune</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CENTRE: canvas -->
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:center">
+      <div id="canvas-wrap">
+        <canvas id="main-canvas"></canvas>
+        <canvas id="grid-canvas"></canvas>
+        <canvas id="hover-canvas"></canvas>
+        <div id="drop-overlay">Drop PNG or YAML here</div>
+      </div>
+      <div id="status-bar">
+        <span id="status-xy">—</span>
+        <span id="status-col">—</span>
+        <span id="status-size">16 × 16</span>
+      </div>
+      <div id="bottom-bar">
+        <label>Zoom</label>
+        <input type="range" id="zoom-slider" min="8" max="48" value="24" step="2">
+        <label id="zoom-label">24 px/cell</label>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL: import/export + YAML -->
+    <div class="side-panel">
+
+      <div class="mc-box">
+        <div class="box-title">File</div>
+        <button class="mc-btn" id="btn-import-png">📂 Import PNG</button>
+        <button class="mc-btn" id="btn-export-png">💾 Export PNG</button>
+        <div style="height:4px"></div>
+        <button class="mc-btn" id="btn-import-yaml">📂 Import YAML</button>
+        <button class="mc-btn" id="btn-export-yaml">💾 Export YAML</button>
+        <div style="height:4px"></div>
+        <button class="mc-btn" id="btn-new">🗋 New 16×16</button>
+        <input type="file" id="file-png" accept="image/png,image/bmp,image/gif,image/webp">
+        <input type="file" id="file-yaml" accept=".yaml,.yml,.txt">
+      </div>
+
+      <div class="mc-box" style="flex:1">
+        <div class="box-title">YAML — paste or view</div>
+        <textarea id="yaml-box" placeholder="Paste YAML here, then click Import YAML…&#10;&#10;Or export to see the format."></textarea>
+        <div id="io-status"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- js-yaml via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<script>
+// ── Constants & state ──────────────────────────────────────────────────────
+const W = 16, H = 16;
+let CELL = 24;
+
+const mainC  = document.getElementById('main-canvas');
+const gridC  = document.getElementById('grid-canvas');
+const hoverC = document.getElementById('hover-canvas');
+const mctx   = mainC.getContext('2d');
+const gctx   = gridC.getContext('2d');
+const hctx   = hoverC.getContext('2d');
+
+let pixels = new Uint8ClampedArray(W * H * 4); // RGBA flat array
+let palette = ['#00000000','#FFFFFFFF','#FF5500FF','#4488FFFF','#44BB44FF','#FFDD00FF','#333333FF','#888888FF'];
+let selectedPal = 1;
+let tool = 'pencil';
+let undoStack = [], redoStack = [];
+let isDown = false;
+
+// ── Canvas sizing ──────────────────────────────────────────────────────────
+function resizeCanvases() {
+  const px = W * CELL, py = H * CELL;
+  [mainC, gridC, hoverC].forEach(c => {
+    c.width = px; c.height = py;
+    c.style.width = px + 'px'; c.style.height = py + 'px';
+  });
+}
+resizeCanvases();
+
+// ── Colour utilities ───────────────────────────────────────────────────────
+function hexToRGBA(h) {
+  h = h.replace('#','');
+  if (h.length === 6) h += 'FF';
+  return [
+    parseInt(h.slice(0,2),16),
+    parseInt(h.slice(2,4),16),
+    parseInt(h.slice(4,6),16),
+    parseInt(h.slice(6,8),16)
+  ];
+}
+function rgbaToHex(r,g,b,a) {
+  return '#' + [r,g,b,a].map(v => v.toString(16).padStart(2,'0').toUpperCase()).join('');
+}
+function colourEq(a,b) { return a[0]===b[0]&&a[1]===b[1]&&a[2]===b[2]&&a[3]===b[3]; }
+
+// ── Pixel access ───────────────────────────────────────────────────────────
+function setPixel(x,y,rgba) {
+  if (x<0||x>=W||y<0||y>=H) return;
+  const i=(y*W+x)*4;
+  pixels[i]=rgba[0]; pixels[i+1]=rgba[1]; pixels[i+2]=rgba[2]; pixels[i+3]=rgba[3];
+}
+function getPixel(x,y) {
+  const i=(y*W+x)*4;
+  return [pixels[i],pixels[i+1],pixels[i+2],pixels[i+3]];
+}
+
+// ── Render ─────────────────────────────────────────────────────────────────
+function renderCanvas() {
+  const id = new ImageData(new Uint8ClampedArray(pixels), W, H);
+  const off = new OffscreenCanvas(W, H);
+  off.getContext('2d').putImageData(id, 0, 0);
+  mctx.clearRect(0, 0, mainC.width, mainC.height);
+  // draw checkerboard for transparency
+  for (let y=0; y<H; y++) for (let x=0; x<W; x++) {
+    const a = pixels[(y*W+x)*4+3];
+    if (a < 255) {
+      mctx.fillStyle = (x+y)%2===0 ? '#888' : '#666';
+      mctx.fillRect(x*CELL, y*CELL, CELL, CELL);
+    }
+  }
+  mctx.imageSmoothingEnabled = false;
+  mctx.drawImage(off, 0, 0, W*CELL, H*CELL);
+}
+
+function renderGrid() {
+  gctx.clearRect(0, 0, gridC.width, gridC.height);
+  gctx.strokeStyle = 'rgba(0,0,0,0.35)';
+  gctx.lineWidth = 0.5;
+  for (let x=0; x<=W; x++) {
+    gctx.beginPath(); gctx.moveTo(x*CELL+0.5, 0); gctx.lineTo(x*CELL+0.5, H*CELL); gctx.stroke();
+  }
+  for (let y=0; y<=H; y++) {
+    gctx.beginPath(); gctx.moveTo(0, y*CELL+0.5); gctx.lineTo(W*CELL, y*CELL+0.5); gctx.stroke();
+  }
+}
+
+function renderHover(x, y) {
+  hctx.clearRect(0, 0, hoverC.width, hoverC.height);
+  if (x<0||x>=W||y<0||y>=H) return;
+  hctx.strokeStyle = 'rgba(255,255,160,0.85)';
+  hctx.lineWidth = 1.5;
+  hctx.strokeRect(x*CELL+1, y*CELL+1, CELL-2, CELL-2);
+}
+
+// ── Undo/Redo ──────────────────────────────────────────────────────────────
+function pushUndo() {
+  undoStack.push(pixels.slice());
+  if (undoStack.length > 80) undoStack.shift();
+  redoStack = [];
+  updateUndoButtons();
+}
+function undo() {
+  if (!undoStack.length) return;
+  redoStack.push(pixels.slice());
+  pixels = undoStack.pop();
+  renderCanvas(); updateUndoButtons();
+}
+function redo() {
+  if (!redoStack.length) return;
+  undoStack.push(pixels.slice());
+  pixels = redoStack.pop();
+  renderCanvas(); updateUndoButtons();
+}
+function updateUndoButtons() {
+  document.getElementById('btn-undo').classList.toggle('disabled', undoStack.length === 0);
+  document.getElementById('btn-redo').classList.toggle('disabled', redoStack.length === 0);
+}
+
+// ── Tool application ───────────────────────────────────────────────────────
+function currentRGBA() { return hexToRGBA(palette[selectedPal] || '#000000FF'); }
+
+function fillAll(target, replacement) {
+  for (let i=0; i<W*H; i++) {
+    const b=i*4;
+    if (colourEq([pixels[b],pixels[b+1],pixels[b+2],pixels[b+3]], target)) {
+      pixels[b]=replacement[0]; pixels[b+1]=replacement[1];
+      pixels[b+2]=replacement[2]; pixels[b+3]=replacement[3];
+    }
+  }
+}
+
+function applyTool(x, y) {
+  if (x<0||x>=W||y<0||y>=H) return;
+  if (tool === 'pencil') {
+    setPixel(x, y, currentRGBA());
+    renderCanvas();
+  } else if (tool === 'fill') {
+    const target = getPixel(x,y);
+    const repl = currentRGBA();
+    if (colourEq(target, repl)) return;
+    pushUndo();
+    fillAll(target, repl);
+    renderCanvas();
+  } else if (tool === 'pick') {
+    const p = getPixel(x,y);
+    const h = rgbaToHex(...p);
+    if (!palette.includes(h)) palette.push(h);
+    selectedPal = palette.indexOf(h);
+    buildPaletteUI(); syncColorUI(h);
+  }
+}
+
+// ── Canvas mouse events ────────────────────────────────────────────────────
+function getXY(e) {
+  const r = mainC.getBoundingClientRect();
+  return [Math.floor((e.clientX-r.left)/CELL), Math.floor((e.clientY-r.top)/CELL)];
+}
+
+mainC.addEventListener('mousedown', e => {
+  const [x,y] = getXY(e);
+  if (tool === 'pencil') pushUndo();
+  isDown = true;
+  applyTool(x,y);
+});
+mainC.addEventListener('mousemove', e => {
+  const [x,y] = getXY(e);
+  renderHover(x,y);
+  if (x>=0&&x<W&&y>=0&&y<H) {
+    const p = getPixel(x,y);
+    document.getElementById('status-xy').textContent  = `(${x}, ${y})`;
+    document.getElementById('status-col').textContent = rgbaToHex(...p);
+  }
+  if (isDown && tool === 'pencil') applyTool(x,y);
+});
+mainC.addEventListener('mouseup',    () => isDown = false);
+mainC.addEventListener('mouseleave', () => { isDown=false; hctx.clearRect(0,0,hoverC.width,hoverC.height); });
+
+// ── Keyboard shortcuts ─────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey||e.metaKey) && e.key === 'z') { e.shiftKey ? redo() : undo(); e.preventDefault(); }
+  if (e.key === 'p' || e.key === 'b') setTool('pencil');
+  if (e.key === 'f') setTool('fill');
+  if (e.key === 'k') setTool('pick');
+});
+
+// ── Tool selector ──────────────────────────────────────────────────────────
+function setTool(t) {
+  tool = t;
+  ['pencil','fill','pick'].forEach(name => {
+    document.getElementById('btn-'+name).classList.toggle('active', name===t);
+  });
+}
+['pencil','fill','pick'].forEach(t => document.getElementById('btn-'+t).addEventListener('click',()=>setTool(t)));
+document.getElementById('btn-undo').addEventListener('click', undo);
+document.getElementById('btn-redo').addEventListener('click', redo);
+updateUndoButtons();
+
+// ── Colour UI ──────────────────────────────────────────────────────────────
+function syncColorUI(hex8) {
+  if (!hex8.startsWith('#')) hex8 = '#' + hex8;
+  if (hex8.length === 7) hex8 += 'FF';
+  const rgba = hexToRGBA(hex8);
+  const hex6 = '#' + hex8.slice(1,7);
+  document.getElementById('native-picker').value = hex6.toUpperCase();
+  document.getElementById('color-hex').value = hex8.toUpperCase();
+  document.getElementById('alpha-slider').value = rgba[3];
+  document.getElementById('alpha-val').textContent = rgba[3];
+  document.getElementById('color-preview-inner').style.background =
+    `rgba(${rgba[0]},${rgba[1]},${rgba[2]},${rgba[3]/255})`;
+}
+
+document.getElementById('color-preview').addEventListener('click', () =>
+  document.getElementById('native-picker').click()
+);
+document.getElementById('native-picker').addEventListener('input', e => {
+  const hex6 = e.target.value;
+  const alpha = parseInt(document.getElementById('alpha-slider').value).toString(16).padStart(2,'0').toUpperCase();
+  const hex8 = hex6.toUpperCase() + alpha;
+  palette[selectedPal] = hex8;
+  syncColorUI(hex8); buildPaletteUI();
+});
+document.getElementById('alpha-slider').addEventListener('input', e => {
+  const alphaHex = parseInt(e.target.value).toString(16).padStart(2,'0').toUpperCase();
+  const cur = palette[selectedPal].slice(0,7).toUpperCase();
+  const hex8 = cur + alphaHex;
+  palette[selectedPal] = hex8;
+  syncColorUI(hex8); buildPaletteUI();
+});
+document.getElementById('color-hex').addEventListener('change', e => {
+  let v = e.target.value.trim().toUpperCase();
+  if (!v.startsWith('#')) v = '#' + v;
+  if (v.length === 7) v += 'FF';
+  if (!/^#[0-9A-F]{8}$/.test(v)) { e.target.style.outline='1px solid red'; return; }
+  e.target.style.outline = '';
+  palette[selectedPal] = v;
+  syncColorUI(v); buildPaletteUI();
+});
+
+// ── Palette UI ─────────────────────────────────────────────────────────────
+function buildPaletteUI() {
+  const grid = document.getElementById('palette-grid');
+  grid.innerHTML = '';
+  palette.forEach((col, i) => {
+    const rgba = hexToRGBA(col);
+    const wrap = document.createElement('div');
+    wrap.className = 'pal-swatch' + (i===selectedPal?' selected':'');
+    wrap.title = col;
+    const inner = document.createElement('div');
+    inner.className = 'pal-swatch-inner';
+    inner.style.background = `rgba(${rgba[0]},${rgba[1]},${rgba[2]},${rgba[3]/255})`;
+    wrap.appendChild(inner);
+    wrap.addEventListener('click', () => {
+      selectedPal = i;
+      syncColorUI(palette[i]);
+      buildPaletteUI();
+    });
+    grid.appendChild(wrap);
+  });
+}
+
+document.getElementById('btn-add-pal').addEventListener('click', () => {
+  palette.push('#888888FF');
+  selectedPal = palette.length-1;
+  buildPaletteUI(); syncColorUI(palette[selectedPal]);
+});
+document.getElementById('btn-clear-pal').addEventListener('click', () => {
+  const used = new Set();
+  for (let i=0; i<W*H; i++) {
+    const b=i*4;
+    used.add(rgbaToHex(pixels[b],pixels[b+1],pixels[b+2],pixels[b+3]));
+  }
+  const prevCol = palette[selectedPal];
+  palette = palette.filter(c => used.has(c));
+  if (!palette.length) palette = ['#00000000'];
+  selectedPal = Math.max(0, palette.indexOf(prevCol));
+  buildPaletteUI(); syncColorUI(palette[selectedPal]);
+  setStatus('Pruned unused palette entries', false);
+});
+
+// ── YAML serialization ─────────────────────────────────────────────────────
+const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@$%^&*+=~';
+
+function pixelsToYAML() {
+  const usedColors = new Set();
+  for (let i=0; i<W*H; i++) {
+    const b=i*4;
+    usedColors.add(rgbaToHex(pixels[b],pixels[b+1],pixels[b+2],pixels[b+3]));
+  }
+  const pal = {}; const colorToChar = {};
+  let ci = 0;
+  usedColors.forEach(c => {
+    if (c === '#00000000') { pal['T'] = c; colorToChar[c] = 'T'; }
+    else { const ch = CHARS[ci++]||'?'; pal[ch] = c; colorToChar[c] = ch; }
+  });
+  let rows = '';
+  for (let y=0; y<H; y++) {
+    let row = '';
+    for (let x=0; x<W; x++) {
+      const b=(y*W+x)*4;
+      row += colorToChar[rgbaToHex(pixels[b],pixels[b+1],pixels[b+2],pixels[b+3])] || '?';
+    }
+    rows += row + (y<H-1?'\n':'');
+  }
+  return jsyaml.dump({ version:1, format:'indexed', width:W, height:H, palette:pal, pixels:rows }, { lineWidth:-1 });
+}
+
+function yamlToPixels(src) {
+  const d = jsyaml.load(src);
+  if (!d || d.version !== 1) throw new Error('unsupported YAML version (expected version: 1)');
+  const pal = d.palette;
+  const charToColor = {};
+  Object.entries(pal).forEach(([k,v]) => charToColor[k] = v);
+  const lines = d.pixels.split('\n');
+  const newPix = new Uint8ClampedArray(W*H*4);
+  lines.forEach((row,y) => {
+    [...row].forEach((ch,x) => {
+      const hex = charToColor[ch] || '#00000000';
+      const rgba = hexToRGBA(hex);
+      const b=(y*W+x)*4;
+      newPix[b]=rgba[0]; newPix[b+1]=rgba[1]; newPix[b+2]=rgba[2]; newPix[b+3]=rgba[3];
+    });
+  });
+  pixels = newPix;
+  const newPalette = Object.values(pal);
+  if (!newPalette.includes('#00000000')) newPalette.unshift('#00000000');
+  palette = [...new Set(newPalette)];
+  selectedPal = 0;
+}
+
+// ── Status helper ──────────────────────────────────────────────────────────
+function setStatus(msg, isErr=false) {
+  const el = document.getElementById('io-status');
+  el.textContent = msg;
+  el.className = isErr ? 'err' : '';
+}
+
+// ── Export ─────────────────────────────────────────────────────────────────
+document.getElementById('btn-export-yaml').addEventListener('click', () => {
+  const y = pixelsToYAML();
+  document.getElementById('yaml-box').value = y;
+  const blob = new Blob([y], {type:'text/yaml'});
+  const a = document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='texture.yaml'; a.click();
+  setStatus('Exported texture.yaml');
+});
+
+document.getElementById('btn-export-png').addEventListener('click', () => {
+  const id = new ImageData(new Uint8ClampedArray(pixels), W, H);
+  const off = new OffscreenCanvas(W, H);
+  off.getContext('2d').putImageData(id, 0, 0);
+  off.convertToBlob({type:'image/png'}).then(blob => {
+    const a = document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='texture.png'; a.click();
+    setStatus('Exported texture.png (16×16)');
+  });
+});
+
+// ── Import ─────────────────────────────────────────────────────────────────
+function loadYAMLText(txt, name) {
+  try {
+    yamlToPixels(txt);
+    renderCanvas(); buildPaletteUI(); syncColorUI(palette[selectedPal]||'#000000FF');
+    setStatus('Loaded ' + (name||'YAML'));
+  } catch(e) {
+    setStatus('Error: ' + e.message, true);
+  }
+}
+
+document.getElementById('btn-import-yaml').addEventListener('click', () => {
+  const txt = document.getElementById('yaml-box').value.trim();
+  if (txt) { loadYAMLText(txt, 'pasted YAML'); }
+  else { document.getElementById('file-yaml').click(); }
+});
+document.getElementById('file-yaml').addEventListener('change', e => {
+  const f = e.target.files[0]; if (!f) return;
+  const fr = new FileReader();
+  fr.onload = ev => { document.getElementById('yaml-box').value = ev.target.result; loadYAMLText(ev.target.result, f.name); };
+  fr.readAsText(f);
+  e.target.value = '';
+});
+
+function loadPNGImage(img, name) {
+  pushUndo();
+  const off = new OffscreenCanvas(W, H);
+  const ctx = off.getContext('2d');
+  ctx.clearRect(0,0,W,H);
+  ctx.drawImage(img, 0, 0, W, H);
+  const id = ctx.getImageData(0, 0, W, H);
+  pixels = new Uint8ClampedArray(id.data);
+  // build palette from pixels
+  const colorSet = new Set();
+  for (let i=0; i<W*H; i++) {
+    const b=i*4;
+    colorSet.add(rgbaToHex(pixels[b],pixels[b+1],pixels[b+2],pixels[b+3]));
+  }
+  palette = Array.from(colorSet);
+  if (!palette.includes('#00000000')) palette.unshift('#00000000');
+  selectedPal = 0;
+  renderCanvas(); buildPaletteUI(); syncColorUI(palette[0]||'#000000FF');
+  setStatus(`Loaded ${name||'PNG'} (${colorSet.size} colours)`);
+}
+
+document.getElementById('btn-import-png').addEventListener('click', () => document.getElementById('file-png').click());
+document.getElementById('file-png').addEventListener('change', e => {
+  const f = e.target.files[0]; if (!f) return;
+  const url = URL.createObjectURL(f);
+  const img = new Image();
+  img.onload = () => { loadPNGImage(img, f.name); URL.revokeObjectURL(url); };
+  img.src = url;
+  e.target.value = '';
+});
+
+// ── New canvas ─────────────────────────────────────────────────────────────
+document.getElementById('btn-new').addEventListener('click', () => {
+  if (!confirm('Clear the canvas and start fresh?')) return;
+  undoStack=[]; redoStack=[]; pixels.fill(0);
+  renderCanvas(); updateUndoButtons();
+  setStatus('New 16×16 canvas');
+});
+
+// ── Drag and drop ──────────────────────────────────────────────────────────
+const dropOv = document.getElementById('drop-overlay');
+const wrap   = document.getElementById('canvas-wrap');
+wrap.addEventListener('dragover',  e => { e.preventDefault(); dropOv.classList.add('show'); });
+wrap.addEventListener('dragleave', () => dropOv.classList.remove('show'));
+wrap.addEventListener('drop', e => {
+  e.preventDefault(); dropOv.classList.remove('show');
+  const f = e.dataTransfer.files[0]; if (!f) return;
+  if (f.type.startsWith('image/')) {
+    const url = URL.createObjectURL(f);
+    const img = new Image();
+    img.onload = () => { loadPNGImage(img, f.name); URL.revokeObjectURL(url); };
+    img.src = url;
+  } else if (f.name.match(/\.ya?ml$/i)) {
+    const fr = new FileReader();
+    fr.onload = ev => { document.getElementById('yaml-box').value = ev.target.result; loadYAMLText(ev.target.result, f.name); };
+    fr.readAsText(f);
+  }
+});
+
+// ── Zoom ───────────────────────────────────────────────────────────────────
+document.getElementById('zoom-slider').addEventListener('input', e => {
+  CELL = parseInt(e.target.value);
+  document.getElementById('zoom-label').textContent = CELL + ' px/cell';
+  resizeCanvases();
+  renderCanvas(); renderGrid();
+  hctx.clearRect(0,0,hoverC.width,hoverC.height);
+});
+
+// ── Initial render ─────────────────────────────────────────────────────────
+buildPaletteUI();
+syncColorUI(palette[selectedPal]);
+renderCanvas();
+renderGrid();
+updateUndoButtons();
+setStatus('Ready — drop a PNG or paste YAML to begin');
+</script>
+</body>
+</html>

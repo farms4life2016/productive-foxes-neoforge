@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:sweet_berries"
+    },
+    "X": {
+      "tag": "c:foods/chocolate"
+    }
+  },
+  "pattern": [
+    " #X",
+    "#X#",
+    "X# "
+  ],
+  "result": {
+    "count": 4,
+    "id": "create:chocolate_glazed_berries"
+  }
+}

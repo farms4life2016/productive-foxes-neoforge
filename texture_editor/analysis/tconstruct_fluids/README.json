@@ -1,0 +1,948 @@
+{
+  "source": "../TinkersConstruct",
+  "raw_files": 267,
+  "fluid_texture_jsons": 72,
+  "tinted_previews": {
+    "beetroot_soup": {
+      "color": "FF84160D",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/food/stew/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/beetroot_soup/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/food/stew/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/beetroot_soup/flowing.png"
+        }
+      }
+    },
+    "blazing_blood": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/blaze/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/blazing_blood/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/blaze/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/blazing_blood/flowing.png"
+        }
+      }
+    },
+    "earth_slime": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/earth/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/earth_slime/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/earth/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/earth_slime/flowing.png"
+        }
+      }
+    },
+    "ender_slime": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/ender/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/ender_slime/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/ender/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/ender_slime/flowing.png"
+        }
+      }
+    },
+    "fiery_liquid": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/fiery/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/fiery_liquid/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/fiery/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/fiery_liquid/flowing.png"
+        }
+      }
+    },
+    "honey": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/food/honey/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/honey/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/food/honey/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/honey/flowing.png"
+        }
+      }
+    },
+    "ichor": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/ichor/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/ichor/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/ichor/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/ichor/flowing.png"
+        }
+      }
+    },
+    "liquid_soul": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/soul/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/liquid_soul/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/soul/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/liquid_soul/flowing.png"
+        }
+      }
+    },
+    "magma": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/magma/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/magma/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/magma/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/magma/flowing.png"
+        }
+      }
+    },
+    "meat_soup": {
+      "color": "FFE03E35",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/food/stew/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/meat_soup/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/food/stew/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/meat_soup/flowing.png"
+        }
+      }
+    },
+    "molten_aluminum": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/aluminum/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_aluminum/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/aluminum/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_aluminum/flowing.png"
+        }
+      }
+    },
+    "molten_amethyst": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/amethyst/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_amethyst/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/amethyst/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_amethyst/flowing.png"
+        }
+      }
+    },
+    "molten_amethyst_bronze": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/amethyst_bronze/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_amethyst_bronze/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/amethyst_bronze/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_amethyst_bronze/flowing.png"
+        }
+      }
+    },
+    "molten_bendalloy": {
+      "color": "FFD6D2C1",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_bendalloy/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_bendalloy/flowing.png"
+        }
+      }
+    },
+    "molten_brass": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/brass/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_brass/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/brass/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_brass/flowing.png"
+        }
+      }
+    },
+    "molten_bronze": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/bronze/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_bronze/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/bronze/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_bronze/flowing.png"
+        }
+      }
+    },
+    "molten_cadmium": {
+      "color": "FF8AB8C8",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_cadmium/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_cadmium/flowing.png"
+        }
+      }
+    },
+    "molten_chromium": {
+      "color": "FFC4B180",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_chromium/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_chromium/flowing.png"
+        }
+      }
+    },
+    "molten_cinderslime": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/cinderslime/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_cinderslime/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/cinderslime/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_cinderslime/flowing.png"
+        }
+      }
+    },
+    "molten_clay": {
+      "color": "FF9B6045",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_clay/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_clay/flowing.png"
+        }
+      }
+    },
+    "molten_cobalt": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/cobalt/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_cobalt/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/cobalt/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_cobalt/flowing.png"
+        }
+      }
+    },
+    "molten_constantan": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/constantan/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_constantan/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/constantan/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_constantan/flowing.png"
+        }
+      }
+    },
+    "molten_copper": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/copper/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_copper/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/copper/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_copper/flowing.png"
+        }
+      }
+    },
+    "molten_debris": {
+      "color": "FF411E15",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_debris/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_debris/flowing.png"
+        }
+      }
+    },
+    "molten_diamond": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/diamond/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_diamond/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/diamond/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_diamond/flowing.png"
+        }
+      }
+    },
+    "molten_duralumin": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/duralumin/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_duralumin/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/duralumin/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_duralumin/flowing.png"
+        }
+      }
+    },
+    "molten_electrum": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/electrum/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_electrum/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/electrum/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_electrum/flowing.png"
+        }
+      }
+    },
+    "molten_emerald": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/emerald/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_emerald/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/emerald/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_emerald/flowing.png"
+        }
+      }
+    },
+    "molten_ender": {
+      "color": "FF105E51",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_ender/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_ender/flowing.png"
+        }
+      }
+    },
+    "molten_enderium": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/enderium/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_enderium/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/enderium/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_enderium/flowing.png"
+        }
+      }
+    },
+    "molten_glass": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/glass/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_glass/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/glass/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_glass/flowing.png"
+        }
+      }
+    },
+    "molten_gold": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/gold/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_gold/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/gold/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_gold/flowing.png"
+        }
+      }
+    },
+    "molten_hepatizon": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/hepatizon/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_hepatizon/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/hepatizon/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_hepatizon/flowing.png"
+        }
+      }
+    },
+    "molten_invar": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/invar/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_invar/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/invar/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_invar/flowing.png"
+        }
+      }
+    },
+    "molten_iron": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/iron/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_iron/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/iron/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_iron/flowing.png"
+        }
+      }
+    },
+    "molten_knightmetal": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/knightmetal/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_knightmetal/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/knightmetal/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_knightmetal/flowing.png"
+        }
+      }
+    },
+    "molten_knightslime": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/knightslime/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_knightslime/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/knightslime/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_knightslime/flowing.png"
+        }
+      }
+    },
+    "molten_lead": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/lead/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_lead/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/lead/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_lead/flowing.png"
+        }
+      }
+    },
+    "molten_lumium": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/lumium/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_lumium/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/lumium/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_lumium/flowing.png"
+        }
+      }
+    },
+    "molten_manyullyn": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/manyullyn/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_manyullyn/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/manyullyn/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_manyullyn/flowing.png"
+        }
+      }
+    },
+    "molten_netherite": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/netherite/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_netherite/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/netherite/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_netherite/flowing.png"
+        }
+      }
+    },
+    "molten_nickel": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/nickel/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_nickel/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/nickel/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_nickel/flowing.png"
+        }
+      }
+    },
+    "molten_nicrosil": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/nicrosil/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_nicrosil/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/nicrosil/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_nicrosil/flowing.png"
+        }
+      }
+    },
+    "molten_obsidian": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/obsidian/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_obsidian/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/obsidian/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_obsidian/flowing.png"
+        }
+      }
+    },
+    "molten_osmium": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/osmium/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_osmium/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/osmium/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_osmium/flowing.png"
+        }
+      }
+    },
+    "molten_pewter": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/pewter/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_pewter/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/pewter/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_pewter/flowing.png"
+        }
+      }
+    },
+    "molten_pig_iron": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/pig_iron/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_pig_iron/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/pig_iron/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_pig_iron/flowing.png"
+        }
+      }
+    },
+    "molten_platinum": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/platinum/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_platinum/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/platinum/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_platinum/flowing.png"
+        }
+      }
+    },
+    "molten_porcelain": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/porcelain/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_porcelain/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/porcelain/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_porcelain/flowing.png"
+        }
+      }
+    },
+    "molten_quartz": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/quartz/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_quartz/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/quartz/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_quartz/flowing.png"
+        }
+      }
+    },
+    "molten_queens_slime": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/queens_slime/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_queens_slime/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/queens_slime/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_queens_slime/flowing.png"
+        }
+      }
+    },
+    "molten_refined_glowstone": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/refined_glowstone/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_refined_glowstone/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/refined_glowstone/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_refined_glowstone/flowing.png"
+        }
+      }
+    },
+    "molten_refined_obsidian": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/refined_obsidian/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_refined_obsidian/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/refined_obsidian/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_refined_obsidian/flowing.png"
+        }
+      }
+    },
+    "molten_rose_gold": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/rose_gold/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_rose_gold/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/rose_gold/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_rose_gold/flowing.png"
+        }
+      }
+    },
+    "molten_signalum": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/signalum/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_signalum/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_alloy/signalum/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_signalum/flowing.png"
+        }
+      }
+    },
+    "molten_silver": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/silver/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_silver/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/silver/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_silver/flowing.png"
+        }
+      }
+    },
+    "molten_slimesteel": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/slimesteel/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_slimesteel/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/slimesteel/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_slimesteel/flowing.png"
+        }
+      }
+    },
+    "molten_soulsteel": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/soulsteel/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_soulsteel/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/alloy/soulsteel/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_soulsteel/flowing.png"
+        }
+      }
+    },
+    "molten_steel": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/steel/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_steel/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/ore/steel/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_steel/flowing.png"
+        }
+      }
+    },
+    "molten_steeleaf": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/steeleaf/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_steeleaf/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/steeleaf/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_steeleaf/flowing.png"
+        }
+      }
+    },
+    "molten_tin": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/tin/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_tin/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/tin/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_tin/flowing.png"
+        }
+      }
+    },
+    "molten_tungsten": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/tungsten/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_tungsten/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/tungsten/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_tungsten/flowing.png"
+        }
+      }
+    },
+    "molten_uranium": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/uranium/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_uranium/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/uranium/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_uranium/flowing.png"
+        }
+      }
+    },
+    "molten_zinc": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/zinc/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_zinc/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/compat_ore/zinc/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/molten_zinc/flowing.png"
+        }
+      }
+    },
+    "mushroom_stew": {
+      "color": "FFCD8C6F",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/food/stew/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/mushroom_stew/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/food/stew/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/mushroom_stew/flowing.png"
+        }
+      }
+    },
+    "potion": {
+      "color": "FFF800F8",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/potion/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/potion/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/potion/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/potion/flowing.png"
+        }
+      }
+    },
+    "powdered_snow": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/powdered_snow/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/powdered_snow/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/powdered_snow/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/powdered_snow/flowing.png"
+        }
+      }
+    },
+    "rabbit_stew": {
+      "color": "FF984A2C",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/food/stew/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/rabbit_stew/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/food/stew/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/rabbit_stew/flowing.png"
+        }
+      }
+    },
+    "scorched_stone": {
+      "color": "FF3E3029",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/scorched_stone/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/scorched_stone/flowing.png"
+        }
+      }
+    },
+    "seared_stone": {
+      "color": "FF4F4A47",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/seared_stone/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/molten/stone/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/seared_stone/flowing.png"
+        }
+      }
+    },
+    "sky_slime": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/sky/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/sky_slime/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/sky/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/sky_slime/flowing.png"
+        }
+      }
+    },
+    "venom": {
+      "color": "FFFFFFFF",
+      "textures": {
+        "still": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/venom/still.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/venom/still.png"
+        },
+        "flowing": {
+          "source": "src/main/resources/assets/tconstruct/textures/fluid/slime/venom/flowing.png",
+          "output": "texture_editor/analysis/tconstruct_fluids/tinted_previews/venom/flowing.png"
+        }
+      }
+    }
+  },
+  "notes": [
+    "TConstruct stores many fluid PNGs as greyscale/base sprites.",
+    "Generated mantle/fluid_texture JSON supplies ARGB color, still, flowing, and camera texture ids.",
+    "These previews multiply each source RGBA channel by the ARGB tint, matching the baked tint path closely enough for inspection."
+  ]
+}
