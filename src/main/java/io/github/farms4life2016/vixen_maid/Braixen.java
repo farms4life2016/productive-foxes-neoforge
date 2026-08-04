@@ -10,11 +10,13 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.util.ByIdMap;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.DifficultyInstance;
@@ -39,19 +41,19 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CaveVines;
 import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.core.registries.Registries;
 
 import javax.annotation.Nullable;
 import java.util.*;
@@ -59,6 +61,11 @@ import java.util.function.IntFunction;
 import java.util.function.Predicate;
 
 public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
+    // ponytail: drives which bushes the "vixen maid" seeks out and harvests. Add a bush block to
+    // this tag (and give it an AGE_3 property + a BlockItem) and she'll pick it with no code changes.
+    public static final TagKey<Block> VIXEN_MAID_HARVESTABLE =
+            TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath("productivefoxes", "vixen_maid_harvestable"));
+
     private static final EntityDataAccessor<Integer> DATA_TYPE_ID = SynchedEntityData.defineId(Braixen.class, EntityDataSerializers.INT);
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(Braixen.class, EntityDataSerializers.BYTE);
     private static final EntityDataAccessor<Optional<UUID>> DATA_TRUSTED_ID_0 = SynchedEntityData.defineId(Braixen.class, EntityDataSerializers.OPTIONAL_UUID);
@@ -677,28 +684,33 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
     }
 
     private boolean isRipeBerryBlock(BlockState state) {
-        return state.is(Blocks.SWEET_BERRY_BUSH) && state.getValue(SweetBerryBushBlock.AGE) >= 2 || CaveVines.hasGlowBerries(state);
+        return state.is(VIXEN_MAID_HARVESTABLE) && state.getOptionalValue(SweetBerryBushBlock.AGE).orElse(0) >= 2
+                || CaveVines.hasGlowBerries(state);
     }
 
     private void pickBerries(BlockPos pos, BlockState state) {
-        if (state.is(Blocks.SWEET_BERRY_BUSH)) {
-            this.pickSweetBerries(pos, state);
+        if (state.is(VIXEN_MAID_HARVESTABLE)) {
+            this.pickBerryBush(pos, state);
         } else if (CaveVines.hasGlowBerries(state)) {
             CaveVines.use(this, state, this.level(), pos);
         }
     }
 
-    private void pickSweetBerries(BlockPos pos, BlockState state) {
+    // ponytail: generic over any SweetBerryBushBlock-family bush in VIXEN_MAID_HARVESTABLE.
+    // The berry item comes from the block's own BlockItem (asItem), so sour bushes drop sour
+    // berries and sweet bushes drop sweet berries with no per-block branching.
+    private void pickBerryBush(BlockPos pos, BlockState state) {
         int age = state.getValue(SweetBerryBushBlock.AGE);
         int berryCount = 1 + this.level().random.nextInt(2) + (age == 3 ? 1 : 0);
+        Item berryItem = state.getBlock().asItem();
         ItemStack heldItem = this.getItemBySlot(EquipmentSlot.MAINHAND);
         if (heldItem.isEmpty()) {
-            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.SWEET_BERRIES));
+            this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(berryItem));
             berryCount--;
         }
 
         if (berryCount > 0) {
-            Block.popResource(this.level(), pos, new ItemStack(Items.SWEET_BERRIES, berryCount));
+            Block.popResource(this.level(), pos, new ItemStack(berryItem, berryCount));
         }
 
         this.playSound(SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, 1.0F, 1.0F);
