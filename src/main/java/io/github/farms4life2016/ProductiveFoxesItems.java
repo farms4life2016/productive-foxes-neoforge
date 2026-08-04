@@ -5,6 +5,7 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
@@ -29,6 +30,12 @@ public final class ProductiveFoxesItems {
     public static final DeferredItem<Item> WASHED_SWEET_BERRIES = ITEMS.registerSimpleItem(
             "washed_sweet_berries",
             new Item.Properties().food(Foods.SWEET_BERRIES)
+    );
+
+    // Right-clicking a dirt-like block with this places a sour berry bush; eating behaves like sweet berries.
+    public static final DeferredItem<ItemNameBlockItem> SOUR_BERRIES = ITEMS.registerItem(
+            "sour_berries",
+            properties -> new ItemNameBlockItem(ProductiveFoxesBlocks.SOUR_BERRY_BUSH.get(), properties.food(Foods.SWEET_BERRIES))
     );
 
     public static final DeferredItem<BucketItem> SWEET_BERRY_PULP_BUCKET = ITEMS.registerItem(

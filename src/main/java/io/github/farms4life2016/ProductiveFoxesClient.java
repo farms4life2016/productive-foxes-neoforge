@@ -19,9 +19,15 @@ import net.neoforged.neoforge.client.model.DynamicFluidContainerModel;
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = ProductiveFoxes.MODID, dist = Dist.CLIENT)
 public class ProductiveFoxesClient {
+    // ponytail: tint multiply can only attenuate channels, so lemon-yellow (full R+G, low B)
+    // warms the reused vanilla textures into a yellow-green bush with orange berries. Tweak this
+    // single constant to recolour both the bush and the fruit item at once.
+    private static final int LEMON_TINT = 0xFFFF66;
+
     public ProductiveFoxesClient(IEventBus modEventBus, ModContainer container) {
         modEventBus.addListener(this::registerEntityRenderers);
         modEventBus.addListener(this::registerClientExtensions);
+        modEventBus.addListener(this::registerBlockColors);
         modEventBus.addListener(this::registerItemColors);
         modEventBus.addListener(ProductiveFoxesClient::onClientSetup);
 
@@ -62,6 +68,11 @@ public class ProductiveFoxesClient {
 
     private void registerItemColors(RegisterColorHandlersEvent.Item event) {
         event.register(new DynamicFluidContainerModel.Colors(), ProductiveFoxesItems.SWEET_BERRY_PULP_BUCKET.get());
+        event.register((stack, tintIndex) -> tintIndex == 0 ? LEMON_TINT : -1, ProductiveFoxesItems.SOUR_BERRIES.get());
+    }
+
+    private void registerBlockColors(RegisterColorHandlersEvent.Block event) {
+        event.register((state, level, pos, tintIndex) -> tintIndex == 0 ? LEMON_TINT : -1, ProductiveFoxesBlocks.SOUR_BERRY_BUSH.get());
     }
 
     static void onClientSetup(FMLClientSetupEvent event) {

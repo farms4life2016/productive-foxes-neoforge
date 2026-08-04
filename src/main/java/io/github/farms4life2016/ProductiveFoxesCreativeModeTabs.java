@@ -18,6 +18,7 @@ public final class ProductiveFoxesCreativeModeTabs {
                     .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
                     .icon(() -> ProductiveFoxesItems.BRAIXEN_SPAWN_EGG.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
+                        output.accept(ProductiveFoxesItems.SOUR_BERRIES.get());
                         output.accept(ProductiveFoxesItems.WASHED_SWEET_BERRIES.get());
                         output.accept(ProductiveFoxesItems.SWEET_BERRY_PULP_BUCKET.get());
                         output.accept(ProductiveFoxesItems.BRAIXEN_SPAWN_EGG.get());

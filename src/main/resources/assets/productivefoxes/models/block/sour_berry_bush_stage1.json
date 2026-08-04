@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "render_type": "cutout",
+  "textures": {
+    "cross": "productivefoxes:block/sour_berry_bush_stage1"
+  }
+}
