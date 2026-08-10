@@ -19,5 +19,7 @@
   "productivefoxes.configuration.items": "Item List",
   "productivefoxes.configuration.logDirtBlock": "Log Dirt Block",
   "productivefoxes.configuration.magicNumberIntroduction": "Magic Number Text",
-  "productivefoxes.configuration.magicNumber": "Magic Number"
+  "productivefoxes.configuration.magicNumber": "Magic Number",
+  "productivefoxes.braixen.trust_gained": "You gained %s's trust!",
+  "productivefoxes.braixen.breeding_warning": "No matter how much you feed them, it seems like these foxes cannot breed amongst themselves..."
 }

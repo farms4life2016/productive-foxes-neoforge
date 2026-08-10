@@ -1,11 +1,15 @@
 package io.github.farms4life2016.vixen_maid;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.NbtUtils;
 import net.minecraft.nbt.Tag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -73,6 +77,10 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
 
     private static final byte EATING_PARTICLES_EVENT = -45;
     private static final byte EATING_ANIMATION_EVENT = -46;
+    private static final byte TRUST_HEARTS_EVENT = -47;
+    // ponytail: once-per-login flag. Set.add returns true iff newly added, so it's a one-line
+    // check-and-set. Cleared on PlayerLoggedInEvent (see ProductiveFoxes) so it refreshes each session.
+    public static final Set<UUID> BREEDING_WARNING_SHOWN = new HashSet<>();
     private static final int FLAG_DEFENDING = 1;
     private static final int MIN_TICKS_BEFORE_EAT = 200; // was 600
     private static final int EATING_ANIMATION_TICKS = 60;
@@ -255,8 +263,19 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
             }
         } else if (id == EATING_ANIMATION_EVENT) {
             this.clientEatingAnimationStartTicks = this.tickCount;
+        } else if (id == TRUST_HEARTS_EVENT) {
+            this.spawnTrustParticles(ParticleTypes.HEART, 14);
         } else {
             super.handleEntityEvent(id);
+        }
+    }
+
+    private void spawnTrustParticles(ParticleOptions particle, int count) {
+        for (int i = 0; i < count; i++) {
+            double d0 = this.random.nextGaussian() * 0.02D;
+            double d1 = this.random.nextGaussian() * 0.02D;
+            double d2 = this.random.nextGaussian() * 0.02D;
+            this.level().addParticle(particle, this.getRandomX(1.0D), this.getRandomY() + 0.5D, this.getRandomZ(1.0D), d0, d1, d2);
         }
     }
 
@@ -356,9 +375,15 @@ public class Braixen extends Animal implements VariantHolder<Braixen.Type> {
         ItemStack itemstack = player.getItemInHand(hand);
         // temp code to get a braixen to "trust" you when you feed it a berry
         if (this.isFutureBreedingFood(itemstack) && !this.level().isClientSide) {
+            boolean firstTrust = !this.trusts(player.getUUID());
             this.usePlayerItem(player, hand, itemstack);
             this.addTrustedUUID(player.getUUID());
-            this.level().broadcastEntityEvent(this, (byte)18); // 18 = love hearts
+            this.level().broadcastEntityEvent(this, TRUST_HEARTS_EVENT); // hearts (double vanilla's 7)
+            if (firstTrust) {
+                player.sendSystemMessage(Component.translatable("productivefoxes.braixen.trust_gained", this.getName()).withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
+            } else if (BREEDING_WARNING_SHOWN.add(player.getUUID())) {
+                player.sendSystemMessage(Component.translatable("productivefoxes.braixen.breeding_warning").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
+            }
             return InteractionResult.SUCCESS;
 
         }
