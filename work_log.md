@@ -134,11 +134,22 @@ The basic processing line should look like this:
 
 1. (optional) wash berries. "washed berries" can be a separate item.
 2. crush washed berries into pulp. pulp is liquid
-3. pulp + sugar + lemon juice + pectin --(heated mixing)--> heated slurry
+3. pulp + sugar + lemon juice (liquid?) + pectin --(heated mixing)--> heated slurry
 4. (optional) impurities removed from slurry
 5. Hot slurry is poured in glass jars
 6. Jars are sealed and inverted.
 7. Jars are cooled.
+
+Apparently u can also just put lemon juice with the lemon peels,
+heat up the acidic mixture to get pectin, then dump the entire
+acid + pectin solution into the jam mixture (instead of separately adding lemon juice and pectin).
+Ofc you still need to filter out the solid stuff out.
+
+My other idea was to add acidic berries (acidic) and chalky berries (basic),
+then we crush the acidic berries into concentrated acid and make pectin using that acid.
+but at this point we are introducing a lot of inputs for a single output (the jam)...
+
+Also how are we gonna find these bushes in the wild? by trading?
 
 ### Fluid Implementation
 
@@ -172,3 +183,12 @@ Oritech borrows some textures from them. The mod itself also has some great text
 However, some of those textures just feel *too* animated and a bit disgusting as food.
 
 Maybe I should just use tinted water and lava for simplicity for now...
+
+### Feeding Braxien
+
+Added some small chat messages for feeding Braixen: gaining its trust and trying to breed it.
+There might be a bug in the code where only the first and last uuid in the trusted list is actually trusted.
+Anyhow, in the future maybe we do something like feeding a sweet berry (or something in a "sweet" tag)
+will make Braixen trust and follow you, and feeding a "sour" tagged berry will make Braixen lose trust and stop following.
+This could be a good way to lead Braixen to your desired location.
+
