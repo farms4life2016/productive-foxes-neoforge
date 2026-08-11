@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "productivefoxes:sour_berry_juice",
+  "loader": "neoforge:fluid_container"
+}

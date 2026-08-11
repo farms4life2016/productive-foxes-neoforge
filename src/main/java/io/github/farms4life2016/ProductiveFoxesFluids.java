@@ -29,6 +29,17 @@ public final class ProductiveFoxesFluids {
             FLUIDS.register("flowing_sweet_berry_pulp",
                     () -> new BaseFlowingFluid.Flowing(sweetBerryPulpProperties()));
 
+    // ponytail: lemon juice is water-thin, so no density/viscosity override on the FluidType.
+    public static final DeferredHolder<FluidType, FluidType> SOUR_BERRY_JUICE_TYPE =
+            FLUID_TYPES.register("sour_berry_juice", () -> new FluidType(baseProperties()));
+
+    public static final DeferredHolder<Fluid, BaseFlowingFluid.Source> SOUR_BERRY_JUICE =
+            FLUIDS.register("sour_berry_juice", () -> new BaseFlowingFluid.Source(sourBerryJuiceProperties()));
+
+    public static final DeferredHolder<Fluid, BaseFlowingFluid.Flowing> FLOWING_SOUR_BERRY_JUICE =
+            FLUIDS.register("flowing_sour_berry_juice",
+                    () -> new BaseFlowingFluid.Flowing(sourBerryJuiceProperties()));
+
     private static FluidType.Properties baseProperties() {
         return FluidType.Properties.create()
                 .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
@@ -39,6 +50,16 @@ public final class ProductiveFoxesFluids {
         return new BaseFlowingFluid.Properties(SWEET_BERRY_PULP_TYPE, SWEET_BERRY_PULP, FLOWING_SWEET_BERRY_PULP)
                 .bucket(ProductiveFoxesItems.SWEET_BERRY_PULP_BUCKET)
                 .block(ProductiveFoxesBlocks.SWEET_BERRY_PULP)
+                .slopeFindDistance(3)
+                .levelDecreasePerBlock(2)
+                .tickRate(25)
+                .explosionResistance(100.0F);
+    }
+
+    private static BaseFlowingFluid.Properties sourBerryJuiceProperties() {
+        return new BaseFlowingFluid.Properties(SOUR_BERRY_JUICE_TYPE, SOUR_BERRY_JUICE, FLOWING_SOUR_BERRY_JUICE)
+                .bucket(ProductiveFoxesItems.SOUR_BERRY_JUICE_BUCKET)
+                .block(ProductiveFoxesBlocks.SOUR_BERRY_JUICE)
                 .slopeFindDistance(3)
                 .levelDecreasePerBlock(2)
                 .tickRate(25)

@@ -32,6 +32,17 @@ public final class ProductiveFoxesBlocks {
                             .liquid()
                             .pushReaction(PushReaction.DESTROY)));
 
+    public static final DeferredBlock<LiquidBlock> SOUR_BERRY_JUICE =
+            BLOCKS.register("sour_berry_juice", () -> new LiquidBlock(ProductiveFoxesFluids.SOUR_BERRY_JUICE.get(),
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_YELLOW)
+                            .replaceable()
+                            .noCollission()
+                            .strength(100.0F)
+                            .noLootTable()
+                            .liquid()
+                            .pushReaction(PushReaction.DESTROY)));
+
     public static void register(IEventBus modEventBus) {
         BLOCKS.register(modEventBus);
     }

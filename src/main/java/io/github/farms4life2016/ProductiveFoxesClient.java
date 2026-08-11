@@ -24,6 +24,9 @@ public class ProductiveFoxesClient {
     // single constant to recolour both the bush and the fruit item at once.
     private static final int LEMON_TINT = 0xFFFF66;
 
+    // ponytail: tint multiply on the bluish water texture yields a yellow-green juice; raise B for a paler lemon.
+    private static final int LEMON_JUICE_TINT = 0xFFFFF44F;
+
     public ProductiveFoxesClient(IEventBus modEventBus, ModContainer container) {
         modEventBus.addListener(this::registerEntityRenderers);
         modEventBus.addListener(this::registerClientExtensions);
@@ -64,10 +67,33 @@ public class ProductiveFoxesClient {
             }
         }, ProductiveFoxesFluids.SWEET_BERRY_PULP_TYPE.get());
 
+        event.registerFluidType(new IClientFluidTypeExtensions() {
+            @Override
+            public ResourceLocation getStillTexture() {
+                return ResourceLocation.withDefaultNamespace("block/water_still");
+            }
+
+            @Override
+            public ResourceLocation getFlowingTexture() {
+                return ResourceLocation.withDefaultNamespace("block/water_flow");
+            }
+
+            @Override
+            public ResourceLocation getOverlayTexture() {
+                return ResourceLocation.withDefaultNamespace("block/water_overlay");
+            }
+
+            @Override
+            public int getTintColor() {
+                return LEMON_JUICE_TINT;
+            }
+        }, ProductiveFoxesFluids.SOUR_BERRY_JUICE_TYPE.get());
+
     }
 
     private void registerItemColors(RegisterColorHandlersEvent.Item event) {
         event.register(new DynamicFluidContainerModel.Colors(), ProductiveFoxesItems.SWEET_BERRY_PULP_BUCKET.get());
+        event.register(new DynamicFluidContainerModel.Colors(), ProductiveFoxesItems.SOUR_BERRY_JUICE_BUCKET.get());
         event.register((stack, tintIndex) -> tintIndex == 0 ? LEMON_TINT : -1, ProductiveFoxesItems.SOUR_BERRIES.get());
     }
 

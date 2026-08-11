@@ -44,6 +44,16 @@ public final class ProductiveFoxesItems {
                     properties.craftRemainder(Items.BUCKET).stacksTo(1))
     );
 
+    public static final DeferredItem<BucketItem> SOUR_BERRY_JUICE_BUCKET = ITEMS.registerItem(
+            "sour_berry_juice_bucket",
+            properties -> new BucketItem(ProductiveFoxesFluids.SOUR_BERRY_JUICE.get(),
+                    properties.craftRemainder(Items.BUCKET).stacksTo(1))
+    );
+
+    // Crushed sour-berry peels and waste left over after industrial juicing.
+    public static final DeferredItem<Item> SOUR_BERRY_POMACE = ITEMS.registerSimpleItem(
+            "sour_berry_pomace", new Item.Properties());
+
     public static final DeferredItem<DeferredSpawnEggItem> BRAIXEN_SPAWN_EGG = ITEMS.registerItem(
             "braixen_spawn_egg",
             properties -> new DeferredSpawnEggItem(ProductiveFoxesEntities.BRAIXEN, 0xddc16c, 0xd75a39, properties)
