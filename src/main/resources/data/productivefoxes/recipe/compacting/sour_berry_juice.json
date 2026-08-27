@@ -1,0 +1,51 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "productivefoxes:washed_sour_berries"
+    },
+    {
+      "item": "productivefoxes:washed_sour_berries"
+    },
+    {
+      "item": "productivefoxes:washed_sour_berries"
+    },
+    {
+      "item": "productivefoxes:washed_sour_berries"
+    },
+    {
+      "item": "productivefoxes:washed_sour_berries"
+    },
+    {
+      "item": "productivefoxes:washed_sour_berries"
+    },
+    {
+      "item": "productivefoxes:washed_sour_berries"
+    },
+    {
+      "item": "productivefoxes:washed_sour_berries"
+    },
+    {
+      "item": "productivefoxes:washed_sour_berries"
+    },
+    {
+      "item": "productivefoxes:washed_sour_berries"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "productivefoxes:sour_berry_juice"
+    },
+    {
+      "id": "productivefoxes:sour_berry_pomace",
+      "count": 5
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "productivefoxes:sour_berries"
+    }
+  ],
+  "results": [
+    {
+      "id": "productivefoxes:washed_sour_berries"
+    }
+  ]
+}
