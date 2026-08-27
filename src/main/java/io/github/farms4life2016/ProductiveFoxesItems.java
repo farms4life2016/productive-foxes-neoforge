@@ -32,6 +32,11 @@ public final class ProductiveFoxesItems {
             new Item.Properties().food(Foods.SWEET_BERRIES)
     );
 
+    public static final DeferredItem<Item> WASHED_SOUR_BERRIES = ITEMS.registerSimpleItem(
+            "washed_sour_berries",
+            new Item.Properties().food(Foods.SWEET_BERRIES)
+    );
+
     // Right-clicking a dirt-like block with this places a sour berry bush; eating behaves like sweet berries.
     public static final DeferredItem<ItemNameBlockItem> SOUR_BERRIES = ITEMS.registerItem(
             "sour_berries",
